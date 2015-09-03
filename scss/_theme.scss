@@ -1,0 +1,26 @@
+
+// Theme variables
+@import 'global-settings';
+
+// import required files
+@import '../node_modules/vanilla-framework/scss/vanilla';
+
+// Include required modules from Vanilla
+@mixin required-vanilla-modules {
+  @include vf-reset;
+  @include vf-buttons;
+  @include vf-clearfix;
+  @include vf-forms;
+  @include vf-grid;
+  @include vf-header;
+  @include vf-lists;
+  @include vf-rows;
+  @include vf-typography;
+  @include vf-tables;
+  @include vf-footer;
+}
+
+// MAAS theme
+@mixin maas-gui-vanilla-theme {
+  @include required-vanilla-modules;
+}
