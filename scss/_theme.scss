@@ -4,8 +4,10 @@
 // Theme variables
 @import 'global-settings';
 
-// Theme modules and styles
-@import 'modules/header';
+// Theme base styles
+@import 'base/main';
+@import 'base/header';
+@import 'base/typography';
 
 // Include required modules from Vanilla
 @mixin required-vanilla-modules {
@@ -25,5 +27,7 @@
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
   @include required-vanilla-modules;
+  @include maas-main;
   @include maas-header;
+  @include maas-typography;
 }

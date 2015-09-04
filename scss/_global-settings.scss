@@ -1,5 +1,32 @@
-// Global colours
-$brand-color: #dd4814;
+/// MAAS font sizes
+$base-font-family:      Ubuntu, Arial, 'libra sans', sans-serif;
+$base-font-size:        16px!default;
+$base-line-height:      24px!default;
+
+$h1:                    32px!default;
+$h2:                    23px!default;
+$h3:                    20px!default;
+$h4:                    16px!default;
+$h5:                    14px!default;
+
+/// MAAS Line heights
+$base-spacing-unit:     $base-line-height!default;
+$half-spacing-unit:     $base-spacing-unit / 2!default;
+$line-height-ratio:     $base-line-height / $base-font-size;
+
+/// MAAS Text styles
+$text-color:            $cool-grey;
+$headline-color:        $warm-grey;
+$link-color:            $brand-color;
+
+// MAAS Colours
+
+// MAAS notifications
+$error:                 #d83832;
+$information:           #2ab7ec;
 
 // Header variables
 $header-link-color: $white;
+
+// MAAS structure
+$site-max-width:        1440px;

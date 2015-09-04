@@ -1,0 +1,22 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-typography
+/// @since        0.0.1
+////
+
+/// Typographic element styles
+/// @group Typography
+@mixin maas-typography {
+
+  @media only screen and (min-width: $breakpoint-large) {
+
+    p,
+    li,
+    code,
+    pre {
+      font-size: #{($base-font-size/16px)*1em};
+      line-height: #{$line-height-ratio};
+      margin-bottom: .75em;
+    }
+  }
+}
