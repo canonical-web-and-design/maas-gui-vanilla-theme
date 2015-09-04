@@ -1,0 +1,19 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-header
+/// @since        0.0.3
+////
+
+/// MAAS row styling
+/// @group maas row
+@mixin maas-row {
+
+  .row {
+    background-color: $transparent;
+    border-bottom: 1px dotted $warm-grey;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+} // @mixin maas-row

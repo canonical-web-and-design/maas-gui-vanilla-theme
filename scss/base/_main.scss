@@ -41,5 +41,9 @@
       z-index: -1;
     }
   }
+
+  .inner-wrapper {
+    max-width: $site-max-width;
+  }
   // scss-lint:enable DuplicateProperty
 }

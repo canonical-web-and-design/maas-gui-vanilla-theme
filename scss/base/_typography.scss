@@ -18,5 +18,34 @@
       line-height: #{$line-height-ratio};
       margin-bottom: .75em;
     }
+
+    // Headings
+    #{headings()} {
+      margin: 10px 0;
+      line-height: 1.5em;
+    }
+
+    $headings: h1, h2, h3, h4, h5;
+    $size: $h1, $h2, $h3, $h4, $h5;
+
+    $heading-size: zip($headings, $size);
+
+    // Create heading styles
+    @each $h in $heading-size {
+      #{nth($h, 1)} {
+        color: $headline-color;
+        font-size: #{(nth($h, 2)/16px)*1em};
+        line-height: #{$line-height-ratio};
+
+        small {
+          font-size: 75%;
+        }
+      }
+    }
+
+    .gigantic {
+      font-size: #{($gigantic/16px)*1em};
+      line-height: #{$line-height-ratio};
+    }
   }
 }

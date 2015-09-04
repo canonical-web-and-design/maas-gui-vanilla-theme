@@ -9,6 +9,9 @@ $h3:                    20px!default;
 $h4:                    16px!default;
 $h5:                    14px!default;
 
+$gigantic:              45px!default;
+$mega:                  40px!default;
+
 /// MAAS Line heights
 $base-spacing-unit:     $base-line-height!default;
 $half-spacing-unit:     $base-spacing-unit / 2!default;
@@ -19,8 +22,6 @@ $text-color:            $cool-grey;
 $headline-color:        $warm-grey;
 $link-color:            $brand-color;
 
-// MAAS Colours
-
 // MAAS notifications
 $error:                 #d83832;
 $information:           #2ab7ec;
@@ -30,3 +31,4 @@ $header-link-color: $white;
 
 // MAAS structure
 $site-max-width:        1440px;
+$breakpoint-large:      $site-max-width;
