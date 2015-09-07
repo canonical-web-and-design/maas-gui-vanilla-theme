@@ -13,7 +13,7 @@
     min-height: 100%;
     color: $text-color;
     font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
-    background-color: $white;
+    background-color: $off-white;
   }
 
   // scss-lint:disable DuplicateProperty
@@ -25,7 +25,7 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
-    background: lighten($white, 60%);
+    background: $off-white;
 
     &:after {
       content: '';

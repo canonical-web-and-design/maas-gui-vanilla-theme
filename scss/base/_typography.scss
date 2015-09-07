@@ -4,8 +4,8 @@
 /// @since        0.0.1
 ////
 
-/// Typographic element styles
-/// @group Typography
+/// MAAS Typographic element styles
+/// @group MAAS Typography
 @mixin maas-typography {
 
   @media only screen and (min-width: $breakpoint-large) {
@@ -35,6 +35,7 @@
       #{nth($h, 1)} {
         color: $headline-color;
         font-size: #{(nth($h, 2)/16px)*1em};
+        font-weight: 300;
         line-height: #{$line-height-ratio};
 
         small {
@@ -43,9 +44,13 @@
       }
     }
 
+    // Additional font sizes
     .gigantic {
       font-size: #{($gigantic/16px)*1em};
-      line-height: #{$line-height-ratio};
+    }
+
+    .mega {
+      font-size: #{($mega/16px)*1em};
     }
   }
 }
