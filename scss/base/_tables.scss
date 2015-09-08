@@ -1,0 +1,82 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-header
+/// @since        0.0.3
+////
+
+/// MAAS table styling
+/// @group maa table
+@mixin maas-table {
+  @include tables($alto-grey, $warm-grey, 16px, 13px);
+  @include table-columns(100);
+}
+
+// scss-lint:disable SelectorFormat
+@mixin tables($table-border-color, $table-header-color, $table-font-size, $table-header-size) {
+  table,
+  .table {
+    display: table;
+    border-color: $table-border-color;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    margin: 0 0 2.5em;
+    width: 100%;
+
+    tr,
+    .table__row {
+      display: table-row;
+    }
+
+    th,
+    td,
+    .table__header,
+    .table__data {
+      display: table-cell;
+      background: none;
+      border: 0;
+      border-bottom: 1px dotted lighten($table-border-color, 2%);
+      text-align: left;
+      padding: 8px 10px 7px;
+    }
+
+    thead,
+    .table__head {
+      display: table-header-group;
+
+      th,
+      .table__header {
+        font-size: #{($table-header-size/16px)*1em};
+        background: none;
+        color: $table-header-color;
+        border-bottom: 1px solid;
+      }
+    }
+
+    tbody,
+    .table__body {
+      display: table-row-group;
+    }
+
+    tfoot,
+    .table__footer {
+      display: table-footer-group;
+    }
+  }
+}
+
+@mixin table-columns($table-columns) {
+  $table-list: null;
+  @for $i from 1 through $table-columns {
+    .table__column--#{$i} {
+      width: percentage($i / 100);
+    }
+
+    $table-list: append($table-list, unquote(".table__column--#{$i}"), comma);
+  }
+
+  #{$table-list} {
+  }
+}
+// scss-lint:enable SelectorFormat

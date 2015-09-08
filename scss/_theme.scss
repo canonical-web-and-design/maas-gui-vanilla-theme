@@ -8,6 +8,7 @@
 @import 'base/main';
 @import 'base/header';
 @import 'base/row';
+@import 'base/tables';
 @import 'base/typography';
 
 // Include required modules from Vanilla
@@ -31,5 +32,6 @@
   @include maas-main;
   @include maas-header;
   @include maas-row;
+  @include maas-table;
   @include maas-typography;
 }
