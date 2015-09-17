@@ -5,7 +5,7 @@
 ////
 
 /// MAAS table styling
-/// @group maa table
+/// @group maas table
 @mixin maas-table {
   @include tables($alto-grey, $warm-grey, 16px, 13px);
   @include table-columns(100);
@@ -13,9 +13,13 @@
 
 // scss-lint:disable SelectorFormat
 @mixin tables($table-border-color, $table-header-color, $table-font-size, $table-header-size) {
-  table,
-  .table {
-    display: table;
+
+  // scss-lint:disable NestingDepth
+
+  // Here is the main placeholder styles for tables. All main elements can be
+  // changed or amended here and will effect standard table markup / class based
+  // div created tables.
+  %table {
     border-color: $table-border-color;
     border-collapse: collapse;
     border-spacing: 0;
@@ -23,60 +27,494 @@
     margin-bottom: 20px;
     margin: 0 0 2.5em;
     width: 100%;
+    table-layout: fixed;
 
-    tr,
-    .table__row {
-      display: table-row;
+    // Table row styles
+    %table-row {
+      width: 100%;
+      border-bottom: 1px dotted $table-border-color;
     }
 
-    th,
-    td,
-    .table__header,
-    .table__data {
-      display: table-cell;
+    // Table cell styles
+    %table-cell {
+      @include font-size($table-font-size);
+      padding: 8px 10px 7px;
+      box-sizing: border-box;
+      min-height: 21px;
       background: none;
       border: 0;
-      border-bottom: 1px dotted lighten($table-border-color, 2%);
       text-align: left;
-      padding: 8px 10px 7px;
-    }
 
-    thead,
-    .table__head {
-      display: table-header-group;
+      a {
+        color: $link-color;
 
-      th,
-      .table__header {
-        font-size: #{($table-header-size/16px)*1em};
-        background: none;
-        color: $table-header-color;
-        border-bottom: 1px solid;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 
-    tbody,
+    // Table header row styles
+    %table-header-row {
+      color: $table-header-color;
+      border-bottom: 1px solid;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    // Table header cell styles
+    %table-header {
+      @include font-size($table-header-size);
+      background: none;
+      color: $table-header-color;
+    }
+
+    // Table header hyperlink styles
+    %table-header-link {
+      color: $table-header-color;
+
+      &:hover {
+        color: $text-color;
+        text-decoration: none;
+        border-bottom: 1px solid $text-color;
+      }
+
+      // Sorting and active styles when filtering a table
+      &.active {
+        color: $text-color;
+        text-decoration: none;
+      }
+
+      &.sort {
+        border-bottom: 1px solid inherit;
+      }
+    }
+
+    // Table divide is used for multiple table header options
+    %table-divide {
+      width: 1px;
+      display: inline-block;
+      background: $table-header-color;
+      height: 10px;
+      margin: 0 5px;
+    }
+
+    // Cell alignments
+    [colspan] {
+      text-align: center;
+    }
+
+    [colspan="1"] {
+      text-align: left;
+    }
+
+    [rowspan] {
+      vertical-align: middle;
+    }
+
+    [rowspan="1"] {
+      vertical-align: top;
+    }
+
+    .numerical {
+      text-align: right;
+    }
+
+    // Generic table form elements, covers general alignment of common form
+    // elements which can be found in all tables.
+    label {
+      font-size: 13px;
+      color: $pale-grey;
+    }
+
+    input,
+    select {
+      margin: 0 0 0 -14px;
+    }
+
+    input[type="radio"] {
+      margin-left: 0;
+    }
+  }
+
+  // Generic table styles, this is to be used for simple display of data which
+  // doesn't reqire dropdowns or form input interaction. Example would be a
+  // listing of machines or generic report information.
+  //
+  // @example
+  // <table>
+  //   <thead>
+  //     <tr>
+  //       <th>...</th>
+  //       ...
+  //     </tr>
+  //   </thead>
+  //   <tfoot>
+  //     <tr>
+  //       <td>...</td>
+  //       ...
+  //     </tr>
+  //   </tfoot>
+  //   <tbody>
+  //     <tr>
+  //       <td>...</td>
+  //       ...
+  //     </tr>
+  //   </tbody>
+  // </table>
+  table {
+    @extend %table;
+
+    tr {
+      @extend %table-row;
+    }
+
+    th,
+    td {
+      @extend %table-cell;
+    }
+
+    thead {
+
+      tr {
+        @extend %table-header-row;
+      }
+
+      th {
+        @extend %table-header;
+      }
+
+      a {
+        @extend %table-header-link;
+      }
+
+      .divide {
+        @extend %table-divide;
+      }
+    }
+  }
+
+  // Table styles used to replicate the table layout but where extra interaction
+  // can not be created using standard table elements. This includes in table
+  // form editing, dropdown elements and layouts not possibile using tables.
+  //
+  // @example
+  // <div class="table">
+  //   <header class="table__head">
+  //     <div class="table__row">
+  //       <div class="table__header">...</div>
+  //       ...
+  //     </div>
+  //   </div>
+  //   <footer class="table__footer">
+  //     <div class="table__row">
+  //       <div class="table__data>...</div>
+  //       ...
+  //     </div>
+  //   </footer>
+  //   <section class="table__body">
+  //     <div class="table__row">
+  //       <div class="table__data>...</div>
+  //       ...
+  //     </div>
+  //   </section>
+  // </div>
+  .table {
+    @extend %table;
+    display: table;
+
+    // Table row style
+    .table__row {
+      @extend %table-row;
+      float: left;
+      display: table-row;
+
+      // Table row hover style, this can reveal control elements
+      &:hover {
+        background-color: $white;
+
+        // Show input / select styles when on hover over a parent .table__row
+        .table__input {
+          background-color: $white;
+          border-color: $alto-grey;
+          background-position: right 10px top 16px;
+        }
+
+        // Set controls z-index and opacity so it is visible
+        .table__controls {
+          z-index: 1;
+          opacity: 1;
+
+          &--secondary {
+            z-index: 1;
+            opacity: 1;
+          }
+        }
+      }
+
+      // Active state on .table__row
+      &.active {
+        background-color: $white;
+
+        // Hover state makes any forms / controls invisible or unable to be used
+        &:hover {
+
+          .table__input {
+            background-color: transparent;
+            border-color: transparent;
+            pointer-events: none;
+            background-position: -9999px -9999px;
+          }
+
+          .table__controls {
+            opacity: 0;
+            z-index: -1000;
+            pointer-events: none;
+
+            &--secondary {
+              z-index: -1000;
+              opacity: 0;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+
+    .table__header,
+    .table__data {
+      @extend %table-cell;
+      display: table-cell;
+      float: left;
+    }
+
+    .table__head {
+      display: table-head;
+      width: 100%;
+      box-sizing: border-box;
+
+      .table__row {
+        @extend %table-header-row;
+      }
+
+      .table__header {
+        @extend %table-header;
+      }
+
+      .table__header-link {
+        @extend %table-header-link;
+      }
+
+      .table__header-divide,
+      .divide {
+        @extend %table-divide;
+      }
+    }
+
     .table__body {
       display: table-row-group;
     }
 
-    tfoot,
     .table__footer {
       display: table-footer-group;
     }
+
+    // Table label style used as secondary information with in a table cell. Can
+    // also be used as a toggle.
+    //
+    // @example
+    // <div class="table__data">
+    //    ...
+    //    <span class="table__label">
+    //        <a href="#">Show more</a>
+    //    </span>
+    // </div>
+    //
+    // <div class="table__data active">
+    //     ...
+    //     <span class="table__label">
+    //         <a href="#">Hide</a>
+    //     </span>
+    // </div>
+    .table__label {
+      clear: both;
+      display: block;
+      margin-top: 11px;
+      color: $pale-grey;
+
+      a {
+        color: $pale-grey;
+
+        &:hover {
+          color: $link-color;
+        }
+      }
+
+      &.active {
+
+        a {
+          color: $link-color;
+        }
+      }
+    }
+
+    // Table contol container, hidden unless hovered on the table row. Will have
+    // action controls which can effect the parent table row or other actions.
+    //
+    // @example
+    // <div class="table">
+    //     <div class="table__row">
+    //         <div class="table__data">
+    //             ...
+    //         </div>
+    //         <div class="table__data">
+    //             <div class="table__controls">
+    //                 <a href="#">Delete</a>
+    //                 <a href="#">Save</a>
+    //             </div>
+    //         </div>
+    //     </div>
+    // </div>
+    .table__controls {
+      width: 100%;
+      text-align: right;
+      opacity: 0;
+      z-index: -1000;
+
+      &--secondary {
+        opacity: 0;
+        z-index: -1000;
+        width: auto;
+        text-align: left;
+      }
+    }
+
+    // Table input styles act in a similar way to table controls. They are only
+    // active on hover. This style can effect input boxes or select boxes.
+    //
+    // @example
+    // <div class="table">
+    //     <div class="table__row">
+    //         <div class="table__data">
+    //             ...
+    //         </div>
+    //         <div class="table__data">
+    //             <input type="text" class="table__input" placeholder="Enter text...">
+    //         </div>
+    //     </div>
+    // </div>
+    .table__input {
+      display: inline-block;
+      margin: -7px 0 -8px -14px;
+      background-color: transparent;
+      border-color: transparent;
+      background-position: -9999px -9999px;
+    }
+
+    // Table dropdowns are used for extra condenced information and to expand
+    // form elements. The class .table__dropdown must be within a .table__row and
+    // acts as a container.
+    //
+    // @example
+    // <div class="table">
+    //     <div class="table__row active">
+    //         <div class="table__data">
+    //             ...
+    //         </div>
+    //         <div class="table__data">
+    //             ...
+    //         </div>
+    //         <div class="table__dropdown">
+    //             <div class="table__row table__dropdown-row">
+    //                 <div class="table__data">
+    //                     ...
+    //                 </div>
+    //                 <div class="table__data">
+    //                     ...
+    //                 </div>
+    //                 <div class="table__data">
+    //                     ...
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </div>
+    // </div>
+    .table__dropdown {
+      width: 100%;
+
+      // Table dropdown row style, add class to .table__row
+      .table__dropdown-row {
+        border-bottom: 0;
+
+        &:before {
+          display: block;
+          margin: 0 auto;
+          width: calc(100% - 20px);
+          border-top: 1px dotted $alto-grey;
+          position: relative;
+          height: 1px;
+          content: '';
+        }
+
+        // Table dropdown header row removes border styling from .table__row
+        &.table__dropdown-row--head {
+          border-bottom: 0;
+
+          .table__header {
+            color: $pale-grey;
+            font-size: 13px;
+          }
+        }
+
+        // If no borders are required, removes all borders and before elements
+        &.no-border {
+          border: 0;
+
+          &:before {
+            border: 0;
+          }
+        }
+      }
+
+      // .table__dropdown--info Information style dropdown sets all colours
+      // styles to pale to inform users this is not an interactive table
+      &--info {
+
+        .table__row {
+          border-bottom: 0;
+        }
+
+        .table__data {
+          color: $pale-grey;
+        }
+      }
+    }
   }
+  // scss-lint:enable NestingDepth
 }
 
+// Generates column classes use for tables
+// the column class generated will look like '.table__column--1'
+// Number value at the end signifies the width percentage
 @mixin table-columns($table-columns) {
   $table-list: null;
+  $max-width: 1440px;
+
   @for $i from 1 through $table-columns {
     .table__column--#{$i} {
       width: percentage($i / 100);
     }
-
-    $table-list: append($table-list, unquote(".table__column--#{$i}"), comma);
   }
 
-  #{$table-list} {
+  .table {
+    @for $i from 1 through $table-columns {
+      .table__column--#{$i} {
+        max-width: ($max-width / 100) * $i;
+        width: 100%;
+      }
+    }
   }
 }
 // scss-lint:enable SelectorFormat

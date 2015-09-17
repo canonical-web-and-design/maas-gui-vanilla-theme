@@ -18,6 +18,7 @@ $half-spacing-unit:     $base-spacing-unit / 2!default;
 $line-height-ratio:     $base-line-height / $base-font-size;
 
 /// MAAS Text styles
+$brand-color:           #dd4814;
 $text-color:            $cool-grey;
 $headline-color:        $warm-grey;
 $link-color:            $brand-color;
@@ -26,6 +27,7 @@ $link-color:            $brand-color;
 $off-white:             #fafafa;
 $error:                 #d83832;
 $information:           #2ab7ec;
+$pale-grey:             #bcbcbc;
 
 // Header variables
 $header-link-color: $white;

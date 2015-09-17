@@ -66,6 +66,10 @@
                     <h4>h4, Ubuntu light, 16px</h4>
                     <h5>h5, Ubuntu light, 13px</h5>
                 </div>
+                <div class="eight-col">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum quas accusamus. Omnis <strong>strong text style</strong>veritatis expedita eos et libero totam veniam? Hic debitis voluptas natus <i>itallic text style explicabo velit</i>, doloribus expedita, vitae excepturi est ea soluta ab quia autem vero sit sequi enim. <a href="#">Hyperlink temporibus</a> culpa rem minus optio.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum molestias dolore corporis sequi, itaque, quae iste qui. Enim, illo, exercitationem. Atque, eligendi repudiandae? Maxime illo impedit voluptate magnam quidem facilis accusamus accusantium qui atque repudiandae.</p>
+                </div>
                 <div class="twelve-col">
                   <h1>Colours</h1>
                   <hr />
@@ -158,65 +162,228 @@
                     <table>
                         <thead>
                             <tr>
-                                <th class="table__column--1">Table heading</th>
-                                <th>lorem</th>
+                                <th>Table heading</th>
+                                <th>
+                                    <a href="#">Table heading</a>
+                                    <span class="table__header-divide"></span>
+                                    <a href="">Table heading</a>
+                                </th>
                                 <th>lorem 2</th>
                                 <th>lorem 3</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="table__column--1">test</td>
                                 <td>test</td>
-                                <td>test</td>
-                                <td>test</td>
-                            </tr>
-                            <tr>
-                                <td class="table__column--1">test</td>
                                 <td>test</td>
                                 <td>test</td>
                                 <td>test</td>
                             </tr>
                             <tr>
-                                <td class="table__column--1">test</td>
+                                <td>test</td>
                                 <td>test</td>
                                 <td>test</td>
                                 <td>test</td>
                             </tr>
                             <tr>
-                                <td class="table__column--1">test</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                            </tr>
+                            <tr>
+                                <td>test</td>
                                 <td>test</td>
                                 <td>test</td>
                                 <td>test</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="table">
-                        <div class="table__head">
+                </div>
+                <div class="twelve-col">
+                  <div class="twelve-col padding-bottom">
+                    <h4>Available disks and partitions</h4>
+                    <section class="table margin-bottom">
+                        <header class="table__head">
                             <div class="table__row">
-                                <div class="table__header table__column--1">test</div>
-                                <div class="table__header">lorem</div>
-                                <div class="table__header">lorem</div>
+                                <div class="table__header table__column--3">
+                                    <input class="checkbox" type="checkbox" id="check-all" />
+                                    <label class="checkbox-label" for="check-all"></label>
+                                </div>
+                                <div class="table__header table__column--15">Name</div>
+                                <div class="table__header table__column--15">Size</div>
+                                <div class="table__header table__column--15">Device Type</div>
+                                <div class="table__header table__column--15">File system</div>
+                                <div class="table__header table__column--15">
+                                    <a>Model</a>
+                                    <span class="divide"></span>
+                                    <a>Serial</a>
+                                </div>
+                                <div class="table__header table__column--15">Tags</div>
+                                <div class="table__header table__column--7"></div>
                             </div>
-                        </div>
-                        <div class="table__body">
+                        </header>
+                        <main class="table__body">
                             <div class="table__row">
-                                <div class="table__data table__column--1">derp</div>
-                                <div class="table__data">test</div>
-                                <div class="table__data">yo yo yo!</div>
+                                <div class="table__data table__column--3">
+                                    <input class="checkbox" type="checkbox" id="sda" />
+                                    <label class="checkbox-label" for="sda"></label>
+                                </div>
+                                <div class="table__data table__column--15">
+                                    <input type="text" value="sda" class="table__input">
+                                </div>
+                                <div class="table__data table__column--15">8.5 G</div>
+                                <div class="table__data table__column--15">Physical</div>
+                                <div class="table__data table__column--15">
+                                    <a class="table__controls table__controls--secondary">Format</a>
+                                </div>
+                                <div class="table__data table__column--15">QEMU HARDDISK</div>
+                                <div class="table__data table__column--15 ng-hide">937368252</div>
+                                <div class="table__data table__column--15">rotary, storage, machine</div>
+                                <div class="table__data table__column--7">
+                                    <div class="table__controls">
+                                        <a class="icon partition">Partition</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__row active">
+                                <div class="table__data table__column--3">
+                                    <input class="checkbox" type="checkbox" id="sdb" />
+                                    <label class="checkbox-label" for="sdb"></label>
+                                </div>
+                                <div class="table__data table__column--15">
+                                    <input type="text" value="sdb" class="table__input">
+                                </div>
+                                <div class="table__data table__column--15">8.5 G</div>
+                                <div class="table__data table__column--15">Physical</div>
+                                <div class="table__data table__column--15">
+                                    fat32 <a class="table__controls table__controls--secondary margin-left--ten">Mount</a>
+                                </div>
+                                <div class="table__data table__column--15">QEMU HARDDISK</div>
+                                <div class="table__data table__column--15 ng-hide">937368252</div>
+                                <div class="table__data table__column--15">
+                                    <div class="table__tags">rotary, storage, test, hp, machine<span class="table__controls table__controls--secondary">, <a>edit</a></span></div>
+                                </div>
+                                <div class="table__data table__column--7">
+                                    <div class="table__controls">
+                                        <a class="icon partition">Partition</a>
+                                        <a class="icon delete">Delete</a>
+                                    </div>
+                                </div>
+                                <div class="table__dropdown">
+                                    <div class="table__row table__dropdown-row padding-bottom--ten">
+                                        <div class="table__data table__column--3"></div>
+                                        <div class="table__data table__column--15">
+                                            <label for="filesys">Filesystem</label>
+                                            <select name="filesys" id="filesys">
+                                                <option value="fat32">fat32</option>
+                                            </select>
+                                        </div>
+                                        <div class="table__data table__column--30">
+                                            <label for="mountpoint">Mountpoint</label>
+                                            <input type="text" id="mountpoint">
+                                        </div>
+                                        <div class="table__data table__column--52">
+                                        </div>
+                                    </div>
+                                    <div class="table__row table__dropdown-row">
+                                        <div class="table__data right">
+                                              <a class="link-cta-ubuntu text-button">Cancel</a>
+                                              <button class="cta-ubuntu">Mount</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="table__row">
-                                <div class="table__data table__column--1">derp</div>
-                                <div class="table__data">test</div>
-                                <div class="table__data">yo yo yo!</div>
+                                <div class="table__data table__column--3">
+                                    <input class="checkbox" type="checkbox" id="sdb" />
+                                    <label class="checkbox-label" for="sdb"></label>
+                                </div>
+                                <div class="table__data table__column--15">
+                                    <input type="text" value="sdb" class="table__input">
+                                </div>
+                                <div class="table__data table__column--15">8.5 G</div>
+                                <div class="table__data table__column--15">Physical</div>
+                                <div class="table__data table__column--15">
+                                    <a class="table__controls table__controls--secondary">Format</a>
+                                </div>
+                                <div class="table__data table__column--15">QEMU HARDDISK</div>
+                                <div class="table__data table__column--15 ng-hide">937368252</div>
+                                <div class="table__data table__column--15">rotary, storage, machine</div>
+                                <div class="table__data table__column--7">
+                                    <div class="table__controls">
+                                        <a class="icon partition">Partition</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="table__row">
-                                <div class="table__data table__column--1">derp</div>
-                                <div class="table__data">test</div>
-                                <div class="table__data">yo yo yo!</div>
+                                <div class="table__data table__column--3">
+                                    <input class="checkbox" type="checkbox" id="sdc" />
+                                    <label class="checkbox-label" for="sdc"></label>
+                                </div>
+                                <div class="table__data table__column--15">
+                                    <input type="text" value="sdc" class="table__input">
+                                </div>
+                                <div class="table__data table__column--15">8.5 G</div>
+                                <div class="table__data table__column--15">Physical</div>
+                                <div class="table__data table__column--15">
+                                    <a class="table__controls table__controls--secondary">Format</a>
+                                </div>
+                                <div class="table__data table__column--15">QEMU HARDDISK</div>
+                                <div class="table__data table__column--15 ng-hide">937368252</div>
+                                <div class="table__data table__column--15">rotary, storage, machine</div>
+                                <div class="table__data table__column--7">
+                                    <div class="table__controls">
+                                        <a class="icon partition">Partition</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="table__row">
+                                <div class="table__data table__column--3">
+                                    <input class="checkbox" type="checkbox" id="sdd" />
+                                    <label class="checkbox-label" for="sdd"></label>
+                                </div>
+                                <div class="table__data table__column--15">
+                                    <input type="text" value="sdd" class="table__input">
+                                </div>
+                                <div class="table__data table__column--15">8.5 G</div>
+                                <div class="table__data table__column--15">Physical</div>
+                                <div class="table__data table__column--15">
+                                    <a class="table__controls table__controls--secondary">Format</a>
+                                </div>
+                                <div class="table__data table__column--15">QEMU HARDDISK</div>
+                                <div class="table__data table__column--15 ng-hide">937368252</div>
+                                <div class="table__data table__column--15">rotary, storage, machine</div>
+                                <div class="table__data table__column--7">
+                                    <div class="table__controls">
+                                        <a class="icon partition">Partition</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__data table__column--3">
+                                    <input class="checkbox" type="checkbox" id="vg0-lv0" />
+                                    <label class="checkbox-label" for="vg0-lv0"></label>
+                                </div>
+                                <div class="table__data table__column--15">
+                                    <input type="text" value="vg0-lv0" class="table__input">
+                                </div>
+                                <div class="table__data table__column--15">8.5 G</div>
+                                <div class="table__data table__column--15">Logical volume</div>
+                                <div class="table__data table__column--15">
+                                    <a class="table__controls table__controls--secondary">Format</a>
+                                </div>
+                                <div class="table__data table__column--15"></div>
+                                <div class="table__data table__column--15 ng-hide"></div>
+                                <div class="table__data table__column--15">rotary, storage, machine</div>
+                                <div class="table__data table__column--7">
+                                    <div class="table__controls">
+                                        <a class="icon delete">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </section>
                 </div>
             </div>
         </div>
