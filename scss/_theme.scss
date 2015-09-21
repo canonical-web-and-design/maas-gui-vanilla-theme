@@ -7,6 +7,7 @@
 // Theme base styles
 @import 'base/main';
 @import 'base/header';
+@import 'base/forms';
 @import 'base/row';
 @import 'base/tables';
 @import 'base/typography';
@@ -31,6 +32,7 @@
   @include required-vanilla-modules;
   @include maas-main;
   @include maas-header;
+  @include maas-forms;
   @include maas-row;
   @include maas-table;
   @include maas-typography;
