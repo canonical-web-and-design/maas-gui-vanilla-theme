@@ -133,43 +133,65 @@
                 <div class="twelve-col">
                     <h2>Forms</h2>
                     <hr />
-                    <form class="form">
-                        <div class="form__group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                        </div>
-                        <div class="form__group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form__group">
-                            <label for="exampleInputFile">File input</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Example block-level help text here.</p>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                              <input type="checkbox"> Check me out
-                          </label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                    <form class="form form--inline">
-                        <div class="form-group">
-                          <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                          <label class="sr-only" for="exampleInputPassword3">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        </div>
-                        <button type="submit" class="btn btn-default">Sign in</button>
-                  </form>
+                    <div class="twelve-col">
+                        <form class="form">
+                            <div class="form__group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form__group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form__group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="form__help-text">Example form help text.</p>
+                            </div>
+                            <div class="form__group">
+                              <label>
+                                  <input type="checkbox"> Check me out
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                    <h2>Inline forms</h2>
+                    <hr />
+                    <div class="twelve-col">
+                        <form class="form form__inline">
+                            <div class="form__group">
+                              <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                            </div>
+                            <div class="form__group">
+                              <label class="sr-only" for="exampleInputPassword3">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="form__group">
+                              <label>
+                                  <input type="checkbox"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Sign in</button>
+                        </form>
+                    </div>
+                    <h2>Inline grouped forms</h2>
+                    <hr/>
+                    <div class="twelve-col">
+                      <form action="" class="form form__inline-group">
+                          <fieldset class="six-col">
+                            <div class="form__group">
+                              <label class="two-col" for="exampleInputEmail3">Email address</label>
+                              <input class="four-col last-col" type="email" id="exampleInputEmail3" placeholder="Email">
+                            </div>
+                            <div class="form__group">
+                              <label class="two-col" for="exampleInputPassword3">Password</label>
+                              <input type="password" class="four-col last-col" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                          </fieldset>
+                      </form>
+                    </div>
                 </div>
                 <div class="twelve-col">
                     <h2>Table</h2>

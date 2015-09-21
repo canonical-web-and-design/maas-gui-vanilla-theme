@@ -108,8 +108,45 @@
     padding: 0;
   }
 
-  .form__group {
-    margin-bottom: 10px;
-    width: 100%;
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form {
+
+    .form__group {
+      margin-bottom: 10px;
+    }
+
+    .form__help-text {
+      @include font-size(14px);
+      color: $warm-grey;
+    }
+
+    &.form__inline {
+
+      .form__group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+
+        input,
+        select {
+          display: inline-block;
+          width: auto;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &.form__inline-group {
+
+      .form__group {
+        width: 100%;
+        float: left;
+      }
+    }
   }
 }
