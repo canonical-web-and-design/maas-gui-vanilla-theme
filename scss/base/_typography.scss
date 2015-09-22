@@ -19,6 +19,10 @@
       margin-bottom: .75em;
     }
 
+    hr {
+      margin-bottom: 20px;
+    }
+
     // Heading required classes and sizes
     $headings: h1, h2, h3, h4, h5;
     $size: $h1, $h2, $h3, $h4, $h5;

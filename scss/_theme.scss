@@ -8,6 +8,7 @@
 @import 'base/main';
 @import 'base/header';
 @import 'base/forms';
+@import 'base/helpers';
 @import 'base/row';
 @import 'base/tables';
 @import 'base/typography';
@@ -33,6 +34,7 @@
   @include maas-main;
   @include maas-header;
   @include maas-forms;
+  @include maas-helpers;
   @include maas-row;
   @include maas-table;
   @include maas-typography;
