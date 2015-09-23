@@ -9,10 +9,16 @@
 @import 'base/buttons';
 @import 'base/header';
 @import 'base/forms';
-@import 'base/helpers';
 @import 'base/row';
 @import 'base/tables';
 @import 'base/typography';
+
+// Theme generic styles
+@import 'generic/helpers';
+
+// Theme object styles
+@import 'objects/accordion';
+@import 'objects/search';
 
 // Include required modules from Vanilla
 @mixin required-vanilla-modules {
@@ -33,11 +39,13 @@
 @mixin maas-gui-vanilla-theme {
   @include required-vanilla-modules;
   @include maas-main;
+  @include maas-accordion;
   @include maas-buttons;
   @include maas-header;
   @include maas-forms;
   @include maas-helpers;
   @include maas-row;
+  @include maas-search;
   @include maas-table;
   @include maas-typography;
 }
