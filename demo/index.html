@@ -456,99 +456,94 @@
         <div class="inner-wrapper">
           <div class="accordion three-col maas-accordion">
           <h3 class="accordion__title">Filter by</h3>
-          <!-- XXX blake_r 2015-02-18 - Need to add e2e test. -->
-          <div class="accordion__tab" data-ng-show="tabs.nodes.metadata.status.length">
-              <h4 class="accordion__tab-title maas-accordion-tab">Status</h4>
+          <div class="accordion__tab">
+              <h4 class="accordion__tab-title">Lorem</h4>
               <div class="accordion__tab-content">
                   <ul class="accordion__tab-list">
-                      <!-- XXX blake_r 2015-02-18 - Need to add e2e test. -->
-                      <!-- ngRepeat: status in tabs.nodes.metadata.status | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="status in tabs.nodes.metadata.status | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('status', status.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('status', status.name, 'nodes')">Allocated (2)</a>
-                      </li><!-- end ngRepeat: status in tabs.nodes.metadata.status | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="status in tabs.nodes.metadata.status | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('status', status.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('status', status.name, 'nodes')">Broken (1)</a>
-                      </li><!-- end ngRepeat: status in tabs.nodes.metadata.status | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="status in tabs.nodes.metadata.status | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('status', status.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('status', status.name, 'nodes')">Commissioning (1)</a>
-                      </li><!-- end ngRepeat: status in tabs.nodes.metadata.status | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="status in tabs.nodes.metadata.status | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('status', status.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('status', status.name, 'nodes')">Deployed (2)</a>
-                      </li><!-- end ngRepeat: status in tabs.nodes.metadata.status | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="status in tabs.nodes.metadata.status | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('status', status.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('status', status.name, 'nodes')">Ready (2)</a>
-                      </li><!-- end ngRepeat: status in tabs.nodes.metadata.status | orderBy:['name', '-count'] -->
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Sit amet</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Consectetur</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                      </li>
                   </ul>
               </div>
           </div>
-          <div class="accordion__tab" data-ng-show="tabs.nodes.metadata.owner.length">
-              <h4 class="accordion__tab-title maas-accordion-tab">Owner</h4>
+          <div class="accordion__tab">
+              <h4 class="accordion__tab-title active">Ipsum</h4>
               <div class="accordion__tab-content">
                   <ul class="accordion__tab-list">
-                      <!-- ngRepeat: owner in tabs.nodes.metadata.owner | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="owner in tabs.nodes.metadata.owner | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('owner', owner.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('owner', owner.name, 'nodes')">admin (3)</a>
-                      </li><!-- end ngRepeat: owner in tabs.nodes.metadata.owner | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="owner in tabs.nodes.metadata.owner | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('owner', owner.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('owner', owner.name, 'nodes')">user1 (2)</a>
-                      </li><!-- end ngRepeat: owner in tabs.nodes.metadata.owner | orderBy:['name', '-count'] -->
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Sit amet</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Consectetur</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                      </li>
                   </ul>
               </div>
           </div>
-          <div class="accordion__tab" data-ng-show="tabs.nodes.metadata.tags.length">
-              <h4 class="accordion__tab-title maas-accordion-tab">Tags</h4>
+          <div class="accordion__tab">
+              <h4 class="accordion__tab-title">Dolor</h4>
               <div class="accordion__tab-content">
                   <ul class="accordion__tab-list">
-                      <!-- ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">lanky (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">virtual (8)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">visitor (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">worm (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">zone-a (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">zone-b (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('tags', tag.name, 'nodes')">zone-c (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.tags | orderBy:['name', '-count'] -->
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Sit amet</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Consectetur</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                      </li>
                   </ul>
               </div>
           </div>
-          <div class="accordion__tab" data-ng-show="tabs.nodes.metadata.storage_tags.length">
-              <h4 class="accordion__tab-title maas-accordion-tab active">Storage Tags</h4>
+          <div class="accordion__tab">
+              <h4 class="accordion__tab-title">Sit amet</h4>
               <div class="accordion__tab-content">
                   <ul class="accordion__tab-list">
-                      <!-- ngRepeat: tag in tabs.nodes.metadata.storage_tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.storage_tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('storage_tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('storage_tags', tag.name, 'nodes')">rotary (8)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.storage_tags | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="tag in tabs.nodes.metadata.storage_tags | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('storage_tags', tag.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('storage_tags', tag.name, 'nodes')">virtio (1)</a>
-                      </li><!-- end ngRepeat: tag in tabs.nodes.metadata.storage_tags | orderBy:['name', '-count'] -->
-                  </ul>
-              </div>
-          </div>
-          <div class="accordion__tab" data-ng-show="tabs.nodes.metadata.networks.length">
-              <h4 class="accordion__tab-title maas-accordion-tab">Networks</h4>
-              <div class="accordion__tab-content">
-                  <ul class="accordion__tab-list">
-                      <!-- ngRepeat: network in tabs.nodes.metadata.networks | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="network in tabs.nodes.metadata.networks | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('networks', network.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('networks', network.name, 'nodes')"> (8)</a>
-                      </li><!-- end ngRepeat: network in tabs.nodes.metadata.networks | orderBy:['name', '-count'] -->
-                  </ul>
-              </div>
-          </div>
-          <div class="accordion__tab" data-ng-show="tabs.nodes.metadata.zone.length">
-              <h4 class="accordion__tab-title maas-accordion-tab">Zones</h4>
-              <div class="accordion__tab-content">
-                  <ul class="accordion__tab-list">
-                      <!-- ngRepeat: zone in tabs.nodes.metadata.zone | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="zone in tabs.nodes.metadata.zone | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('zone', zone.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('zone', zone.name, 'nodes')">default (5)</a>
-                      </li><!-- end ngRepeat: zone in tabs.nodes.metadata.zone | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="zone in tabs.nodes.metadata.zone | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('zone', zone.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('zone', zone.name, 'nodes')">zone-a (1)</a>
-                      </li><!-- end ngRepeat: zone in tabs.nodes.metadata.zone | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="zone in tabs.nodes.metadata.zone | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('zone', zone.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('zone', zone.name, 'nodes')">zone-b (1)</a>
-                      </li><!-- end ngRepeat: zone in tabs.nodes.metadata.zone | orderBy:['name', '-count'] --><li class="accordion__tab-item ng-scope" data-ng-repeat="zone in tabs.nodes.metadata.zone | orderBy:['name', '-count']" data-ng-class="{ active: isFilterActive('zone', zone.name, 'nodes') }">
-                          <a class="accordion__tab-link ng-binding" href="" data-ng-click="toggleFilter('zone', zone.name, 'nodes')">zone-c (1)</a>
-                      </li><!-- end ngRepeat: zone in tabs.nodes.metadata.zone | orderBy:['name', '-count'] -->
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Sit amet</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Consectetur</a>
+                      </li>
+                      <li class="accordion__tab-item">
+                          <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                      </li>
                   </ul>
               </div>
           </div>
       </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="inner-wrapper">
+          <h2>Global search</h2>
+          <div class="twelve-col">
+              <div class="search">
+                  <input placeholder="Search..." class="search__input" type="search">
+                  <input class="search__submit" type="submit">
+              </div>
+          </div>
         </div>
     </div>
     <footer class="global clearfix no-global">
