@@ -492,6 +492,27 @@
       }
     }
   }
+
+  $states: (
+    error: $error,
+    warning: $warning,
+    success: $success,
+    information: $information
+  );
+
+  @each $state, $color in $states {
+    &.table--#{$state} {
+      border-color: $color;
+
+      .table__header,
+      .table__data,
+      th,
+      td {
+        border-color: $color;
+        background-color: lighten($color, 40%);
+      }
+    }
+  }
   // scss-lint:enable NestingDepth
 }
 
