@@ -6,6 +6,7 @@
 
 // Theme base styles
 @import 'base/main';
+@import 'base/buttons';
 @import 'base/header';
 @import 'base/forms';
 @import 'base/helpers';
@@ -32,6 +33,7 @@
 @mixin maas-gui-vanilla-theme {
   @include required-vanilla-modules;
   @include maas-main;
+  @include maas-buttons;
   @include maas-header;
   @include maas-forms;
   @include maas-helpers;

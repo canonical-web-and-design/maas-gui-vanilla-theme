@@ -206,10 +206,21 @@
             </div>
         </div>
         <div class="row">
+            <div class="inner-wrapper">
+                <h2>Buttons</h2>
+                <div class="twelve-col">
+                    <button>Button</button>
+                    <a href="#" class="button--primary">Button primary</a>
+                    <a href="#" class="button--secondary">Button secondary</a>
+                    <a href="#" class="button--primary" disabled="disable">Button disabled</a>
+                    <a href="#" class="button--text">Button text</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
           <div class="inner-wrapper">
               <div class="twelve-col">
                   <h2>Table</h2>
-
                   <table>
                       <thead>
                           <tr>
@@ -254,9 +265,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="twelve-col">
+          <div class="inner-wrapper">
             <div class="twelve-col padding-bottom">
-              <h4>Available disks and partitions</h4>
+              <h2>Div table</h2>
               <section class="table margin-bottom">
                   <header class="table__head">
                       <div class="table__row">
@@ -269,9 +280,9 @@
                           <div class="table__header table__column--15">Device Type</div>
                           <div class="table__header table__column--15">File system</div>
                           <div class="table__header table__column--15">
-                              <a>Model</a>
+                              <a class="table__header-link">Model</a>
                               <span class="divide"></span>
-                              <a>Serial</a>
+                              <a class="table__header-link">Serial</a>
                           </div>
                           <div class="table__header table__column--15">Tags</div>
                           <div class="table__header table__column--7"></div>
@@ -292,7 +303,7 @@
                               <a class="table__controls table__controls--secondary">Format</a>
                           </div>
                           <div class="table__data table__column--15">QEMU HARDDISK</div>
-                          <div class="table__data table__column--15 ng-hide">937368252</div>
+                          <div class="table__data table__column--15 hidden">937368252</div>
                           <div class="table__data table__column--15">rotary, storage, machine</div>
                           <div class="table__data table__column--7">
                               <div class="table__controls">
@@ -311,10 +322,10 @@
                           <div class="table__data table__column--15">8.5 G</div>
                           <div class="table__data table__column--15">Physical</div>
                           <div class="table__data table__column--15">
-                              fat32 <a class="table__controls table__controls--secondary margin-left--ten">Mount</a>
+                              fat32 <a class="table__controls table__controls--secondary margin__left--10">Mount</a>
                           </div>
                           <div class="table__data table__column--15">QEMU HARDDISK</div>
-                          <div class="table__data table__column--15 ng-hide">937368252</div>
+                          <div class="table__data table__column--15 hidden">937368252</div>
                           <div class="table__data table__column--15">
                               <div class="table__tags">rotary, storage, test, hp, machine<span class="table__controls table__controls--secondary">, <a>edit</a></span></div>
                           </div>
@@ -325,7 +336,7 @@
                               </div>
                           </div>
                           <div class="table__dropdown">
-                              <div class="table__row table__dropdown-row padding-bottom--ten">
+                              <div class="table__row table__dropdown-row padding__bottom--10">
                                   <div class="table__data table__column--3"></div>
                                   <div class="table__data table__column--15">
                                       <label for="filesys">Filesystem</label>
@@ -342,7 +353,7 @@
                               </div>
                               <div class="table__row table__dropdown-row">
                                   <div class="table__data right">
-                                        <a class="link-cta-ubuntu text-button">Cancel</a>
+                                        <a class="link-cta-ubuntu text-button margin__right--20">Cancel</a>
                                         <button class="cta-ubuntu">Mount</button>
                                   </div>
                               </div>
@@ -362,7 +373,7 @@
                               <a class="table__controls table__controls--secondary">Format</a>
                           </div>
                           <div class="table__data table__column--15">QEMU HARDDISK</div>
-                          <div class="table__data table__column--15 ng-hide">937368252</div>
+                          <div class="table__data table__column--15 hidden">937368252</div>
                           <div class="table__data table__column--15">rotary, storage, machine</div>
                           <div class="table__data table__column--7">
                               <div class="table__controls">
@@ -384,7 +395,7 @@
                               <a class="table__controls table__controls--secondary">Format</a>
                           </div>
                           <div class="table__data table__column--15">QEMU HARDDISK</div>
-                          <div class="table__data table__column--15 ng-hide">937368252</div>
+                          <div class="table__data table__column--15 hidden">937368252</div>
                           <div class="table__data table__column--15">rotary, storage, machine</div>
                           <div class="table__data table__column--7">
                               <div class="table__controls">
@@ -406,7 +417,7 @@
                               <a class="table__controls table__controls--secondary">Format</a>
                           </div>
                           <div class="table__data table__column--15">QEMU HARDDISK</div>
-                          <div class="table__data table__column--15 ng-hide">937368252</div>
+                          <div class="table__data table__column--15 hidden">937368252</div>
                           <div class="table__data table__column--15">rotary, storage, machine</div>
                           <div class="table__data table__column--7">
                               <div class="table__controls">
@@ -428,7 +439,7 @@
                               <a class="table__controls table__controls--secondary">Format</a>
                           </div>
                           <div class="table__data table__column--15"></div>
-                          <div class="table__data table__column--15 ng-hide"></div>
+                          <div class="table__data table__column--15 hidden"></div>
                           <div class="table__data table__column--15">rotary, storage, machine</div>
                           <div class="table__data table__column--7">
                               <div class="table__controls">
