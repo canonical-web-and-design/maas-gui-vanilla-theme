@@ -47,7 +47,7 @@
       top: 15px;
       right: 25px;
       background-color: $transparent;
-      background-image: url('../img/search-icon.svg');
+      background-image: url('../../assets/images/icons/magnifying_glass.svg');
       background-repeat: no-repeat;
       text-indent: -999em;
       display: block;
@@ -60,17 +60,17 @@
 
       &:hover {
         background-color: $transparent;
-        background-image: url('../img/search-icon.svg');
+        background-image: url('../../assets/images/icons/magnifying_glass.svg');
       }
 
       &.search__submit--close {
-        background-image: url('../img/icons/cross.svg');
+        background-image: url('../../assets/images/icons/cross.svg');
         background-size: 21px;
         margin-top: 2px;
 
         // scss-lint:disable NestingDepth
         &:hover {
-          background-image: url('../img/icons/cross.svg');
+          background-image: url('../../assets/images/icons/cross.svg');
         }
         // scss-lint:enable NestingDepth
       }

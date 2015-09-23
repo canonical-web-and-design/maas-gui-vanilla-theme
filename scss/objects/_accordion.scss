@@ -44,11 +44,11 @@
         margin: 0;
         color: $warm-grey;
         cursor: pointer;
-        background: $transparent url('../img/icons/accordion-open.svg') top 20px right 20px no-repeat;
+        background: $transparent url('../../assets/images/forms/chevron_down.svg') top 20px right 20px no-repeat;
 
         // scss-lint:disable NestingDepth
         &.active {
-          background-image: url('../img/icons/accordion-close.svg');
+          background-image: url('../../assets/images/forms/chevron_up.svg');
 
           + .accordion__tab-content {
             max-height: 3000px;
@@ -94,7 +94,7 @@
               font-weight: 400;
 
               .accordion__tab-link {
-                background: $transparent url('../img/icons/cross.svg') top 7px right 0 no-repeat;
+                background: $transparent url('../../img/icons/cross.svg') top 7px right 0 no-repeat;
               }
 
               &:hover {
@@ -102,7 +102,7 @@
 
                 .accordion__tab-link {
                   color: $brand-color;
-                  background-image: url('../img/icons/cross-orange.svg');
+                  background-image: url('../../img/icons/cross-orange.svg');
                 }
               }
             }

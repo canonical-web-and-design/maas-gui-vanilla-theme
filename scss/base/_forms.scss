@@ -146,6 +146,10 @@
       .form__group {
         width: 100%;
         float: left;
+
+        label {
+          margin: 5px 0 4px;
+        }
       }
     }
   }
