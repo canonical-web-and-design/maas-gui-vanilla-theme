@@ -52,6 +52,20 @@
           cursor: pointer;
         }
       }
+
+      .checkbox {
+        display: inline-block;
+        margin: 0;
+
+        label {
+
+          input[type='checkbox'] {
+            margin: 0;
+            left: 0;
+            top: 5px;
+          }
+        }
+      }
     }
 
     // Table header row styles
@@ -69,6 +83,13 @@
       @include font-size($table-header-size);
       background: none;
       color: $table-header-color;
+
+      .checkbox {
+
+        input {
+          margin-top: 2px;
+        }
+      }
     }
 
     // Table header hyperlink styles
@@ -134,8 +155,12 @@
       margin: 0 0 0 -14px;
     }
 
-    input[type="radio"] {
-      margin-left: 0;
+    input {
+
+      &[type="radio"],
+      &[type="checkbox"] {
+        margin-left: 0;
+      }
     }
   }
 
@@ -529,13 +554,13 @@
     }
   }
 
-  .table {
-    @for $i from 1 through $table-columns {
-      .table__column--#{$i} {
-        max-width: ($max-width / 100) * $i;
-        width: 100%;
-      }
-    }
-  }
+  // .table {
+  //   @for $i from 1 through $table-columns {
+  //     .table__column--#{$i} {
+  //       max-width: ($max-width / 100) * $i;
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 // scss-lint:enable SelectorFormat
