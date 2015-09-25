@@ -58,6 +58,7 @@
         margin: 0;
 
         label {
+          vertical-align: middle;
 
           input[type='checkbox'] {
             margin: 0;
@@ -86,8 +87,11 @@
 
       .checkbox {
 
-        input {
-          margin-top: 2px;
+        label {
+
+          input[type='checkbox'] {
+            top: 2px;
+          }
         }
       }
     }
@@ -553,14 +557,5 @@
       width: percentage($i / 100);
     }
   }
-
-  // .table {
-  //   @for $i from 1 through $table-columns {
-  //     .table__column--#{$i} {
-  //       max-width: ($max-width / 100) * $i;
-  //       width: 100%;
-  //     }
-  //   }
-  // }
 }
 // scss-lint:enable SelectorFormat
