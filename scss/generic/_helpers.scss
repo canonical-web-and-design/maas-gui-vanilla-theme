@@ -20,27 +20,23 @@
     border-color: $border-color;
     border: $border-width dotted;
 
-    &__top {
-      border: 0;
+    &-top {
       border-top: $border-width dotted;
     }
 
-    &__right {
-      border: 0;
+    &-right {
       border-right: $border-width dotted;
     }
 
-    &__bottom {
-      border: 0;
+    &-bottom {
       border-bottom: $border-width dotted;
     }
 
-    &__left {
-      border: 0;
+    &-left {
       border-left: $border-width dotted;
     }
 
-    &__solid {
+    &-solid {
       border-style: solid;
     }
   }
@@ -57,15 +53,15 @@
 
   .align {
 
-    &__right {
+    &-right {
       text-align: right;
     }
 
-    &__center {
+    &-center {
       text-align: center;
     }
 
-    &__left {
+    &-left {
       text-align: left;
     }
   }
@@ -82,7 +78,7 @@
 @mixin maas-padding {
   .no {
 
-    &__padding {
+    &-padding {
       padding: 0 !important;
 
       &--top {
@@ -105,7 +101,7 @@
 
   .padding {
 
-    &__top {
+    &-top {
 
       &--10 {
         padding-top: 10px !important;
@@ -120,7 +116,7 @@
       }
     }
 
-    &__right {
+    &-right {
 
       &--10 {
         padding-right: 10px !important;
@@ -135,7 +131,7 @@
       }
     }
 
-    &__bottom {
+    &-bottom {
 
       &--10 {
         padding-bottom: 10px !important;
@@ -150,7 +146,7 @@
       }
     }
 
-    &__left {
+    &-left {
 
       &--10 {
         padding-left: 10px !important;
@@ -171,7 +167,7 @@
 
   .no {
 
-    &__margin {
+    &-margin {
       margin: 0 !important;
 
       &--top {
@@ -194,7 +190,7 @@
 
   .margin {
 
-    &__top {
+    &-top {
 
       &--10 {
         margin-top: 10px !important;
@@ -209,7 +205,7 @@
       }
     }
 
-    &__right {
+    &-right {
 
       &--10 {
         margin-right: 10px !important;
@@ -224,7 +220,7 @@
       }
     }
 
-    &__bottom {
+    &-bottom {
 
       &--10 {
         margin-bottom: 10px !important;
@@ -239,7 +235,7 @@
       }
     }
 
-    &__left {
+    &-left {
 
       &--10 {
         margin-left: 10px !important;
