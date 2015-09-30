@@ -104,6 +104,13 @@
     }
   }
 
+  textarea {
+
+    &::placeholder {
+      color: $warm-grey;
+    }
+  }
+
   fieldset {
     background: none;
     margin-left: 0;

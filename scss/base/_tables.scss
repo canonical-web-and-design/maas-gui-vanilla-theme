@@ -63,7 +63,7 @@
           input[type='checkbox'] {
             margin: 0;
             left: 0;
-            top: 5px;
+            top: 3px;
           }
         }
       }
@@ -84,16 +84,6 @@
       @include font-size($table-header-size);
       background: none;
       color: $table-header-color;
-
-      .checkbox {
-
-        label {
-
-          input[type='checkbox'] {
-            top: 2px;
-          }
-        }
-      }
     }
 
     // Table header hyperlink styles
