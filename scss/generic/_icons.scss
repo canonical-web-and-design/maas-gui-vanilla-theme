@@ -27,7 +27,7 @@
     }
 
     &.icon__cross-orange {
-      background: url('../../assets/images/icons/cross-orange.svg') no-repeat;
+      background: url('../../assets/images/icons/cross_orange.svg') no-repeat;
       background-size: 100% 100%;
     }
 
@@ -56,15 +56,15 @@
       background-size: 100% 100%;
     }
 
+    &.icon__info {
+      background: url('../../assets/images/icons/info.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &.icon__loading {
       background: url('../../assets/images/icons/in_progress.png') no-repeat;
       background-size: 100% 100%;
       animation: spin 1s infinite linear;
-    }
-
-    &.icon__info {
-      background: url('../../assets/images/icons/info.svg') no-repeat;
-      background-size: 100% 100%;
     }
 
     &.icon__partition {
@@ -77,13 +77,13 @@
       background-size: 100% 100%;
     }
 
-    &.icon__power-on {
-      background: url('../../assets/images/icons/power-on.svg') no-repeat;
+    &.icon__power-off {
+      background: url('../../assets/images/icons/power-off.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__power-off {
-      background: url('../../assets/images/icons/power-off.svg') no-repeat;
+    &.icon__power-on {
+      background: url('../../assets/images/icons/power-on.svg') no-repeat;
       background-size: 100% 100%;
     }
 
