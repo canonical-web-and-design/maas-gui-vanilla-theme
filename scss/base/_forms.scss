@@ -57,7 +57,7 @@
   textarea {
     height: auto;
     min-height: 175px;
-    padding: 7px 10px;
+    padding: 7px 10px !important;
     box-shadow: none;
     width: 100%;
   }
@@ -69,10 +69,10 @@
     clear: both;
     cursor: pointer;
     margin: 0;
-    background-image: url('../img/icons/accordion-open.svg');
+    background-image: url('../../assets/images/forms/chevron_down.svg');
     background-repeat: no-repeat;
-    background-position: top 16px right 10px;
-    padding: 7px 30px 7px 10px;
+    background-position: top 14px right 10px;
+    padding: 7px 30px 7px 10px !important;
     box-shadow: none;
     width: 100%;
 
@@ -80,10 +80,6 @@
     appearance: none;
     text-indent: .01px;
     text-overflow: '';
-
-    option {
-      color: $error;
-    }
 
     &[multiple],
     &[size] {
@@ -184,6 +180,10 @@
       .form__group {
         width: 100%;
         float: left;
+
+        [class*='-col'] {
+          margin-bottom: 0;
+        }
 
         label {
           margin: 5px 0 4px;
