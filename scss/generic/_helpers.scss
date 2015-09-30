@@ -20,29 +20,66 @@
     border-color: $border-color;
     border: $border-width dotted;
 
-    &-top {
+    &--top {
       border-top: $border-width dotted;
     }
 
-    &-right {
+    &--right {
       border-right: $border-width dotted;
     }
 
-    &-bottom {
+    &--bottom {
       border-bottom: $border-width dotted;
     }
 
-    &-left {
+    &--left {
       border-left: $border-width dotted;
     }
 
-    &-solid {
+    &--solid {
       border-style: solid;
     }
   }
 }
 
+/// Alignment and display styles
 @mixin maas-display {
+
+  .align {
+
+    &--right {
+      text-align: right;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  .float {
+
+    &--right {
+      float: right !important;
+    }
+
+    &--left {
+      float: left !important;
+    }
+
+    &--none {
+      font-weight: normal !important;
+    }
+  }
+
+  .muted {
+    opacity: .5 !important;
+    filter: alpha(opacity = 50) !important;
+  }
+
   .clear {
     clear: both;
   }
@@ -50,31 +87,9 @@
   .hidden {
     display: none !important;
   }
-
-  .align {
-
-    &-right {
-      text-align: right;
-    }
-
-    &-center {
-      text-align: center;
-    }
-
-    &-left {
-      text-align: left;
-    }
-  }
-
-  .right {
-    float: right !important;
-  }
-
-  .left {
-    float: left !important;
-  }
 }
 
+/// Add and remove paddings
 @mixin maas-padding {
   .no {
 
@@ -100,6 +115,7 @@
   }
 
   .padding {
+    padding: 20px !important;
 
     &-top {
 
@@ -163,6 +179,7 @@
   }
 }
 
+// Add and remove margins
 @mixin maas-margin {
 
   .no {
@@ -189,7 +206,8 @@
   }
 
   .margin {
-
+    margin: 20px !important;
+    
     &-top {
 
       &--10 {

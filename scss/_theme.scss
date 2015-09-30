@@ -14,7 +14,10 @@
 @import 'base/typography';
 
 // Theme generic styles
+@import 'generic/animations';
 @import 'generic/helpers';
+@import 'generic/icons';
+@import 'generic/mixins';
 
 // Theme object styles
 @import 'objects/accordion';
@@ -44,6 +47,7 @@
   @include maas-header;
   @include maas-forms;
   @include maas-helpers;
+  @include maas-icons;
   @include maas-row;
   @include maas-search;
   @include maas-table;
