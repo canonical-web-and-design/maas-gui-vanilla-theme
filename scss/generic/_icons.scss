@@ -131,17 +131,23 @@
     }
   }
 
+  //scss-lint:disable SelectorFormat
   h4,
   h5,
   p,
   label,
   button,
-  a {
+  a,
+  th,
+  td,
+  .table__header,
+  .table__data {
 
     .icon {
       margin-top: -3px;
     }
   }
+  //scss-lint:enable SelectorFormat
 }
 
 @mixin icon-size($size) {
