@@ -8,12 +8,12 @@
 /// @group Fonts
 @mixin maas-fonts {
 
-  @include font-face('Ubuntu', '../../assets/fonts/ubuntu-l-webfont', 300, normal);
-  @include font-face('Ubuntu', '../../assets/fonts/ubuntu-li-webfont', 300, italic);
-  @include font-face('Ubuntu', '../../assets/fonts/ubuntu-r-webfont', 400, normal);
-  @include font-face('Ubuntu', '../../assets/fonts/ubuntu-m-webfont', 500, normal);
-  @include font-face('Ubuntu', '../../assets/fonts/ubuntu-mi-webfont', 500, italic);
-  @include font-face('Ubuntu', '../../assets/fonts/ubuntu-b-webfont', 700, normal);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-l-webfont', 300, normal);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-li-webfont', 300, italic);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-r-webfont', 400, normal);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-m-webfont', 500, normal);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-mi-webfont', 500, italic);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-b-webfont', 700, normal);
 
   @font-face {
     font-family: 'Ubuntu';

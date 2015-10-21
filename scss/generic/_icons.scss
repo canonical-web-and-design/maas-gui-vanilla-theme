@@ -17,82 +17,82 @@
 
     // scss-lint:disable SelectorFormat
     &.icon__add {
-      background: url('../../assets/images/icons/add.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/add.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__cross {
-      background: url('../../assets/images/icons/cross.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/cross.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__cross-orange {
-      background: url('../../assets/images/icons/cross_orange.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/cross_orange.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__debug {
-      background: url('../../assets/images/icons/debug.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/debug.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__delete {
-      background: url('../../assets/images/icons/delete.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/delete.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__edit {
-      background: url('../../assets/images/icons/edit.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/edit.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__error {
-      background: url('../../assets/images/icons/error.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__help {
-      background: url('../../assets/images/icons/help.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/help.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__info {
-      background: url('../../assets/images/icons/info.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/info.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__loading {
-      background: url('../../assets/images/icons/in_progress.png') no-repeat;
+      background: url('#{$asset-path}images/icons/in_progress.png') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__partition {
-      background: url('../../assets/images/icons/partition.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/partition.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__power-error {
-      background: url('../../assets/images/icons/power-error.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/power-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__power-off {
-      background: url('../../assets/images/icons/power-off.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/power-off.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__power-on {
-      background: url('../../assets/images/icons/power-on.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/power-on.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__success {
-      background: url('../../assets/images/icons/success.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/success.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon__warning {
-      background: url('../../assets/images/icons/warning.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/warning.svg') no-repeat;
       background-size: 100% 100%;
     }
     // scss-lint:enable SelectorFormat

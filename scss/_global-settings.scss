@@ -1,8 +1,11 @@
+/// assets database path
+/// usage: background: url(#{$asset-path}img//backgrounds/background.jpg) no-repeat 0 0;
+$asset-path: '../../assets/';
+
 /// MAAS font sizes
-$base-font-family:      Ubuntu, Arial, 'libra sans', sans-serif;
+$base-font-family:      'Ubuntu', Arial, 'libra sans', sans-serif;
 $base-font-size:        16px!default;
 $base-line-height:      20px!default;
-
 
 $h1:                    32px!default;
 $h2:                    23px!default;
