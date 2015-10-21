@@ -528,8 +528,6 @@
 // the column class generated will look like '.table__column--1'
 // Number value at the end signifies the width percentage
 @mixin table-columns($table-columns) {
-  $table-list: null;
-  $max-width: 1440px;
 
   @for $i from 1 through $table-columns {
     .table__column--#{$i} {

@@ -25,6 +25,11 @@
       &::placeholder {
         color: $warm-grey;
       }
+
+      &[disabled] {
+        color: $warm-grey;
+        background-color: $transparent;
+      }
     }
 
     &[type='number'] {
@@ -62,6 +67,15 @@
     //scss-lint:enable ImportantRule
     box-shadow: none;
     width: 100%;
+
+    &::placeholder {
+      color: $warm-grey;
+    }
+
+    &[disabled] {
+      color: $warm-grey;
+      background-color: $transparent;
+    }
   }
 
   // Select dropdown styles
@@ -96,6 +110,7 @@
     &[disabled] {
       color: $warm-grey;
       background-image: none;
+      background-color: $transparent;
     }
 
     // Removes firefox dotted outline focusing
@@ -106,13 +121,6 @@
 
     &::-ms-expand {
       display: none;
-    }
-  }
-
-  textarea {
-
-    &::placeholder {
-      color: $warm-grey;
     }
   }
 
@@ -170,6 +178,18 @@
         font-size: 10px;
         color: $white;
         transition: all .2s;
+      }
+    }
+
+    &[disabled] {
+      cursor: none;
+
+      + label {
+        cursor: none;
+
+        &:before {
+          opacity: .5;
+        }
       }
     }
   }
