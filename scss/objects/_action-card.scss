@@ -11,7 +11,7 @@
     background: $white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 20px 20px 10px;
     box-sizing: border-box;
     width: 100%;
 
@@ -24,8 +24,8 @@
       border-top: 1px dotted $warm-grey;
       width: 100%;
       display: inline-block;
-      margin: 20px 0 0;
-      padding: 20px 0 0;
+      margin: 10px 0 0;
+      padding: 10px 0 0;
       box-sizing: border-box;
     }
   }
