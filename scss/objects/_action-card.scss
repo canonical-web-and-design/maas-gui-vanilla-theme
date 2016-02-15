@@ -1,0 +1,32 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
+/// @since        0.0.3
+////
+
+/// Action card
+/// @group Action card
+@mixin maas-action-card {
+  .action-card {
+    background: $white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+
+    .action-card__title {
+      font-size: $h2;
+      margin-bottom: 20px;
+    }
+
+    .action-card__controls {
+      border-top: 1px dotted $warm-grey;
+      width: 100%;
+      display: inline-block;
+      margin: 20px 0 0;
+      padding: 20px 0 0;
+      box-sizing: border-box;
+    }
+  }
+}

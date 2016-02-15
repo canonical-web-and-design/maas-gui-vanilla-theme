@@ -71,7 +71,7 @@
     }
 
     &--none {
-      font-weight: normal !important;
+      float: none !important;
     }
   }
 
@@ -207,7 +207,7 @@
 
   .margin {
     margin: 20px !important;
-    
+
     &-top {
 
       &--10 {

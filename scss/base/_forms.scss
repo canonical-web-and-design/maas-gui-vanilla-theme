@@ -246,7 +246,7 @@
       color: $warm-grey;
     }
 
-    &.form__inline {
+    &.form--inline {
 
       .form__group {
         display: inline-block;
@@ -260,9 +260,11 @@
           vertical-align: middle;
         }
       }
+
+
     }
 
-    &.form__inline-group {
+    &.form--inline-group {
 
       .form__group {
         width: 100%;
