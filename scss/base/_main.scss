@@ -13,7 +13,6 @@
     min-height: 100%;
     color: $text-color;
     font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
-    background-color: $off-white;
   }
 
   // scss-lint:disable DuplicateProperty
@@ -25,7 +24,7 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
-    background: $off-white;
+    background: rgba($white, .6);
 
     &:after {
       content: '';
@@ -35,7 +34,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: url('../assets/images/backgrounds/image-background-paper.png');
+      background: url('#{$asset-path}images/backgrounds/background-paper.png');
       height: 100%;
       width: 100%;
       z-index: -1;

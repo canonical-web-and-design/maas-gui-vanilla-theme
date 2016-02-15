@@ -14,6 +14,8 @@
     padding: 20px 20px 10px;
     box-sizing: border-box;
     width: 100%;
+    display: inline-block;
+    clear: both;
 
     .action-card__title {
       font-size: $h2;
