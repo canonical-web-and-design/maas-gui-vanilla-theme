@@ -239,11 +239,19 @@
 
     .form__group {
       margin-bottom: 10px;
-    }
 
-    .form__help-text {
-      @include font-size(14px);
-      color: $warm-grey;
+      &.form__group--inline {
+        width: 100%;
+        float: left;
+
+        [class*='-col'] {
+          margin-bottom: 0;
+        }
+
+        label {
+          margin: 5px 0 4px;
+        }
+      }
     }
 
     &.form--inline {
@@ -260,24 +268,11 @@
           vertical-align: middle;
         }
       }
-
-
     }
 
-    &.form--inline-group {
-
-      .form__group {
-        width: 100%;
-        float: left;
-
-        [class*='-col'] {
-          margin-bottom: 0;
-        }
-
-        label {
-          margin: 5px 0 4px;
-        }
-      }
+    .form__help-text {
+      @include font-size(14px);
+      color: $warm-grey;
     }
   }
 }
