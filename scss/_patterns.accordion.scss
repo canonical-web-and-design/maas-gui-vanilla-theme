@@ -40,15 +40,10 @@
 
       // Block level title
       .accordion__tab-title {
-        padding: 12px 20px;
-        margin: 0;
-        color: $warm-grey;
-        cursor: pointer;
-        background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
-
+        @extend %accordion__tab-title;
         // scss-lint:disable NestingDepth
         &--active {
-          @extend .accordion__tab-title;
+          @extend %accordion__tab-title;
           background-image: url('#{$asset-path}images/forms/chevron_up.svg');
 
           + .accordion__tab-content {
@@ -92,7 +87,7 @@
             }
 
             &--active {
-              @extend .accordion__tab-item;
+              margin-bottom: .15em;
               font-weight: 400;
 
               .accordion__tab-link {
@@ -115,4 +110,14 @@
     }
   }
   // scss-lint:enable SelectorFormat
+
+  // Accordion patterns
+
+  %accordion__tab-title {
+    padding: 12px 20px;
+    margin: 0;
+    color: $warm-grey;
+    cursor: pointer;
+    background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
+  }
 }

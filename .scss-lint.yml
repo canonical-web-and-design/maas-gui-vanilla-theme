@@ -11,3 +11,7 @@ linters:
     enabled: false
   QualifyingElement:
     allow_element_with_attribute: true
+  NameFormat:
+    enabled: false
+  PlaceholderInExtend:
+    enabled: false
