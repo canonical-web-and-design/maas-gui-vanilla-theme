@@ -44,11 +44,12 @@
         margin: 0;
         color: $warm-grey;
         cursor: pointer;
-        background: $transparent url('../../assets/images/forms/chevron_down.svg') top 20px right 20px no-repeat;
+        background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
 
         // scss-lint:disable NestingDepth
-        &.active {
-          background-image: url('../../assets/images/forms/chevron_up.svg');
+        &--active {
+          @extend .accordion__tab-title;
+          background-image: url('#{$asset-path}images/forms/chevron_up.svg');
 
           + .accordion__tab-content {
             max-height: 3000px;
@@ -90,7 +91,8 @@
               }
             }
 
-            &.active {
+            &--active {
+              @extend .accordion__tab-item;
               font-weight: 400;
 
               .accordion__tab-link {

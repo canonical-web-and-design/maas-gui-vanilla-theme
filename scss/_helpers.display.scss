@@ -8,7 +8,7 @@
 /// @group Display
 @mixin maas-display {
   // scss-lint:disable ImportantRule
-  .align {
+  .u-align {
 
     &--right {
       text-align: right;
@@ -23,7 +23,7 @@
     }
   }
 
-  .float {
+  .u-float {
 
     &--right {
       float: right !important;
@@ -38,16 +38,16 @@
     }
   }
 
-  .muted {
+  .u-muted {
     opacity: .5 !important;
     filter: alpha(opacity = 50) !important;
   }
 
-  .clear {
+  .u-clear {
     clear: both;
   }
 
-  .hidden {
+  .u-hidden {
     display: none !important;
   }
   // scss-lint:enable ImportantRule

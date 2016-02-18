@@ -7,7 +7,7 @@
 /// Vertical alignment
 /// @group Vertical alignment
 @mixin maas-vertical-alignment {
-  .vertical-align {
+  .u-vertical-align {
     position: relative;
     top: 50%;
     transform: translateY(-50%);

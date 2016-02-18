@@ -33,7 +33,7 @@
     }
   }
 
-  .inner-wrapper {
+  &--inner {
     max-width: $site-max-width;
   }
   // scss-lint:enable DuplicateProperty
