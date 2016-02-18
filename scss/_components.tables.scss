@@ -530,7 +530,7 @@
 @mixin table-columns($table-columns) {
 
   @for $i from 1 through $table-columns {
-    .table__column--#{$i} {
+    .table-col--#{$i} {
       width: percentage($i / 100);
     }
   }
