@@ -7,6 +7,7 @@
 /// Form element styles
 /// @group Forms
 @mixin maas-forms {
+  // scss-lint:disable ImportantRule
 
   // All input elements
   input {
@@ -62,9 +63,7 @@
   textarea {
     height: auto;
     min-height: 175px;
-    //scss-lint:disabled ImportantRule
     padding: 7px 10px !important;
-    //scss-lint:enable ImportantRule
     box-shadow: none;
     width: 100%;
 
@@ -89,9 +88,7 @@
     background-repeat: no-repeat;
     background-position: top 14px right 10px;
     background-color: $white;
-    //scss-lint:disabled ImportantRule
     padding: 7px 30px 7px 10px !important;
-    //scss-lint:enable ImportantRule
     box-shadow: none;
     width: 100%;
 
@@ -275,4 +272,5 @@
       color: $warm-grey;
     }
   }
+  // scss-lint:enable ImportantRule
 }

@@ -29,11 +29,17 @@ $link-color:            $brand-color;
 
 // MAAS colours
 $off-white:             #fafafa;
-$error:                 #d83832;
-$information:           #2ab7ec;
 $pale-grey:             #bcbcbc;
 $muted-grey:            #b2b2b2;
 $gallery-grey:          #eee;
+
+$error:                 #d83832;
+$information:           #2ab7ec;
+$outline:               #d2d2d2;
+$success:               #38b44a;
+$disabled:              $gallery-grey;
+$editable:              $white;
+
 
 // Header variables
 $header-link-color:     $white;

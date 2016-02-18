@@ -1,0 +1,54 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
+/// @since        0.0.3
+////
+
+/// Display
+/// @group Display
+@mixin maas-display {
+  // scss-lint:disable ImportantRule
+  .align {
+
+    &--right {
+      text-align: right;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  .float {
+
+    &--right {
+      float: right !important;
+    }
+
+    &--left {
+      float: left !important;
+    }
+
+    &--none {
+      float: none !important;
+    }
+  }
+
+  .muted {
+    opacity: .5 !important;
+    filter: alpha(opacity = 50) !important;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+  // scss-lint:enable ImportantRule
+}

@@ -1,4 +1,75 @@
 // import required files
+@import '../node_modules/vanilla-framework/scss/vanilla';
 
-@import 'theme';
+// Theme variables
+@import 'settings.defaults';
+@import 'settings.fonts';
+
+// Theme base styles
+@import 'base.main';
+@import 'base.typography';
+
+// Theme component styles
+@import 'components.buttons';
+@import 'components.forms';
+@import 'components.icons';
+@import 'components.tables';
+
+// Theme helper styles
+@import 'helpers.animations';
+@import 'helpers.borders';
+@import 'helpers.display';
+@import 'helpers.mixins';
+@import 'helpers.spacing';
+@import 'helpers.vertical-alignment';
+
+// Theme layout styles
+@import 'layout.row';
+@import 'layout.wrapper';
+
+// Theme pattern styles
+@import 'patterns.accordion';
+@import 'patterns.action-card';
+@import 'patterns.header';
+@import 'patterns.search';
+
+
+// Include required modules from Vanilla
+@mixin required-vanilla-modules {
+  @include vf-reset;
+  @include vf-buttons;
+  @include vf-clearfix;
+  @include vf-forms;
+  @include vf-grid;
+  @include vf-header;
+  @include vf-lists;
+  @include vf-rows;
+  @include vf-typography;
+  @include vf-tables;
+  @include vf-footer;
+}
+
+// MAAS theme
+@mixin maas-gui-vanilla-theme {
+  @include required-vanilla-modules;
+  @include maas-main;
+  @include maas-accordion;
+  @include maas-animations;
+  @include maas-action-card;
+  @include maas-borders;
+  @include maas-buttons;
+  @include maas-display;
+  @include maas-header;
+  @include maas-forms;
+  @include maas-icons;
+  @include maas-row;
+  @include maas-search;
+  @include maas-spacing;
+  @include maas-table;
+  @include maas-typography;
+  @include maas-vertical-alignment;
+  @include maas-wrapper;
+}
+
+// Build the MAAS theme
 @include maas-gui-vanilla-theme;

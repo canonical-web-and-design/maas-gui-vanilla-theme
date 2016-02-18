@@ -1,0 +1,34 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
+/// @since        0.0.3
+////
+
+/// Borders
+/// @group Borders
+@mixin maas-borders($border-color: $warm-grey, $border-width: 1px) {
+  .border {
+    border-color: $border-color;
+    border: $border-width dotted;
+
+    &--top {
+      border-top: $border-width dotted;
+    }
+
+    &--right {
+      border-right: $border-width dotted;
+    }
+
+    &--bottom {
+      border-bottom: $border-width dotted;
+    }
+
+    &--left {
+      border-left: $border-width dotted;
+    }
+
+    &--solid {
+      border-style: solid;
+    }
+  }
+}

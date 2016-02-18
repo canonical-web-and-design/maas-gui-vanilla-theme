@@ -1,0 +1,15 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
+/// @since        0.0.3
+////
+
+/// Vertical alignment
+/// @group Vertical alignment
+@mixin maas-vertical-alignment {
+  .vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
