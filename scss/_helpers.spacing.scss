@@ -13,20 +13,28 @@
 
 @mixin spacing($spacing, $spacing-unit) {
   // scss-lint:disable ImportantRule
-  $directions:                    top right bottom left horizontal vertical;
+  $directions:                    top right bottom left;
   $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
 
   .u-#{$spacing} {
+    #{$spacing}: $spacing-unit;
+
+    &--none {
+      #{$spacing}: none !important;
+    }
+
+    @each $size, $division in $sizes {
+      &--#{$size} {
+        #{$spacing}: $division !important;
+      }
+    }
+
     @each $direction in $directions {
       &--#{$direction} {
-        @if $direction == 'horizontal' {
-          #{$spacing}-right: $spacing-unit !important;
-          #{$spacing}-left: $spacing-unit !important;
-        } @else if $direction == 'vertical' {
-          #{$spacing}-top: $spacing-unit !important;
-          #{$spacing}-bottom: $spacing-unit !important;
-        } @else {
-          #{$spacing}-#{$direction}: $spacing-unit !important;
+        #{$spacing}-#{$direction}: $spacing-unit !important;
+
+        &-none {
+          #{$spacing}-#{$direction}: none !important;
         }
 
         @each $size, $division in $sizes {
@@ -34,10 +42,6 @@
             #{$spacing}-#{$direction}: $division !important;
           }
         }
-      }
-
-      &--none {
-        #{$spacing}: none !important;
       }
     }
   }
