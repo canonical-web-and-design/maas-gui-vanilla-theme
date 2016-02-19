@@ -40,7 +40,7 @@
     "sassdoc": "2.1.7"
   },
   "dependencies": {
-    "vanilla-framework": ">=0.0.12"
+    "vanilla-framework": ">=0.0.61"
   },
   "license": "LGPL-3.0",
   "name": "maas-gui-vanilla-theme",
