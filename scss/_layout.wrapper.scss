@@ -31,10 +31,10 @@
       width: 100%;
       z-index: -1;
     }
-  }
 
-  &--inner {
-    max-width: $site-max-width;
+    &--inner {
+      max-width: $site-max-width;
+    }
   }
   // scss-lint:enable DuplicateProperty
 }

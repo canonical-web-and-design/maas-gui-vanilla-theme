@@ -5,6 +5,8 @@ linters:
     enabled: false
   SelectorDepth:
     enabled: false
+  SelectorFormat:
+    enable: false
   CapitalizationInSelector:
     enabled: false
   Comment:

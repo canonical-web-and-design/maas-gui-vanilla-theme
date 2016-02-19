@@ -109,10 +109,8 @@
       }
     }
   }
-  // scss-lint:enable SelectorFormat
 
   // Accordion patterns
-
   %accordion__tab-title {
     padding: 12px 20px;
     margin: 0;
@@ -120,4 +118,6 @@
     cursor: pointer;
     background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
   }
+  
+  // scss-lint:enable SelectorFormat
 }
