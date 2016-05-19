@@ -27,8 +27,16 @@
       border-left: $border-width dotted;
     }
 
+    &--dotted {
+      border-style: dotted;
+    }
+
     &--solid {
-      border-style: solid !important;
+      border-style: solid;
+    }
+
+    &--dashed {
+      border-style: dashed;
     }
   }
 }

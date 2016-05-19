@@ -7,7 +7,6 @@
 /// Display
 /// @group Display
 @mixin maas-display {
-  // scss-lint:disable ImportantRule
   .u-align {
 
     &--right {
@@ -26,21 +25,21 @@
   .u-float {
 
     &--right {
-      float: right !important;
+      float: right;
     }
 
     &--left {
-      float: left !important;
+      float: left;
     }
 
     &--none {
-      float: none !important;
+      float: none;
     }
   }
 
   .u-muted {
-    opacity: .5 !important;
-    filter: alpha(opacity = 50) !important;
+    opacity: .5;
+    filter: alpha(opacity = 50);
   }
 
   .u-clear {
@@ -48,7 +47,21 @@
   }
 
   .u-hidden {
-    display: none !important;
+    display: none;
   }
-  // scss-lint:enable ImportantRule
+
+  .u-display {
+
+    &--block {
+      display: block;
+    }
+
+    &--inline {
+      display: inline;
+    }
+
+    &--inline-block {
+      display: inline-block;
+    }
+  }
 }

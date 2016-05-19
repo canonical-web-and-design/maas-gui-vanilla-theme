@@ -1,0 +1,18 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
+/// @since        0.0.3
+////
+/// Page header
+/// @group Page header
+@mixin maas-page-header {
+  .page-header {
+    box-sizing: border-box;
+    background: $white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    width: 100%;
+    float: left;
+    position: fixed;
+    z-index: 10;
+  }
+}
