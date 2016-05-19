@@ -1,5 +1,5 @@
 // import required files
-@import '../node_modules/vanilla-framework/scss/vanilla';
+@import '../node_modules/cloud-vanilla-theme/scss/theme';
 
 // Theme variables
 @import 'settings.defaults';
@@ -35,7 +35,7 @@
 
 
 // Include required modules from Vanilla
-@mixin required-vanilla-modules {
+/*@mixin required-vanilla-modules {
   @include vf-reset;
   @include vf-buttons;
   @include vf-clearfix;
@@ -47,11 +47,12 @@
   @include vf-typography;
   @include vf-tables;
   @include vf-footer;
-}
+}*/
 
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
-  @include required-vanilla-modules;
+  @include cloud-vanilla-theme;
+  // @include required-vanilla-modules;
   @include maas-main;
   @include maas-accordion;
   @include maas-animations;
