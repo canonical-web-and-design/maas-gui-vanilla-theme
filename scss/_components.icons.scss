@@ -16,84 +16,134 @@
     vertical-align: middle;
 
     // scss-lint:disable SelectorFormat
-    &.icon__add {
+    &.icon--add {
       background: url('#{$asset-path}images/icons/add.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__cross {
+    &.icon--cross {
       background: url('#{$asset-path}images/icons/cross.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__cross-orange {
+    &.icon--cross-orange {
       background: url('#{$asset-path}images/icons/cross_orange.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__debug {
+    &.icon--debug {
       background: url('#{$asset-path}images/icons/debug.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__delete {
+    &.icon--delete {
       background: url('#{$asset-path}images/icons/delete.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__edit {
+    &.icon--edit {
       background: url('#{$asset-path}images/icons/edit.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__error {
-      background: url('#{$asset-path}images/icons/error.svg') no-repeat;
+    &.icon--error {
+      background: url('#{$asset-path}images/icons/error_colour_white.svg') no-repeat;
       background-size: 100% 100%;
+
+      &-dark {
+        background: url('#{$asset-path}images/icons/error_colour_black.svg') no-repeat;
+      }
+
+      &-mono {
+        background: url('#{$asset-path}images/icons/error_colour_mono.svg') no-repeat;
+      }
     }
 
-    &.icon__help {
-      background: url('#{$asset-path}images/icons/help.svg') no-repeat;
+    &.icon--help {
+      background: url('#{$asset-path}images/icons/help_colour_white.svg') no-repeat;
       background-size: 100% 100%;
+
+      &-dark {
+        background: url('#{$asset-path}images/icons/help_colour_black.svg') no-repeat;
+      }
+
+      &-mono {
+        background: url('#{$asset-path}images/icons/help_colour_mono.svg') no-repeat;
+      }
     }
 
-    &.icon__info {
-      background: url('#{$asset-path}images/icons/info.svg') no-repeat;
+    &.icon--info {
+      background: url('#{$asset-path}images/icons/information_colour_white.svg') no-repeat;
       background-size: 100% 100%;
+
+      &-dark {
+        background: url('#{$asset-path}images/icons/information_colour_black.svg') no-repeat;
+      }
+
+      &-mono {
+        background: url('#{$asset-path}images/icons/information_colour_mono.svg') no-repeat;
+      }
     }
 
-    &.icon__loading {
+    &.icon--loading {
       background: url('#{$asset-path}images/icons/in_progress.png') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__partition {
-      background: url('#{$asset-path}images/icons/partition.svg') no-repeat;
+    &.icon--partition {
+      background: url('#{$asset-path}images/icons/add-partition.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__power-error {
+    &.icon--power-error {
       background: url('#{$asset-path}images/icons/power-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__power-off {
+    &.icon--power-off {
       background: url('#{$asset-path}images/icons/power-off.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__power-on {
+    &.icon--power-on {
       background: url('#{$asset-path}images/icons/power-on.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__success {
-      background: url('#{$asset-path}images/icons/success.svg') no-repeat;
+    &.icon--success {
+      background: url('#{$asset-path}images/icons/success_colour_white.svg') no-repeat;
+      background-size: 100% 100%;
+
+      &-dark {
+        background: url('#{$asset-path}images/icons/success_colour_black.svg') no-repeat;
+      }
+
+      &-mono {
+        background: url('#{$asset-path}images/icons/success_colour_mono.svg') no-repeat;
+      }
+    }
+
+    &.icon--tooltip {
+      background: url('#{$asset-path}images/icons/tooltip.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon__warning {
-      background: url('#{$asset-path}images/icons/warning.svg') no-repeat;
+    &.icon--logical-volume {
+      background: url('#{$asset-path}images/icons/add-logical-volume.svg') no-repeat;
       background-size: 100% 100%;
+    }
+
+    &.icon--warning {
+      background: url('#{$asset-path}images/icons/warning_colour_white.svg') no-repeat;
+      background-size: 100% 100%;
+
+      &-dark {
+        background: url('#{$asset-path}images/icons/warning_colour_black.svg') no-repeat;
+      }
+
+      &-mono {
+        background: url('#{$asset-path}images/icons/warning_colour_mono.svg') no-repeat;
+      }
     }
     // scss-lint:enable SelectorFormat
   }

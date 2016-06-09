@@ -7,30 +7,17 @@
 /// Buttons element styles
 /// @group Forms
 @mixin maas-buttons {
-  button,
-  input[type='button'],
-  input[type='reset'],
-  input[type='submit'],
   .button--primary,
   .button--secondary {
-    @extend %maas-button-style;
-
-    &[disabled],
-    &.disabled {
-      color: $cool-grey;
-      background-color: $gallery-grey;
-      border: 1px solid $muted-grey;
-      pointer-events: none;
-    }
+    @extend %button-pattern;
   }
 
-  .button--text {
-    @extend %maas-button-style;
-    @include vf-button($cool-grey, $transparent, $transparent);
+  .button--primary {
+    background-color: $primary-button-color;
   }
 }
 
-%maas-button-style {
+%button-pattern {
   line-height: #{$line-height-ratio};
   white-space: nowrap;
   vertical-align: middle;
@@ -39,4 +26,9 @@
   user-select: none;
   box-sizing: border-box;
   padding: 8px 14px;
+
+  &:disabled,
+  &.button--disabled {
+    pointer-events: none;
+  }
 }
