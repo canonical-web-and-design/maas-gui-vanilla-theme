@@ -237,7 +237,37 @@
     .form__group {
       margin-bottom: 10px;
 
-      &.form__group--inline {
+      &.form__group--subtle {
+
+        label {
+          color: $warm-grey;
+        }
+
+        input,
+        select,
+        textarea {
+          border-color: $mercury-grey;
+          background-color: transparent;
+
+          &:hover {
+            border-color: $mid-grey;
+            background-color: $white;
+            outline: none;
+          }
+
+          &:active,
+          &:focus {
+            border-color: $warm-grey;
+            outline: none;
+            background-color: $white;
+          }
+        }
+      }
+    }
+
+    &.form--stack {
+
+      .form__group {
         width: 100%;
         float: left;
 
@@ -245,8 +275,11 @@
           margin-bottom: 0;
         }
 
-        label {
-          margin: 5px 0 4px;
+        .form__group-label {
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 36px;
+          vertical-align: top;
         }
       }
     }
@@ -259,10 +292,24 @@
         vertical-align: middle;
 
         input,
-        select {
+        select,
+        .form__group-input {
           display: inline-block;
           width: auto;
           vertical-align: middle;
+        }
+      }
+    }
+
+    .form__group-errors {
+      margin: 5px 0 0;
+      color: $error;
+
+      li {
+        margin: 7px 0;
+
+        &::first-child {
+          margin-top: 0;
         }
       }
     }

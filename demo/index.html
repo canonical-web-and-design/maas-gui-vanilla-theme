@@ -214,18 +214,23 @@
             <div class="wrapper--inner">
                 <h2>Inline grouped forms</h2>
                 <div class="twelve-col">
-                  <form action="" class="form">
+                  <form action="" class="form form--stack">
                       <fieldset class="six-col">
-                        <div class="form__group form__group--inline">
-                          <label class="two-col" for="exampleInputEmail3">Email address</label>
-                          <input class="four-col last-col" type="email" id="exampleInputEmail3" placeholder="Email">
+                        <div class="form__group">
+                          <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
+                          <div class="form__group-input four-col last-col">
+                              <input class="error" type="email" id="exampleInputEmail3" placeholder="Email">
+                              <ul class="form__group-errors errors">
+                                  <li>Test</li>
+                              </ul>
+                          </div>
                         </div>
-                        <div class="form__group form__group--inline">
-                          <label class="two-col" for="exampleInputPassword3">Password</label>
+                        <div class="form__group">
+                          <label class="form__group-label two-col" for="exampleInputPassword3">Password</label>
                           <input type="password" class="four-col last-col" id="exampleInputPassword3" placeholder="Password">
                         </div>
-                        <div class="form__group form__group--inline">
-                            <label class="two-col" for="exampleSelectCountry">Country</label>
+                        <div class="form__group">
+                            <label class="form__group-label two-col" for="exampleSelectCountry">Country</label>
                             <select class="four-col last-col" name="exampleSelectCountry" id="exampleSelectCountry">
                                 <option value="disabled" disabled selected>Choose a country...</option>
                                 <option value="UK">United Kingdom</option>
@@ -234,8 +239,8 @@
                                 <option value="GER">Germany</option>
                             </select>
                         </div>
-                        <div class="form__group form__group--inline">
-                            <label class="two-col" for="exampleTextarea">More information</label>
+                        <div class="form__group">
+                            <label class="form__group-label two-col" for="exampleTextarea">More information</label>
                             <textarea class="four-col last-col" name="exampleTextarea" rows="8" cols="40" placeholder="Add text..."></textarea>
                         </div>
                       </fieldset>
