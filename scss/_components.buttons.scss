@@ -11,10 +11,6 @@
   .button--secondary {
     @extend %button-pattern;
   }
-
-  .button--primary {
-    background-color: $primary-button-color;
-  }
 }
 
 %button-pattern {
@@ -30,5 +26,10 @@
   &:disabled,
   &.button--disabled {
     pointer-events: none;
+  }
+
+  &.button--inline {
+    display: inline-block;
+    width: auto;
   }
 }
