@@ -21,19 +21,20 @@
       text-align: center;
     }
   }
-
+  
+  // scss-lint:disable ImportantRule
   .u-float {
 
     &--right {
-      float: right;
+      float: right !important;
     }
 
     &--left {
-      float: left;
+      float: left !important;
     }
 
     &--none {
-      float: none;
+      float: none !important;
     }
   }
 
@@ -46,22 +47,23 @@
     clear: both;
   }
 
-  .u-hidden {
-    display: none;
-  }
-
   .u-display {
 
     &--block {
-      display: block;
+      display: block !important;
     }
 
     &--inline {
-      display: inline;
+      display: inline !important;
     }
 
     &--inline-block {
-      display: inline-block;
+      display: inline-block !important;
+    }
+
+    &--hidden {
+      display: none !important;
     }
   }
+  // scss-lint:enable ImportantRule
 }

@@ -39,9 +39,10 @@ $success:               #38b44a!default;
 $disabled:              $gallery-grey;
 $editable:              $white;
 
-/// MAAS Button colours
-$primary-button-color:  #dd4814!default;
+/// MAAS Form colours
+$primary-button-color:  #dd4814;
 $secondary-button-color: $white;
+$input-checked:         #dd4814;
 
 // MAAS Tab colours
 $tab-active-state:      #dd4814!default;

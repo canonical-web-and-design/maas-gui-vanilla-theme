@@ -163,8 +163,8 @@
     &:checked {
 
       + label:before {
-        background-color: $brand-color;
-        border-color: $brand-color;
+        background-color: $input-checked;
+        border-color: $input-checked;
       }
 
       + label:after {
@@ -226,7 +226,7 @@
         top: 4px;
         width: 9px;
         height: 9px;
-        background: $brand-color;
+        background: $input-checked;
         border-radius: 50%;
       }
     }
