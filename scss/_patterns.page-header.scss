@@ -12,7 +12,53 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     width: 100%;
     float: left;
-    position: fixed;
-    z-index: 10;
+
+    .page-header__title {
+      font-size: $h1;
+      margin: 0;
+      padding: 34px 0;
+      display: inline-block;
+    }
+
+    .page-header__tabs {
+      display: inline-block;
+    }
+
+    .page-header__tabs-item {
+      @include font-size(18px);
+      display: inline-block;
+      list-style-type: none;
+
+      a {
+        color: $warm-grey;
+        text-decoration: none;
+      }
+
+      &:hover a {
+        border-bottom: 3px solid $warm-grey;
+      }
+
+      &:after {
+        content: '';
+        width: 1px;
+        display: inline-block;
+        background: $outline;
+        height: 11px;
+        padding: 0;
+        margin: 0 5px;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+
+    .page-header__tabs-item--active {
+
+      a,
+      &:hover a {
+        border-bottom: 3px solid $tab-active-state;
+      }
+    }
   }
 }

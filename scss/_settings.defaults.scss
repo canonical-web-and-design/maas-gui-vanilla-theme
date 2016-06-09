@@ -1,5 +1,5 @@
 /// assets database path
-/// usage: background: url(#{$asset-path}img//backgrounds/background.jpg) no-repeat 0 0;
+/// usage: background: url(#{$asset-path}img/backgrounds/background.jpg) no-repeat 0 0;
 $asset-path: '../../assets/';
 
 /// MAAS font sizes
@@ -27,21 +27,24 @@ $headline-color:        $warm-grey;
 $link-color:            $brand-color;
 
 // MAAS colours
-$off-white:             #fafafa;
-$pale-grey:             #bcbcbc;
-$muted-grey:            #b2b2b2;
-$gallery-grey:          #eee;
+$off-white:             #fafafa!default;
+$pale-grey:             #bcbcbc!default;
+$muted-grey:            #b2b2b2!default;
+$gallery-grey:          #eee!default;
 
-$error:                 #d83832;
-$information:           #2ab7ec;
-$outline:               #d2d2d2;
-$success:               #38b44a;
+$error:                 #d83832!default;
+$information:           #2ab7ec!default;
+$outline:               #d2d2d2!default;
+$success:               #38b44a!default;
 $disabled:              $gallery-grey;
 $editable:              $white;
 
 /// MAAS Button colours
-$primary-button-color:  #dd4814;
+$primary-button-color:  #dd4814!default;
 $secondary-button-color: $white;
+
+// MAAS Tab colours
+$tab-active-state:      #dd4814!default;
 
 
 // Header variables
