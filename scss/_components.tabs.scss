@@ -18,6 +18,7 @@
       .tabs__tab-link {
         color: $warm-grey;
         text-decoration: none;
+        border-bottom: 0;
       }
 
       &:hover .tabs__tab-link {

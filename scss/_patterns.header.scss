@@ -31,6 +31,10 @@
             &:nth-child(2n+2) {
               border-right: 0;
             }
+
+            a {
+              border-bottom: 0;
+            }
           }
         }
       }
