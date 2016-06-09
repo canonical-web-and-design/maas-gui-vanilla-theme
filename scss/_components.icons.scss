@@ -12,6 +12,7 @@
   .icon {
     @include icon-size(16px);
     padding: 0;
+    border-bottom: 0;
     display: inline-block;
     vertical-align: middle;
     text-indent: 999em;

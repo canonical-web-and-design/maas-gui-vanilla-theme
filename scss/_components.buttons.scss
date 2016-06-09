@@ -11,6 +11,20 @@
   .button--secondary {
     @extend %button-pattern;
   }
+
+  .button--primary {
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .button--base {
+
+    &:hover {
+      color: $cool-grey;
+    }
+  }
 }
 
 %button-pattern {
