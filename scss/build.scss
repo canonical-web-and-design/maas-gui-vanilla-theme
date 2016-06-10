@@ -35,26 +35,9 @@
 @import 'patterns.page-header';
 @import 'patterns.search';
 
-
-// Include required modules from Vanilla
-/*@mixin required-vanilla-modules {
-  @include vf-reset;
-  @include vf-buttons;
-  @include vf-clearfix;
-  @include vf-forms;
-  @include vf-grid;
-  @include vf-header;
-  @include vf-lists;
-  @include vf-rows;
-  @include vf-typography;
-  @include vf-tables;
-  @include vf-footer;
-}*/
-
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
   @include cloud-vanilla-theme;
-  // @include required-vanilla-modules;
   @include maas-main;
   @include maas-accordion;
   @include maas-animations;

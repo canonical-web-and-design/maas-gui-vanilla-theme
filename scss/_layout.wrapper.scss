@@ -1,11 +1,11 @@
 ////
 /// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-header
-/// @since        0.0.3
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-wrapper
+/// @since        0.0.1
 ////
 
-/// MAAS row styling
-/// @group maas row
+/// MAAS wrapper styling
+/// @group maas wrapper
 @mixin maas-wrapper {
   // scss-lint:disable DuplicateProperty
   .wrapper {

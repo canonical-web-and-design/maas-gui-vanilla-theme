@@ -1,11 +1,11 @@
 ////
 /// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
-/// @since        0.0.3
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-fonts
+/// @since        0.0.1
 ////
 
-/// Font face styles
-/// @group Fonts
+/// MAAS Font face styles
+/// @group maas fonts
 @mixin maas-fonts {
 
   @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-l-webfont', 300, normal);

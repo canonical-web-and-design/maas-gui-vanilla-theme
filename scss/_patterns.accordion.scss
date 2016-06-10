@@ -1,11 +1,11 @@
 ////
 /// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
-/// @since        0.0.3
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-accordion
+/// @since        0.0.1
 ////
 
-/// Accordion
-/// @group Accordion
+/// MAAS Accordion
+/// @group maas accordion
 @mixin maas-accordion {
 
   // scss-lint:disable SelectorFormat
@@ -118,6 +118,6 @@
     cursor: pointer;
     background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
   }
-  
+
   // scss-lint:enable SelectorFormat
 }
