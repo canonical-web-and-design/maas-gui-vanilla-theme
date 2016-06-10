@@ -12,17 +12,89 @@
     @extend %button-pattern;
   }
 
-  .button--primary {
+  .button--primary,
+  .button--destructive,
+  .button--positive {
 
     &:hover {
       color: $white;
     }
   }
 
-  .button--base {
+  .button--base,
+  .button--neutral {
 
     &:hover {
       color: $cool-grey;
+    }
+  }
+}
+
+@mixin maas-button-group {
+  .button-group {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+
+    &.button--inline {
+      display: inline-block;
+      width: auto;
+    }
+
+    .button-group__link {
+      display: inline-block;
+      float: left;
+      text-align: left;
+
+      .button-group__caret {
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 4px;
+        height: 4px;
+        vertical-align: middle;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        transform: rotate(45deg);
+      }
+    }
+
+    .button-group__dropdown {
+      border-radius: 3px;
+      right: 0;
+      margin: 0;
+      list-style: none;
+      background: $white;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+      z-index: 20;
+      max-height: 1000px;
+      transition: max-height .3s ease-in;
+      overflow: hidden;
+      position: relative;
+      clear: both;
+      min-width: 160px;
+    }
+
+    .button-group__item {
+      float: left;
+      clear: both;
+      padding: 5px 10px;
+      margin: 0;
+
+      a {
+        color: $cool-grey;
+        cursor: pointer;
+        width: 100%;
+        float: left;
+        margin: 0;
+        border: 0;
+
+        &:hover {
+          color: $link-hover;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
@@ -34,7 +106,6 @@
   touch-action: manipulation;
   cursor: pointer;
   user-select: none;
-  box-sizing: border-box;
   padding: 8px 14px;
 
   &:disabled,
