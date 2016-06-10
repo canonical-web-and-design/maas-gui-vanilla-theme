@@ -39,7 +39,7 @@
     position: relative;
     min-width: 160px;
 
-    &.button--inline {
+    &.button-group--inline {
       display: inline-block;
       width: auto;
     }
@@ -77,6 +77,7 @@
       position: absolute;
       top: 36px;
       clear: both;
+      width: 100%;
       min-width: 160px;
     }
 
