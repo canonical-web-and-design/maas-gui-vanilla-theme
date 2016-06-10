@@ -67,6 +67,76 @@
                         <a href="" class="tabs__tab-link">Controllers</a>
                     </li>
                 </ul>
+                <div class="page-header__controls u-float--right">
+                    <span class="page-header__controls-feedback u-margin--right">1 Selected</span>
+                    <div class="button-group button--inline">
+                        <a href="" class="button-group__link button--primary">Actions <span class="button-group__caret"></span></a>
+                        <ul class="button-group__dropdown">
+                            <li class="button-group__item">
+                                <a href="">Add hardware</a>
+                            </li>
+                            <li class="button-group__item">
+                                <a href="">Remove hardware</a>
+                            </li>
+                            <li class="button-group__item">
+                                <a href="">Commission</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-header__dropdown">
+                    <section class="page-header__section twelve-col u-margin--bottom-none">
+                        <h3 class="page-header__dropdown-title">Add machine</h3>
+                        <form class="form form--stack">
+                            <fieldset class="six-col">
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                            </fieldset>
+                            <fieldset class="six-col last-col">
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <input id="machine-name" class="three-col" placeholder="Choose a machine name (optional)" type="text">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+                    <div class="page-header__section twelve-col u-margin--bottom-none">
+                        <form class="form form--inline">
+                            <p class="page-header__message page-header__message--error">Error message</p>
+                            <div class="page-header__controls">
+                                <a href="" class="button--base button--inline" data-ng-click="cancel()">Cancel</a>
+                                <button class="button--secondary button--inline" data-ng-class="{ disabled: machineHasError() }" data-ng-click="saveMachine(true)">Save and add another</button>
+                                <button class="button--primary button--inline" data-ng-class="{ disabled: machineHasError() }" data-ng-click="saveMachine(false)">Save machine</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">

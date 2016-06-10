@@ -35,6 +35,9 @@
     position: relative;
     width: 100%;
     vertical-align: middle;
+    clear: both;
+    position: relative;
+    min-width: 160px;
 
     &.button--inline {
       display: inline-block;
@@ -71,7 +74,8 @@
       max-height: 1000px;
       transition: max-height .3s ease-in;
       overflow: hidden;
-      position: relative;
+      position: absolute;
+      top: 36px;
       clear: both;
       min-width: 160px;
     }

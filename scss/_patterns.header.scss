@@ -18,6 +18,10 @@
       .nav-primary {
         max-width: none;
 
+        .logo a {
+          border-bottom: 0;
+        }
+
         ul {
 
           li {

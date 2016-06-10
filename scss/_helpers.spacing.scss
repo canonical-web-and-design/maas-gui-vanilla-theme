@@ -34,7 +34,7 @@
         #{$spacing}-#{$direction}: $spacing-unit !important;
 
         &-none {
-          #{$spacing}-#{$direction}: none !important;
+          #{$spacing}-#{$direction}: 0 !important;
         }
 
         @each $size, $division in $sizes {
