@@ -11,6 +11,7 @@
 
 // Theme component styles
 @import 'components.buttons';
+@import 'components.flashmessages';
 @import 'components.forms';
 @import 'components.icons';
 @import 'components.tables';
@@ -49,6 +50,7 @@
   @include maas-display;
   @include maas-header;
   @include maas-forms;
+  @include maas-flash-messages;
   @include maas-icons;
   @include maas-page-header;
   @include maas-row;

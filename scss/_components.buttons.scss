@@ -31,12 +31,12 @@
 }
 
 @mixin maas-button-group {
+  // scss-lint:disable SelectorFormat
   .button-group {
     position: relative;
     width: 100%;
     vertical-align: middle;
     clear: both;
-    position: relative;
     min-width: 160px;
 
     &.button-group--inline {
@@ -102,6 +102,7 @@
       }
     }
   }
+  // scss-lint:enable SelectorFormat
 }
 
 %button-pattern {
