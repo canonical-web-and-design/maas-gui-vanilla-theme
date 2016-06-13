@@ -1,0 +1,80 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-search
+/// @since        0.0.1
+////
+
+/// MAAS search
+/// @group maas search
+@mixin maas-search {
+
+  // scss-lint:disable SelectorFormat
+  .search {
+    position: relative;
+
+    .search__input {
+      @include font-size(20px);
+      box-sizing: border-box;
+      border-radius: 4px;
+      list-style: none;
+      background: $white;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+      width: 100%;
+      border: 0;
+      padding: 13px 20px;
+      appearance: textfield;
+
+      &::placeholder {
+        color: $black;
+      }
+
+      &[disabled] {
+        background-color: $white;
+        opacity: .5;
+        pointer-events: none;
+
+        // scss-lint:disable NestingDepth
+        + .search__submit {
+          pointer-events: none;
+          opacity: .5;
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+
+    .search__submit {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      background-color: $transparent;
+      background-image: url('../../assets/images/icons/magnifying_glass.svg');
+      background-repeat: no-repeat;
+      text-indent: -999em;
+      display: block;
+      width: 21px;
+      height: 20px;
+      overflow: hidden;
+      outline: none;
+      padding: 0;
+      border: 0;
+
+      &:hover {
+        background-color: $transparent;
+        background-image: url('../../assets/images/icons/magnifying_glass.svg');
+      }
+
+      &.search__submit--close {
+        background-image: url('../../assets/images/icons/cross.svg');
+        background-size: 21px;
+        margin-top: 2px;
+
+        // scss-lint:disable NestingDepth
+        &:hover {
+          background-image: url('../../assets/images/icons/cross.svg');
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+  }
+  // scss-lint:enable SelectorFormat
+}

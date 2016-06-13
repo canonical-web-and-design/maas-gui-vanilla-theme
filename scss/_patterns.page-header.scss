@@ -1,0 +1,79 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-page-header
+/// @since        0.0.1
+////
+
+/// MAAS Page header
+/// @group maas page header
+@mixin maas-page-header {
+  .page-header {
+    box-sizing: border-box;
+    background: $white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    width: 100%;
+    float: left;
+
+    .page-header__title {
+      font-size: $h1;
+      margin: 0;
+      padding: 34px 0;
+      display: inline-block;
+    }
+
+    .page-header__controls {
+      padding: 34px 0;
+      display: inline-block;
+    }
+
+    .page-header__dropdown {
+
+      .page-header__section {
+        border-top: 1px dotted $warm-grey;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .page-header__message {
+        width: auto;
+        display: inline-block;
+        float: none;
+        margin: 0 20px 0 0;
+        line-height: 38px;
+      }
+
+      .page-header__message--error {
+        background: url('#{$asset-path}images/icons/error_colour_white.svg') no-repeat;
+        background-size: 16px 16px;
+        background-position: 0 10px;
+        padding-left: 25px;
+      }
+
+      .page-header__message--info {
+        background: url('#{$asset-path}images/icons/information_colour_white.svg') no-repeat;
+        background-size: 16px 16px;
+        background-position: 0 10px;
+        padding-left: 25px;
+      }
+
+      .page-header__message--warning {
+        background: url('#{$asset-path}images/icons/warning_colour_white.svg') no-repeat;
+        background-size: 16px 16px;
+        background-position: 0 10px;
+        padding-left: 25px;
+      }
+
+      .page-header__message--success {
+        background: url('#{$asset-path}images/icons/success_colour_white.svg') no-repeat;
+        background-size: 16px 16px;
+        background-position: 0 10px;
+        padding-left: 25px;
+      }
+
+      .page-header__controls {
+        padding: 0;
+        float: right;
+      }
+    }
+  }
+}

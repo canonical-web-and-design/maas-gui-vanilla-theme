@@ -1,0 +1,123 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-accordion
+/// @since        0.0.1
+////
+
+/// MAAS Accordion
+/// @group maas accordion
+@mixin maas-accordion {
+
+  // scss-lint:disable SelectorFormat
+  .accordion {
+    box-sizing: border-box;
+    border-radius: 2px;
+    list-style: none;
+    background: $white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 40px;
+
+    .disabled & {
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    // accordion main sidebar title
+    .accordion__title {
+      @include font-size(20px);
+      border-bottom: 1px dotted $muted-grey;
+      padding: 13px 20px 12px;
+      margin: 0;
+    }
+
+    // accordion data block, contains all filter links and controls.
+    .accordion__tab {
+      border-bottom: 1px dotted $muted-grey;
+
+      &:last-of-type {
+        border: 0;
+      }
+
+      // Block level title
+      .accordion__tab-title {
+        @extend %accordion__tab-title;
+        // scss-lint:disable NestingDepth
+        &--active {
+          @extend %accordion__tab-title;
+          background-image: url('#{$asset-path}images/forms/chevron_up.svg');
+
+          + .accordion__tab-content {
+            max-height: 3000px;
+            transition: max-height .5s ease-in;
+          }
+        }
+        // scss-lint:enable NestingDepth
+      }
+
+      // Filter list
+      .accordion__tab-content {
+        max-height: 0;
+        transition: max-height .5s ease-out;
+        overflow: hidden;
+
+        // scss-lint:disable NestingDepth
+        .accordion__tab-list {
+          list-style-type: none;
+          padding: 0 20px 14px;
+          margin: 0;
+
+          .accordion__tab-item {
+            margin-bottom: .15em;
+
+            .accordion__tab-link {
+              box-sizing: border-box;
+              color: $cool-grey;
+              width: 100%;
+              display: inline-block;
+              padding-right: 20px;
+
+              &:hover {
+                color: $brand-color;
+                text-decoration: none;
+              }
+
+              .disabled & {
+                color: $cool-grey;
+              }
+            }
+
+            &--active {
+              margin-bottom: .15em;
+              font-weight: 400;
+
+              .accordion__tab-link {
+                background: $transparent url('../../img/icons/cross.svg') top 7px right 0 no-repeat;
+              }
+
+              &:hover {
+                color: $brand-color;
+
+                .accordion__tab-link {
+                  color: $brand-color;
+                  background-image: url('../../img/icons/cross-orange.svg');
+                }
+              }
+            }
+          }
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+  }
+
+  // Accordion patterns
+  %accordion__tab-title {
+    padding: 12px 20px;
+    margin: 0;
+    color: $warm-grey;
+    cursor: pointer;
+    background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
+  }
+
+  // scss-lint:enable SelectorFormat
+}

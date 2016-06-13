@@ -1,0 +1,55 @@
+{
+  "author": {
+    "name": "MAAS GUI framework",
+    "email": "webteam@canonical.com",
+    "url": "http://maas.io/"
+  },
+  "contributors": [
+    {
+      "name": "Richard McCartney",
+      "email": "richard.mccartney@canonical.com"
+    },
+    {
+      "name": "Carla Berkers",
+      "email": "Carla.berkers@canonical.com"
+    }
+  ],
+  "description": "MAAS GUI framework",
+  "homepage": "http://maas.io/",
+  "keywords": [
+    "ubuntu",
+    "vanilla",
+    "framework",
+    "landscape",
+    "cloud"
+  ],
+  "devDependencies": {
+    "gulp": "3.9",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-cache": "0.2.8",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-notify": "2.2.0",
+    "gulp-rename": "1.2.0",
+    "gulp-sass": "2.1.1",
+    "gulp-scss-lint": "0.1.10",
+    "gulp-util": "3.0.4",
+    "sassdoc": "2.1.7"
+  },
+  "dependencies": {
+    "cloud-vanilla-theme": ">=0.0.18"
+  },
+  "license": "LGPL-3.0",
+  "name": "maas-gui-vanilla-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubuntudesign/maas-gui-vanilla-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ubuntudesign/maas-gui-vanilla-theme/issues",
+    "email": "webteam@canonical.com"
+  },
+  "scripts": {
+    "clean": "rm -r build; rm -r node_modules"
+  },
+  "version": "0.0.1"
+}
