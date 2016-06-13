@@ -9,6 +9,7 @@
 @mixin maas-flash-messages {
   .flash-messages {
     width: 100%;
+    margin-left: 0;
 
     .flash-messages__item {
       box-sizing: border-box;
