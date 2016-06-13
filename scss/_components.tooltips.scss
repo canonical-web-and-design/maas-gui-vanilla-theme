@@ -1,0 +1,83 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-tool-tips
+/// @since        0.0.1
+////
+
+/// Tooltip element styles
+/// @group maas tooltips
+@mixin maas-tooltips {
+  .tooltip {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-14px);
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      z-index: 1000;
+      transition:opacity 0.2s ease-out;
+      border-top: 5px solid $cool-grey;
+      opacity: 0;
+      bottom: 100%;
+      margin-bottom: -11px;
+    }
+
+    &::after {
+      content: attr(aria-label);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      position:absolute;
+      z-index: 99999;
+      left: 50%;
+      bottom: 100%;
+      transform: translateX(-50%) translateY(-8px);
+      background: $cool-grey;
+      color: $white;
+      padding: 10px;
+      height: auto;
+      text-indent: 0;
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+      border-radius: 5px;
+      box-shadow: 0px 1px 3px 0 rgba(51,51,51,0.2);
+      white-space: pre;
+      box-sizing: border-box;
+    }
+
+    &:hover::after {
+      opacity: 1 !important;
+    }
+
+    &:hover::before {
+      opacity: 1 !important;
+    }
+
+    &.tooltip--right {
+
+      &::before {
+        border-top: 5px solid transparent;
+        border-right: 5px solid $cool-grey;
+        border-bottom: 5px solid transparent;
+        left: 100%;
+        bottom: inherit;
+        top: 50%;
+        transform: translateX(4px) translateY(-50%);
+      }
+
+      &::after {
+        left: 100%;
+        bottom: inherit;
+        top: 50%;
+        margin-bottom: -14px;
+        transform: translateX(14px) translateY(-50%);
+      }
+    }
+  }
+
+}
