@@ -8,35 +8,35 @@
 /// @group Borders
 @mixin maas-borders($border-color: $warm-grey, $border-width: 1px) {
   .u-border {
-    border-color: $border-color;
-    border: $border-width dotted;
+    border-color: $border-color !important;
+    border: $border-width dotted !important;
 
     &--top {
-      border-top: $border-width dotted;
+      border-top: $border-width dotted !important;
     }
 
     &--right {
-      border-right: $border-width dotted;
+      border-right: $border-width dotted !important;
     }
 
     &--bottom {
-      border-bottom: $border-width dotted;
+      border-bottom: $border-width dotted !important;
     }
 
     &--left {
-      border-left: $border-width dotted;
+      border-left: $border-width dotted !important;
     }
 
     &--dotted {
-      border-style: dotted;
+      border-style: dotted !important;
     }
 
     &--solid {
-      border-style: solid;
+      border-style: solid !important;
     }
 
     &--dashed {
-      border-style: dashed;
+      border-style: dashed !important;
     }
   }
 }

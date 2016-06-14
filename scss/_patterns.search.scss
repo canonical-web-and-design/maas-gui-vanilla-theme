@@ -28,7 +28,8 @@
         color: $black;
       }
 
-      &[disabled] {
+      &:disabled,
+      &.search--disabled {
         background-color: $white;
         opacity: .5;
         pointer-events: none;

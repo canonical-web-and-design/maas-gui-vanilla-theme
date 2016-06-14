@@ -1,0 +1,31 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-definition-list
+/// @since        0.0.1
+////
+
+/// Definition list styles
+/// @group Forms
+@mixin maas-definition-list {
+  dl {
+
+    dt {
+      clear: left;
+      color: $mid-grey;
+    }
+
+    dd {
+      color: $cool-grey;
+      margin-left: 0;
+    }
+
+    dt,
+    dd {
+      display: inline-block;
+      float: left;
+      line-height: 36px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+  }
+}

@@ -7,22 +7,22 @@
 /// Display
 /// @group Display
 @mixin maas-display {
+  // scss-lint:disable ImportantRule
   .u-align {
 
     &--right {
-      text-align: right;
+      text-align: right !important;
     }
 
     &--left {
-      text-align: left;
+      text-align: left !important;
     }
 
     &--center {
-      text-align: center;
+      text-align: center !important;
     }
   }
 
-  // scss-lint:disable ImportantRule
   .u-float {
 
     &--right {
@@ -39,12 +39,12 @@
   }
 
   .u-muted {
-    opacity: .5;
-    filter: alpha(opacity = 50);
+    opacity: .5 !important;
+    filter: alpha(opacity = 50) !important;
   }
 
   .u-clear {
-    clear: both;
+    clear: both !important;
   }
 
   .u-display {

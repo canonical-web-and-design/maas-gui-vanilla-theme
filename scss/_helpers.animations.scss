@@ -8,7 +8,7 @@
 /// @group Animations
 @mixin maas-animations {
   .u-animation--spin {
-    animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear !important;
   }
 
   @keyframes spin {

@@ -49,7 +49,8 @@
       float: left;
       text-align: left;
 
-      .button-group__caret {
+      &::after {
+        content: '';
         display: inline-block;
         position: absolute;
         top: 15px;
@@ -87,7 +88,7 @@
       padding: 5px 10px;
       margin: 0;
 
-      a {
+      .button-group__item-link {
         color: $cool-grey;
         cursor: pointer;
         width: 100%;
