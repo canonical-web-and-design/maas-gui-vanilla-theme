@@ -37,6 +37,7 @@ $gallery-grey:          #eee!default;
 $mercury-grey:          #e3e3e3!default;
 $off-white:             #f8f8f8!default;
 
+$loading:               #2ab7ec!default;
 $error:                 #d83832!default;
 $information:           #2ab7ec!default;
 $outline:               #d2d2d2!default;
@@ -59,3 +60,12 @@ $header-link-color:     $cool-grey;
 // MAAS structure
 $site-max-width:        1440px;
 $breakpoint-large:      $site-max-width;
+
+// MAAS states
+$states: (
+  error: $error,
+  warning: $warning,
+  success: $success,
+  information: $information,
+  loading: $loading
+);

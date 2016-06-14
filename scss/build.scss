@@ -37,6 +37,7 @@
 @import 'helpers.borders';
 @import 'helpers.display';
 @import 'helpers.spacing';
+@import 'helpers.state';
 @import 'helpers.vertical-alignment';
 @import 'helpers.mixins';
 
@@ -67,6 +68,7 @@
   @include maas-borders;
   @include maas-display;
   @include maas-spacing;
+  @include maas-state;
   @include maas-vertical-alignment;
 }
 

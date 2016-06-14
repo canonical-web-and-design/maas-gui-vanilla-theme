@@ -500,13 +500,6 @@
     }
   }
 
-  $states: (
-    error: $error,
-    warning: $warning,
-    success: $success,
-    information: $information
-  );
-
   @each $state, $color in $states {
     &.table--#{$state} {
       border-color: $color;

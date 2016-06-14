@@ -29,6 +29,17 @@
       position: relative;
       margin-left: 20px;
       color: $warm-grey;
+
+      .page-header__status-check {
+        @include font-size(16px);
+        margin-left: 10px;
+        color: inherit;
+        border: 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .page-header__controls {
