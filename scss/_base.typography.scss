@@ -40,7 +40,7 @@
     $heading-size: zip($headings, $size);
 
     // Shared heading styles
-    #{headings()} {
+    #{$headings()} {
       margin: 10px 0;
       font-weight: 300;
       line-height: #{$line-height-ratio};

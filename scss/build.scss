@@ -20,6 +20,7 @@
 @import 'components.forms';
 @import 'components.flashmessages';
 @import 'components.icons';
+@import 'components.list-tree';
 @import 'components.tables';
 @import 'components.tooltips';
 @import 'components.tabs';
@@ -53,6 +54,7 @@
   @include maas-form-layouts;
   @include maas-flash-messages;
   @include maas-icons;
+  @include maas-list-tree;
   @include maas-table;
   @include maas-tabs;
   @include maas-tooltips;

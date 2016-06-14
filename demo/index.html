@@ -496,7 +496,7 @@
           <div class="wrapper--inner">
             <div class="twelve-col u-padding--bottom">
               <h2>Div table</h2>
-              <section class="table u-margin--bottom">
+              <section class="table table--hover u-margin--bottom">
                   <header class="table__head">
                       <div class="table__row">
                           <div class="table__header table-col--3">
@@ -539,7 +539,7 @@
                               </div>
                           </div>
                       </div>
-                      <div class="table__row active">
+                      <div class="table__row is-active">
                           <div class="table__data table-col--3">
                               <input type="checkbox" id="exampleCheckboxAll">
                               <label for="exampleCheckboxAll"></label>
@@ -679,6 +679,56 @@
               </section>
           </div>
       </div>
+    </div>
+    <div class="row">
+        <div class="wrapper--inner">
+            <div class="twelve-col">
+                <h2>List tree</h2>
+                <ul class="list__tree no-bullets">
+                    <li class="list__item">
+                        <span>
+                            <span class="icon icon--warning"></span>
+                            &nbsp;rackd
+                            <!-- ngIf: services.rackd.status_info --><span data-ng-if="services.rackd.status_info" class="ng-binding ng-scope"> — Missing connections to 1 region controller(s).</span><!-- end ngIf: services.rackd.status_info -->
+                        </span>
+                        <ul class="list__tree list__tree--sub-level">
+                            <li class="list__item">
+                                <span>
+                                    <span class="icon icon--success"></span>
+                                    &nbsp;http
+                                    <!-- ngIf: services.http.status_info -->
+                                </span>
+                            </li>
+                            <li class="list__item">
+                                <span>
+                                    <span class="icon icon--success"></span>
+                                    &nbsp;tftp
+                                    <!-- ngIf: services.tftp.status_info -->
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            dhcpd
+                            <!-- ngIf: services.dhcpd.status_info -->
+                        </span>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            dhcpd6
+                            <!-- ngIf: services.dhcpd6.status_info -->
+                        </span>
+                    </li>
+                    <li class="list__item">
+                        <span>
+                            tgt
+                            <!-- ngIf: services.tgt.status_info -->
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="wrapper--inner">

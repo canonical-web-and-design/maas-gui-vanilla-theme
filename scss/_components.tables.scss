@@ -39,7 +39,7 @@
     // Table cell styles
     %table-cell {
       @include font-size($table-font-size);
-      padding: 8px 10px 7px;
+      padding: 10px;
       box-sizing: border-box;
       min-height: 21px;
       background: none;
@@ -231,57 +231,6 @@
       @extend %table-row;
       float: left;
       display: table-row;
-
-      // Table row hover style, this can reveal control elements
-      &:hover {
-        background-color: $white;
-
-        // Show input / select styles when on hover over a parent .table__row
-        .table__input {
-          background-color: $white;
-          border-color: $alto-grey;
-          background-position: right 10px top 16px;
-        }
-
-        // Set controls z-index and opacity so it is visible
-        .table__controls {
-          z-index: 1;
-          opacity: 1;
-
-          &--secondary {
-            z-index: 1;
-            opacity: 1;
-          }
-        }
-      }
-
-      // Active state on .table__row
-      &.active {
-        background-color: $white;
-
-        // Hover state makes any forms / controls invisible or unable to be used
-        &:hover {
-
-          .table__input {
-            background-color: transparent;
-            border-color: transparent;
-            pointer-events: none;
-            background-position: -9999px -9999px;
-          }
-
-          .table__controls {
-            opacity: 0;
-            z-index: -1000;
-            pointer-events: none;
-
-            &--secondary {
-              z-index: -1000;
-              opacity: 0;
-              pointer-events: none;
-            }
-          }
-        }
-      }
     }
 
     .table__header,
@@ -361,57 +310,114 @@
       }
     }
 
-    // Table contol container, hidden unless hovered on the table row. Will have
-    // action controls which can effect the parent table row or other actions.
-    //
-    // @example
-    // <div class="table">
-    //     <div class="table__row">
-    //         <div class="table__data">
-    //             ...
-    //         </div>
-    //         <div class="table__data">
-    //             <div class="table__controls">
-    //                 <a href="#">Delete</a>
-    //                 <a href="#">Save</a>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
-    .table__controls {
-      width: 100%;
-      text-align: right;
-      opacity: 0;
-      z-index: -1000;
+    &.table--hover {
 
-      &--secondary {
+      // Table input styles act in a similar way to table controls. They are only
+      // active on hover. This style can effect input boxes or select boxes.
+      //
+      // @example
+      // <div class="table table--hover">
+      //     <div class="table__row">
+      //         <div class="table__data">
+      //             ...
+      //         </div>
+      //         <div class="table__data">
+      //             <input type="text" class="table__input" placeholder="Enter text...">
+      //         </div>
+      //     </div>
+      // </div>
+      .table__input {
+        display: inline-block;
+        margin: -7px 0 -8px -14px;
+        background-color: transparent;
+        border-color: transparent;
+        background-position: -9999px -9999px;
+      }
+
+      // Table contol container, hidden unless hovered on the table row. Will have
+      // action controls which can effect the parent table row or other actions.
+      //
+      // @example
+      // <div class="table table--hover">
+      //     <div class="table__row">
+      //         <div class="table__data">
+      //             ...
+      //         </div>
+      //         <div class="table__data">
+      //             <div class="table__controls">
+      //                 <a href="#">Delete</a>
+      //                 <a href="#">Save</a>
+      //             </div>
+      //         </div>
+      //     </div>
+      // </div>
+      .table__controls {
+        width: 100%;
+        text-align: right;
         opacity: 0;
         z-index: -1000;
-        width: auto;
-        text-align: left;
-      }
-    }
 
-    // Table input styles act in a similar way to table controls. They are only
-    // active on hover. This style can effect input boxes or select boxes.
-    //
-    // @example
-    // <div class="table">
-    //     <div class="table__row">
-    //         <div class="table__data">
-    //             ...
-    //         </div>
-    //         <div class="table__data">
-    //             <input type="text" class="table__input" placeholder="Enter text...">
-    //         </div>
-    //     </div>
-    // </div>
-    .table__input {
-      display: inline-block;
-      margin: -7px 0 -8px -14px;
-      background-color: transparent;
-      border-color: transparent;
-      background-position: -9999px -9999px;
+        &--secondary {
+          opacity: 0;
+          z-index: -1000;
+          width: auto;
+          text-align: left;
+        }
+      }
+
+      .table__row {
+
+        // Table row hover style, this can reveal control elements
+        &:hover {
+          background-color: $white;
+
+          // Show input / select styles when on hover over a parent .table__row
+          .table__input {
+            background-color: $white;
+            border-color: $alto-grey;
+            background-position: right 10px top 16px;
+          }
+
+          // Set controls z-index and opacity so it is visible
+          .table__controls {
+            z-index: 1;
+            opacity: 1;
+
+            &--secondary {
+              z-index: 1;
+              opacity: 1;
+            }
+          }
+        }
+
+        // Active state on .table__row
+        &.is-active {
+          background-color: $white;
+
+          // Hover state makes any forms / controls invisible or unable to be used
+          &:hover {
+
+            .table__input {
+              background-color: transparent;
+              border-color: transparent;
+              pointer-events: none;
+              background-position: -9999px -9999px;
+            }
+
+            .table__controls {
+              opacity: 0;
+              z-index: -1000;
+              pointer-events: none;
+
+              &--secondary {
+                z-index: -1000;
+                opacity: 0;
+                pointer-events: none;
+              }
+            }
+          }
+        }
+      }
     }
 
     // Table dropdowns are used for extra condenced information and to expand

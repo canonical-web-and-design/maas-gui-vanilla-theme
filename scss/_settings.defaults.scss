@@ -23,7 +23,8 @@ $line-height-ratio:     $base-line-height / $base-font-size;
 
 /// MAAS Text styles
 $text-color:            $cool-grey;
-$headline-color:        $warm-grey;
+$headline-color:        $cool-grey;
+$alt-headline-color:    $warm-grey;
 $link-color:            $brand-color;
 $link-border:           #c2c2c2;
 $link-hover:            #dd4814;
@@ -34,6 +35,7 @@ $pale-grey:             #bcbcbc!default;
 $muted-grey:            #b2b2b2!default;
 $gallery-grey:          #eee!default;
 $mercury-grey:          #e3e3e3!default;
+$off-white:             #f8f8f8!default;
 
 $error:                 #d83832!default;
 $information:           #2ab7ec!default;
