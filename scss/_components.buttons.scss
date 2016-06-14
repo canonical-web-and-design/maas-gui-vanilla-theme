@@ -107,7 +107,7 @@
 }
 
 %button-pattern {
-  line-height: #{$line-height-ratio};
+  line-height: 20px;
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
@@ -115,7 +115,6 @@
   user-select: none;
   padding: 8px 14px;
   height: 36px;
-  line-height: 20px;
 
   &:disabled,
   &.button--disabled {
