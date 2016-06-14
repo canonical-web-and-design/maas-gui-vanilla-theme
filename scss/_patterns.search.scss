@@ -13,7 +13,7 @@
     position: relative;
 
     .search__input {
-      @include font-size(20px);
+      @include font-size(16px);
       box-sizing: border-box;
       border-radius: 4px;
       list-style: none;
@@ -21,11 +21,11 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
       width: 100%;
       border: 0;
-      padding: 13px 20px;
+      padding: 10px 15px;
       appearance: textfield;
 
       &::placeholder {
-        color: $black;
+        color: $warm-grey;
       }
 
       &:disabled,
@@ -45,8 +45,8 @@
 
     .search__submit {
       position: absolute;
-      top: 15px;
-      right: 25px;
+      top: 10px;
+      right: 15px;
       background-color: $transparent;
       background-image: url('../../assets/images/icons/magnifying_glass.svg');
       background-repeat: no-repeat;
