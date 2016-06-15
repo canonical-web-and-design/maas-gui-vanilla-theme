@@ -7,7 +7,7 @@
 /// MAAS header styling
 /// @group maas header
 @mixin maas-header {
-  // scss-lint:disable NestingDepth
+
   .banner {
     background-color: $white;
 
@@ -56,5 +56,4 @@
       }
     }
   }
-  // scss-lint:enable NestingDepth
-} // @mixin maas-header
+}

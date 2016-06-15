@@ -7,7 +7,6 @@
 /// Display
 /// @group Display
 @mixin maas-display {
-  // scss-lint:disable ImportantRule
   .u-align {
 
     &--right {
@@ -65,5 +64,4 @@
       display: none !important;
     }
   }
-  // scss-lint:enable ImportantRule
 }

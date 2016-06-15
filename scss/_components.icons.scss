@@ -16,7 +16,6 @@
     vertical-align: middle;
     text-indent: 999em;
 
-    // scss-lint:disable SelectorFormat
     &.icon--add {
       background: url('#{$asset-path}images/icons/add.svg') no-repeat;
       background-size: 100% 100%;
@@ -151,7 +150,6 @@
         background: url('#{$asset-path}images/icons/warning_colour_mono.svg') no-repeat;
       }
     }
-    // scss-lint:enable SelectorFormat
   }
 
   /// Set a specific icon size
@@ -187,7 +185,6 @@
     }
   }
 
-  //scss-lint:disable SelectorFormat
   h4,
   h5,
   p,
@@ -203,7 +200,6 @@
       margin-top: -3px;
     }
   }
-  //scss-lint:enable SelectorFormat
 }
 
 @mixin icon-size($size) {

@@ -11,10 +11,7 @@
   @include table-columns(100);
 }
 
-// scss-lint:disable SelectorFormat
 @mixin tables($table-border-color, $table-header-color, $table-font-size, $table-header-size) {
-
-  // scss-lint:disable NestingDepth
 
   // Here is the main placeholder styles for tables. All main elements can be
   // changed or amended here and will effect standard table markup / class based
@@ -404,16 +401,11 @@
               background-position: -9999px -9999px;
             }
 
-            .table__controls {
+            .table__controls,
+            .table__controls--secondary {
               opacity: 0;
               z-index: -1000;
               pointer-events: none;
-
-              &--secondary {
-                z-index: -1000;
-                opacity: 0;
-                pointer-events: none;
-              }
             }
           }
         }
@@ -513,7 +505,6 @@
       }
     }
   }
-  // scss-lint:enable NestingDepth
 }
 
 // Generates column classes use for tables
@@ -527,4 +518,3 @@
     }
   }
 }
-// scss-lint:enable SelectorFormat

@@ -7,7 +7,6 @@
 /// Icons
 /// @group Icons
 @mixin maas-list-tree {
-  // scss-lint:disable SelectorFormat
   .list__tree {
     list-style: none;
     border-left: 1px solid $outline;
@@ -55,5 +54,4 @@
       }
     }
   }
-  // scss-lint:enable SelectorFormat
 }

@@ -31,7 +31,7 @@
 
       .code-block__line::before {
         width: 1.5em;
-        padding-right: 1em; /* space after numbers */
+        padding-right: 1em; // space after numbers
         content: counter(line-numbering);
         counter-increment: line-numbering;
         user-select: none;

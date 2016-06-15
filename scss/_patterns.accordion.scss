@@ -7,8 +7,7 @@
 /// MAAS Accordion
 /// @group maas accordion
 @mixin maas-accordion {
-
-  // scss-lint:disable SelectorFormat
+  // scss-lint:disable NestingDepth SelectorDepth
   .accordion {
     box-sizing: border-box;
     border-radius: 2px;
@@ -41,7 +40,7 @@
       // Block level title
       .accordion__tab-title {
         @extend %accordion__tab-title;
-        // scss-lint:disable NestingDepth
+
         &--active {
           @extend %accordion__tab-title;
           background-image: url('#{$asset-path}images/forms/chevron_up.svg');
@@ -51,7 +50,6 @@
             transition: max-height .5s ease-in;
           }
         }
-        // scss-lint:enable NestingDepth
       }
 
       // Filter list
@@ -60,7 +58,6 @@
         transition: max-height .5s ease-out;
         overflow: hidden;
 
-        // scss-lint:disable NestingDepth
         .accordion__tab-list {
           list-style-type: none;
           padding: 0 20px 14px;
@@ -105,7 +102,6 @@
             }
           }
         }
-        // scss-lint:enable NestingDepth
       }
     }
   }
@@ -118,6 +114,5 @@
     cursor: pointer;
     background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
   }
-
-  // scss-lint:enable SelectorFormat
+  // scss-lint:enable NestingDepth SelectorDepth
 }

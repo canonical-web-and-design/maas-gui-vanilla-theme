@@ -7,7 +7,7 @@
 /// MAAS Page header
 /// @group maas page header
 @mixin maas-page-header {
-  // scss-lint:disable SelectorFormat
+
   .page-header {
     box-sizing: border-box;
     background: $white;
@@ -97,5 +97,4 @@
       }
     }
   }
-  // scss-lint:enable SelectorFormat
 }

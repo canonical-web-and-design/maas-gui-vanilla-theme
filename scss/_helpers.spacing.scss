@@ -12,7 +12,7 @@
 }
 
 @mixin spacing($spacing, $spacing-unit) {
-  // scss-lint:disable ImportantRule
+
   $directions:                    top right bottom left;
   $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
 
@@ -45,5 +45,4 @@
       }
     }
   }
-  // scss-lint:enable ImportantRule
 }

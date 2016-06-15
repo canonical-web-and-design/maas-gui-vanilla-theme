@@ -34,7 +34,7 @@ gulp.task('help', function() {
 gulp.task('sasslint', function() {
     var path = (gutil.env.file)? gutil.env.file : '**/*.scss';
     return gulp.src('scss/' + path)
-        .pipe(scsslint())
+        .pipe(scsslint({ 'config': '.scss-lint.yml' }))
         .pipe(scsslint.failReporter());
 });
 
