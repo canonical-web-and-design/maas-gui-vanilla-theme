@@ -22,10 +22,9 @@
     border-spacing: 0;
     overflow-x: scroll;
     margin-bottom: 20px;
-    margin: 0 0 2.5em;
+    margin: 0 0 20px;
     width: 100%;
     table-layout: fixed;
-    overflow: hidden;
 
     // Table row styles
     %table-row {
@@ -59,26 +58,34 @@
       @include font-size($table-header-size);
       background: none;
       color: $table-header-color;
+
+      label {
+        top: -4px;
+      }
     }
 
     // Table header hyperlink styles
     %table-header-link {
       color: $table-header-color;
+      border-bottom: 0;
 
       &:hover {
-        color: $text-color;
-        text-decoration: none;
-        border-bottom: 1px solid $text-color;
-      }
-
-      // Sorting and active styles when filtering a table
-      &.active {
         color: $text-color;
         text-decoration: none;
       }
 
       &.sort {
-        border-bottom: 1px solid inherit;
+        border-bottom: 1px solid $table-header-color;
+      }
+
+      // Sorting and active styles when filtering a table
+      &.is-active {
+        color: $text-color;
+        text-decoration: none;
+
+        &.sort {
+          border-color: $text-color;
+        }
       }
     }
 
@@ -114,16 +121,6 @@
 
     // Generic table form elements, covers general alignment of common form
     // elements which can be found in all tables.
-    label {
-      font-size: 13px;
-      color: $pale-grey;
-    }
-
-    input,
-    select {
-      margin: 0 0 0 -14px;
-    }
-
     input {
 
       &[type="radio"],
@@ -131,7 +128,7 @@
 
         + label {
           margin: 0;
-          top: -4px;
+          top: -2px;
         }
       }
     }
@@ -222,6 +219,8 @@
   .table {
     @extend %table;
     display: table;
+    float: left;
+    width: 100%;
 
     // Table row style
     .table__row {
@@ -238,7 +237,7 @@
     }
 
     .table__head {
-      display: table-head;
+      display: table-row-group;
       width: 100%;
       box-sizing: border-box;
 
@@ -325,10 +324,15 @@
       // </div>
       .table__input {
         display: inline-block;
-        margin: -7px 0 -8px -14px;
+        margin: -7px 0 -8px;
         background-color: transparent;
         border-color: transparent;
         background-position: -9999px -9999px;
+
+        &[disabled] {
+          color: $cool-grey;
+          opacity: 1;
+        }
       }
 
       // Table contol container, hidden unless hovered on the table row. Will have
@@ -362,6 +366,13 @@
         }
       }
 
+      .table__head {
+
+        .table__row:hover {
+          background-color: $transparent;
+        }
+      }
+
       .table__row {
 
         // Table row hover style, this can reveal control elements
@@ -373,6 +384,12 @@
             background-color: $white;
             border-color: $alto-grey;
             background-position: right 10px top 16px;
+
+            &[disabled] {
+              background-color: transparent;
+              border-color: transparent;
+              background-position: -9999px -9999px;
+            }
           }
 
           // Set controls z-index and opacity so it is visible
@@ -391,21 +408,31 @@
         &.is-active {
           background-color: $white;
 
-          // Hover state makes any forms / controls invisible or unable to be used
-          &:hover {
+          .table__input {
+            background-color: $white;
+            border-color: $alto-grey;
+            background-position: right 10px top 16px;
+          }
 
-            .table__input {
-              background-color: transparent;
-              border-color: transparent;
-              pointer-events: none;
-              background-position: -9999px -9999px;
+          .table__controls {
+            z-index: 1;
+            opacity: 1;
+
+            &--secondary {
+              z-index: 1;
+              opacity: 1;
             }
+          }
 
-            .table__controls,
-            .table__controls--secondary {
-              opacity: 0;
-              z-index: -1000;
-              pointer-events: none;
+          .table__dropdown {
+
+            .table__dropdown-row {
+
+              // scss-lint:disable NestingDepth
+              &.is-active {
+                display: block !important;
+              }
+              // scss-lint:enable NestingDepth
             }
           }
         }
@@ -446,15 +473,19 @@
       // Table dropdown row style, add class to .table__row
       .table__dropdown-row {
         border-bottom: 0;
+        display: none;
+        position: relative;
 
         &:before {
           display: block;
           margin: 0 auto;
           width: calc(100% - 20px);
           border-top: 1px dotted $alto-grey;
-          position: relative;
+          position: absolute;
           height: 1px;
           content: '';
+          top: 0;
+          left: 10px;
         }
 
         // Table dropdown header row removes border styling from .table__row

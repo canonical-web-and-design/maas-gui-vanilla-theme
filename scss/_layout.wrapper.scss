@@ -15,7 +15,7 @@
     // scss-lint:enable DuplicateProperty
     margin: 0 auto;
     position: relative;
-    background: rgba($white, .6);
+    background: rgba($white, .4);
 
     &:after {
       content: '';
@@ -33,7 +33,10 @@
 
     &--inner {
       max-width: $site-max-width;
+      width: 100%;
       margin: 0 auto;
+      clear: both;
+      display: block;
     }
   }
 }

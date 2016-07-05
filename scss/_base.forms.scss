@@ -83,7 +83,7 @@
     clear: both;
     cursor: pointer;
     margin: 0;
-    background-image: url('../../assets/images/forms/chevron_down.svg');
+    background-image: url('#{$asset-path}images/forms/chevron_down.svg');
     background-repeat: no-repeat;
     background-position: top 14px right 10px;
     background-color: $white;
@@ -92,6 +92,7 @@
     width: 100%;
 
     // Removes firefox select styles & arrow
+    -moz-appearance: none;
     appearance: none;
     text-indent: .01px;
     text-overflow: '';
@@ -169,19 +170,25 @@
       + label:after {
         content: '✔';
         position: absolute;
-        top: 4px;
+        line-height: 13px;
+        top: 3px;
         left: 3px;
         font-size: 10px;
         color: $white;
         transition: all .2s;
+
+        @-moz-document url-prefix() {
+          font-size: 13px;
+          left: 1px;
+        }
       }
     }
 
     &[disabled] {
-      cursor: none;
+      cursor: not-allowed;
 
       + label {
-        cursor: none;
+        cursor: not-allowed;
 
         &:before {
           opacity: .5;
@@ -228,6 +235,32 @@
         background: $input-checked;
         border-radius: 50%;
       }
+    }
+  }
+
+  .tags {
+    width: 100%;
+
+    .tag-list {
+      width: 100%;
+      margin: 0;
+
+      .tag-item {
+        display: inline-block;
+        float: left;
+        line-height: 36px;
+        margin-bottom: 0;
+        margin-right: 10px;
+        word-wrap: break-word;
+
+        .remove-button {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .input {
+      width: 100% !important;
     }
   }
 }

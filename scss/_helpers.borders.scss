@@ -6,25 +6,24 @@
 
 /// Borders
 /// @group Borders
-@mixin maas-borders($border-color: $warm-grey, $border-width: 1px) {
+@mixin maas-borders($border-color: $mid-grey, $border-width: 1px) {
   .u-border {
-    border-color: $border-color !important;
-    border: $border-width dotted !important;
+    border: $border-width dotted $border-color !important;
 
     &--top {
-      border-top: $border-width dotted !important;
+      border-top: $border-width dotted $border-color !important;
     }
 
     &--right {
-      border-right: $border-width dotted !important;
+      border-right: $border-width dotted $border-color !important;
     }
 
     &--bottom {
-      border-bottom: $border-width dotted !important;
+      border-bottom: $border-width dotted $border-color !important;
     }
 
     &--left {
-      border-left: $border-width dotted !important;
+      border-left: $border-width dotted $border-color !important;
     }
 
     &--dotted {
@@ -37,6 +36,10 @@
 
     &--dashed {
       border-style: dashed !important;
+    }
+
+    &--none {
+      border: 0 !important;
     }
   }
 }

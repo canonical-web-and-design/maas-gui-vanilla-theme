@@ -64,4 +64,23 @@
       display: none !important;
     }
   }
+
+  .u-width {
+
+    &--full {
+      width: 100% !important;
+    }
+
+    &--half {
+      width: 50% !important;
+    }
+
+    &--third {
+      width: calc(100%/3) !important;
+    }
+
+    &--quater {
+      width: 25% !important;
+    }
+  }
 }

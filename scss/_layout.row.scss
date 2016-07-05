@@ -10,10 +10,10 @@
 
   .row {
     background-color: $transparent;
-    border-bottom: 1px dotted $mid-grey;
+    border-top: 1px dotted $mid-grey;
 
-    &:last-child {
-      border-bottom: 0;
+    &:first-of-type {
+      border-top: 0;
     }
   }
 }

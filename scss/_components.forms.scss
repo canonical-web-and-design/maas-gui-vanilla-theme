@@ -28,19 +28,6 @@
         }
       }
 
-      .form__error {
-        margin: 5px 0 0;
-        color: $error;
-
-        .form__error-item {
-          margin: 7px 0;
-
-          &::first-child {
-            margin-top: 0;
-          }
-        }
-      }
-
       &.form__group--subtle {
 
         .form__group-label {
@@ -69,6 +56,13 @@
       }
     }
 
+    .form__fieldset {
+
+      .form__group:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
     .form__siblings {
       float: left;
       width: 100%;
@@ -87,7 +81,7 @@
         }
       }
 
-      &.form__siblings--active {
+      &.is-active {
 
         .form__group--subtle {
 
@@ -115,7 +109,7 @@
         .form__group-label {
           margin-top: 0;
           margin-bottom: 0;
-          line-height: 36px;
+          line-height: 34px;
           vertical-align: top;
         }
       }
@@ -123,24 +117,52 @@
 
     &.form--inline {
 
+      .form__fieldset {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+      }
+
       .form__group {
         display: inline-block;
         margin: 0 20px 0 0;
-        vertical-align: middle;
+        vertical-align: top;
+
+        .form__group-label {
+          margin-bottom: 0;
+          margin-right: 10px;
+          vertical-align: top;
+          line-height: 34px;
+        }
 
         input,
         select,
         .form__group-input {
           display: inline-block;
           width: auto;
-          vertical-align: middle;
         }
+
+        // scss-lint:disable QualifyingElement
+        input[type='checkbox'] + label,
+        input[type='radio'] + label {
+          line-height: 34px;
+        }
+        // scss-lint:enable QualifyingElement
       }
     }
 
     .form__help-text {
       @include font-size(14px);
       color: $warm-grey;
+    }
+  }
+
+  .form__error {
+    margin: 0;
+    color: $error;
+
+    .form__error-item {
+      margin: 6px 0;
     }
   }
 }

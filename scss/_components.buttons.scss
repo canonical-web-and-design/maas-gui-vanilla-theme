@@ -115,9 +115,10 @@
   padding: 8px 14px;
   height: 36px;
 
-  &:disabled,
+  &[disabled],
   &.button--disabled {
     pointer-events: none;
+    opacity: .5;
   }
 
   &.button--inline {

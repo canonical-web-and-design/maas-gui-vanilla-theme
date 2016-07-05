@@ -9,8 +9,24 @@
 @mixin maas-state {
 
   @each $state, $color in $states {
-    &.u-state--#{$state} {
+    .u-text--#{$state} {
       color: $color !important;
+    }
+
+    .u-border--#{$state} {
+      border-color: $color !important;
+    }
+
+    .u-background--#{$state} {
+      background-color: $color !important;
+    }
+
+    .has-#{$state} {
+      border: 1px solid $color !important;
+
+      &:focus {
+        border: 1px solid $color !important;
+      }
     }
   }
 }

@@ -30,6 +30,17 @@
       margin-bottom: .75em;
     }
 
+    pre,
+    code {
+      text-align: left;
+      white-space: pre-line;
+      word-spacing: normal;
+      word-wrap: break-word;
+      tab-size: 4;
+      hyphens: none;
+      direction: ltr;
+    }
+
     hr {
       margin-bottom: 20px;
     }

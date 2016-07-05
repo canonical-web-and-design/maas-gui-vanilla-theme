@@ -21,6 +21,11 @@
       background-size: 100% 100%;
     }
 
+    &.icon--account {
+      background: url('#{$asset-path}images/icons/account.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &.icon--cross {
       background: url('#{$asset-path}images/icons/cross.svg') no-repeat;
       background-size: 100% 100%;
@@ -90,6 +95,16 @@
       background-size: 100% 100%;
     }
 
+    &.icon--mount {
+      background: url('#{$asset-path}images/icons/mount.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--unmount {
+      background: url('#{$asset-path}images/icons/unmount.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &.icon--partition {
       background: url('#{$asset-path}images/icons/add-partition.svg') no-repeat;
       background-size: 100% 100%;
@@ -128,8 +143,23 @@
       }
     }
 
+    &.icon--settings {
+      background: url('#{$asset-path}images/icons/settings.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--sync {
+      background: url('#{$asset-path}images/icons/sync.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &.icon--tooltip {
       background: url('#{$asset-path}images/icons/tooltip.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--tags {
+      background: url('#{$asset-path}images/icons/tags.svg') no-repeat;
       background-size: 100% 100%;
     }
 

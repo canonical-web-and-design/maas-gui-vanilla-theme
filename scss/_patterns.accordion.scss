@@ -41,7 +41,7 @@
       .accordion__tab-title {
         @extend %accordion__tab-title;
 
-        &--active {
+        &.is-active {
           @extend %accordion__tab-title;
           background-image: url('#{$asset-path}images/forms/chevron_up.svg');
 
@@ -72,9 +72,11 @@
               width: 100%;
               display: inline-block;
               padding-right: 20px;
+              border-bottom: 0;
+              outline: 0;
 
               &:hover {
-                color: $brand-color;
+                color: $link-hover;
                 text-decoration: none;
               }
 
@@ -83,20 +85,21 @@
               }
             }
 
-            &--active {
+            &.is-active {
               margin-bottom: .15em;
               font-weight: 400;
 
               .accordion__tab-link {
-                background: $transparent url('../../img/icons/cross.svg') top 7px right 0 no-repeat;
+                background: $transparent url('#{$asset-path}images/icons/cross.svg') top 7px right 0 no-repeat;
+                text-decoration: none;
               }
 
               &:hover {
-                color: $brand-color;
+                color: $link-color;
 
                 .accordion__tab-link {
-                  color: $brand-color;
-                  background-image: url('../../img/icons/cross-orange.svg');
+                  color: $link-hover;
+                  background-image: url('#{$asset-path}images/icons/cross_orange.svg');
                 }
               }
             }
