@@ -1,6 +1,6 @@
 /// assets database path
 /// usage: background: url(#{$asset-path}img/backgrounds/background.jpg) no-repeat 0 0;
-$asset-path: '../assets/';
+$asset-path: '../../assets/';
 
 /// MAAS font sizes
 $base-font-family:      "'Ubuntu', Arial, 'libra sans', sans-serif";
@@ -52,7 +52,6 @@ $input-checked:         #dd4814;
 
 // MAAS Tab colours
 $tab-active-state:      #dd4814!default;
-
 
 // Header variables
 $header-link-color:     $white;

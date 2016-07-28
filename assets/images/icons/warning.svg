@@ -13,9 +13,9 @@
    height="16.000017"
    id="svg5918"
    version="1.1"
-   inkscape:version="0.91pre2 r"
+   inkscape:version="0.91+devel r"
    viewBox="0 0 16.000017 16.000017"
-   sodipodi:docname="general-action.svg">
+   sodipodi:docname="warning_colour_white.svg">
   <defs
      id="defs5920" />
   <sodipodi:namedview
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="24.286129"
-     inkscape:cx="0.56486488"
-     inkscape:cy="4.846988"
+     inkscape:zoom="19.428903"
+     inkscape:cx="-0.3490475"
+     inkscape:cy="3.032316"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g6413"
      showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -46,7 +46,8 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-center="true">
+     inkscape:snap-center="true"
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid4137"
@@ -76,28 +77,47 @@
        id="g5687" />
     <g
        style="display:inline"
-       transform="translate(-769.06151,324.35791)"
-       id="g5428">
+       id="g6413"
+       transform="translate(-769.06151,364.35791)">
       <rect
          style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.5, 1.5;stroke-dashoffset:0.60000002;stroke-opacity:1;marker:none;enable-background:accumulate"
-         id="rect5430"
+         id="rect6415"
          width="16"
          height="16"
          x="952"
-         y="236.36218" />
-      <circle
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f4b457;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.80000001;stroke-opacity:1;marker:none;enable-background:accumulate"
-         id="circle5432"
-         cx="960"
-         cy="244.36218"
-         r="7.2500086"
-         d="M 967.25001,244.36218 A 7.2500086,7.2500086 0 0 1 960,251.61219 7.2500086,7.2500086 0 0 1 952.74999,244.36218 7.2500086,7.2500086 0 0 1 960,237.11217 a 7.2500086,7.2500086 0 0 1 7.25001,7.25001 z" />
+         y="196.36218" />
       <path
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#f4b457;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.80000001;stroke-opacity:1;marker:none;enable-background:accumulate"
-         d="m 999,358 0,5 2,0 0,-5 -2,0 z m 0,6 0,2 2,0 0,-2 -2,0 z"
-         transform="translate(-40,-117.63782)"
-         id="rect5434"
-         inkscape:connector-curvature="0" />
+         sodipodi:type="star"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#e95420;fill-opacity:1;fill-rule:nonzero;stroke:#e95420;stroke-width:0.84847599;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+         id="path4389"
+         sodipodi:sides="3"
+         sodipodi:cx="960"
+         sodipodi:cy="205.24977"
+         sodipodi:r1="3.5505643"
+         sodipodi:r2="1.7752821"
+         sodipodi:arg1="0.52359878"
+         sodipodi:arg2="1.5707963"
+         inkscape:flatsided="true"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 963.07488,207.02505 -6.14976,0 L 960,201.69921 Z"
+         inkscape:transform-center-y="-2.1631599"
+         transform="matrix(2.2799708,0,0,2.4369781,-1228.772,-294.16389)"
+         inkscape:transform-center-x="3.2099873e-05" />
+      <rect
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+         id="rect4391"
+         width="2"
+         height="5.0000076"
+         x="958.99988"
+         y="201.36215" />
+      <rect
+         y="207.36217"
+         x="958.99988"
+         height="2.0000002"
+         width="2"
+         id="rect4393"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
     </g>
   </g>
 </svg>
