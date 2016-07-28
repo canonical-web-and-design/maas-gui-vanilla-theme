@@ -46,7 +46,7 @@
           background-image: url('#{$asset-path}images/forms/chevron_up.svg');
 
           + .accordion__tab-content {
-            max-height: 3000px;
+            max-height: 400px;
             transition: max-height .5s ease-in;
           }
         }
@@ -56,7 +56,7 @@
       .accordion__tab-content {
         max-height: 0;
         transition: max-height .5s ease-out;
-        overflow: hidden;
+        overflow-y: auto;
 
         .accordion__tab-list {
           list-style-type: none;
