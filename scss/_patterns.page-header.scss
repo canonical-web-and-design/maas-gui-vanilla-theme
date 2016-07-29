@@ -81,7 +81,7 @@
       display: inline-block;
       position: relative;
       margin-left: 20px;
-      color: $warm-grey;
+      color: $ash;
 
       .page-header__status-check {
         @include font-size(16px);
@@ -115,7 +115,7 @@
       }
 
       .page-header__section {
-        border-top: 1px dotted $warm-grey;
+        border-top: 1px dotted $ash;
         padding-top: 20px;
         padding-bottom: 20px;
       }

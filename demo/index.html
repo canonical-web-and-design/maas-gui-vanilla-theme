@@ -15,1080 +15,435 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../build/css/build.css" />
 </head>
 <body>
-    <header class="banner global" role="banner">
-        <nav role="navigation" class="nav-primary">
-            <span class="accessibility-aid">
-                <a href="#main-content">Jump to main content</a>
-            </span>
-            <div class="logo">
-                <a href="/">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="30px" viewBox="90.64 28.138 100 30" enable-background="new 90.64 28.138 100 30" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path fill="#DD4813" d="M121.464,43.138c0,8.285-6.9,15-15.413,15 c-8.512,0-15.412-6.716-15.412-15c0-8.284,6.9-15,15.412-15C114.564,28.138,121.464,34.854,121.464,43.138"/>
-                                <path fill="#FFFFFF" d="M98.344,36.26c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232c0.01-0.69-0.557-1.258-1.266-1.268 c-0.012,0-0.024,0-0.037,0H98.344"/>
-                                <path fill="#FFFFFF" d="M98.344,40.01c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268c0.013,0,0.025,0,0.037,0h15.412c0.71,0.01,1.293-0.542,1.303-1.232 c0.01-0.69-0.557-1.258-1.266-1.268c-0.012,0-0.024,0-0.037,0H98.344"/>
-                                <path fill="#FFFFFF" d="M98.344,43.76c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.541,1.303-1.231s-0.557-1.258-1.266-1.268h-0.037H98.344"/>
-                                <path fill="#FFFFFF" d="M98.344,47.511c-0.709-0.011-1.292,0.541-1.302,1.231 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232s-0.557-1.258-1.266-1.267 c-0.012-0.001-0.024-0.001-0.037,0H98.344"/>
-                                <path fill="#FFFFFF" d="M137.043,48.857c-0.152-0.356-0.354-0.807-0.605-1.354 c-0.251-0.548-0.521-1.14-0.81-1.776c-0.288-0.636-0.596-1.291-0.923-1.964c-0.327-0.674-0.635-1.311-0.924-1.909 c-0.289-0.6-0.559-1.136-0.809-1.609c-0.251-0.474-0.453-0.836-0.605-1.088c-0.167,1.746-0.304,3.637-0.41,5.671 c-0.107,2.035-0.198,4.088-0.274,6.159h-2.167c0.061-1.332,0.129-2.675,0.206-4.028c0.075-1.354,0.163-2.686,0.262-3.996 c0.098-1.309,0.205-2.585,0.319-3.829c0.113-1.243,0.239-2.419,0.376-3.529h1.938c0.411,0.652,0.852,1.421,1.323,2.308 c0.471,0.888,0.942,1.817,1.414,2.786c0.472,0.97,0.927,1.939,1.369,2.909c0.441,0.969,0.844,1.853,1.209,2.652 c0.365-0.799,0.768-1.683,1.209-2.652c0.44-0.97,0.897-1.939,1.368-2.909c0.472-0.969,0.942-1.898,1.414-2.786 c0.472-0.887,0.912-1.656,1.323-2.308h1.939c0.516,4.958,0.904,10.085,1.163,15.382h-2.167c-0.076-2.071-0.168-4.124-0.274-6.159 c-0.106-2.034-0.243-3.925-0.41-5.671c-0.151,0.251-0.354,0.614-0.604,1.088c-0.251,0.474-0.521,1.01-0.81,1.609 c-0.289,0.599-0.597,1.235-0.924,1.909c-0.327,0.673-0.635,1.327-0.923,1.964c-0.29,0.636-0.559,1.229-0.811,1.776 c-0.251,0.547-0.452,0.998-0.604,1.354H137.043"/>
-                                <path fill="#FFFFFF" d="M160.375,50.987c-0.259-0.666-0.502-1.32-0.73-1.964 c-0.229-0.645-0.464-1.298-0.707-1.965h-7.161l-1.438,3.929h-2.304c0.608-1.627,1.179-3.133,1.711-4.517 c0.532-1.385,1.053-2.697,1.562-3.94s1.016-2.431,1.517-3.562c0.5-1.132,1.026-2.253,1.573-3.363h2.029 c0.548,1.11,1.073,2.23,1.574,3.363c0.501,1.132,1.008,2.319,1.517,3.562s1.03,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.71,4.517H160.375L160.375,50.987z M158.299,45.283c-0.486-1.288-0.969-2.534-1.447-3.74 c-0.479-1.206-0.978-2.364-1.494-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.425,3.74H158.299 L158.299,45.283z"/>
-                                <path fill="#FFFFFF" d="M176.249,50.987c-0.26-0.666-0.502-1.32-0.73-1.964 c-0.228-0.645-0.463-1.298-0.708-1.965h-7.161l-1.438,3.929h-2.303c0.608-1.627,1.178-3.133,1.711-4.517 c0.531-1.385,1.052-2.697,1.562-3.94c0.511-1.243,1.016-2.431,1.517-3.562c0.502-1.132,1.026-2.253,1.574-3.363h2.03 c0.546,1.11,1.071,2.23,1.572,3.363c0.503,1.132,1.008,2.319,1.517,3.562c0.511,1.243,1.031,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.712,4.517H176.249L176.249,50.987z M174.173,45.283c-0.487-1.288-0.97-2.534-1.448-3.74 c-0.479-1.206-0.978-2.364-1.493-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.426,3.74H174.173 L174.173,45.283z"/>
-                                <path fill="#FFFFFF" d="M184.848,49.456c2.31,0,3.466-0.77,3.466-2.309 c0-0.474-0.103-0.877-0.308-1.209c-0.206-0.333-0.483-0.622-0.833-0.866c-0.351-0.244-0.749-0.455-1.197-0.633 c-0.449-0.177-0.923-0.355-1.425-0.533c-0.579-0.192-1.125-0.411-1.643-0.655s-0.966-0.533-1.346-0.866s-0.682-0.729-0.901-1.188 c-0.221-0.458-0.33-1.013-0.33-1.665c0-1.346,0.471-2.397,1.414-3.152c0.942-0.755,2.242-1.132,3.899-1.132 c0.959,0,1.827,0.101,2.612,0.3c0.782,0.199,1.356,0.418,1.722,0.655l-0.708,1.753c-0.319-0.192-0.795-0.38-1.426-0.566 c-0.63-0.185-1.364-0.277-2.2-0.277c-0.425,0-0.82,0.044-1.186,0.133s-0.685,0.223-0.958,0.4s-0.489,0.403-0.649,0.677 c-0.161,0.274-0.24,0.596-0.24,0.966c0,0.414,0.083,0.762,0.252,1.043c0.166,0.281,0.402,0.529,0.706,0.743 c0.304,0.215,0.658,0.411,1.061,0.588c0.403,0.178,0.848,0.355,1.335,0.532c0.685,0.267,1.312,0.533,1.881,0.799 c0.57,0.267,1.064,0.585,1.482,0.955c0.418,0.37,0.741,0.81,0.969,1.321c0.229,0.51,0.343,1.128,0.343,1.853 c0,1.347-0.506,2.383-1.517,3.107c-1.011,0.726-2.437,1.089-4.275,1.089c-0.625,0-1.199-0.042-1.723-0.123 c-0.525-0.081-0.992-0.178-1.402-0.288c-0.411-0.111-0.765-0.229-1.062-0.355c-0.297-0.125-0.528-0.233-0.695-0.322l0.662-1.775 c0.349,0.192,0.881,0.407,1.596,0.644C182.938,49.338,183.812,49.456,184.848,49.456"/>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div id="nav">
-                <div class="nav-toggle">
-                    <a href="#nav" class="nav-toggle__link open"></a>
-                    <a href="#" class="nav-toggle__link close"></a>
-                </div>
-                <ul>
-                    <li><a href="http://ubuntudesign.github.io/vanilla-framework/">Project</a></li>
-                    <li><a href="http://ubuntudesign.github.io/vanilla-framework/docs/">Docs</a></li>
-                    <li><a href="http://ubuntudesign.github.io/vanilla-framework/demo/">Live Demo</a></li>
-                </ul>
-            </div>
-        </nav>
+    <header class="docs-nav" role="banner">
+        <svg class="docs-nav__logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="30px" viewBox="90.64 28.138 100 30" enable-background="new 90.64 28.138 100 30" xml:space="preserve">
+            <g>
+                <g>
+                    <path fill="#DD4813" d="M121.464,43.138c0,8.285-6.9,15-15.413,15 c-8.512,0-15.412-6.716-15.412-15c0-8.284,6.9-15,15.412-15C114.564,28.138,121.464,34.854,121.464,43.138"/>
+                    <path fill="#FFFFFF" d="M98.344,36.26c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232c0.01-0.69-0.557-1.258-1.266-1.268 c-0.012,0-0.024,0-0.037,0H98.344"/>
+                    <path fill="#FFFFFF" d="M98.344,40.01c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268c0.013,0,0.025,0,0.037,0h15.412c0.71,0.01,1.293-0.542,1.303-1.232 c0.01-0.69-0.557-1.258-1.266-1.268c-0.012,0-0.024,0-0.037,0H98.344"/>
+                    <path fill="#FFFFFF" d="M98.344,43.76c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.541,1.303-1.231s-0.557-1.258-1.266-1.268h-0.037H98.344"/>
+                    <path fill="#FFFFFF" d="M98.344,47.511c-0.709-0.011-1.292,0.541-1.302,1.231 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232s-0.557-1.258-1.266-1.267 c-0.012-0.001-0.024-0.001-0.037,0H98.344"/>
+                    <path fill="#333333" d="M137.043,48.857c-0.152-0.356-0.354-0.807-0.605-1.354 c-0.251-0.548-0.521-1.14-0.81-1.776c-0.288-0.636-0.596-1.291-0.923-1.964c-0.327-0.674-0.635-1.311-0.924-1.909 c-0.289-0.6-0.559-1.136-0.809-1.609c-0.251-0.474-0.453-0.836-0.605-1.088c-0.167,1.746-0.304,3.637-0.41,5.671 c-0.107,2.035-0.198,4.088-0.274,6.159h-2.167c0.061-1.332,0.129-2.675,0.206-4.028c0.075-1.354,0.163-2.686,0.262-3.996 c0.098-1.309,0.205-2.585,0.319-3.829c0.113-1.243,0.239-2.419,0.376-3.529h1.938c0.411,0.652,0.852,1.421,1.323,2.308 c0.471,0.888,0.942,1.817,1.414,2.786c0.472,0.97,0.927,1.939,1.369,2.909c0.441,0.969,0.844,1.853,1.209,2.652 c0.365-0.799,0.768-1.683,1.209-2.652c0.44-0.97,0.897-1.939,1.368-2.909c0.472-0.969,0.942-1.898,1.414-2.786 c0.472-0.887,0.912-1.656,1.323-2.308h1.939c0.516,4.958,0.904,10.085,1.163,15.382h-2.167c-0.076-2.071-0.168-4.124-0.274-6.159 c-0.106-2.034-0.243-3.925-0.41-5.671c-0.151,0.251-0.354,0.614-0.604,1.088c-0.251,0.474-0.521,1.01-0.81,1.609 c-0.289,0.599-0.597,1.235-0.924,1.909c-0.327,0.673-0.635,1.327-0.923,1.964c-0.29,0.636-0.559,1.229-0.811,1.776 c-0.251,0.547-0.452,0.998-0.604,1.354H137.043"/>
+                    <path fill="#333333" d="M160.375,50.987c-0.259-0.666-0.502-1.32-0.73-1.964 c-0.229-0.645-0.464-1.298-0.707-1.965h-7.161l-1.438,3.929h-2.304c0.608-1.627,1.179-3.133,1.711-4.517 c0.532-1.385,1.053-2.697,1.562-3.94s1.016-2.431,1.517-3.562c0.5-1.132,1.026-2.253,1.573-3.363h2.029 c0.548,1.11,1.073,2.23,1.574,3.363c0.501,1.132,1.008,2.319,1.517,3.562s1.03,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.71,4.517H160.375L160.375,50.987z M158.299,45.283c-0.486-1.288-0.969-2.534-1.447-3.74 c-0.479-1.206-0.978-2.364-1.494-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.425,3.74H158.299 L158.299,45.283z"/>
+                    <path fill="#333333" d="M176.249,50.987c-0.26-0.666-0.502-1.32-0.73-1.964 c-0.228-0.645-0.463-1.298-0.708-1.965h-7.161l-1.438,3.929h-2.303c0.608-1.627,1.178-3.133,1.711-4.517 c0.531-1.385,1.052-2.697,1.562-3.94c0.511-1.243,1.016-2.431,1.517-3.562c0.502-1.132,1.026-2.253,1.574-3.363h2.03 c0.546,1.11,1.071,2.23,1.572,3.363c0.503,1.132,1.008,2.319,1.517,3.562c0.511,1.243,1.031,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.712,4.517H176.249L176.249,50.987z M174.173,45.283c-0.487-1.288-0.97-2.534-1.448-3.74 c-0.479-1.206-0.978-2.364-1.493-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.426,3.74H174.173 L174.173,45.283z"/>
+                    <path fill="#333333" d="M184.848,49.456c2.31,0,3.466-0.77,3.466-2.309 c0-0.474-0.103-0.877-0.308-1.209c-0.206-0.333-0.483-0.622-0.833-0.866c-0.351-0.244-0.749-0.455-1.197-0.633 c-0.449-0.177-0.923-0.355-1.425-0.533c-0.579-0.192-1.125-0.411-1.643-0.655s-0.966-0.533-1.346-0.866s-0.682-0.729-0.901-1.188 c-0.221-0.458-0.33-1.013-0.33-1.665c0-1.346,0.471-2.397,1.414-3.152c0.942-0.755,2.242-1.132,3.899-1.132 c0.959,0,1.827,0.101,2.612,0.3c0.782,0.199,1.356,0.418,1.722,0.655l-0.708,1.753c-0.319-0.192-0.795-0.38-1.426-0.566 c-0.63-0.185-1.364-0.277-2.2-0.277c-0.425,0-0.82,0.044-1.186,0.133s-0.685,0.223-0.958,0.4s-0.489,0.403-0.649,0.677 c-0.161,0.274-0.24,0.596-0.24,0.966c0,0.414,0.083,0.762,0.252,1.043c0.166,0.281,0.402,0.529,0.706,0.743 c0.304,0.215,0.658,0.411,1.061,0.588c0.403,0.178,0.848,0.355,1.335,0.532c0.685,0.267,1.312,0.533,1.881,0.799 c0.57,0.267,1.064,0.585,1.482,0.955c0.418,0.37,0.741,0.81,0.969,1.321c0.229,0.51,0.343,1.128,0.343,1.853 c0,1.347-0.506,2.383-1.517,3.107c-1.011,0.726-2.437,1.089-4.275,1.089c-0.625,0-1.199-0.042-1.723-0.123 c-0.525-0.081-0.992-0.178-1.402-0.288c-0.411-0.111-0.765-0.229-1.062-0.355c-0.297-0.125-0.528-0.233-0.695-0.322l0.662-1.775 c0.349,0.192,0.881,0.407,1.596,0.644C182.938,49.338,183.812,49.456,184.848,49.456"/>
+                </g>
+            </g>
+        </svg>
+        <h1 class="docs-nav__title">GUI Framework</h1>
     </header>
-    <div class="wrapper">
-        <div class="page-header">
+    <div class="wrapper u-padding--top-huge">
+        <!-- Start Introduction -->
+        <section class="row u-padding--bottom-huge">
             <div class="wrapper--inner">
-                <h1 class="page-header__title">MAAS test title</h1>
-                <ul class="tabs">
-                    <li class="tabs__tab is-active">
-                        <a href="" class="tabs__tab-link">Machines</a>
-                    </li>
-                    <li class="tabs__tab">
-                        <a href="" class="tabs__tab-link">Devices</a>
-                    </li>
-                    <li class="tabs__tab">
-                        <a href="" class="tabs__tab-link">Controllers</a>
-                    </li>
-                </ul>
-                <p class="page-header__status">Ready <a href="" class="page-header__status-check">check now</a></p>
-                <p class="page-header__status"><span class="u-text--loading"><i class="icon icon--loading u-animation--spin"></i> Loading</span> <a href="" class="page-header__status-check">check now</a></p>
-                <div class="page-header__controls u-float--right">
-                    <span class="page-header__controls-feedback u-margin--right">1 Selected</span>
-                    <div class="button-group button-group--inline">
-                        <a href="" class="button-group__link button--primary">Actions</a>
-                        <ul class="button-group__dropdown">
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Add hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Remove hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Commission</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="eight-col u-padding--bottom-large">
+                    <h1>Introduction</h1>
+                    <p>The MAAS GUI Framework is a HTML, CSS framework developed for <a href="http://maas.io/">MAAS</a> a cloud application built by <a href="http://www.canonical.com">Canonical</a> the Ubuntu people. The framework is written in <a href="http://sass-lang.com/">Sass</a> and is a theme based off our own <a href="https://github.com/ubuntudesign/vanilla-framework">Vanilla framework</a>. We created this framework to act as the central location for all our MAAS web UI components, styles and patterns.</p>
                 </div>
-                <div class="page-header__dropdown is-open">
-                    <section class="page-header__section twelve-col u-margin--bottom-none">
-                        <h3 class="page-header__dropdown-title">Add machine</h3>
-                        <form class="form form--stack">
-                            <fieldset class="six-col">
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                    </div>
-                                </div>
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                    </div>
-                                </div>
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                        <span class="form__group-remove"></span>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset class="six-col last-col">
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                    </div>
-                                </div>
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                    </div>
-                                </div>
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                    </div>
-                                </div>
-                                <div class="form__group">
-                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
-                                    <div class="form__group-input three-col">
-                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </section>
-                    <div class="page-header__section twelve-col u-margin--bottom-none">
-                        <div class="page-header__controls">
-                            <a href="" class="button--base button--inline">Cancel</a>
-                            <button class="button--secondary button--inline">Save and add another</button>
-                            <button class="button--primary button--inline">Save machine</button>
-                        </div>
+                <div class="twelve-col">
+                    <h2>Goals</h2>
+                    <div class="four-col">
+                        <svg
+                            class="u-margin--bottom-small"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            width="90"
+                            height="90"
+                            id="svg4874"
+                            version="1.1"
+                            inkscape:version="0.48+devel r"
+                            viewBox="0 0 90 90.000001"
+                            sodipodi:docname="picture.svg">
+                            <defs id="defs4876"/>
+                            <sodipodi:namedview
+                                id="base"
+                                pagecolor="#ffffff"
+                                bordercolor="#666666"
+                                borderopacity="1.0"
+                                inkscape:pageopacity="0.0"
+                                inkscape:pageshadow="2"
+                                inkscape:zoom="5.0931703"
+                                inkscape:cx="-72.508868"
+                                inkscape:cy="34.48736"
+                                inkscape:document-units="px"
+                                inkscape:current-layer="g4480"
+                                showgrid="true"
+                                showborder="true"
+                                fit-margin-top="0"
+                                fit-margin-left="0"
+                                fit-margin-right="0"
+                                fit-margin-bottom="0"
+                                inkscape:snap-bbox="true"
+                                inkscape:bbox-paths="true"
+                                inkscape:bbox-nodes="true"
+                                inkscape:snap-bbox-edge-midpoints="true"
+                                inkscape:snap-bbox-midpoints="true"
+                                inkscape:object-paths="true"
+                                inkscape:snap-intersection-paths="true"
+                                inkscape:object-nodes="true"
+                                inkscape:snap-smooth-nodes="true"
+                                inkscape:snap-midpoints="true"
+                                inkscape:snap-object-midpoints="true"
+                                inkscape:snap-center="true"
+                                showguides="true"
+                                inkscape:guide-bbox="true">
+                                <inkscape:grid type="xygrid" id="grid5451" empspacing="6"/>
+                                <sodipodi:guide orientation="1,0" position="6,77" id="guide4063"/>
+                                <sodipodi:guide orientation="1,0" position="3,78" id="guide4065"/>
+                                <sodipodi:guide orientation="0,1" position="55,84" id="guide4067"/>
+                                <sodipodi:guide orientation="0,1" position="53,87" id="guide4069"/>
+                                <sodipodi:guide orientation="0,1" position="20,3" id="guide4071"/>
+                                <sodipodi:guide orientation="0,1" position="20,6" id="guide4073"/>
+                                <sodipodi:guide orientation="1,0" position="87,7" id="guide4075"/>
+                                <sodipodi:guide orientation="1,0" position="84,7" id="guide4077"/>
+                                <sodipodi:guide orientation="0,1" position="58,81" id="guide4074"/>
+                                <sodipodi:guide orientation="1,0" position="9,74" id="guide4076"/>
+                                <sodipodi:guide orientation="0,1" position="21,9" id="guide4078"/>
+                                <sodipodi:guide orientation="1,0" position="81,4" id="guide4080"/>
+                            </sodipodi:namedview>
+                            <metadata id="metadata4879">
+                                <rdf:RDF>
+                                    <cc:Work rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                        <dc:title></dc:title>
+                                    </cc:Work>
+                                </rdf:RDF>
+                            </metadata>
+                            <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(67.857146,-84.50504)">
+                                <g transform="matrix(0,-1,-1,0,373.50506,516.50504)" id="g4845" style="display:inline">
+                                    <g transform="matrix(0,-1,-1,0,-173.6378,899.36221)" id="g4480">
+                                        <rect style="fill:none;stroke:none" id="rect4512" width="90" height="90" x="458" y="-605.63782"/>
+                                        <path
+                                            inkscape:connector-curvature="0"
+                                            id="path4527"
+                                            d="m 520.50001,-585.63781 c -5.24669,0 -9.49998,4.25329 -9.49998,9.5 0,5.2467 4.25329,9.5 9.49998,9.5 5.24669,0 9.49999,-4.2533 9.49999,-9.5 0,-5.24671 -4.25329,-9.5 -9.49999,-9.5 z"
+                                            style="color:#000000;fill:#3EB34F;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"/>
+                                        <path
+                                            inkscape:connector-curvature="0"
+                                            id="path4518"
+                                            d="m 493.21736,-575.63781 -17.21738,33 16.15706,0 25.45162,0 -12.72599,-24.39128 -3.58696,6.87511 -8.07835,-15.48383 z"
+                                            style="color:#000000;fill:#3EB34F;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"/>
+                                        <path
+                                            sodipodi:nodetypes="cccccccccc"
+                                            inkscape:connector-curvature="0"
+                                            id="rect4520"
+                                            d="m 463.99999,-599.63867 0,78 78,0 0,-78 z m 6,6 66,0 0,57 -66,0 z"
+                                            style="color:#000000;fill:#3EB34F;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h3>Design language</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa aspernatur quidem veniam magnam, adipisci culpa consequuntur, suscipit accusamus tempore vitae temporibus, possimus asperiores ut.</p>
+                    </div>
+                    <div class="four-col">
+                        <svg
+                            class="u-margin--bottom-small"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            width="90"
+                            height="90"
+                            id="svg4874"
+                            version="1.1"
+                            inkscape:version="0.48+devel r"
+                            viewBox="0 0 90 90.000001"
+                            sodipodi:docname="view-fullscreen.svg">
+                            <defs id="defs4876"/>
+                            <sodipodi:namedview
+                                id="base"
+                                pagecolor="#ffffff"
+                                bordercolor="#666666"
+                                borderopacity="1.0"
+                                inkscape:pageopacity="0.0"
+                                inkscape:pageshadow="2"
+                                inkscape:zoom="9.9475984"
+                                inkscape:cx="49.383779"
+                                inkscape:cy="64.688982"
+                                inkscape:document-units="px"
+                                inkscape:current-layer="g1311"
+                                showgrid="true"
+                                showborder="true"
+                                fit-margin-top="0"
+                                fit-margin-left="0"
+                                fit-margin-right="0"
+                                fit-margin-bottom="0"
+                                inkscape:snap-bbox="true"
+                                inkscape:bbox-paths="true"
+                                inkscape:bbox-nodes="true"
+                                inkscape:snap-bbox-edge-midpoints="true"
+                                inkscape:snap-bbox-midpoints="true"
+                                inkscape:object-paths="true"
+                                inkscape:snap-intersection-paths="true"
+                                inkscape:object-nodes="true"
+                                inkscape:snap-smooth-nodes="true"
+                                inkscape:snap-midpoints="true"
+                                inkscape:snap-object-midpoints="true"
+                                inkscape:snap-center="true"
+                                showguides="true"
+                                inkscape:guide-bbox="true">
+                                <inkscape:grid type="xygrid" id="grid5451" empspacing="6"/>
+                                <sodipodi:guide orientation="1,0" position="6,77" id="guide4063"/>
+                                <sodipodi:guide orientation="1,0" position="3,78" id="guide4065"/>
+                                <sodipodi:guide orientation="0,1" position="55,84" id="guide4067"/>
+                                <sodipodi:guide orientation="0,1" position="53,87" id="guide4069"/>
+                                <sodipodi:guide orientation="0,1" position="20,3" id="guide4071"/>
+                                <sodipodi:guide orientation="0,1" position="20,6" id="guide4073"/>
+                                <sodipodi:guide orientation="1,0" position="87,7" id="guide4075"/>
+                                <sodipodi:guide orientation="1,0" position="84,7" id="guide4077"/>
+                                <sodipodi:guide orientation="0,1" position="58,81" id="guide4074"/>
+                                <sodipodi:guide orientation="1,0" position="9,74" id="guide4076"/>
+                                <sodipodi:guide orientation="0,1" position="21,9" id="guide4078"/>
+                                <sodipodi:guide orientation="1,0" position="81,4" id="guide4080"/>
+                            </sodipodi:namedview>
+                            <metadata id="metadata4879">
+                                <rdf:RDF>
+                                    <cc:Work rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                        <dc:title></dc:title>
+                                    </cc:Work>
+                                </rdf:RDF>
+                            </metadata>
+                            <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(67.857146,-84.50504)">
+                                <g transform="matrix(0,-1,-1,0,373.50506,516.50504)" id="g4845" style="display:inline">
+                                    <g transform="matrix(0,-1,-1,0,567.36222,615.36221)" id="g1311" inkscape:export-filename="envelope02.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90">
+                                        <g id="g1313" transform="matrix(1.875,0,0,1.875,-366,-1657.8169)">
+                                            <rect transform="translate(0,804.3622)" y="152" x="288" height="48" width="48" id="rect1315" style="opacity:0.21171169;fill:none;stroke:none"/>
+                                        </g>
+                                        <path
+                                            style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#E95420;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+                                            d="m 204,144.36222 c -10,0 -15,-2e-4 -15,11.62695 l 0,12.37305 6,0 0,-9.80859 c 0,-8.19205 2.93449,-8.19141 10.86719,-8.19141 l 38.26562,0 c 7.9327,0 10.86719,-6.4e-4 10.86719,8.19141 l 0,31.61718 c 0,8.19205 -2.93449,8.19141 -10.86719,8.19141 l -7.13281,0 0,6 9,0 c 10,0 15,2.1e-4 15,-11.62695 l 0,-36.7461 c 0,-11.62715 -5,-11.62695 -15,-11.62695 l -42,0 z"
+                                            id="path4129"/>
+                                        <path
+                                            style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#E95420;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+                                            d="M 18,36 C 8.0000001,36 3,35.999803 3,47.626953 L 3,69.373047 C 3,81.000207 8.0000001,81 18,81 l 27,0 c 10,0 15,2.07e-4 15,-11.626953 l 0,-20.408203 -6,6 0,11.84375 C 54,75.000644 51.065512,75 43.132812,75 L 19.867188,75 C 11.934488,75 9,75.000644 9,66.808594 L 9,50.191406 C 9,41.999356 11.934488,42 19.867188,42 l 21.167968,0 6,-6 L 47,36 Z"
+                                            transform="translate(174,135.36222)"
+                                            id="path4109"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="ssssssccsssssscccs"/>
+                                        <path
+                                            style="color:#000000;fill:#E95420;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                                            d="m 242.7172,179.39183 c 0,0 4.39987,-11.25055 6.30815,-23.02914 -8.1e-4,-8.2e-4 -0.001,-10e-4 -0.009,-10e-4 -8.2e-4,-8.2e-4 -0.006,-8.2e-4 -0.01,-0.002 -8.2e-4,-8.3e-4 -0.006,-8.3e-4 -0.01,-0.002 -8.1e-4,-8.2e-4 -0.006,-8.2e-4 -0.01,-0.002 C 236.67708,158.4811 226,162.68414 226,162.68414 Z"
+                                            id="path2194-3"
+                                            inkscape:connector-curvature="0"
+                                            inkscape:transform-center-x="-3.3318527"
+                                            inkscape:transform-center-y="-2.9841979"
+                                            sodipodi:nodetypes="ccsssccc"/>
+                                        <path
+                                            sodipodi:nodetypes="ssssssssssssssssss"
+                                            inkscape:connector-curvature="0"
+                                            id="path4117"
+                                            d="m 304,144.36222 c -10,0 -15,-2e-4 -15,11.62695 l 0,36.7461 c 0,11.62716 5,11.62695 15,11.62695 l 42,0 c 10,0 15,2.1e-4 15,-11.62695 l 0,-36.7461 c 0,-11.62715 -5,-11.62695 -15,-11.62695 z m 1.86719,6 38.26562,0 c 7.9327,0 10.86719,-6.4e-4 10.86719,8.19141 l 0,31.61718 c 0,8.19205 -2.93449,8.19141 -10.86719,8.19141 l -38.26562,0 c -7.9327,0 -10.86719,6.4e-4 -10.86719,-8.19141 l 0,-31.61718 c 0,-8.19205 2.93449,-8.19141 10.86719,-8.19141 z"
+                                            style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#E95420;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"/>
+                                        <path
+                                            style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#E95420;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+                                            d="m 292,171.36222 c -10,0 -15,-2e-4 -15,11.62695 l 0,21.7461 c 0,11.62716 5,11.62695 15,11.62695 l 27,0 c 10,0 15,2.1e-4 15,-11.62695 l 0,-21.7461 c 0,-11.62715 -5,-11.62695 -15,-11.62695 z m 1.86719,6 23.26562,0 c 7.9327,0 10.86719,-6.4e-4 10.86719,8.19141 l 0,16.61718 c 0,8.19205 -2.93449,8.19141 -10.86719,8.19141 l -23.26562,0 c -7.9327,0 -10.86719,6.4e-4 -10.86719,-8.19141 l 0,-16.61718 c 0,-8.19205 2.93449,-8.19141 10.86719,-8.19141 z"
+                                            id="path4119"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="ssssssssssssssssss"/>
+                                        <path
+                                            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#E95420;fill-opacity:1;stroke:none;stroke-width:9;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+                                            d="m 236.8125,164.17473 -23,23 4.375,4.375 23,-23 z"
+                                            id="path3789"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="ccccc"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h3>Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa aspernatur quidem veniam magnam, adipisci culpa consequuntur, suscipit accusamus tempore vitae temporibus, possimus asperiores ut.</p>
+                    </div>
+                    <div class="four-col last-col">
+                        <svg
+                            class="u-margin--bottom-small"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            width="90"
+                            height="90"
+                            id="svg4874"
+                            version="1.1"
+                            inkscape:version="0.48+devel r"
+                            viewBox="0 0 90 90.000001"
+                            sodipodi:docname="compose.svg">
+                            <defs id="defs4876"/>
+                            <sodipodi:namedview
+                                id="base"
+                                pagecolor="#ffffff"
+                                bordercolor="#666666"
+                                borderopacity="1.0"
+                                inkscape:pageopacity="0.0"
+                                inkscape:pageshadow="2"
+                                inkscape:zoom="9.9475981"
+                                inkscape:cx="31.007484"
+                                inkscape:cy="35.687006"
+                                inkscape:document-units="px"
+                                inkscape:current-layer="g1708"
+                                showgrid="true"
+                                showborder="true"
+                                fit-margin-top="0"
+                                fit-margin-left="0"
+                                fit-margin-right="0"
+                                fit-margin-bottom="0"
+                                inkscape:snap-bbox="true"
+                                inkscape:bbox-paths="true"
+                                inkscape:bbox-nodes="true"
+                                inkscape:snap-bbox-edge-midpoints="true"
+                                inkscape:snap-bbox-midpoints="true"
+                                inkscape:object-paths="true"
+                                inkscape:snap-intersection-paths="true"
+                                inkscape:object-nodes="true"
+                                inkscape:snap-smooth-nodes="true"
+                                inkscape:snap-midpoints="true"
+                                inkscape:snap-object-midpoints="true"
+                                inkscape:snap-center="true"
+                                showguides="true"
+                                inkscape:guide-bbox="true">
+                                <inkscape:grid type="xygrid" id="grid5451" empspacing="6"/>
+                                <sodipodi:guide orientation="1,0" position="6,77" id="guide4063"/>
+                                <sodipodi:guide orientation="1,0" position="3,78" id="guide4065"/>
+                                <sodipodi:guide orientation="0,1" position="55,84" id="guide4067"/>
+                                <sodipodi:guide orientation="0,1" position="53,87" id="guide4069"/>
+                                <sodipodi:guide orientation="0,1" position="20,3" id="guide4071"/>
+                                <sodipodi:guide orientation="0,1" position="20,6" id="guide4073"/>
+                                <sodipodi:guide orientation="1,0" position="87,7" id="guide4075"/>
+                                <sodipodi:guide orientation="1,0" position="84,7" id="guide4077"/>
+                                <sodipodi:guide orientation="0,1" position="58,81" id="guide4074"/>
+                                <sodipodi:guide orientation="1,0" position="9,74" id="guide4076"/>
+                                <sodipodi:guide orientation="0,1" position="21,9" id="guide4078"/>
+                                <sodipodi:guide orientation="1,0" position="81,4" id="guide4080"/>
+                            </sodipodi:namedview>
+                            <metadata id="metadata4879">
+                                <rdf:RDF>
+                                    <cc:Work rdf:about="">
+                                        <dc:format>image/svg+xml</dc:format>
+                                        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                        <dc:title></dc:title>
+                                    </cc:Work>
+                                </rdf:RDF>
+                            </metadata>
+                            <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(67.857146,-84.50504)">
+                                <g transform="matrix(0,-1,-1,0,373.50506,516.50504)" id="g4845" style="display:inline">
+                                    <g inkscape:label="Layer 1" id="g1708" transform="matrix(0,-1,-1,0,1394.3622,441.36221)" inkscape:export-filename="add01.png" inkscape:export-xdpi="90" inkscape:export-ydpi="90">
+                                        <rect style="color:#000000;fill:none;stroke:none;stroke-width:7.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect1710" width="90" height="90" x="0" y="962.36218"/>
+                                        <rect style="color:#000000;fill:none;stroke:none;stroke-width:7.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="rect4198" width="89.999954" height="89.999954" x="3.5066018e-06" y="962.36218"/>
+                                        <path
+                                            style="color:#000000;fill:#19b6ee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                                            d="m 65.384619,968.3622 -47.076923,47.9231 c 0,0 -8.9230745,13.9993 -12.3076925,30.0339 0.00189,9e-4 0.00214,0 0.00496,0.01 9.392e-4,0 4.875e-4,0 0.00331,0.012 9.392e-4,0 -0.00117,0 0.00165,0.012 9.475e-4,8e-4 0.0012,0.01 0.00496,0.01 16.0618805,-3.3846 30.0620495,-12.3077 30.0620495,-12.3077 l 47.923071,-47.07792 z m -43.394832,51.6052 10.436449,10.4364 c -0.702337,0.4064 -10.601148,7.3211 -19.653697,9.2288 -0.0022,0 -9.75e-4,-0.01 -0.0017,-0.01 -0.0017,-0.01 -0.0011,-0.01 -0.0017,-0.01 -0.0017,-0.01 -0.0011,-0.01 -0.0017,-0.01 -0.0017,-0.01 -0.0021,-0.01 -0.0033,-0.01 1.905141,-9.0256 8.810412,-18.9128 9.22551,-19.6305 z"
+                                            id="path2194-7"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="ccccccccccccccccccc"/>
+                                        <path
+                                            style="color:#000000;fill:#19b6ee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+                                            d="m 13.615389,1033.6699 5.076923,5.0769 -8.461539,3.1544 z"
+                                            id="path4126"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="cccc"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <h3>Improved design process</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa aspernatur quidem veniam magnam, adipisci culpa consequuntur, suscipit accusamus tempore vitae temporibus, possimus asperiores ut.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
-                <div class="twelve-col">
-                    <h1 class="gigantic">MAAS style guide</h1>
-                </div>
-                <div class="twelve-col">
-                    <h1>Typography</h1>
+        </section>
+        <!-- End Introduction -->
 
-                    <h1>h1, Ubuntu light, 32px</h1>
-                    <h2>h2, Ubuntu light, 23px</h2>
-                    <h3>h3, Ubuntu light, 20px</h3>
-                    <h4>h4, Ubuntu light, 16px</h4>
-                    <h5>h5, Ubuntu light, 13px</h5>
-                </div>
+        <!-- Start design -->
+        <section class="row">
+            <div class="wrapper--inner">
                 <div class="eight-col">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum quas accusamus. Omnis <strong>strong text style</strong>veritatis expedita eos et libero totam veniam? Hic debitis voluptas natus <i>itallic text style explicabo velit</i>, doloribus expedita, vitae excepturi est ea soluta ab quia autem vero sit sequi enim. <a href="#">Hyperlink temporibus</a> culpa rem minus optio.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <code>Test</code> Eum molestias dolore corporis sequi, itaque, quae iste qui. Enim, illo, exercitationem. Atque, eligendi repudiandae? Maxime illo impedit voluptate magnam quidem facilis accusamus accusantium qui atque repudiandae.</p>
+                    <h1>Design</h1>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
                 <div class="twelve-col">
-                    <h2>Flashmessages</h2>
-                    <ul class="flash-messages">
-                        <li class="flash-messages__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure minima enim, earum, saepe officiis!</li>
-                        <li class="flash-messages__item flash-messages__item--info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure minima enim, earum, saepe officiis!</li>
-                        <li class="flash-messages__item flash-messages__item--error">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure minima enim, earum, saepe officiis!</li>
-                        <li class="flash-messages__item flash-messages__item--success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure minima enim, earum, saepe officiis!</li>
-                        <li class="flash-messages__item flash-messages__item--warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid iure minima enim, earum, saepe officiis!</li>
-                    </ul>
+                    <h2>Color scheme</h2>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="wrapper--inner">
-              <h1>Colours</h1>
-              <h2>Primary colours</h2>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #333333;" />
-                  </svg>
-                  <p>#333333<br />Text default</p>
-              </div>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #888888;" />
-                  </svg>
-                  <p>#888888<br />Title headings</p>
-              </div>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #D2D2D2;" />
-                  </svg>
-                  <p>#D2D2D2<br />Outlines</p>
-              </div>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #EEEEEE;" />
-                  </svg>
-                  <p>#EEEEEE<br />Disabled state</p>
-              </div>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #FFFFFF;" />
-                  </svg>
-                  <p>#FFFFFF<br />Editible</p>
-              </div>
-              <div class="two-col last-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #DD4814;" />
-                  </svg>
-                  <p>#DD4814<br />Button / link</p>
-              </div>
-              <h2>Secondary colours</h2>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #D83832;" />
-                  </svg>
-                  <p>#D83832<br />Error</p>
-              </div>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #2AB7EC;" />
-                  </svg>
-                  <p>#2AB7EC<br />Power check / Information</p>
-              </div>
-              <div class="two-col">
-                  <svg>
-                      <circle cx="100" cy="100" r="50" style="stroke: none; fill: #38B44A;" />
-                  </svg>
-                  <p>#38B44A<br />Powered on / Success</p>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
-                <h2>Forms</h2>
                 <div class="twelve-col">
-                    <form class="form">
-                        <div class="form__group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                        </div>
-                        <div class="form__group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form__group">
-                            <label for="exampleInputFile">File input</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="form__help-text">Example form help text.</p>
-                        </div>
-                        <div class="form__group">
-                            <input type="checkbox" id="CheckMe">
-                            <label for="CheckMe">Check me out</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="radio" name="RadioOptions" id="Radio1" value="option1">
-                            <label for="Radio1">Radio 1</label>
-                            <input type="radio" name="RadioOptions" id="Radio2" value="option2">
-                            <label for="Radio2">Radio 2</label>
-                            <input type="radio" name="RadioOptions" id="Radio4" value="option4">
-                            <label for="Radio4">Radio 4</label>
-                            <input type="radio" name="RadioOptions" id="Radio6" value="option6">
-                            <label for="Radio6">Radio 6</label>
-                        </div>
-                        <button type="submit" class="button--primary button--inline">Submit</button>
-                    </form>
+                    <h3>Brand colours</h3>
+                    <p class="eight-col">Primary brand colours used for elements of importance; active states, hover styles or primary buttons and also reflects the Ubuntu brand.</p>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
-                <h2>Inline forms</h2>
+                <div class="twelve-col u-border--bottom">
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--orange"></div>
+                        <p>#e95420</br>Orange</p>
+                    </div>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--cool-grey"></div>
+                        <p>#333333</br>Cool grey</p>
+                    </div>
+                </div>
+                <div class="twelve-col u-border--bottom">
+                    <h3>Grey colours</h3>
+                    <p class="u-margin--bottom-large">Our grey colour pallet is used for text, background colours, form styles, lines and borders</p>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--black"></div>
+                        <p>#000000</br>black</p>
+                    </div>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--cool-grey"></div>
+                        <p>#333333</br>Cool grey</p>
+                    </div>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--ash"></div>
+                        <p>#888888</br>Ash</p>
+                    </div>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--silk"></div>
+                        <p>#cdcdcd</br>Silk</p>
+                    </div>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--porcelain u-border"></div>
+                        <p>#f7f7f7</br>Porcelain</p>
+                    </div>
+                    <div class="two-col last-col u-align--center">
+                        <div class="docs-color docs-color--white u-border"></div>
+                        <p>#f7f7f7</br>white</p>
+                    </div>
+                </div>
                 <div class="twelve-col">
-                    <form class="form form--inline">
-                        <div class="form__group">
-                          <label class="u-margin--right-small" for="exampleInputEmail3">Email address</label>
-                          <input type="email" id="exampleInputEmail3" placeholder="Email">
-                        </div>
-                        <div class="form__group">
-                          <label class="u-margin--right-small" for="exampleInputPassword3">Password</label>
-                          <input type="password" id="exampleInputPassword3" placeholder="Password">
-                        </div>
-                        <div class="form__group">
-                            <input type="checkbox" id="exampleCheckboxTable">
-                            <label for="exampleCheckboxTable">Save password</label>
-                        </div>
-                        <button type="submit" class="button--primary button--inline">Sign in</button>
-                    </form>
+                    <h3>UI colours</h3>
+                    <p class="eight-col">UI colors are used for buttons, flash messages, and form elements. For example inputs fields could get negative feedback by changing the border colour using our red.</p>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
-                <h2>Inline grouped forms</h2>
                 <div class="twelve-col">
-                  <form action="" class="form form--stack">
-                      <fieldset class="six-col">
-                        <div class="form__group">
-                          <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
-                          <div class="form__group-input four-col last-col">
-                              <input class="has-error" type="email" id="exampleInputEmail3" placeholder="Email">
-                              <ul class="form__error errors">
-                                  <li class="form__error-item">Test</li>
-                              </ul>
-                          </div>
-                        </div>
-                        <div class="form__group">
-                          <label class="form__group-label two-col" for="exampleInputPassword3">Password</label>
-                          <input type="password" class="four-col last-col" id="exampleInputPassword3" placeholder="Password">
-                        </div>
-                        <div class="form__group">
-                            <label class="form__group-label two-col" for="exampleSelectCountry">Country</label>
-                            <select class="four-col last-col" name="exampleSelectCountry" id="exampleSelectCountry">
-                                <option value="disabled" disabled selected>Choose a country...</option>
-                                <option value="UK">United Kingdom</option>
-                                <option value="US">United States</option>
-                                <option value="FRA">France</option>
-                                <option value="GER">Germany</option>
-                            </select>
-                        </div>
-                        <div class="form__group">
-                            <label class="form__group-label two-col" for="exampleTextarea">More information</label>
-                            <textarea class="four-col last-col" name="exampleTextarea" rows="8" cols="40" placeholder="Add text..."></textarea>
-                        </div>
-                      </fieldset>
-                  </form>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
-                <h2>Buttons</h2>
-                <div class="twelve-col">
-                    <button class="button--inline">Button</button>
-                    <a href="#" class="button--primary button--inline">Button primary</a>
-                    <a href="#" class="button--secondary button--inline">Button secondary</a>
-                    <a href="#" class="button--primary button--inline" disabled="disable">Button disabled</a>
-                    <a href="#" class="button--base button--inline">Button text</a>
-                </div>
-                <h2>Button groups</h2>
-                <div class="twelve-col">
-                    <div class="button-group button-group--inline">
-                        <a href="" class="button-group__link button--primary">Actions</a>
-                        <ul class="button-group__dropdown">
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Add hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Remove hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Commission</a>
-                            </li>
-                        </ul>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--red"></div>
+                        <p>#5d5d5d</br>Slate</p>
                     </div>
-                    <div class="button-group button-group--inline">
-                        <a href="" class="button-group__link button--secondary">Actions</a>
-                        <ul class="button-group__dropdown">
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Add hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Remove hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Commission</a>
-                            </li>
-                        </ul>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--green"></div>
+                        <p>#666666</br>Graphite</p>
                     </div>
-                    <div class="button-group button-group--inline">
-                        <a href="" class="button-group__link button--positive">Actions</a>
-                        <ul class="button-group__dropdown">
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Add hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Remove hardware</a>
-                            </li>
-                            <li class="button-group__item">
-                                <a href="" class="button-group__item-link">Commission</a>
-                            </li>
-                        </ul>
+                    <div class="two-col u-align--center">
+                        <div class="docs-color docs-color--blue"></div>
+                        <p>#888888</br>Ash</p>
+                    </div>
+                    <div class="two-col last-col u-align--center">
+                        <div class="docs-color docs-color--yellow"></div>
+                        <p>#cdcdcd</br>Silk</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="wrapper--inner">
-                <div class="twelve-col">
-                    <h2>Tooltips</h2>
-                    <div class="three-col">
-                        <a href="#" class="tooltip" aria-label="This is a default&#xa;tooltip Lorem ipsum dolor sit amet, consectetur adipisicing elit.&#xa;Provident magnam possimus aut tempore sint officia, iusto ipsa minus vel consequatur.&#xa;Saepe vero ipsum odit magnam.&#xa;&#xa;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequatur, quisquam beatae debitis consequuntur dolores.">Default tooltip</a>
-                    </div>
-                    <div class="three-col">
-                        <a href="#" class="tooltip tooltip--right" aria-label="This is a right&#xa;tooltip">Right tooltip</a>
-                    </div>
-                    <div class="three-col">
-                        <a href="#" class="tooltip tooltip--bottom" aria-label="This is a bottom&#xa;tooltip">Bottom tooltip</a>
-                    </div>
-                    <div class="three-col last-col">
-                        <a href="#" class="tooltip tooltip--left" aria-label="This is a left&#xa;tooltip">Left tooltip</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-          <div class="wrapper--inner">
-              <div class="twelve-col">
-                  <h2>Table</h2>
-                  <table>
-                      <thead>
-                          <tr>
-                              <th>Table heading</th>
-                              <th>
-                                  <a href="#">Table heading</a>
-                                  <span class="divide"></span>
-                                  <a href="">Table heading</a>
-                              </th>
-                              <th>lorem 2</th>
-                              <th>lorem 3</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr class="table--success">
-                              <td><i class="icon icon--success"></i> test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr><tr>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr class="table--warning">
-                              <td><i class="icon icon--warning"></i> test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr class="table--error">
-                              <td><i class="icon icon--error"></i> test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr class="table--information">
-                              <td><i class="icon icon--info"></i> test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                          <tr>
-                              <td>
-                                  <input type="checkbox" id="exampleCheckbox">
-                                  <label for="exampleCheckbox"></label>
-                              test</td>
-                              <td>test</td>
-                              <td>test</td>
-                              <td>test</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="wrapper--inner">
-            <div class="twelve-col u-padding--bottom">
-              <h2>Div table</h2>
-              <section class="table table--hover u-margin--bottom">
-                  <header class="table__head">
-                      <div class="table__row">
-                          <div class="table__header table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__header table-col--15">Name</div>
-                          <div class="table__header table-col--15">Size</div>
-                          <div class="table__header table-col--15">Device Type</div>
-                          <div class="table__header table-col--15">File system</div>
-                          <div class="table__header table-col--15">
-                              <a class="table__header-link">Model</a>
-                              <span class="divide"></span>
-                              <a class="table__header-link">Serial</a>
-                          </div>
-                          <div class="table__header table-col--15">Tags</div>
-                          <div class="table__header table-col--7"></div>
-                      </div>
-                  </header>
-                  <main class="table__body">
-                      <div class="table__row">
-                          <div class="table__data table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__data table-col--15">
-                              <input type="text" value="sda" class="table__input">
-                          </div>
-                          <div class="table__data table-col--15">8.5 G</div>
-                          <div class="table__data table-col--15">Physical</div>
-                          <div class="table__data table-col--15">
-                              <a class="table__controls table__controls--secondary">Format</a>
-                          </div>
-                          <div class="table__data table-col--15">QEMU HARDDISK</div>
-                          <div class="table__data table-col--15 u-display--hidden">937368252</div>
-                          <div class="table__data table-col--15">rotary, storage, machine</div>
-                          <div class="table__data table-col--7">
-                              <div class="table__controls">
-                                  <a class="icon icon--partition">Partition</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="table__row is-active">
-                          <div class="table__data table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__data table-col--15">
-                              <input type="text" value="sdb" class="table__input">
-                          </div>
-                          <div class="table__data table-col--15">8.5 G</div>
-                          <div class="table__data table-col--15">Physical</div>
-                          <div class="table__data table-col--15">
-                              fat32 <a class="table__controls table__controls--secondary u-margin--left-small">Mount</a>
-                          </div>
-                          <div class="table__data table-col--15">QEMU HARDDISK</div>
-                          <div class="table__data table-col--15 u-display--hidden">937368252</div>
-                          <div class="table__data table-col--15">
-                              <div class="table__tags">rotary, storage, test, hp, machine<span class="table__controls table__controls--secondary">, <a>edit</a></span></div>
-                          </div>
-                          <div class="table__data table-col--7">
-                              <div class="table__controls">
-                                  <a class="icon icon--partition">Partition</a>
-                                  <a class="icon icon--delete">Delete</a>
-                              </div>
-                          </div>
-                          <div class="table__dropdown">
-                              <div class="table__row table__dropdown-row u-padding--bottom-small is-active">
-                                  <div class="table__data table-col--3"></div>
-                                  <div class="table__data table-col--15">
-                                      <label for="filesys">Filesystem</label>
-                                      <select name="filesys" id="filesys">
-                                          <option value="fat32">fat32</option>
-                                      </select>
-                                  </div>
-                                  <div class="table__data table-col--30">
-                                      <label for="mountpoint">Mountpoint</label>
-                                      <input type="text" id="mountpoint">
-                                  </div>
-                                  <div class="table__data table-col--52">
-                                  </div>
-                              </div>
-                              <div class="table__row table__dropdown-row is-active">
-                                  <div class="table__data u-float--right">
-                                        <a class="button--base button--inline">Cancel</a>
-                                        <button class="button--primary button--inline">Mount</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="table__row">
-                          <div class="table__data table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__data table-col--15">
-                              <input type="text" value="sdb" class="table__input">
-                          </div>
-                          <div class="table__data table-col--15">8.5 G</div>
-                          <div class="table__data table-col--15">Physical</div>
-                          <div class="table__data table-col--15">
-                              <a class="table__controls table__controls--secondary">Format</a>
-                          </div>
-                          <div class="table__data table-col--15">QEMU HARDDISK</div>
-                          <div class="table__data table-col--15 u-display--hidden">937368252</div>
-                          <div class="table__data table-col--15">rotary, storage, machine</div>
-                          <div class="table__data table-col--7">
-                              <div class="table__controls">
-                                  <a class="icon icon--partition">Partition</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="table__row">
-                          <div class="table__data table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__data table-col--15">
-                              <input type="text" value="sdc" class="table__input">
-                          </div>
-                          <div class="table__data table-col--15">8.5 G</div>
-                          <div class="table__data table-col--15">Physical</div>
-                          <div class="table__data table-col--15">
-                              <a class="table__controls table__controls--secondary">Format</a>
-                          </div>
-                          <div class="table__data table-col--15">QEMU HARDDISK</div>
-                          <div class="table__data table-col--15 u-display--hidden">937368252</div>
-                          <div class="table__data table-col--15">rotary, storage, machine</div>
-                          <div class="table__data table-col--7">
-                              <div class="table__controls">
-                                  <a class="icon icon--partition">Partition</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="table__row">
-                          <div class="table__data table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__data table-col--15">
-                              <input type="text" value="sdd" class="table__input">
-                          </div>
-                          <div class="table__data table-col--15">8.5 G</div>
-                          <div class="table__data table-col--15">Physical</div>
-                          <div class="table__data table-col--15">
-                              <a class="table__controls table__controls--secondary">Format</a>
-                          </div>
-                          <div class="table__data table-col--15">QEMU HARDDISK</div>
-                          <div class="table__data table-col--15 u-display--hidden">937368252</div>
-                          <div class="table__data table-col--15">rotary, storage, machine</div>
-                          <div class="table__data table-col--7">
-                              <div class="table__controls">
-                                  <a class="icon icon--partition">Partition</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="table__row">
-                          <div class="table__data table-col--3">
-                              <input type="checkbox" id="exampleCheckboxAll">
-                              <label for="exampleCheckboxAll"></label>
-                          </div>
-                          <div class="table__data table-col--15">
-                              <input type="text" value="vg0-lv0" class="table__input">
-                          </div>
-                          <div class="table__data table-col--15">8.5 G</div>
-                          <div class="table__data table-col--15">Logical volume</div>
-                          <div class="table__data table-col--15">
-                              <a class="table__controls table__controls--secondary">Format</a>
-                          </div>
-                          <div class="table__data table-col--15"></div>
-                          <div class="table__data table-col--15 u-display--hidden"></div>
-                          <div class="table__data table-col--15">rotary, storage, machine</div>
-                          <div class="table__data table-col--7">
-                              <div class="table__controls">
-                                  <a class="icon icon--delete">Delete</a>
-                              </div>
-                          </div>
-                      </div>
-                  </main>
-              </section>
-          </div>
-      </div>
-    </div>
-    <div class="row">
-        <div class="wrapper--inner">
-            <div class="twelve-col">
-                <h2>List tree</h2>
-                <ul class="list__tree no-bullets">
-                    <li class="list__item">
-                        <span>
-                            <span class="icon icon--warning"></span>
-                            &nbsp;rackd
-                            <!-- ngIf: services.rackd.status_info --><span data-ng-if="services.rackd.status_info" class="ng-binding ng-scope"> — Missing connections to 1 region controller(s).</span><!-- end ngIf: services.rackd.status_info -->
-                        </span>
-                        <ul class="list__tree list__tree--sub-level">
-                            <li class="list__item">
-                                <span>
-                                    <span class="icon icon--success"></span>
-                                    &nbsp;http
-                                    <!-- ngIf: services.http.status_info -->
-                                </span>
-                            </li>
-                            <li class="list__item">
-                                <span>
-                                    <span class="icon icon--success"></span>
-                                    &nbsp;tftp
-                                    <!-- ngIf: services.tftp.status_info -->
-                                </span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="list__item">
-                        <span>
-                            dhcpd
-                            <!-- ngIf: services.dhcpd.status_info -->
-                        </span>
-                    </li>
-                    <li class="list__item">
-                        <span>
-                            dhcpd6
-                            <!-- ngIf: services.dhcpd6.status_info -->
-                        </span>
-                    </li>
-                    <li class="list__item">
-                        <span>
-                            tgt
-                            <!-- ngIf: services.tgt.status_info -->
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="wrapper--inner">
-            <div class="twelve-col">
-                <h2>Icons</h2>
-            </div>
-            <div class="twelve-col">
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--add"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--account"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--cross"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--cross-orange"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--debug"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--delete"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--edit"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--error"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--error-mono"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--help"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--help-mono"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--info"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--info-mono"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--loading u-animation--spin"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--mount"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--unmount"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--partition"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--logical-volume"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--power-error"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--power-off"></i>
-                </div>
-                <div class="one-col last-col u-align--centre">
-                    <i class="icon icon--power-on"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--remove"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--success"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--success-dark"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--success-mono"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--settings"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--search"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--sync"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--system-shutdown"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--tags"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--tick"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--tooltip"></i>
-                </div>
-                <div class="one-col last-col u-align--centre">
-                    <i class="icon icon--warning"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--warning-dark"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--warning-mono"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--open"></i>
-                </div>
-                <div class="one-col u-align--centre">
-                    <i class="icon icon--close"></i>
-                </div>
-            </div>
-            <div class="twelve-col">
-                <div class="six-col u-align--centre">
-                    <i class="icon u-margin--right-small icon--success icon--gigantic"></i>
-                    <i class="icon u-margin--right-small icon--success icon--mega"></i>
-                    <i class="icon u-margin--right-small icon--success icon--large"></i>
-                    <i class="icon u-margin--right-small icon--success"></i>
-                    <i class="icon u-margin--right-small icon--success icon--small"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="wrapper--inner">
-            <div class="accordion three-col maas-accordion">
-                <h3 class="accordion__title">Filter by</h3>
-                <div class="accordion__tab">
-                    <h4 class="accordion__tab-title">Lorem</h4>
-                    <div class="accordion__tab-content">
-                        <ul class="accordion__tab-list">
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Sit amet</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Consectetur</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion__tab">
-                    <h4 class="accordion__tab-title is-active">Ipsum</h4>
-                    <div class="accordion__tab-content">
-                        <ul class="accordion__tab-list">
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Sit amet</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Consectetur</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion__tab">
-                    <h4 class="accordion__tab-title">Dolor</h4>
-                    <div class="accordion__tab-content">
-                        <ul class="accordion__tab-list">
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Sit amet</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Consectetur</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="accordion__tab">
-                    <h4 class="accordion__tab-title">Sit amet</h4>
-                    <div class="accordion__tab-content">
-                        <ul class="accordion__tab-list">
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Sit amet</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Consectetur</a>
-                            </li>
-                            <li class="accordion__tab-item">
-                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="tweleve-col">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="table-col--3">
-                                <input class="checkbox" type="checkbox" id="check-all" />
-                                <label class="checkbox-label" for="check-all"></label>
-                            </th>
-                            <th>Fabric</th>
-                            <th>VLAN</th>
-                            <th>Subnet</th>
-                            <th class="align-right">Available IP's</th>
-                            <th>Space</th>
-                            <th>Class</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-col--3">
-                                <input class="checkbox" type="checkbox" id="fabric-0" />
-                                <label class="checkbox-label" for="fabric-0"></label>
-                            </td>
-                            <td>
-                                <a href="#">fabric-0</a>
-                            </td>
-                            <td>
-                                <a href="#">untagged</a>
-                            </td>
-                            <td class="align-right">
-                                <a href="#">192.168.10.0/24</a>
-                            </td>
-                            <td>99%</td>
-                            <td>
-                                <a href="#">management</a>
-                            </td>
-                            <td>10G</td>
-                        </tr>
-                        <tr>
-                            <td class="table-col--3"></td>
-                            <td></td>
-                            <td>
-                                <a href="#">10</a>
-                            </td>
-                            <td class="align-right">
-                                <a href="#">172.16.10.0/16</a>
-                            </td>
-                            <td>99%</td>
-                            <td>
-                                <a href="#">data</a>
-                            </td>
-                            <td>10G</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="wrapper--inner">
-          <h2>Global search</h2>
-          <div class="twelve-col">
-              <div class="search">
-                  <input placeholder="Search..." class="search__input" type="search">
-                  <input class="search__submit" type="submit">
-              </div>
-          </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="wrapper--inner">
-            <div class="twelve-col">
-                <h2>Action card</h2>
-            </div>
-            <div class="action-card">
-                <h2 class="action-card__title">Add rack controller</h2>
-                <form class="form form--inline">
-                    <div class="form__group u-margin--right">
-                      <label class="u-margin--right-small" for="node-list">Select a ready node</label>
-                      <select name="node-list" id="node-list">
-                          <option value="" disabled="disabled" selected="selected">Select</option>
-                          <option value="1">Snowwhite</option>
-                          <option value="2">Pocahontas</option>
-                          <option value="3">Yasmin</option>
-                          <option value="4">(4 more)</option>
-                      </select>
-                      <label class="u-margin--left-small">or go to <a href="#">Node listing</a> to view all ready machines</label>
-                    </div>
-                    <div class="action-card__controls">
-                        <div class="u-float--right">
-                            <button class="button--base button--inline">Cancel</button>
-                            <button type="submit" class="button--primary button--inline">Provision</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="wrapper--inner">
-            <h2>Code blocks &amp; snippets</h2>
-            <div class="twelve-col">
-                <p>Lorem ipsum dolor sit amet <code>sample code</code> Lorem ipsum dolor sit amet, consectetur..</p>
-                <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem culpa dicta illo dolor est, enim adipisci aliquam asperiores hic voluptate reprehenderit, libero aspernatur nihil quos eligendi quidem voluptatum nemo esse assumenda omnis vitae quas sit. Iste dicta saepe, a quo, vel provident laborum eligendi nesciunt incidunt obcaecati maiores, molestias nobis!</pre>
-                <pre class="code-block code-block--terminal">
-                    <code>Lorem ipsum dolor sit amet.</code>
-                    <code>Lorem ipsum dolor sit amet.</code>
-                    <code>Lorem ipsum dolor sit amet.</code>
-                    <code>Lorem ipsum dolor sit amet.</code>
-                    <code>Lorem ipsum dolor sit amet.</code>
-                </pre>
-                <pre class="code-block code-block--numbering">
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                </pre>
-                <pre class="code-block code-block--numbering code-block--terminal">
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                    <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
-                </pre>
-            </div>
-            <div class="twelve-col">
-                <p class="code-snippet">
-                    <input class="code-snippet__input" value="sudo apt-get update" readonly="readonly">
-                    <button class="js-copy-to-clipboard code-snippet__copy-button">Copy to clipboard</button>
-                </p>
-                <p class="code-snippet code-snippet--terminal">
-                    <input class="code-snippet__input" value="sudo apt-get update" readonly="readonly">
-                    <button class="js-copy-to-clipboard code-snippet__copy-button">Copy to clipboard</button>
-                </p>
-            </div>
-        </div>
+        </section>
+        <!-- End design -->
     </div>
     <footer class="u-padding--top">
         <div class="wrapper--inner clearfix">

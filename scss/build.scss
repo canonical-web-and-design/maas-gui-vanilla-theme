@@ -2,8 +2,9 @@
 @import '../node_modules/cloud-vanilla-theme/scss/theme';
 
 // Theme variables
-@import 'settings.defaults';
+@import 'settings.colors';
 @import 'settings.fonts';
+@import 'settings.defaults';
 
 // Theme base styles
 @import 'base.main';
@@ -41,6 +42,8 @@
 @import 'helpers.state';
 @import 'helpers.vertical-alignment';
 @import 'helpers.mixins';
+
+@import 'scratch.docs';
 
 // MAAS theme
 @mixin maas-gui-vanilla-theme {

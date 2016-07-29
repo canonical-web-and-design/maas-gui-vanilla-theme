@@ -13,6 +13,8 @@
     padding: 1em;
     border: 1px solid $mid-grey;
     border-radius: .5em;
+    color: $cool-grey;
+    background-color: $white;
 
     .code-block__line {
       float: left;
@@ -20,13 +22,13 @@
       margin: 0;
     }
 
-    &.code-block--terminal {
+    &--terminal {
       color: $white;
       border: 0;
       background-color: $cool-grey;
     }
 
-    &.code-block--numbering {
+    &--numbering {
       counter-reset: line-numbering;
 
       .code-block__line::before {

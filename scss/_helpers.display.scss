@@ -7,7 +7,7 @@
 /// Display
 /// @group Display
 @mixin maas-display {
-  .u-align {
+  .u-text {
 
     &--right {
       text-align: right !important;
@@ -79,7 +79,7 @@
       width: calc(100%/3) !important;
     }
 
-    &--quater {
+    &--quarter {
       width: 25% !important;
     }
   }

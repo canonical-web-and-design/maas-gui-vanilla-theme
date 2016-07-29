@@ -28,10 +28,10 @@
         }
       }
 
-      &.form__group--subtle {
+      &--subtle {
 
         .form__group-label {
-          color: $warm-grey;
+          color: $ash;
         }
 
         input,
@@ -48,7 +48,7 @@
 
           &:active,
           &:focus {
-            border-color: $warm-grey;
+            border-color: $ash;
             background-color: $white;
             outline: none;
           }
@@ -96,7 +96,7 @@
       }
     }
 
-    &.form--stack {
+    &--stack {
 
       .form__group {
         width: 100%;
@@ -115,7 +115,7 @@
       }
     }
 
-    &.form--inline {
+    &--inline {
 
       .form__fieldset {
         display: inline-block;
@@ -153,7 +153,7 @@
 
     .form__help-text {
       @include font-size(14px);
-      color: $warm-grey;
+      color: $ash;
     }
   }
 

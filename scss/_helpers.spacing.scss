@@ -20,7 +20,7 @@
     #{$spacing}: $spacing-unit;
 
     &--none {
-      #{$spacing}: none !important;
+      #{$spacing}: 0 !important;
     }
 
     @each $size, $division in $sizes {

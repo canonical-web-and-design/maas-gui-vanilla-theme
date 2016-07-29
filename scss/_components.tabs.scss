@@ -16,20 +16,20 @@
       list-style-type: none;
 
       .tabs__tab-link {
-        color: $warm-grey;
+        color: $ash;
         text-decoration: none;
         border-bottom: 0;
       }
 
       &:hover .tabs__tab-link {
-        border-bottom: 3px solid $warm-grey;
+        border-bottom: 3px solid $ash;
       }
 
       &:after {
         content: '';
         width: 1px;
         display: inline-block;
-        background: $outline;
+        background: $silk;
         height: 11px;
         padding: 0;
         margin: 0 5px;

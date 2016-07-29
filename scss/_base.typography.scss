@@ -52,7 +52,7 @@
 
     // Shared heading styles
     #{$headings()} {
-      margin: 10px 0;
+      margin: 0 0 .5em;
       font-weight: 300;
       line-height: #{$line-height-ratio};
       color: $headline-color;
