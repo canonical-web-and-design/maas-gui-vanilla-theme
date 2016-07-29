@@ -12,6 +12,10 @@
 
     &--top {
       border-top: $border-width dotted $border-color !important;
+
+      &-none {
+        border-top: 0 !important;
+      }
     }
 
     &--right {
@@ -20,6 +24,10 @@
 
     &--bottom {
       border-bottom: $border-width dotted $border-color !important;
+
+      &-none {
+        border-bottom: 0 !important;
+      }
     }
 
     &--left {

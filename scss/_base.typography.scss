@@ -70,11 +70,11 @@
     }
 
     // Additional font sizes
-    .gigantic {
+    .u-text--gigantic {
       @include font-size($gigantic);
     }
 
-    .mega {
+    .u-text--mega {
       @include font-size($mega);
     }
   }

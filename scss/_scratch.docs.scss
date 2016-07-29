@@ -31,3 +31,45 @@
     }
   }
 }
+
+.docs-code {
+  color: darken($red, 15%);
+  background-color: darken($porcelain, 5%);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.docs-example {
+  border: 1px solid $silk;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: $porcelain;
+
+  .docs-example__item {
+    border-bottom: 1px solid $silk;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    width: 100%;
+
+    &--last,
+    &--code {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    &--code {
+      color: $ash;
+      background-color: lighten($silk, 15%);
+    }
+  }
+
+  .docs-example__help-text {
+    font-size: 14px;
+    color: $silk;
+    margin: 0;
+    width: 100%;
+  }
+}
