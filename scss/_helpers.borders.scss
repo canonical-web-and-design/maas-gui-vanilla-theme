@@ -20,6 +20,10 @@
 
     &--right {
       border-right: $border-width dotted $border-color !important;
+
+      &-none {
+        border-right: 0 !important;
+      }
     }
 
     &--bottom {
@@ -32,6 +36,10 @@
 
     &--left {
       border-left: $border-width dotted $border-color !important;
+
+      &-none {
+        border-left: 0 !important;
+      }
     }
 
     &--dotted {

@@ -42,7 +42,6 @@
         @extend %accordion__tab-title;
 
         &.is-active {
-          @extend %accordion__tab-title;
           background-image: url('#{$asset-path}images/forms/chevron-up.svg');
 
           + .accordion__tab-content {
@@ -99,7 +98,7 @@
 
                 .accordion__tab-link {
                   color: $link-hover;
-                  background-image: url('#{$asset-path}images/icons/cross_orange.svg');
+                  background-image: url('#{$asset-path}images/icons/cross-orange.svg');
                 }
               }
             }

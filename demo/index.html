@@ -803,10 +803,102 @@
         <section class="row">
             <div class="wrapper--inner">
                 <div class="eight-col">
-                    <h2>Components</h2>
+                    <h1>Patterns</h1>
+                </div>
+                <div class="eight-col">
+                    <h2>Tooltips</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo assumenda, magni aspernatur repudiandae voluptates consequatur earum debitis numquam laborum aliquam reiciendis, quisquam voluptate necessitatibus eligendi.</p>
                 </div>
                 <div class="twelve-col">
-                    <h3>Buttons</h3>
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="three-col">
+                                <a href="#" class="tooltip" aria-label="This is a default&#xa;tooltip">Default tooltip</a>
+                            </div>
+                            <div class="three-col">
+                                <a href="#" class="tooltip tooltip--right" aria-label="This is a right&#xa;tooltip">Right tooltip</a>
+                            </div>
+                            <div class="three-col">
+                                <a href="#" class="tooltip tooltip--bottom" aria-label="This is a bottom&#xa;tooltip">Bottom tooltip</a>
+                            </div>
+                            <div class="three-col last-col">
+                                <a href="#" class="tooltip tooltip--left" aria-label="This is a left&#xa;tooltip">Left tooltip</a>
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;a href="#" class="tooltip" aria-label="This is a default tooltip"&gt;...&lt;/a&gt;
+&lt;a href="#" class="tooltip tooltip--right" aria-label="This is a right tooltip"&gt;...&lt;/a&gt;
+&lt;a href="#" class="tooltip tooltip--bottom" aria-label="This is a bottom tooltip"&gt;...&lt;/a&gt;
+&lt;a href="#" class="tooltip tooltip--left" aria-label="This is a left tooltip"&gt;...&lt;/a&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>List tree</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ut magnam maxime laborum eaque iusto debitis quas provident doloremque non, assumenda reiciendis quasi voluptate ea?</p>
+                </div>
+                <div class="twelve-col">
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <ul class="list__tree no-bullets">
+                                <li class="list__item">
+                                    List item
+                                    <ul class="list__tree list__tree--sub-level">
+                                        <li class="list__item">
+                                            Sub list item
+                                        </li>
+                                        <li class="list__item">
+                                            Sub list item
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="list__item">
+                                    List item
+                                </li>
+                                <li class="list__item">
+                                    List item
+                                </li>
+                                <li class="list__item">
+                                    List item
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;ul class="list__tree no-bullets"&gt;
+    &lt;li class="list__item"&gt;
+        List item
+        &lt;ul class="list__tree list__tree--sub-level"&gt;
+            &lt;li class="list__item"&gt;
+                Sub list item
+            &lt;/li&gt;
+            &lt;li class="list__item"&gt;
+                Sub list item
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class="list__item"&gt;
+        List item
+    &lt;/li&gt;
+    &lt;li class="list__item"&gt;
+        List item
+    &lt;/li&gt;
+    &lt;li class="list__item"&gt;
+        List item
+    &lt;/li&gt;
+&lt;/ul&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="twelve-col">
+                    <h2>Buttons</h2>
                     <div class="eight-col">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum commodi, rerum dolores illum nisi asperiores molestiae. Explicabo officiis aperiam tenetur obcaecati dignissimos enim, officia iusto.</p>
                     </div>
@@ -904,7 +996,7 @@
         <section class="row">
             <div class="wrapper--inner">
                 <div class="eight-col">
-                    <h3>Forms</h3>
+                    <h2>Forms</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi molestiae unde, eos placeat minus quaerat. Doloribus eveniet, illum similique atque est ea pariatur vel!</p>
                 </div>
                 <div class="twelve-col">
@@ -1211,7 +1303,97 @@
         <section class="row">
             <div class="wrapper--inner">
                 <div class="eight-col">
-                    <h3>Table</h3>
+                    <h2>Tabs</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia non, magnam! Ipsam nam quod sunt. Corporis eum, non mollitia sequi, exercitationem consectetur deserunt sunt.</p>
+                </div>
+                <div class="twelve-col">
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <ul class="tabs u-margin--none">
+                                <li class="tabs__tab is-active">
+                                    <a href="" class="tabs__tab-link">Machines</a>
+                                </li>
+                                <li class="tabs__tab">
+                                    <a href="" class="tabs__tab-link">Devices</a>
+                                </li>
+                                <li class="tabs__tab">
+                                    <a href="" class="tabs__tab-link">Controllers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;ul class="tabs"&gt;
+    &lt;li class="tabs__tab is-active"&gt;
+        &lt;a href="" class="tabs__tab-link"&gt;Machines&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="tabs__tab"&gt;
+        &lt;a href="" class="tabs__tab-link"&gt;Devices&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="tabs__tab"&gt;
+        &lt;a href="" class="tabs__tab-link"&gt;Controllers&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Code block</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eum iste, officiis, quia quisquam dignissimos officia inventore doloremque nemo explicabo voluptatum cum, blanditiis nobis aspernatur!</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <pre class="code-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem culpa dicta illo dolor est, enim adipisci aliquam asperiores hic voluptate reprehenderit, libero aspernatur nihil quos eligendi quidem voluptatum nemo esse assumenda omnis vitae quas sit. Iste dicta saepe, a quo, vel provident laborum eligendi nesciunt incidunt obcaecati maiores, molestias nobis!</pre>
+                            <pre class="code-block code-block--terminal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem culpa dicta illo dolor est, enim adipisci aliquam asperiores hic voluptate reprehenderit, libero aspernatur nihil quos eligendi quidem voluptatum nemo esse assumenda omnis vitae quas sit. Iste dicta saepe, a quo, vel provident laborum eligendi nesciunt incidunt obcaecati maiores, molestias nobis!</pre>
+                            <pre class="code-block code-block--numbering">
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                            </pre>
+                            <pre class="code-block code-block--numbering code-block--terminal">
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                                <code class="code-block__line">Lorem ipsum dolor sit amet.</code>
+                            </pre>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;pre class="code-block"&gt;...&lt;/pre&gt;
+&lt;pre class="code-block code-block--terminal"&gt;...&lt;/pre&gt;
+&lt;pre class="code-block code-block--numbering"&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+&lt;/pre&gt;
+&lt;pre class="code-block code-block--numbering code-block--terminal"&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+    &lt;code class="code-block__line"&gt;...&lt;/code&gt;
+&lt;/pre&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Tables</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et eos quas, dignissimos laudantium velit aliquam porro, quis perspiciatis, quaerat quos sed dolor, inventore fugiat?</p>
                 </div>
                 <div class="twelve-col">
@@ -1402,6 +1584,1088 @@
                         <pre class="docs-example__item docs-example__item--code">
 &lt;td class="table--1"&gt;...&lt;/td&gt;
 &lt;td class="table--100"&gt;...&lt;/td&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Table - Interactive</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut ea iusto, quisquam eveniet rem deserunt necessitatibus natus, impedit pariatur tenetur qui aspernatur quos eum!</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <section class="table table--hover u-margin--bottom">
+                                <header class="table__head">
+                                    <div class="table__row">
+                                        <div class="table__header table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__header table-col--15">Name</div>
+                                        <div class="table__header table-col--15">Size</div>
+                                        <div class="table__header table-col--15">Device Type</div>
+                                        <div class="table__header table-col--15">File system</div>
+                                        <div class="table__header table-col--15">
+                                            <a class="table__header-link">Model</a>
+                                            <span class="divide"></span>
+                                            <a class="table__header-link">Serial</a>
+                                        </div>
+                                        <div class="table__header table-col--15">Tags</div>
+                                        <div class="table__header table-col--7"></div>
+                                    </div>
+                                </header>
+                                <main class="table__body">
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__data table-col--15">
+                                            <input type="text" value="sda" class="table__input">
+                                        </div>
+                                        <div class="table__data table-col--15">8.5 G</div>
+                                        <div class="table__data table-col--15">Physical</div>
+                                        <div class="table__data table-col--15">
+                                            <a class="table__controls table__controls--secondary">Format</a>
+                                        </div>
+                                        <div class="table__data table-col--15">QEMU HARDDISK</div>
+                                        <div class="table__data table-col--15 u-display--hidden">937368252</div>
+                                        <div class="table__data table-col--15">rotary, storage, machine</div>
+                                        <div class="table__data table-col--7">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition">Partition</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row is-active">
+                                        <div class="table__data table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__data table-col--15">
+                                            <input type="text" value="sdb" class="table__input">
+                                        </div>
+                                        <div class="table__data table-col--15">8.5 G</div>
+                                        <div class="table__data table-col--15">Physical</div>
+                                        <div class="table__data table-col--15">
+                                            fat32 <a class="table__controls table__controls--secondary u-margin--left-small">Mount</a>
+                                        </div>
+                                        <div class="table__data table-col--15">QEMU HARDDISK</div>
+                                        <div class="table__data table-col--15 u-display--hidden">937368252</div>
+                                        <div class="table__data table-col--15">
+                                            <div class="table__tags">rotary, storage, test, hp, machine<span class="table__controls table__controls--secondary">, <a>edit</a></span></div>
+                                        </div>
+                                        <div class="table__data table-col--7">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition">Partition</a>
+                                                <a class="icon icon--delete">Delete</a>
+                                            </div>
+                                        </div>
+                                        <div class="table__dropdown">
+                                            <div class="table__row table__dropdown-row u-padding--bottom-small is-active">
+                                                <div class="table__data table-col--3"></div>
+                                                <div class="table__data table-col--15">
+                                                    <label for="filesys">Filesystem</label>
+                                                    <select name="filesys" id="filesys">
+                                                        <option value="fat32">fat32</option>
+                                                    </select>
+                                                </div>
+                                                <div class="table__data table-col--30">
+                                                    <label for="mountpoint">Mountpoint</label>
+                                                    <input type="text" id="mountpoint">
+                                                </div>
+                                                <div class="table__data table-col--52">
+                                                </div>
+                                            </div>
+                                            <div class="table__row table__dropdown-row is-active">
+                                                <div class="table__data u-float--right">
+                                                      <a class="button--base button--inline">Cancel</a>
+                                                      <button class="button--primary button--inline">Mount</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__data table-col--15">
+                                            <input type="text" value="sdb" class="table__input">
+                                        </div>
+                                        <div class="table__data table-col--15">8.5 G</div>
+                                        <div class="table__data table-col--15">Physical</div>
+                                        <div class="table__data table-col--15">
+                                            <a class="table__controls table__controls--secondary">Format</a>
+                                        </div>
+                                        <div class="table__data table-col--15">QEMU HARDDISK</div>
+                                        <div class="table__data table-col--15 u-display--hidden">937368252</div>
+                                        <div class="table__data table-col--15">rotary, storage, machine</div>
+                                        <div class="table__data table-col--7">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition">Partition</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__data table-col--15">
+                                            <input type="text" value="sdc" class="table__input">
+                                        </div>
+                                        <div class="table__data table-col--15">8.5 G</div>
+                                        <div class="table__data table-col--15">Physical</div>
+                                        <div class="table__data table-col--15">
+                                            <a class="table__controls table__controls--secondary">Format</a>
+                                        </div>
+                                        <div class="table__data table-col--15">QEMU HARDDISK</div>
+                                        <div class="table__data table-col--15 u-display--hidden">937368252</div>
+                                        <div class="table__data table-col--15">rotary, storage, machine</div>
+                                        <div class="table__data table-col--7">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition">Partition</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__data table-col--15">
+                                            <input type="text" value="sdd" class="table__input">
+                                        </div>
+                                        <div class="table__data table-col--15">8.5 G</div>
+                                        <div class="table__data table-col--15">Physical</div>
+                                        <div class="table__data table-col--15">
+                                            <a class="table__controls table__controls--secondary">Format</a>
+                                        </div>
+                                        <div class="table__data table-col--15">QEMU HARDDISK</div>
+                                        <div class="table__data table-col--15 u-display--hidden">937368252</div>
+                                        <div class="table__data table-col--15">rotary, storage, machine</div>
+                                        <div class="table__data table-col--7">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition">Partition</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input type="checkbox" id="exampleCheckboxAll">
+                                            <label for="exampleCheckboxAll"></label>
+                                        </div>
+                                        <div class="table__data table-col--15">
+                                            <input type="text" value="vg0-lv0" class="table__input">
+                                        </div>
+                                        <div class="table__data table-col--15">8.5 G</div>
+                                        <div class="table__data table-col--15">Logical volume</div>
+                                        <div class="table__data table-col--15">
+                                            <a class="table__controls table__controls--secondary">Format</a>
+                                        </div>
+                                        <div class="table__data table-col--15"></div>
+                                        <div class="table__data table-col--15 u-display--hidden"></div>
+                                        <div class="table__data table-col--15">rotary, storage, machine</div>
+                                        <div class="table__data table-col--7">
+                                            <div class="table__controls">
+                                                <a class="icon icon--delete">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
+                            </section>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;section class="table table--hover"&gt;
+    &lt;header class="table__head"&gt;
+        &lt;div class="table__row"&gt;
+            &lt;div class="table__header table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__header table-col--15"&gt;Name&lt;/div&gt;
+            &lt;div class="table__header table-col--15"&gt;Size&lt;/div&gt;
+            &lt;div class="table__header table-col--15"&gt;Device Type&lt;/div&gt;
+            &lt;div class="table__header table-col--15"&gt;File system&lt;/div&gt;
+            &lt;div class="table__header table-col--15"&gt;
+                &lt;a class="table__header-link"&gt;Model&lt;/a&gt;
+                &lt;span class="divide"&gt;&lt;/span&gt;
+                &lt;a class="table__header-link"&gt;Serial&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__header table-col--15"&gt;Tags&lt;/div&gt;
+            &lt;div class="table__header table-col--7"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;main class="table__body"&gt;
+        &lt;div class="table__row"&gt;
+            &lt;div class="table__data table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;input type="text" value="sda" class="table__input"&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;8.5 G&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;Physical&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;a class="table__controls table__controls--secondary"&gt;Format&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;QEMU HARDDISK&lt;/div&gt;
+            &lt;div class="table__data table-col--15 u-display--hidden"&gt;937368252&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;rotary, storage, machine&lt;/div&gt;
+            &lt;div class="table__data table-col--7"&gt;
+                &lt;div class="table__controls"&gt;
+                    &lt;a class="icon icon--partition"&gt;Partition&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="table__row is-active"&gt;
+            &lt;div class="table__data table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;input type="text" value="sdb" class="table__input"&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;8.5 G&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;Physical&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                fat32 &lt;a class="table__controls table__controls--secondary u-margin--left-small"&gt;Mount&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;QEMU HARDDISK&lt;/div&gt;
+            &lt;div class="table__data table-col--15 u-display--hidden"&gt;937368252&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;div class="table__tags"&gt;rotary, storage, test, hp, machine&lt;span class="table__controls table__controls--secondary"&gt;, &lt;a&gt;edit&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--7"&gt;
+                &lt;div class="table__controls"&gt;
+                    &lt;a class="icon icon--partition"&gt;Partition&lt;/a&gt;
+                    &lt;a class="icon icon--delete"&gt;Delete&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="table__dropdown"&gt;
+                &lt;div class="table__row table__dropdown-row u-padding--bottom-small is-active"&gt;
+                    &lt;div class="table__data table-col--3"&gt;&lt;/div&gt;
+                    &lt;div class="table__data table-col--15"&gt;
+                        &lt;label for="filesys"&gt;Filesystem&lt;/label&gt;
+                        &lt;select name="filesys" id="filesys"&gt;
+                            &lt;option value="fat32"&gt;fat32&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                    &lt;div class="table__data table-col--30"&gt;
+                        &lt;label for="mountpoint"&gt;Mountpoint&lt;/label&gt;
+                        &lt;input type="text" id="mountpoint"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="table__data table-col--52"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="table__row table__dropdown-row is-active"&gt;
+                    &lt;div class="table__data u-float--right"&gt;
+                          &lt;a class="button--base button--inline"&gt;Cancel&lt;/a&gt;
+                          &lt;button class="button--primary button--inline"&gt;Mount&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="table__row"&gt;
+            &lt;div class="table__data table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;input type="text" value="sdb" class="table__input"&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;8.5 G&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;Physical&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;a class="table__controls table__controls--secondary"&gt;Format&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;QEMU HARDDISK&lt;/div&gt;
+            &lt;div class="table__data table-col--15 u-display--hidden"&gt;937368252&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;rotary, storage, machine&lt;/div&gt;
+            &lt;div class="table__data table-col--7"&gt;
+                &lt;div class="table__controls"&gt;
+                    &lt;a class="icon icon--partition"&gt;Partition&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="table__row"&gt;
+            &lt;div class="table__data table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;input type="text" value="sdc" class="table__input"&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;8.5 G&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;Physical&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;a class="table__controls table__controls--secondary"&gt;Format&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;QEMU HARDDISK&lt;/div&gt;
+            &lt;div class="table__data table-col--15 u-display--hidden"&gt;937368252&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;rotary, storage, machine&lt;/div&gt;
+            &lt;div class="table__data table-col--7"&gt;
+                &lt;div class="table__controls"&gt;
+                    &lt;a class="icon icon--partition"&gt;Partition&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="table__row"&gt;
+            &lt;div class="table__data table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;input type="text" value="sdd" class="table__input"&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;8.5 G&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;Physical&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;a class="table__controls table__controls--secondary"&gt;Format&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;QEMU HARDDISK&lt;/div&gt;
+            &lt;div class="table__data table-col--15 u-display--hidden"&gt;937368252&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;rotary, storage, machine&lt;/div&gt;
+            &lt;div class="table__data table-col--7"&gt;
+                &lt;div class="table__controls"&gt;
+                    &lt;a class="icon icon--partition"&gt;Partition&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="table__row"&gt;
+            &lt;div class="table__data table-col--3"&gt;
+                &lt;input type="checkbox" id="exampleCheckboxAll"&gt;
+                &lt;label for="exampleCheckboxAll"&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;input type="text" value="vg0-lv0" class="table__input"&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;8.5 G&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;Logical volume&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;
+                &lt;a class="table__controls table__controls--secondary"&gt;Format&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;&lt;/div&gt;
+            &lt;div class="table__data table-col--15 u-display--hidden"&gt;&lt;/div&gt;
+            &lt;div class="table__data table-col--15"&gt;rotary, storage, machine&lt;/div&gt;
+            &lt;div class="table__data table-col--7"&gt;
+                &lt;div class="table__controls"&gt;
+                    &lt;a class="icon icon--delete"&gt;Delete&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+&lt;/section&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Navigation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, maiores, deserunt? Mollitia necessitatibus laborum facere eaque, voluptatum voluptate. Quisquam molestias error commodi nostrum. Culpa, incidunt?</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <header class="banner global" role="banner">
+                                <nav role="navigation" class="nav-primary">
+                                    <span class="accessibility-aid">
+                                        <a href="#main-content">Jump to main content</a>
+                                    </span>
+                                    <div class="logo">
+                                        <a href="/">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="30px" viewBox="90.64 28.138 100 30" enable-background="new 90.64 28.138 100 30" xml:space="preserve">
+                                                <g>
+                                                    <g>
+                                                        <path fill="#DD4813" d="M121.464,43.138c0,8.285-6.9,15-15.413,15 c-8.512,0-15.412-6.716-15.412-15c0-8.284,6.9-15,15.412-15C114.564,28.138,121.464,34.854,121.464,43.138"></path>
+                                                        <path fill="#FFFFFF" d="M98.344,36.26c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232c0.01-0.69-0.557-1.258-1.266-1.268 c-0.012,0-0.024,0-0.037,0H98.344"></path>
+                                                        <path fill="#FFFFFF" d="M98.344,40.01c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268c0.013,0,0.025,0,0.037,0h15.412c0.71,0.01,1.293-0.542,1.303-1.232 c0.01-0.69-0.557-1.258-1.266-1.268c-0.012,0-0.024,0-0.037,0H98.344"></path>
+                                                        <path fill="#FFFFFF" d="M98.344,43.76c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.541,1.303-1.231s-0.557-1.258-1.266-1.268h-0.037H98.344"></path>
+                                                        <path fill="#FFFFFF" d="M98.344,47.511c-0.709-0.011-1.292,0.541-1.302,1.231 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232s-0.557-1.258-1.266-1.267 c-0.012-0.001-0.024-0.001-0.037,0H98.344"></path>
+                                                        <path fill="#FFFFFF" d="M137.043,48.857c-0.152-0.356-0.354-0.807-0.605-1.354 c-0.251-0.548-0.521-1.14-0.81-1.776c-0.288-0.636-0.596-1.291-0.923-1.964c-0.327-0.674-0.635-1.311-0.924-1.909 c-0.289-0.6-0.559-1.136-0.809-1.609c-0.251-0.474-0.453-0.836-0.605-1.088c-0.167,1.746-0.304,3.637-0.41,5.671 c-0.107,2.035-0.198,4.088-0.274,6.159h-2.167c0.061-1.332,0.129-2.675,0.206-4.028c0.075-1.354,0.163-2.686,0.262-3.996 c0.098-1.309,0.205-2.585,0.319-3.829c0.113-1.243,0.239-2.419,0.376-3.529h1.938c0.411,0.652,0.852,1.421,1.323,2.308 c0.471,0.888,0.942,1.817,1.414,2.786c0.472,0.97,0.927,1.939,1.369,2.909c0.441,0.969,0.844,1.853,1.209,2.652 c0.365-0.799,0.768-1.683,1.209-2.652c0.44-0.97,0.897-1.939,1.368-2.909c0.472-0.969,0.942-1.898,1.414-2.786 c0.472-0.887,0.912-1.656,1.323-2.308h1.939c0.516,4.958,0.904,10.085,1.163,15.382h-2.167c-0.076-2.071-0.168-4.124-0.274-6.159 c-0.106-2.034-0.243-3.925-0.41-5.671c-0.151,0.251-0.354,0.614-0.604,1.088c-0.251,0.474-0.521,1.01-0.81,1.609 c-0.289,0.599-0.597,1.235-0.924,1.909c-0.327,0.673-0.635,1.327-0.923,1.964c-0.29,0.636-0.559,1.229-0.811,1.776 c-0.251,0.547-0.452,0.998-0.604,1.354H137.043"></path>
+                                                        <path fill="#FFFFFF" d="M160.375,50.987c-0.259-0.666-0.502-1.32-0.73-1.964 c-0.229-0.645-0.464-1.298-0.707-1.965h-7.161l-1.438,3.929h-2.304c0.608-1.627,1.179-3.133,1.711-4.517 c0.532-1.385,1.053-2.697,1.562-3.94s1.016-2.431,1.517-3.562c0.5-1.132,1.026-2.253,1.573-3.363h2.029 c0.548,1.11,1.073,2.23,1.574,3.363c0.501,1.132,1.008,2.319,1.517,3.562s1.03,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.71,4.517H160.375L160.375,50.987z M158.299,45.283c-0.486-1.288-0.969-2.534-1.447-3.74 c-0.479-1.206-0.978-2.364-1.494-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.425,3.74H158.299 L158.299,45.283z"></path>
+                                                        <path fill="#FFFFFF" d="M176.249,50.987c-0.26-0.666-0.502-1.32-0.73-1.964 c-0.228-0.645-0.463-1.298-0.708-1.965h-7.161l-1.438,3.929h-2.303c0.608-1.627,1.178-3.133,1.711-4.517 c0.531-1.385,1.052-2.697,1.562-3.94c0.511-1.243,1.016-2.431,1.517-3.562c0.502-1.132,1.026-2.253,1.574-3.363h2.03 c0.546,1.11,1.071,2.23,1.572,3.363c0.503,1.132,1.008,2.319,1.517,3.562c0.511,1.243,1.031,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.712,4.517H176.249L176.249,50.987z M174.173,45.283c-0.487-1.288-0.97-2.534-1.448-3.74 c-0.479-1.206-0.978-2.364-1.493-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.426,3.74H174.173 L174.173,45.283z"></path>
+                                                        <path fill="#FFFFFF" d="M184.848,49.456c2.31,0,3.466-0.77,3.466-2.309 c0-0.474-0.103-0.877-0.308-1.209c-0.206-0.333-0.483-0.622-0.833-0.866c-0.351-0.244-0.749-0.455-1.197-0.633 c-0.449-0.177-0.923-0.355-1.425-0.533c-0.579-0.192-1.125-0.411-1.643-0.655s-0.966-0.533-1.346-0.866s-0.682-0.729-0.901-1.188 c-0.221-0.458-0.33-1.013-0.33-1.665c0-1.346,0.471-2.397,1.414-3.152c0.942-0.755,2.242-1.132,3.899-1.132 c0.959,0,1.827,0.101,2.612,0.3c0.782,0.199,1.356,0.418,1.722,0.655l-0.708,1.753c-0.319-0.192-0.795-0.38-1.426-0.566 c-0.63-0.185-1.364-0.277-2.2-0.277c-0.425,0-0.82,0.044-1.186,0.133s-0.685,0.223-0.958,0.4s-0.489,0.403-0.649,0.677 c-0.161,0.274-0.24,0.596-0.24,0.966c0,0.414,0.083,0.762,0.252,1.043c0.166,0.281,0.402,0.529,0.706,0.743 c0.304,0.215,0.658,0.411,1.061,0.588c0.403,0.178,0.848,0.355,1.335,0.532c0.685,0.267,1.312,0.533,1.881,0.799 c0.57,0.267,1.064,0.585,1.482,0.955c0.418,0.37,0.741,0.81,0.969,1.321c0.229,0.51,0.343,1.128,0.343,1.853 c0,1.347-0.506,2.383-1.517,3.107c-1.011,0.726-2.437,1.089-4.275,1.089c-0.625,0-1.199-0.042-1.723-0.123 c-0.525-0.081-0.992-0.178-1.402-0.288c-0.411-0.111-0.765-0.229-1.062-0.355c-0.297-0.125-0.528-0.233-0.695-0.322l0.662-1.775 c0.349,0.192,0.881,0.407,1.596,0.644C182.938,49.338,183.812,49.456,184.848,49.456"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div id="nav">
+                                        <div class="nav-toggle">
+                                            <a href="#nav" class="nav-toggle__link open"></a>
+                                            <a href="#" class="nav-toggle__link close"></a>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#" class="active">Nav item</a></li>
+                                            <li><a href="#">Nav item</a></li>
+                                            <li><a href="#">Nav item</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </header>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;header class="banner global" role="banner"&gt;
+    &lt;nav role="navigation" class="nav-primary"&gt;
+        &lt;span class="accessibility-aid"&gt;
+            &lt;a href="#main-content"&gt;Jump to main content&lt;/a&gt;
+        &lt;/span&gt;
+        &lt;div class="logo"&gt;
+            &lt;a href="/"&gt;
+                &lt;img src="/assets/images/logos/maas-logo.svg" alt=""&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div id="nav"&gt;
+            &lt;div class="nav-toggle"&gt;
+                &lt;a href="#nav" class="nav-toggle__link open"&gt;&lt;/a&gt;
+                &lt;a href="#" class="nav-toggle__link close"&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#" class="active"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h2>Page header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur quibusdam reiciendis vitae eligendi rem debitis deserunt, nostrum, eius, accusantium voluptatem est consectetur beatae blanditiis?</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="page-header u-padding--left u-padding--right u-margin--none">
+                                <div class="wrapper--inner">
+                                    <h1 class="page-header__title">MAAS test title</h1>
+                                    <ul class="tabs">
+                                        <li class="tabs__tab is-active">
+                                            <a href="" class="tabs__tab-link">Machines</a>
+                                        </li>
+                                        <li class="tabs__tab">
+                                            <a href="" class="tabs__tab-link">Devices</a>
+                                        </li>
+                                        <li class="tabs__tab">
+                                            <a href="" class="tabs__tab-link">Controllers</a>
+                                        </li>
+                                    </ul>
+                                    <p class="page-header__status">Ready <a href="" class="page-header__status-check">check now</a></p>
+                                    <p class="page-header__status"><span class="u-text--loading"><i class="icon icon--loading u-animation--spin"></i> Loading</span> <a href="" class="page-header__status-check">check now</a></p>
+                                    <div class="page-header__controls u-float--right">
+                                        <span class="page-header__controls-feedback u-margin--right">1 Selected</span>
+                                        <div class="button-group button-group--inline">
+                                            <a href="" class="button-group__link button--primary">Actions</a>
+                                            <ul class="button-group__dropdown">
+                                                <li class="button-group__item">
+                                                    <a href="" class="button-group__item-link">Add hardware</a>
+                                                </li>
+                                                <li class="button-group__item">
+                                                    <a href="" class="button-group__item-link">Remove hardware</a>
+                                                </li>
+                                                <li class="button-group__item">
+                                                    <a href="" class="button-group__item-link">Commission</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="page-header__dropdown is-open">
+                                        <section class="page-header__section twelve-col u-margin--bottom-none">
+                                            <h3 class="page-header__dropdown-title">Add machine</h3>
+                                            <form class="form form--stack">
+                                                <fieldset class="six-col">
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                            <span class="form__group-remove"></span>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <fieldset class="six-col last-col">
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                                        <div class="form__group-input three-col">
+                                                            <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </section>
+                                        <div class="page-header__section twelve-col u-margin--bottom-none">
+                                            <div class="page-header__controls">
+                                                <a href="" class="button--base button--inline">Cancel</a>
+                                                <button class="button--secondary button--inline">Save and add another</button>
+                                                <button class="button--primary button--inline">Save machine</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="page-header"&gt;
+    &lt;div class="wrapper--inner"&gt;
+        &lt;h1 class="page-header__title"&gt;MAAS test title&lt;/h1&gt;
+        &lt;ul class="tabs"&gt;
+            &lt;li class="tabs__tab is-active"&gt;
+                &lt;a href="" class="tabs__tab-link"&gt;Machines&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="tabs__tab"&gt;
+                &lt;a href="" class="tabs__tab-link"&gt;Devices&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="tabs__tab"&gt;
+                &lt;a href="" class="tabs__tab-link"&gt;Controllers&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p class="page-header__status"&gt;Ready &lt;a href="" class="page-header__status-check"&gt;check now&lt;/a&gt;&lt;/p&gt;
+        &lt;p class="page-header__status"&gt;
+            &lt;span class="u-text--loading"&gt;&lt;i class="icon icon--loading u-animation--spin"&gt;&lt;/i&gt; Loading&lt;/span&gt;
+            &lt;a href="" class="page-header__status-check"&gt;check now&lt;/a&gt;
+        &lt;/p&gt;
+        &lt;div class="page-header__controls u-float--right"&gt;
+            &lt;span class="page-header__controls-feedback u-margin--right"&gt;1 Selected&lt;/span&gt;
+            &lt;div class="button-group button-group--inline"&gt;
+                &lt;a href="" class="button-group__link button--primary"&gt;Actions&lt;/a&gt;
+                &lt;ul class="button-group__dropdown"&gt;
+                    &lt;li class="button-group__item"&gt;
+                        &lt;a href="" class="button-group__item-link"&gt;Add hardware&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="button-group__item"&gt;
+                        &lt;a href="" class="button-group__item-link"&gt;Remove hardware&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="button-group__item"&gt;
+                        &lt;a href="" class="button-group__item-link"&gt;Commission&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="page-header__dropdown is-open"&gt;
+            &lt;section class="page-header__section twelve-col u-margin--bottom-none"&gt;
+                &lt;h3 class="page-header__dropdown-title"&gt;Add machine&lt;/h3&gt;
+                &lt;form class="form form--stack"&gt;
+                    &lt;fieldset class="form__fieldset six-col"&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                                &lt;span class="form__group-remove"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/fieldset&gt;
+                    &lt;fieldset class="form__fieldset six-col last-col"&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form__group"&gt;
+                            &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
+                            &lt;div class="form__group-input three-col"&gt;
+                                &lt;input id="machine-name" placeholder="Choose a machine name (optional)" type="text"&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/fieldset&gt;
+                &lt;/form&gt;
+            &lt;/section&gt;
+            &lt;div class="page-header__section twelve-col u-margin--bottom-none"&gt;
+                &lt;div class="page-header__controls"&gt;
+                    &lt;a href="" class="button--base button--inline"&gt;Cancel&lt;/a&gt;
+                    &lt;button class="button--secondary button--inline"&gt;Save and add another&lt;/button&gt;
+                    &lt;button class="button--primary button--inline"&gt;Save machine&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Flash messages</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores aspernatur ipsam, ducimus laudantium sed, expedita deleniti provident quod eligendi enim, fugit quasi veniam eius dignissimos.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <ul class="flash-messages">
+                                <li class="flash-messages__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eveniet.</li>
+                                <li class="flash-messages__item flash-messages__item--info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nemo!</li>
+                                <li class="flash-messages__item flash-messages__item--error">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nobis.</li>
+                                <li class="flash-messages__item flash-messages__item--success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.</li>
+                                <li class="flash-messages__item flash-messages__item--warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, deserunt?</li>
+                            </ul>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;ul class="flash-messages"&gt;
+    &lt;li class="flash-messages__item"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eveniet.&lt;/li&gt;
+    &lt;li class="flash-messages__item flash-messages__item--info"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, nemo!&lt;/li&gt;
+    &lt;li class="flash-messages__item flash-messages__item--error"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nobis.&lt;/li&gt;
+    &lt;li class="flash-messages__item flash-messages__item--success"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, perferendis.&lt;/li&gt;
+    &lt;li class="flash-messages__item flash-messages__item--warning"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, deserunt?&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Global search</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aut vitae! Blanditiis incidunt animi ad velit provident, quis, porro. Fugit voluptas eaque, doloribus nesciunt sequi.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="search">
+                                <input placeholder="Search..." class="search__input" type="search">
+                                <input class="search__submit" type="submit">
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="search"&gt;
+    &lt;input placeholder="Search..." class="search__input" type="search"&gt;
+    &lt;input class="search__submit" type="submit"&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Accordion</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium itaque natus, quidem quod, expedita ducimus ipsum sit eveniet obcaecati quo accusamus ut doloribus nulla blanditiis.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="accordion three-col u-margin--none">
+                                <h3 class="accordion__title">Filter by</h3>
+                                <div class="accordion__tab">
+                                    <h4 class="accordion__tab-title">Lorem</h4>
+                                    <div class="accordion__tab-content">
+                                        <ul class="accordion__tab-list">
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Sit amet</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Consectetur</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion__tab">
+                                    <h4 class="accordion__tab-title is-active">Ipsum</h4>
+                                    <div class="accordion__tab-content">
+                                        <ul class="accordion__tab-list">
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                            </li>
+                                            <li class="accordion__tab-item is-active">
+                                                <a class="accordion__tab-link" href="">Sit amet</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Consectetur</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion__tab">
+                                    <h4 class="accordion__tab-title">Dolor</h4>
+                                    <div class="accordion__tab-content">
+                                        <ul class="accordion__tab-list">
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Sit amet</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Consectetur</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion__tab">
+                                    <h4 class="accordion__tab-title">Sit amet</h4>
+                                    <div class="accordion__tab-content">
+                                        <ul class="accordion__tab-list">
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Sit amet</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Consectetur</a>
+                                            </li>
+                                            <li class="accordion__tab-item">
+                                                <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="accordion three-col"&gt;
+    &lt;h3 class="accordion__title"&gt;Filter by&lt;/h3&gt;
+    &lt;div class="accordion__tab"&gt;
+        &lt;h4 class="accordion__tab-title"&gt;Lorem&lt;/h4&gt;
+        &lt;div class="accordion__tab-content"&gt;
+            &lt;ul class="accordion__tab-list"&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Lorem ipsum dolor&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Sit amet&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Consectetur&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Adipisicing elit&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion__tab"&gt;
+        &lt;h4 class="accordion__tab-title is-active"&gt;Ipsum&lt;/h4&gt;
+        &lt;div class="accordion__tab-content"&gt;
+            &lt;ul class="accordion__tab-list"&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Lorem ipsum dolor&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item is-active"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Sit amet&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Consectetur&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Adipisicing elit&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion__tab"&gt;
+        &lt;h4 class="accordion__tab-title"&gt;Dolor&lt;/h4&gt;
+        &lt;div class="accordion__tab-content"&gt;
+            &lt;ul class="accordion__tab-list"&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Lorem ipsum dolor&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Sit amet&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Consectetur&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Adipisicing elit&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion__tab"&gt;
+        &lt;h4 class="accordion__tab-title"&gt;Sit amet&lt;/h4&gt;
+        &lt;div class="accordion__tab-content"&gt;
+            &lt;ul class="accordion__tab-list"&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Lorem ipsum dolor&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Sit amet&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Consectetur&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="accordion__tab-item"&gt;
+                    &lt;a class="accordion__tab-link" href=""&gt;Adipisicing elit&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Action card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi illum, omnis, fugiat molestiae, facilis iure quod eveniet delectus autem ipsa sunt! Veritatis dolorem dolor suscipit.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="action-card u-margin--none">
+                                <h2 class="action-card__title">Add rack controller</h2>
+                                <form class="form form--inline">
+                                    <div class="form__group u-margin--right">
+                                      <label class="u-margin--right-small" for="node-list">Select a ready node</label>
+                                      <select name="node-list" id="node-list">
+                                          <option value="" disabled="disabled" selected="selected">Select</option>
+                                          <option value="1">Snowwhite</option>
+                                          <option value="2">Pocahontas</option>
+                                          <option value="3">Yasmin</option>
+                                          <option value="4">(4 more)</option>
+                                      </select>
+                                      <label class="u-margin--left-small">or go to <a href="#">Node listing</a> to view all ready machines</label>
+                                    </div>
+                                    <div class="action-card__controls">
+                                        <div class="u-float--right">
+                                            <button class="button--base button--inline">Cancel</button>
+                                            <button type="submit" class="button--primary button--inline">Provision</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="action-card"&gt;
+    &lt;h2 class="action-card__title"&gt;Add rack controller&lt;/h2&gt;
+    &lt;form class="form form--inline"&gt;
+        &lt;div class="form__group u-margin--right"&gt;
+          &lt;label class="u-margin--right-small" for="node-list"&gt;Select a ready node&lt;/label&gt;
+          &lt;select name="node-list" id="node-list"&gt;
+              &lt;option value="" disabled="disabled" selected="selected"&gt;Select&lt;/option&gt;
+              &lt;option value="1"&gt;Snowwhite&lt;/option&gt;
+              &lt;option value="2"&gt;Pocahontas&lt;/option&gt;
+              &lt;option value="3"&gt;Yasmin&lt;/option&gt;
+              &lt;option value="4"&gt;(4 more)&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;label class="u-margin--left-small"&gt;or go to &lt;a href="#"&gt;Node listing&lt;/a&gt; to view all ready machines&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="action-card__controls"&gt;
+            &lt;div class="u-float--right"&gt;
+                &lt;button class="button--base button--inline"&gt;Cancel&lt;/button&gt;
+                &lt;button type="submit" class="button--primary button--inline"&gt;Provision&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="twelve-col">
+                    <h1>Utility classes</h1>
+                </div>
+                <div class="eight-col">
+                    <h2>Borders</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-border--top"&gt;&lt;/div&gt;
+&lt;div class="u-border--right"&gt;&lt;/div&gt;
+&lt;div class="u-border--bottom"&gt;&lt;/div&gt;
+&lt;div class="u-border--left"&gt;&lt;/div&gt;
+&lt;div class="u-border--none"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h2>Border styles</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-border--dotted"&gt;&lt;/div&gt;
+&lt;div class="u-border--solid"&gt;&lt;/div&gt;
+&lt;div class="u-border--dashed"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Float</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-float--left"&gt;&lt;/div&gt;
+&lt;div class="u-float--right"&gt;&lt;/div&gt;
+&lt;div class="u-float--none"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h2>Display</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-display--block"&gt;&lt;/div&gt;
+&lt;div class="u-display--inline"&gt;&lt;/div&gt;
+&lt;div class="u-display--inline-block"&gt;&lt;/div&gt;
+&lt;div class="u-display--hidden"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Division</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-width--full"&gt;&lt;/div&gt;
+&lt;div class="u-width--half"&gt;&lt;/div&gt;
+&lt;div class="u-width--third"&gt;&lt;/div&gt;
+&lt;div class="u-width--quarter"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h2>Colour states</h2>
+                </div>
+                <div class="eight-col">
+                    <h3>Text</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-text--error"&gt;&lt;/div&gt;
+&lt;div class="u-text--success"&gt;&lt;/div&gt;
+&lt;div class="u-text--information"&gt;&lt;/div&gt;
+&lt;div class="u-text--warning"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Borders</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-border--error"&gt;&lt;/div&gt;
+&lt;div class="u-border--success"&gt;&lt;/div&gt;
+&lt;div class="u-border--information"&gt;&lt;/div&gt;
+&lt;div class="u-border--warning"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Background</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-background--error"&gt;&lt;/div&gt;
+&lt;div class="u-background--success"&gt;&lt;/div&gt;
+&lt;div class="u-background--information"&gt;&lt;/div&gt;
+&lt;div class="u-background--warning"&gt;&lt;/div&gt;</pre>
                     </div>
                 </div>
             </div>
