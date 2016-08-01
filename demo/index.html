@@ -976,6 +976,434 @@
                         </pre>
                     </div>
                 </div>
+                <div class="eight-col">
+                    <h3>Forms - inline</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aut dolorem, veritatis unde assumenda nemo cum quisquam labore reprehenderit, facere suscipit voluptatibus excepturi, a! Dicta.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <form class="form form--inline">
+                                <div class="form__group">
+                                  <label class="u-margin--right-small" for="exampleInputEmail3">Email address</label>
+                                  <input type="email" id="exampleInputEmail3" placeholder="Email">
+                                </div>
+                                <div class="form__group">
+                                  <label class="u-margin--right-small" for="exampleInputPassword3">Password</label>
+                                  <input type="password" id="exampleInputPassword3" placeholder="Password">
+                                </div>
+                                <div class="form__group">
+                                    <input type="checkbox" id="exampleCheckboxTable">
+                                    <label for="exampleCheckboxTable">Save password</label>
+                                </div>
+                                <button type="submit" class="button--primary button--inline">Sign in</button>
+                            </form>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;form class="form form--inline"&gt;
+    &lt;div class="form__group"&gt;
+      &lt;label class="u-margin--right-small" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+      &lt;input type="email" id="exampleInputEmail3" placeholder="Email"&gt;
+    &lt;/div&gt;
+    &lt;div class="form__group"&gt;
+      &lt;label class="u-margin--right-small" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
+      &lt;input type="password" id="exampleInputPassword3" placeholder="Password"&gt;
+    &lt;/div&gt;
+    &lt;div class="form__group"&gt;
+        &lt;input type="checkbox" id="exampleCheckboxTable"&gt;
+        &lt;label for="exampleCheckboxTable"&gt;Save password&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="button--primary button--inline"&gt;Sign in&lt;/button&gt;
+&lt;/form&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Forms - stacked</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt iste necessitatibus ducimus odio, molestias harum eveniet, pariatur nisi tenetur sunt! Quia, cupiditate quibusdam ullam maxime!</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <form action="" class="form form--stack">
+                                <fieldset class="form__fieldset six-col">
+                                  <div class="form__group">
+                                    <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
+                                    <div class="form__group-input four-col last-col">
+                                        <input class="has-error" type="email" id="exampleInputEmail3" placeholder="Email">
+                                        <ul class="form__error errors">
+                                            <li class="form__error-item">Test</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                  <div class="form__group">
+                                      <label class="form__group-label two-col" for="exampleInputPassword3">Password</label>
+                                      <div class="form__group-input four-col last-col">
+                                          <input type="password" id="exampleInputPassword3" placeholder="Password">
+                                      </div>
+                                  </div>
+                                  <div class="form__group">
+                                      <label class="form__group-label two-col" for="exampleSelectCountry">Country</label>
+                                      <div class="form__group-input four-col last-col">
+                                          <select name="exampleSelectCountry" id="exampleSelectCountry">
+                                              <option value="disabled" disabled selected>Choose a country...</option>
+                                              <option value="UK">United Kingdom</option>
+                                              <option value="US">United States</option>
+                                              <option value="FRA">France</option>
+                                              <option value="GER">Germany</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  <div class="form__group">
+                                      <label class="form__group-label two-col" for="exampleTextarea">More information</label>
+                                      <div class="form__group-input four-col last-col">
+                                          <textarea name="exampleTextarea" rows="8" cols="40" placeholder="Add text..."></textarea>
+                                      </div>
+                                  </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;form action="" class="form form--stack"&gt;
+    &lt;fieldset class="form__fieldset six-col"&gt;
+      &lt;div class="form__group"&gt;
+        &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+        &lt;div class="form__group-input four-col last-col"&gt;
+            &lt;input class="has-error" type="email" id="exampleInputEmail3" placeholder="Email"&gt;
+            &lt;ul class="form__error errors"&gt;
+                &lt;li class="form__error-item"&gt;Test&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="form__group"&gt;
+        &lt;label class="form__group-label two-col" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
+        &lt;input type="password" class="four-col last-col" id="exampleInputPassword3" placeholder="Password"&gt;
+      &lt;/div&gt;
+      &lt;div class="form__group"&gt;
+          &lt;label class="form__group-label two-col" for="exampleSelectCountry"&gt;Country&lt;/label&gt;
+          &lt;select class="four-col last-col" name="exampleSelectCountry" id="exampleSelectCountry"&gt;
+              &lt;option value="disabled" disabled selected&gt;Choose a country...&lt;/option&gt;
+              &lt;option value="UK"&gt;United Kingdom&lt;/option&gt;
+              &lt;option value="US"&gt;United States&lt;/option&gt;
+              &lt;option value="FRA"&gt;France&lt;/option&gt;
+              &lt;option value="GER"&gt;Germany&lt;/option&gt;
+          &lt;/select&gt;
+      &lt;/div&gt;
+      &lt;div class="form__group"&gt;
+          &lt;label class="form__group-label two-col" for="exampleTextarea"&gt;More information&lt;/label&gt;
+          &lt;textarea class="four-col last-col" name="exampleTextarea" rows="8" cols="40" placeholder="Add text..."&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Forms - subtle</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus doloremque voluptate labore voluptas, deserunt odio, nulla animi veniam voluptatem cum, non vero dolore nemo fugiat!</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <form action="" class="form form--stack">
+                                <fieldset class="form__fieldset six-col">
+                                    <div class="form__group form__group--subtle">
+                                        <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
+                                        <div class="form__group-input four-col last-col">
+                                            <input type="email" id="exampleInputEmail3" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form__group form__group--subtle">
+                                        <label class="form__group-label two-col" for="exampleInputPassword3">Password</label>
+                                        <div class="form__group-input four-col last-col">
+                                            <input type="password" id="exampleInputPassword3" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;form action="" class="form form--stack"&gt;
+    &lt;fieldset class="form__fieldset six-col"&gt;
+        &lt;div class="form__group form__group--subtle"&gt;
+            &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+            &lt;div class="form__group-input four-col last-col"&gt;
+                &lt;input type="email" id="exampleInputEmail3" placeholder="Email"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form__group form__group--subtle"&gt;
+            &lt;label class="form__group-label two-col" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
+            &lt;div class="form__group-input four-col last-col"&gt;
+                &lt;input type="password" id="exampleInputPassword3" placeholder="Password"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Forms - Sibling</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ullam vitae excepturi facere cupiditate, distinctio pariatur vero, consequuntur numquam sit dicta officia hic, repellendus doloremque.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <form action="" class="form form--stack">
+                                <fieldset class="form__fieldset">
+                                    <div class="form__siblings">
+                                        <div class="form__group form__group--subtle">
+                                            <label class="form__group-label two-col" for="exampleInput1">Sibling 1</label>
+                                            <div class="form__group-input four-col last-col">
+                                                <input type="text" id="exampleInput1" placeholder="Form field sibling 1">
+                                            </div>
+                                        </div>
+                                        <div class="form__group form__group--subtle">
+                                            <label class="form__group-label two-col" for="exampleInput2">Sibling 2</label>
+                                            <div class="form__group-input four-col last-col">
+                                                <input type="text" id="exampleInput2" placeholder="Form field sibling 2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__group form__group--subtle">
+                                        <label class="form__group-label two-col" for="examplePassword4">Password</label>
+                                        <div class="form__group-input four-col last-col">
+                                            <input type="password" id="examplePassword4" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;form action="" class="form form--stack"&gt;
+    &lt;fieldset class="form__fieldset"&gt;
+        &lt;div class="form__siblings"&gt;
+            &lt;div class="form__group form__group--subtle"&gt;
+                &lt;label class="form__group-label two-col" for="exampleInput1"&gt;Sibling 1&lt;/label&gt;
+                &lt;div class="form__group-input four-col last-col"&gt;
+                    &lt;input type="text" id="exampleInput1" placeholder="Form field sibling 1"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form__group form__group--subtle"&gt;
+                &lt;label class="form__group-label two-col" for="exampleInput2"&gt;Sibling 2&lt;/label&gt;
+                &lt;div class="form__group-input four-col last-col"&gt;
+                    &lt;input type="text" id="exampleInput2" placeholder="Form field sibling 2"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form__group form__group--subtle"&gt;
+            &lt;label class="form__group-label two-col" for="examplePassword4"&gt;Password&lt;/label&gt;
+            &lt;div class="form__group-input four-col last-col"&gt;
+                &lt;input type="password" id="examplePassword4" placeholder="Password"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
+                    <h3>Table</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus et eos quas, dignissimos laudantium velit aliquam porro, quis perspiciatis, quaerat quos sed dolor, inventore fugiat?</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <table>
+                                <thead>
+                                      <tr>
+                                          <th>Table heading</th>
+                                          <th>
+                                              <a href="#">Table heading</a>
+                                              <span class="divide"></span>
+                                              <a href="">Table heading</a>
+                                          </th>
+                                          <th>lorem 2</th>
+                                          <th>lorem 3</th>
+                                      </tr>
+                                </thead>
+                                <tbody>
+                                      <tr>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr class="table--success">
+                                          <td><i class="icon icon--success"></i> test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr><tr>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr class="table--warning">
+                                          <td><i class="icon icon--warning"></i> test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr class="table--error">
+                                          <td><i class="icon icon--error"></i> test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr class="table--information">
+                                          <td><i class="icon icon--info"></i> test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                              <input type="checkbox" id="exampleCheckbox">
+                                              <label for="exampleCheckbox"></label>
+                                          test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                          <td>test</td>
+                                      </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;table&gt;
+    &lt;thead&gt;
+          &lt;tr&gt;
+              &lt;th&gt;Table heading&lt;/th&gt;
+              &lt;th&gt;
+                  &lt;a href="#"&gt;Table heading&lt;/a&gt;
+                  &lt;span class="divide"&gt;&lt;/span&gt;
+                  &lt;a href=""&gt;Table heading&lt;/a&gt;
+              &lt;/th&gt;
+              &lt;th&gt;lorem 2&lt;/th&gt;
+              &lt;th&gt;lorem 3&lt;/th&gt;
+          &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+          &lt;tr&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class="table--success"&gt;
+              &lt;td&gt;&lt;i class="icon icon--success"&gt;&lt;/i&gt; test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;&lt;tr&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class="table--warning"&gt;
+              &lt;td&gt;&lt;i class="icon icon--warning"&gt;&lt;/i&gt; test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class="table--error"&gt;
+              &lt;td&gt;&lt;i class="icon icon--error"&gt;&lt;/i&gt; test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class="table--information"&gt;
+              &lt;td&gt;&lt;i class="icon icon--info"&gt;&lt;/i&gt; test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+              &lt;td&gt;
+                  &lt;input type="checkbox" id="exampleCheckbox"&gt;
+                  &lt;label for="exampleCheckbox"&gt;&lt;/label&gt;
+              test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+              &lt;td&gt;test&lt;/td&gt;
+          &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Table - row classes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit rerum labore commodi, minus similique? Fuga vitae aliquid explicabo harum, quis maxime amet debitis. Esse, assumenda.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right"></h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;tr class="table--information"&gt;...&lt;/tr&gt;
+&lt;tr class="table--success"&gt;...&lt;/tr&gt;
+&lt;tr class="table--error"&gt;...&lt;/tr&gt;
+&lt;tr class="table--warning"&gt;...&lt;/tr&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Table - column classes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit rerum labore commodi, minus similique? Fuga vitae aliquid explicabo harum, quis maxime amet debitis. Esse, assumenda.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right"></h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;td class="table--1"&gt;...&lt;/td&gt;
+&lt;td class="table--100"&gt;...&lt;/td&gt;</pre>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
