@@ -63,6 +63,11 @@
     &--code {
       color: $ash;
       background-color: lighten($silk, 15%);
+      white-space: pre-wrap;
+
+      code {
+        white-space: pre-wrap;
+      }
     }
   }
 
