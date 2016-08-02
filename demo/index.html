@@ -1120,7 +1120,7 @@
                     <div class="docs-example">
                         <div class="docs-example__item">
                             <form action="" class="form form--stack">
-                                <fieldset class="form__fieldset six-col">
+                                <fieldset class="form__fieldset u-margin--bottom-none six-col">
                                   <div class="form__group">
                                     <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
                                     <div class="form__group-input four-col last-col">
@@ -1159,7 +1159,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset six-col"&gt;
+    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
       &lt;div class="form__group"&gt;
         &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
         &lt;div class="form__group-input four-col last-col"&gt;
@@ -1201,7 +1201,7 @@
                     <div class="docs-example">
                         <div class="docs-example__item">
                             <form action="" class="form form--stack">
-                                <fieldset class="form__fieldset six-col">
+                                <fieldset class="form__fieldset u-margin--bottom-none six-col">
                                     <div class="form__group form__group--subtle">
                                         <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
                                         <div class="form__group-input four-col last-col">
@@ -1219,7 +1219,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset six-col"&gt;
+    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
         &lt;div class="form__group form__group--subtle"&gt;
             &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
             &lt;div class="form__group-input four-col last-col"&gt;
@@ -1246,7 +1246,7 @@
                     <div class="docs-example">
                         <div class="docs-example__item">
                             <form action="" class="form form--stack">
-                                <fieldset class="form__fieldset">
+                                <fieldset class="form__fieldset u-margin--bottom-none">
                                     <div class="form__siblings">
                                         <div class="form__group form__group--subtle">
                                             <label class="form__group-label two-col" for="exampleInput1">Sibling 1</label>
@@ -1272,7 +1272,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset"&gt;
+    &lt;fieldset class="form__fieldset u-margin--bottom-none"&gt;
         &lt;div class="form__siblings"&gt;
             &lt;div class="form__group form__group--subtle"&gt;
                 &lt;label class="form__group-label two-col" for="exampleInput1"&gt;Sibling 1&lt;/label&gt;
@@ -1291,6 +1291,51 @@
             &lt;label class="form__group-label two-col" for="examplePassword4"&gt;Password&lt;/label&gt;
             &lt;div class="form__group-input four-col last-col"&gt;
                 &lt;input type="password" id="examplePassword4" placeholder="Password"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Forms - disabled</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus doloremque voluptate labore voluptas, deserunt odio, nulla animi veniam voluptatem cum, non vero dolore nemo fugiat!</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <form action="" class="form form--stack">
+                                <fieldset class="form__fieldset u-margin--bottom-none six-col">
+                                    <div class="form__group">
+                                        <label class="form__group-label two-col" for="exampleInputEmail3">Email address</label>
+                                        <div class="form__group-input four-col last-col">
+                                            <input type="email" id="exampleInputEmail3" placeholder="Email" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__group-label two-col" for="exampleInputPassword3">Password</label>
+                                        <div class="form__group-input four-col last-col">
+                                            <input type="password" id="exampleInputPassword3" placeholder="Password" disabled="disabled">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;form action="" class="form form--stack"&gt;
+    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
+        &lt;div class="form__group"&gt;
+            &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
+            &lt;div class="form__group-input four-col last-col"&gt;
+                &lt;input type="email" id="exampleInputEmail3" placeholder="Email" disabled="disabled"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form__group"&gt;
+            &lt;label class="form__group-label two-col" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
+            &lt;div class="form__group-input four-col last-col"&gt;
+                &lt;input type="password" id="exampleInputPassword3" placeholder="Password" disabled="disabled"&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/fieldset&gt;
@@ -2132,6 +2177,7 @@
                                             </form>
                                         </section>
                                         <div class="page-header__section twelve-col u-margin--bottom-none">
+                                            <p class="page-header__message page-header__message--error">Error message</p>
                                             <div class="page-header__controls">
                                                 <a href="" class="button--base button--inline">Cancel</a>
                                                 <button class="button--secondary button--inline">Save and add another</button>
@@ -2183,7 +2229,7 @@
             &lt;section class="page-header__section twelve-col u-margin--bottom-none"&gt;
                 &lt;h3 class="page-header__dropdown-title"&gt;Add machine&lt;/h3&gt;
                 &lt;form class="form form--stack"&gt;
-                    &lt;fieldset class="form__fieldset six-col"&gt;
+                    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
                         &lt;div class="form__group"&gt;
                             &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
                             &lt;div class="form__group-input three-col"&gt;
@@ -2204,7 +2250,7 @@
                             &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/fieldset&gt;
-                    &lt;fieldset class="form__fieldset six-col last-col"&gt;
+                    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col last-col"&gt;
                         &lt;div class="form__group"&gt;
                             &lt;label for="machine-name" class="form__group-label two-col"&gt;Machine name&lt;/label&gt;
                             &lt;div class="form__group-input three-col"&gt;
@@ -2333,8 +2379,47 @@
 &lt;div class="search"&gt;
     &lt;input placeholder="Search..." class="search__input" type="search"&gt;
     &lt;input class="search__submit" type="submit"&gt;
-&lt;/div&gt;
-                        </pre>
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Global search - Remove / clear</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aut vitae! Blanditiis incidunt animi ad velit provident, quis, porro. Fugit voluptas eaque, doloribus nesciunt sequi.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="search">
+                                <input placeholder="Search..." class="search__input" type="search" value="Lorem ipsum dolor sit amet.">
+                                <input class="search__submit search__submit--close" type="submit">
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="search"&gt;
+    &lt;input placeholder="Search..." class="search__input" type="search"&gt;
+    &lt;input class="search__submit search__submit--close" type="submit"&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Global search - Disabled</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, aut vitae! Blanditiis incidunt animi ad velit provident, quis, porro. Fugit voluptas eaque, doloribus nesciunt sequi.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="search">
+                                <input placeholder="Search..." class="search__input" type="search" value="Lorem ipsum dolor sit amet." disabled="disabled">
+                                <input class="search__submit" type="submit">
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="search"&gt;
+    &lt;input placeholder="Search..." class="search__input" type="search" disabled="disabled"&gt;
+    &lt;input class="search__submit" type="submit"&gt;
+&lt;/div&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -2586,11 +2671,55 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="box two-col u-margin--bottom-none u-border--top">
+                                <p>.u-border--top</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none u-border--right">
+                                <p>.u-border--right</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none u-border--bottom">
+                                <p>.u-border--bottom</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none u-border--left">
+                                <p>.u-border--left</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;div class="u-border--top"&gt;&lt;/div&gt;
 &lt;div class="u-border--right"&gt;&lt;/div&gt;
 &lt;div class="u-border--bottom"&gt;&lt;/div&gt;
-&lt;div class="u-border--left"&gt;&lt;/div&gt;
+&lt;div class="u-border--left"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repellendus quam provident eos, sapiente quaerat. Soluta deserunt facere, molestias nobis iste perferendis. Sit, architecto, laudantium.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="box two-col u-margin--bottom-none u-border--top-none">
+                                <p>.u-border--top-none</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none u-border--right-none">
+                                <p>.u-border--right-none</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none u-border--bottom-none">
+                                <p>.u-border--bottom-none</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none u-border--left-none">
+                                <p>.u-border--left-none</p>
+                            </div>
+                            <div class="box two-col u-margin--bottom-none last-col u-border--none">
+                                <p>.u-border--none</p>
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-border--top-none"&gt;&lt;/div&gt;
+&lt;div class="u-border--right-none"&gt;&lt;/div&gt;
+&lt;div class="u-border--bottom-none"&gt;&lt;/div&gt;
+&lt;div class="u-border--left-none"&gt;&lt;/div&gt;
 &lt;div class="u-border--none"&gt;&lt;/div&gt;</pre>
                     </div>
                 </div>
@@ -2601,6 +2730,17 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="box u-border--dotted three-col u-margin--bottom-none">
+                                <p>.u-border--dotted</p>
+                            </div>
+                            <div class="box u-border--solid three-col u-margin--bottom-none">
+                                <p>.u-border--solid</p>
+                            </div>
+                            <div class="box u-border--dashed three-col last-col u-margin--bottom-none">
+                                <p>.u-border--dashed</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;div class="u-border--dotted"&gt;&lt;/div&gt;
 &lt;div class="u-border--solid"&gt;&lt;/div&gt;
@@ -2618,6 +2758,14 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="box u-float--left">
+                                <p>.u-float--left</p>
+                            </div>
+                            <div class="box u-float--right">
+                                <p>.u-float--right</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;div class="u-float--left"&gt;&lt;/div&gt;
 &lt;div class="u-float--right"&gt;&lt;/div&gt;
@@ -2638,6 +2786,16 @@
 &lt;div class="u-display--hidden"&gt;&lt;/div&gt;</pre>
                     </div>
                 </div>
+                <div class="eight-col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis architecto ipsa minima vel veniam aspernatur aut, ratione, blanditiis, reprehenderit autem sint adipisci laboriosam corrupti odio?</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-clearfix"&gt;&lt;/div&gt;</pre>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="row">
@@ -2649,6 +2807,38 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="u-width--full u-margin--bottom box">
+                                <p>.u-width--full</p>
+                            </div>
+                            <div class="u-width--half u-margin--bottom box">
+                                <p>.u-width--half</p>
+                            </div>
+                            <div class="u-width--half u-margin--bottom box">
+                                <p>.u-width--half</p>
+                            </div>
+                            <div class="u-width--third u-margin--bottom box">
+                                <p>.u-width--third</p>
+                            </div>
+                            <div class="u-width--third u-margin--bottom box">
+                                <p>.u-width--third</p>
+                            </div>
+                            <div class="u-width--third u-margin--bottom box">
+                                <p>.u-width--third</p>
+                            </div>
+                            <div class="u-width--quarter u-margin--bottom box">
+                                <p>.u-width--quarter</p>
+                            </div>
+                            <div class="u-width--quarter u-margin--bottom box">
+                                <p>.u-width--quarter</p>
+                            </div>
+                            <div class="u-width--quarter u-margin--bottom box">
+                                <p>.u-width--quarter</p>
+                            </div>
+                            <div class="u-width--quarter u-margin--bottom box">
+                                <p>.u-width--quarter</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;div class="u-width--full"&gt;&lt;/div&gt;
 &lt;div class="u-width--half"&gt;&lt;/div&gt;
@@ -2670,11 +2860,25 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="u-text--error u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-text--error</p>
+                            </div>
+                            <div class="u-text--success u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-text--success</p>
+                            </div>
+                            <div class="u-text--information u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-text--information</p>
+                            </div>
+                            <div class="u-text--warning u-text--center u-margin--bottom-none box three-col last-col">
+                                <p>.u-text--warning</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
-&lt;div class="u-text--error"&gt;&lt;/div&gt;
-&lt;div class="u-text--success"&gt;&lt;/div&gt;
-&lt;div class="u-text--information"&gt;&lt;/div&gt;
-&lt;div class="u-text--warning"&gt;&lt;/div&gt;</pre>
+&lt;div class="u-text--error"&gt;...&lt;/div&gt;
+&lt;div class="u-text--success"&gt;...&lt;/div&gt;
+&lt;div class="u-text--information"&gt;...&lt;/div&gt;
+&lt;div class="u-text--warning"&gt;...&lt;/div&gt;</pre>
                     </div>
                 </div>
                 <div class="eight-col">
@@ -2684,11 +2888,25 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="u-border--error u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-border--error</p>
+                            </div>
+                            <div class="u-border--success u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-border--success</p>
+                            </div>
+                            <div class="u-border--information u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-border--information</p>
+                            </div>
+                            <div class="u-border--warning u-text--center u-margin--bottom-none box three-col last-col">
+                                <p>.u-border--warning</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
-&lt;div class="u-border--error"&gt;&lt;/div&gt;
-&lt;div class="u-border--success"&gt;&lt;/div&gt;
-&lt;div class="u-border--information"&gt;&lt;/div&gt;
-&lt;div class="u-border--warning"&gt;&lt;/div&gt;</pre>
+&lt;div class="u-border--error"&gt;...&lt;/div&gt;
+&lt;div class="u-border--success"&gt;...&lt;/div&gt;
+&lt;div class="u-border--information"&gt;...&lt;/div&gt;
+&lt;div class="u-border--warning"&gt;...&lt;/div&gt;</pre>
                     </div>
                 </div>
                 <div class="eight-col">
@@ -2698,11 +2916,41 @@
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="u-background--error u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-background--error</p>
+                            </div>
+                            <div class="u-background--success u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-background--success</p>
+                            </div>
+                            <div class="u-background--information u-text--center u-margin--bottom-none box three-col">
+                                <p>.u-background--information</p>
+                            </div>
+                            <div class="u-background--warning u-text--center u-margin--bottom-none box three-col last-col">
+                                <p>.u-background--warning</p>
+                            </div>
+                        </div>
                         <pre class="docs-example__item docs-example__item--code">
-&lt;div class="u-background--error"&gt;&lt;/div&gt;
-&lt;div class="u-background--success"&gt;&lt;/div&gt;
-&lt;div class="u-background--information"&gt;&lt;/div&gt;
-&lt;div class="u-background--warning"&gt;&lt;/div&gt;</pre>
+&lt;div class="u-background--error"&gt;...&lt;/div&gt;
+&lt;div class="u-background--success"&gt;...&lt;/div&gt;
+&lt;div class="u-background--information"&gt;...&lt;/div&gt;
+&lt;div class="u-background--warning"&gt;...&lt;/div&gt;</pre>
+                    </div>
+                </div>
+                <div class="eight-col">
+                    <h3>Animations</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus neque, necessitatibus ipsum itaque et hic optio cum nisi maxime facilis veniam mollitia tempore placeat cupiditate.</p>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <div class="box u-animation--spin" style="width: 150px; height: 150px;">
+                                <p>.u-animation--spin</p>
+                            </div>
+                        </div>
+                        <pre class="docs-example__item docs-example__item--code">
+&lt;div class="u-animation--spin"&gt;...&lt;/div&gt;</pre>
                     </div>
                 </div>
             </div>
