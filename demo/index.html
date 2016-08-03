@@ -12,7 +12,7 @@
     <title>MAAS GUI | pattern library</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../build/css/build.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://assets.ubuntu.com/v1/99399a1b-build.min.css" />
 </head>
 <body>
     <header class="docs-nav" role="banner">
@@ -1005,16 +1005,22 @@
                         <div class="docs-example__item">
                             <form class="form">
                                 <div class="form__group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <label class="form__group-label" for="exampleInputEmail1">Email address</label>
+                                    <div class="form__group-input">
+                                        <input type="email" id="exampleInputEmail1" placeholder="Email">
+                                    </div>
                                 </div>
                                 <div class="form__group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <label class="form__group-label" for="exampleInputPassword1">Password</label>
+                                    <div class="form__group-input">
+                                        <input type="password" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
                                 </div>
                                 <div class="form__group">
-                                    <label for="exampleInputFile">File input</label>
-                                    <input type="file" id="exampleInputFile">
+                                    <label class="form__group-label" for="exampleInputFile">File input</label>
+                                    <div class="form__group-input">
+                                        <input type="file" id="exampleInputFile">
+                                    </div>
                                     <p class="form__help-text">Example form help text.</p>
                                 </div>
                                 <div class="form__group">
@@ -1037,15 +1043,19 @@
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form class="form"&gt;
     &lt;div class="form__group"&gt;
-        &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
-        &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"&gt;
+        &lt;label class="form__group-label" for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;div class="form__group-input"&gt;
+            &lt;input type="email" id="exampleInputEmail1" placeholder="Email"&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="form__group"&gt;
-        &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
-        &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+        &lt;label class="form__group-label" for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+        &lt;div class="form__group-input"&gt;
+            &lt;input type="password" id="exampleInputPassword1" placeholder="Password"&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="form__group"&gt;
-        &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+        &lt;label class="form__group-label" for="exampleInputFile"&gt;File input&lt;/label&gt;
         &lt;input type="file" id="exampleInputFile"&gt;
         &lt;p class="form__help-text"&gt;Example form help text.&lt;/p&gt;
     &lt;/div&gt;
@@ -1078,12 +1088,16 @@
                         <div class="docs-example__item">
                             <form class="form form--inline">
                                 <div class="form__group">
-                                  <label class="u-margin--right-small" for="exampleInputEmail3">Email address</label>
-                                  <input type="email" id="exampleInputEmail3" placeholder="Email">
+                                  <label class="form__group-label" for="exampleInputEmail3">Email address</label>
+                                    <div class="form__group-input">
+                                        <input type="email" id="exampleInputEmail3" placeholder="Email">
+                                    </div>
                                 </div>
                                 <div class="form__group">
-                                  <label class="u-margin--right-small" for="exampleInputPassword3">Password</label>
-                                  <input type="password" id="exampleInputPassword3" placeholder="Password">
+                                  <label class="form__group-label" for="exampleInputPassword3">Password</label>
+                                    <div class="form__group-input">
+                                        <input type="password" id="exampleInputPassword3" placeholder="Password">
+                                    </div>
                                 </div>
                                 <div class="form__group">
                                     <input type="checkbox" id="exampleCheckboxTable">
@@ -1095,12 +1109,16 @@
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form class="form form--inline"&gt;
     &lt;div class="form__group"&gt;
-      &lt;label class="u-margin--right-small" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
-      &lt;input type="email" id="exampleInputEmail3" placeholder="Email"&gt;
+        &lt;label class="form__group-label" for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+        &lt;div class="form__group-input"&gt;
+            &lt;input type="email" id="exampleInputEmail1" placeholder="Email"&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="form__group"&gt;
-      &lt;label class="u-margin--right-small" for="exampleInputPassword3"&gt;Password&lt;/label&gt;
-      &lt;input type="password" id="exampleInputPassword3" placeholder="Password"&gt;
+        &lt;label class="form__group-label" for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+        &lt;div class="form__group-input"&gt;
+            &lt;input type="password" id="exampleInputPassword1" placeholder="Password"&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="form__group"&gt;
         &lt;input type="checkbox" id="exampleCheckboxTable"&gt;
@@ -1159,7 +1177,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
+    &lt;fieldset class="form__fieldset six-col"&gt;
       &lt;div class="form__group"&gt;
         &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
         &lt;div class="form__group-input four-col last-col"&gt;
@@ -1219,7 +1237,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
+    &lt;fieldset class="form__fieldset six-col"&gt;
         &lt;div class="form__group form__group--subtle"&gt;
             &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
             &lt;div class="form__group-input four-col last-col"&gt;
@@ -1246,7 +1264,7 @@
                     <div class="docs-example">
                         <div class="docs-example__item">
                             <form action="" class="form form--stack">
-                                <fieldset class="form__fieldset u-margin--bottom-none">
+                                <fieldset class="form__fieldset six-col u-margin--bottom-none">
                                     <div class="form__siblings">
                                         <div class="form__group form__group--subtle">
                                             <label class="form__group-label two-col" for="exampleInput1">Sibling 1</label>
@@ -1272,7 +1290,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset u-margin--bottom-none"&gt;
+    &lt;fieldset class="form__fieldset six-col"&gt;
         &lt;div class="form__siblings"&gt;
             &lt;div class="form__group form__group--subtle"&gt;
                 &lt;label class="form__group-label two-col" for="exampleInput1"&gt;Sibling 1&lt;/label&gt;
@@ -1325,7 +1343,7 @@
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 &lt;form action="" class="form form--stack"&gt;
-    &lt;fieldset class="form__fieldset u-margin--bottom-none six-col"&gt;
+    &lt;fieldset class="form__fieldset six-col"&gt;
         &lt;div class="form__group"&gt;
             &lt;label class="form__group-label two-col" for="exampleInputEmail3"&gt;Email address&lt;/label&gt;
             &lt;div class="form__group-input four-col last-col"&gt;
@@ -1339,8 +1357,7 @@
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/fieldset&gt;
-&lt;/form&gt;
-                        </pre>
+&lt;/form&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -1429,8 +1446,7 @@
     &lt;code class="code-block__line"&gt;...&lt;/code&gt;
     &lt;code class="code-block__line"&gt;...&lt;/code&gt;
     &lt;code class="code-block__line"&gt;...&lt;/code&gt;
-&lt;/pre&gt;
-                        </pre>
+&lt;/pre&gt;</pre>
                     </div>
                 </div>
             </div>
