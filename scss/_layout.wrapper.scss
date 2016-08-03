@@ -16,6 +16,7 @@
     margin: 0 auto;
     position: relative;
     background: rgba($white, .4);
+    overflow-x: hidden;
 
     &:after {
       content: '';
