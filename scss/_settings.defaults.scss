@@ -1,6 +1,6 @@
 /// assets database path
 /// usage: background: url(#{$asset-path}img/backgrounds/background.jpg) no-repeat 0 0;
-$asset-path: '../assets/';
+$asset-path: '../../assets/';
 
 /// MAAS font sizes
 $base-font-family:      "'Ubuntu', Arial, 'libra sans', sans-serif";
@@ -25,34 +25,33 @@ $line-height-ratio:     $base-line-height / $base-font-size;
 $text-color:            $cool-grey;
 $headline-color:        $cool-grey;
 $alt-headline-color:    $warm-grey;
-$link-color:            $brand-color;
-$link-border:           #c2c2c2;
-$link-hover:            #dd4814;
+$link-color:            $cool-grey;
+$link-border:           $silk;
+$link-hover:            $orange;
 
 // MAAS colours
-$off-white:             #fafafa!default;
 $pale-grey:             #bcbcbc!default;
 $muted-grey:            #b2b2b2!default;
 $gallery-grey:          #eee!default;
 $mercury-grey:          #e3e3e3!default;
-$off-white:             #f8f8f8!default;
+$off-white:             $silk!default;
 
-$loading:               #2ab7ec!default;
-$error:                 #d83832!default;
-$information:           #2ab7ec!default;
-$outline:               #d2d2d2!default;
-$success:               #38b44a!default;
+$loading:               $blue!default;
+$error:                 $red!default;
+$information:           $blue!default;
+$outline:               $silk!default;
+$success:               $green!default;
 $disabled:              $gallery-grey;
 $editable:              $white;
 
+
 /// MAAS Form colours
-$primary-button-color:  #dd4814;
+$primary-button-color:  $orange;
 $secondary-button-color: $white;
-$input-checked:         #dd4814;
+$input-checked:         $orange;
 
 // MAAS Tab colours
-$tab-active-state:      #dd4814!default;
-
+$tab-active-state:      $orange!default;
 
 // Header variables
 $header-link-color:     $white;
@@ -64,7 +63,7 @@ $breakpoint-large:      $site-max-width;
 // MAAS states
 $states: (
   error: $error,
-  off: $outline,
+  off: $silk,
   warning: $warning,
   success: $success,
   on: $success,

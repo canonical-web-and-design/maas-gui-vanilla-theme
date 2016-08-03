@@ -23,11 +23,11 @@
       width: 100%;
 
       &::placeholder {
-        color: $warm-grey;
+        color: $ash;
       }
 
       &[disabled] {
-        color: $warm-grey;
+        color: $ash;
         background-color: $transparent;
       }
     }
@@ -67,11 +67,11 @@
     width: 100%;
 
     &::placeholder {
-      color: $warm-grey;
+      color: $ash;
     }
 
     &[disabled] {
-      color: $warm-grey;
+      color: $ash;
       background-color: $transparent;
     }
   }
@@ -83,7 +83,7 @@
     clear: both;
     cursor: pointer;
     margin: 0;
-    background-image: url('#{$asset-path}images/forms/chevron_down.svg');
+    background-image: url('#{$asset-path}images/forms/chevron-down.svg');
     background-repeat: no-repeat;
     background-position: top 14px right 10px;
     background-color: $white;
@@ -105,7 +105,7 @@
     }
 
     &[disabled] {
-      color: $warm-grey;
+      color: $ash;
       background-image: none;
       background-color: $transparent;
     }
@@ -235,32 +235,6 @@
         background: $input-checked;
         border-radius: 50%;
       }
-    }
-  }
-
-  .tags {
-    width: 100%;
-
-    .tag-list {
-      width: 100%;
-      margin: 0;
-
-      .tag-item {
-        display: inline-block;
-        float: left;
-        line-height: 36px;
-        margin-bottom: 0;
-        margin-right: 10px;
-        word-wrap: break-word;
-
-        .remove-button {
-          border-bottom: 0;
-        }
-      }
-    }
-
-    .input {
-      width: 100% !important;
     }
   }
 }

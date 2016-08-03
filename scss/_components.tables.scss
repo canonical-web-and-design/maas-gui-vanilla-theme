@@ -7,7 +7,7 @@
 /// MAAS table styling
 /// @group maas table
 @mixin maas-table {
-  @include tables($alto-grey, $warm-grey, 16px, 13px);
+  @include tables($alto-grey, $ash, 16px, 13px);
   @include table-columns(100);
 }
 

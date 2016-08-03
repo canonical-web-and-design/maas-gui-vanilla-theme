@@ -42,11 +42,10 @@
         @extend %accordion__tab-title;
 
         &.is-active {
-          @extend %accordion__tab-title;
-          background-image: url('#{$asset-path}images/forms/chevron_up.svg');
+          background-image: url('#{$asset-path}images/forms/chevron-up.svg');
 
           + .accordion__tab-content {
-            max-height: 3000px;
+            max-height: 400px;
             transition: max-height .5s ease-in;
           }
         }
@@ -56,7 +55,7 @@
       .accordion__tab-content {
         max-height: 0;
         transition: max-height .5s ease-out;
-        overflow: hidden;
+        overflow-y: auto;
 
         .accordion__tab-list {
           list-style-type: none;
@@ -99,7 +98,7 @@
 
                 .accordion__tab-link {
                   color: $link-hover;
-                  background-image: url('#{$asset-path}images/icons/cross_orange.svg');
+                  background-image: url('#{$asset-path}images/icons/cross-orange.svg');
                 }
               }
             }
@@ -113,9 +112,9 @@
   %accordion__tab-title {
     padding: 12px 20px;
     margin: 0;
-    color: $warm-grey;
+    color: $ash;
     cursor: pointer;
-    background: $transparent url('#{$asset-path}images/forms/chevron_down.svg') top 20px right 20px no-repeat;
+    background: $transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
   }
   // scss-lint:enable NestingDepth SelectorDepth
 }

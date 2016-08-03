@@ -13,14 +13,14 @@
 
 @mixin spacing($spacing, $spacing-unit) {
 
-  $directions:                    top right bottom left;
-  $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
+  $directions:        top right bottom left;
+  $sizes:             (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
 
   .u-#{$spacing} {
     #{$spacing}: $spacing-unit;
 
     &--none {
-      #{$spacing}: none !important;
+      #{$spacing}: 0 !important;
     }
 
     @each $size, $division in $sizes {
