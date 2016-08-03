@@ -5,7 +5,7 @@ $asset-path: '../../assets/';
 /// MAAS font sizes
 $base-font-family:      "'Ubuntu', Arial, 'libra sans', sans-serif";
 $base-font-size:        16px!default;
-$base-line-height:      20px!default;
+$base-line-height:      24px!default;
 
 $h1:                    32px!default;
 $h2:                    23px!default;
@@ -17,43 +17,56 @@ $gigantic:              45px!default;
 $mega:                  40px!default;
 
 /// MAAS Line heights
-$base-spacing-unit:     $base-line-height!default;
+$base-spacing-unit:     20px!default;
 $half-spacing-unit:     $base-spacing-unit / 2!default;
 $line-height-ratio:     $base-line-height / $base-font-size;
 
 /// MAAS Text styles
 $text-color:            $cool-grey;
-$headline-color:        $warm-grey;
-$link-color:            $brand-color;
-$link-border:           #c2c2c2;
-$link-hover:            #dd4814;
+$headline-color:        $cool-grey;
+$alt-headline-color:    $warm-grey;
+$link-color:            $cool-grey;
+$link-border:           $silk;
+$link-hover:            $orange;
 
 // MAAS colours
-$off-white:             #fafafa!default;
 $pale-grey:             #bcbcbc!default;
 $muted-grey:            #b2b2b2!default;
 $gallery-grey:          #eee!default;
 $mercury-grey:          #e3e3e3!default;
+$off-white:             $silk!default;
 
-$error:                 #d83832!default;
-$information:           #2ab7ec!default;
-$outline:               #d2d2d2!default;
-$success:               #38b44a!default;
+$loading:               $blue!default;
+$error:                 $red!default;
+$information:           $blue!default;
+$outline:               $silk!default;
+$success:               $green!default;
 $disabled:              $gallery-grey;
 $editable:              $white;
 
+
 /// MAAS Form colours
-$primary-button-color:  #dd4814;
+$primary-button-color:  $orange;
 $secondary-button-color: $white;
-$input-checked:         #dd4814;
+$input-checked:         $orange;
 
 // MAAS Tab colours
-$tab-active-state:      #dd4814!default;
-
+$tab-active-state:      $orange!default;
 
 // Header variables
-$header-link-color:     $cool-grey;
+$header-link-color:     $white;
 
 // MAAS structure
 $site-max-width:        1440px;
 $breakpoint-large:      $site-max-width;
+
+// MAAS states
+$states: (
+  error: $error,
+  off: $silk,
+  warning: $warning,
+  success: $success,
+  on: $success,
+  information: $information,
+  loading: $loading
+);

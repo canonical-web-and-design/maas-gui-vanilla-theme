@@ -7,14 +7,11 @@
 /// MAAS table styling
 /// @group maas table
 @mixin maas-table {
-  @include tables($alto-grey, $warm-grey, 16px, 13px);
+  @include tables($alto-grey, $ash, 16px, 13px);
   @include table-columns(100);
 }
 
-// scss-lint:disable SelectorFormat
 @mixin tables($table-border-color, $table-header-color, $table-font-size, $table-header-size) {
-
-  // scss-lint:disable NestingDepth
 
   // Here is the main placeholder styles for tables. All main elements can be
   // changed or amended here and will effect standard table markup / class based
@@ -25,7 +22,7 @@
     border-spacing: 0;
     overflow-x: scroll;
     margin-bottom: 20px;
-    margin: 0 0 2.5em;
+    margin: 0 0 20px;
     width: 100%;
     table-layout: fixed;
 
@@ -38,7 +35,7 @@
     // Table cell styles
     %table-cell {
       @include font-size($table-font-size);
-      padding: 8px 10px 7px;
+      padding: 10px;
       box-sizing: border-box;
       min-height: 21px;
       background: none;
@@ -61,26 +58,34 @@
       @include font-size($table-header-size);
       background: none;
       color: $table-header-color;
+
+      label {
+        top: -4px;
+      }
     }
 
     // Table header hyperlink styles
     %table-header-link {
       color: $table-header-color;
+      border-bottom: 0;
 
       &:hover {
-        color: $text-color;
-        text-decoration: none;
-        border-bottom: 1px solid $text-color;
-      }
-
-      // Sorting and active styles when filtering a table
-      &.active {
         color: $text-color;
         text-decoration: none;
       }
 
       &.sort {
-        border-bottom: 1px solid inherit;
+        border-bottom: 1px solid $table-header-color;
+      }
+
+      // Sorting and active styles when filtering a table
+      &.is-active {
+        color: $text-color;
+        text-decoration: none;
+
+        &.sort {
+          border-color: $text-color;
+        }
       }
     }
 
@@ -116,16 +121,6 @@
 
     // Generic table form elements, covers general alignment of common form
     // elements which can be found in all tables.
-    label {
-      font-size: 13px;
-      color: $pale-grey;
-    }
-
-    input,
-    select {
-      margin: 0 0 0 -14px;
-    }
-
     input {
 
       &[type="radio"],
@@ -133,7 +128,7 @@
 
         + label {
           margin: 0;
-          top: -4px;
+          top: -2px;
         }
       }
     }
@@ -224,63 +219,14 @@
   .table {
     @extend %table;
     display: table;
+    float: left;
+    width: 100%;
 
     // Table row style
     .table__row {
       @extend %table-row;
       float: left;
       display: table-row;
-
-      // Table row hover style, this can reveal control elements
-      &:hover {
-        background-color: $white;
-
-        // Show input / select styles when on hover over a parent .table__row
-        .table__input {
-          background-color: $white;
-          border-color: $alto-grey;
-          background-position: right 10px top 16px;
-        }
-
-        // Set controls z-index and opacity so it is visible
-        .table__controls {
-          z-index: 1;
-          opacity: 1;
-
-          &--secondary {
-            z-index: 1;
-            opacity: 1;
-          }
-        }
-      }
-
-      // Active state on .table__row
-      &.active {
-        background-color: $white;
-
-        // Hover state makes any forms / controls invisible or unable to be used
-        &:hover {
-
-          .table__input {
-            background-color: transparent;
-            border-color: transparent;
-            pointer-events: none;
-            background-position: -9999px -9999px;
-          }
-
-          .table__controls {
-            opacity: 0;
-            z-index: -1000;
-            pointer-events: none;
-
-            &--secondary {
-              z-index: -1000;
-              opacity: 0;
-              pointer-events: none;
-            }
-          }
-        }
-      }
     }
 
     .table__header,
@@ -291,7 +237,7 @@
     }
 
     .table__head {
-      display: table-head;
+      display: table-row-group;
       width: 100%;
       box-sizing: border-box;
 
@@ -360,57 +306,137 @@
       }
     }
 
-    // Table contol container, hidden unless hovered on the table row. Will have
-    // action controls which can effect the parent table row or other actions.
-    //
-    // @example
-    // <div class="table">
-    //     <div class="table__row">
-    //         <div class="table__data">
-    //             ...
-    //         </div>
-    //         <div class="table__data">
-    //             <div class="table__controls">
-    //                 <a href="#">Delete</a>
-    //                 <a href="#">Save</a>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
-    .table__controls {
-      width: 100%;
-      text-align: right;
-      opacity: 0;
-      z-index: -1000;
+    &.table--hover {
 
-      &--secondary {
+      // Table input styles act in a similar way to table controls. They are only
+      // active on hover. This style can effect input boxes or select boxes.
+      //
+      // @example
+      // <div class="table table--hover">
+      //     <div class="table__row">
+      //         <div class="table__data">
+      //             ...
+      //         </div>
+      //         <div class="table__data">
+      //             <input type="text" class="table__input" placeholder="Enter text...">
+      //         </div>
+      //     </div>
+      // </div>
+      .table__input {
+        display: inline-block;
+        margin: -7px 0 -8px;
+        background-color: transparent;
+        border-color: transparent;
+        background-position: -9999px -9999px;
+
+        &[disabled] {
+          color: $cool-grey;
+          opacity: 1;
+        }
+      }
+
+      // Table contol container, hidden unless hovered on the table row. Will have
+      // action controls which can effect the parent table row or other actions.
+      //
+      // @example
+      // <div class="table table--hover">
+      //     <div class="table__row">
+      //         <div class="table__data">
+      //             ...
+      //         </div>
+      //         <div class="table__data">
+      //             <div class="table__controls">
+      //                 <a href="#">Delete</a>
+      //                 <a href="#">Save</a>
+      //             </div>
+      //         </div>
+      //     </div>
+      // </div>
+      .table__controls {
+        width: 100%;
+        text-align: right;
         opacity: 0;
         z-index: -1000;
-        width: auto;
-        text-align: left;
-      }
-    }
 
-    // Table input styles act in a similar way to table controls. They are only
-    // active on hover. This style can effect input boxes or select boxes.
-    //
-    // @example
-    // <div class="table">
-    //     <div class="table__row">
-    //         <div class="table__data">
-    //             ...
-    //         </div>
-    //         <div class="table__data">
-    //             <input type="text" class="table__input" placeholder="Enter text...">
-    //         </div>
-    //     </div>
-    // </div>
-    .table__input {
-      display: inline-block;
-      margin: -7px 0 -8px -14px;
-      background-color: transparent;
-      border-color: transparent;
-      background-position: -9999px -9999px;
+        &--secondary {
+          opacity: 0;
+          z-index: -1000;
+          width: auto;
+          text-align: left;
+        }
+      }
+
+      .table__head {
+
+        .table__row:hover {
+          background-color: $transparent;
+        }
+      }
+
+      .table__row {
+
+        // Table row hover style, this can reveal control elements
+        &:hover {
+          background-color: $white;
+
+          // Show input / select styles when on hover over a parent .table__row
+          .table__input {
+            background-color: $white;
+            border-color: $alto-grey;
+            background-position: right 10px top 16px;
+
+            &[disabled] {
+              background-color: transparent;
+              border-color: transparent;
+              background-position: -9999px -9999px;
+            }
+          }
+
+          // Set controls z-index and opacity so it is visible
+          .table__controls {
+            z-index: 1;
+            opacity: 1;
+
+            &--secondary {
+              z-index: 1;
+              opacity: 1;
+            }
+          }
+        }
+
+        // Active state on .table__row
+        &.is-active {
+          background-color: $white;
+
+          .table__input {
+            background-color: $white;
+            border-color: $alto-grey;
+            background-position: right 10px top 16px;
+          }
+
+          .table__controls {
+            z-index: 1;
+            opacity: 1;
+
+            &--secondary {
+              z-index: 1;
+              opacity: 1;
+            }
+          }
+
+          .table__dropdown {
+
+            .table__dropdown-row {
+
+              // scss-lint:disable NestingDepth
+              &.is-active {
+                display: block !important;
+              }
+              // scss-lint:enable NestingDepth
+            }
+          }
+        }
+      }
     }
 
     // Table dropdowns are used for extra condenced information and to expand
@@ -447,15 +473,19 @@
       // Table dropdown row style, add class to .table__row
       .table__dropdown-row {
         border-bottom: 0;
+        display: none;
+        position: relative;
 
         &:before {
           display: block;
           margin: 0 auto;
           width: calc(100% - 20px);
           border-top: 1px dotted $alto-grey;
-          position: relative;
+          position: absolute;
           height: 1px;
           content: '';
+          top: 0;
+          left: 10px;
         }
 
         // Table dropdown header row removes border styling from .table__row
@@ -493,13 +523,6 @@
     }
   }
 
-  $states: (
-    error: $error,
-    warning: $warning,
-    success: $success,
-    information: $information
-  );
-
   @each $state, $color in $states {
     &.table--#{$state} {
       border-color: $color;
@@ -513,7 +536,6 @@
       }
     }
   }
-  // scss-lint:enable NestingDepth
 }
 
 // Generates column classes use for tables
@@ -527,4 +549,3 @@
     }
   }
 }
-// scss-lint:enable SelectorFormat

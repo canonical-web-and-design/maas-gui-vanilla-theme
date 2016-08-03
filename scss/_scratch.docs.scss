@@ -1,0 +1,81 @@
+.docs-nav {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $white;
+  padding: 20px;
+  float: left;
+  position: fixed;
+  z-index: 10;
+
+  .docs-nav__logo {
+    float: left;
+  }
+
+  .docs-nav__title {
+    font-size: 16px;
+    margin: 0 0 0 10px;
+    line-height: 34px;
+    float: left;
+  }
+}
+
+.docs-color {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  @each $name, $color in $colors {
+    &.docs-color--#{$name} {
+      background-color: $color;
+    }
+  }
+}
+
+.docs-code {
+  color: darken($red, 15%);
+  background-color: darken($porcelain, 5%);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.docs-example {
+  border: 1px solid $silk;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $porcelain;
+
+  .docs-example__item {
+    border-bottom: 1px solid $silk;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    width: 100%;
+
+    &--last,
+    &--code {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    &--code {
+      color: $ash;
+      background-color: lighten($silk, 15%);
+      white-space: pre-wrap;
+
+      code {
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  .docs-example__help-text {
+    font-size: 14px;
+    color: $silk;
+    margin: 0;
+    width: 100%;
+  }
+}

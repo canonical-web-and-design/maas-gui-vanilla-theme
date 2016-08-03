@@ -7,16 +7,15 @@
 /// MAAS wrapper styling
 /// @group maas wrapper
 @mixin maas-wrapper {
-  // scss-lint:disable DuplicateProperty
   .wrapper {
     min-height: 100%;
-    // scss-lint:disable ImportantRule
-    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-    // scss-lint:enable ImportantRule
+    // scss-lint:disable DuplicateProperty
+    height: auto !important; // This line and the next line are not necessary unless you need IE6 support
     height: 100%;
+    // scss-lint:enable DuplicateProperty
     margin: 0 auto;
     position: relative;
-    background: rgba($white, .6);
+    background: rgba($white, .4);
 
     &:after {
       content: '';
@@ -34,8 +33,10 @@
 
     &--inner {
       max-width: $site-max-width;
+      width: 100%;
       margin: 0 auto;
+      clear: both;
+      display: block;
     }
   }
-  // scss-lint:enable DuplicateProperty
 }

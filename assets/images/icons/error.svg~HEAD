@@ -13,9 +13,9 @@
    height="16.000017"
    id="svg5918"
    version="1.1"
-   inkscape:version="0.91+devel r"
+   inkscape:version="0.91pre2 r"
    viewBox="0 0 16.000017 16.000017"
-   sodipodi:docname="information_colour_white01.svg">
+   sodipodi:docname="error.svg">
   <defs
      id="defs5920" />
   <sodipodi:namedview
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="37.947076"
-     inkscape:cx="-2.1722784"
-     inkscape:cy="4.3221926"
+     inkscape:zoom="24.286129"
+     inkscape:cx="0.56486488"
+     inkscape:cy="4.846988"
      inkscape:document-units="px"
-     inkscape:current-layer="g6413"
+     inkscape:current-layer="layer1"
      showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -46,8 +46,7 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-center="true"
-     inkscape:snap-global="true">
+     inkscape:snap-center="true">
     <inkscape:grid
        type="xygrid"
        id="grid4137"
@@ -86,28 +85,23 @@
          height="16"
          x="952"
          y="196.36218" />
-      <rect
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#19b6ee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-         id="rect4263"
-         width="16.000256"
-         height="16.000254"
-         x="951.99957"
-         y="196.36205"
-         ry="1.066691" />
-      <rect
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-         id="rect5360"
-         width="2"
-         height="6"
-         x="958.99988"
-         y="203.36215" />
-      <rect
-         y="199.36215"
-         x="958.99988"
-         height="2.0000074"
-         width="2"
-         id="rect5362"
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+      <circle
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#df382c;fill-opacity:1;fill-rule:nonzero;stroke:#df382c;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.80000001;stroke-opacity:1;marker:none;enable-background:accumulate"
+         id="circle6417"
+         cx="960"
+         cy="204.36218"
+         r="7.2500086"
+         d="M 967.25001,204.36218 A 7.2500086,7.2500086 0 0 1 960,211.61219 7.2500086,7.2500086 0 0 1 952.74999,204.36218 7.2500086,7.2500086 0 0 1 960,197.11217 a 7.2500086,7.2500086 0 0 1 7.25001,7.25001 z" />
+      <path
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.80000001;stroke-opacity:1;marker:none;enable-background:accumulate"
+         d="m 957.00001,201.36218 6,6"
+         id="path6479-8"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path6481-8"
+         d="m 963.00001,201.36218 -6,6"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.80000001;stroke-opacity:1;marker:none;enable-background:accumulate" />
     </g>
   </g>
 </svg>

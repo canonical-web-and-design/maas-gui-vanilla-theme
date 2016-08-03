@@ -6,37 +6,56 @@
 
 /// Borders
 /// @group Borders
-@mixin maas-borders($border-color: $warm-grey, $border-width: 1px) {
+@mixin maas-borders($border-color: $mid-grey, $border-width: 1px) {
   .u-border {
-    border-color: $border-color;
-    border: $border-width dotted;
+    border: $border-width dotted $border-color !important;
 
     &--top {
-      border-top: $border-width dotted;
+      border-top: $border-width dotted $border-color !important;
+
+      &-none {
+        border-top: 0 !important;
+      }
     }
 
     &--right {
-      border-right: $border-width dotted;
+      border-right: $border-width dotted $border-color !important;
+
+      &-none {
+        border-right: 0 !important;
+      }
     }
 
     &--bottom {
-      border-bottom: $border-width dotted;
+      border-bottom: $border-width dotted $border-color !important;
+
+      &-none {
+        border-bottom: 0 !important;
+      }
     }
 
     &--left {
-      border-left: $border-width dotted;
+      border-left: $border-width dotted $border-color !important;
+
+      &-none {
+        border-left: 0 !important;
+      }
     }
 
     &--dotted {
-      border-style: dotted;
+      border-style: dotted !important;
     }
 
     &--solid {
-      border-style: solid;
+      border-style: solid !important;
     }
 
     &--dashed {
-      border-style: dashed;
+      border-style: dashed !important;
+    }
+
+    &--none {
+      border: 0 !important;
     }
   }
 }

@@ -16,9 +16,13 @@
     vertical-align: middle;
     text-indent: 999em;
 
-    // scss-lint:disable SelectorFormat
     &.icon--add {
       background: url('#{$asset-path}images/icons/add.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--account {
+      background: url('#{$asset-path}images/icons/account.svg') no-repeat;
       background-size: 100% 100%;
     }
 
@@ -28,7 +32,7 @@
     }
 
     &.icon--cross-orange {
-      background: url('#{$asset-path}images/icons/cross_orange.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/cross-orange.svg') no-repeat;
       background-size: 100% 100%;
     }
 
@@ -48,51 +52,49 @@
     }
 
     &.icon--error {
-      background: url('#{$asset-path}images/icons/error_colour_white.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/error.svg') no-repeat;
       background-size: 100% 100%;
 
-      &-dark {
-        background: url('#{$asset-path}images/icons/error_colour_black.svg') no-repeat;
-      }
-
       &-mono {
-        background: url('#{$asset-path}images/icons/error_colour_mono.svg') no-repeat;
+        background: url('#{$asset-path}images/icons/error-mono.svg') no-repeat;
       }
     }
 
     &.icon--help {
-      background: url('#{$asset-path}images/icons/help_colour_white.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/help.svg') no-repeat;
       background-size: 100% 100%;
 
-      &-dark {
-        background: url('#{$asset-path}images/icons/help_colour_black.svg') no-repeat;
-      }
-
       &-mono {
-        background: url('#{$asset-path}images/icons/help_colour_mono.svg') no-repeat;
+        background: url('#{$asset-path}images/icons/help-mono.svg') no-repeat;
       }
     }
 
     &.icon--info {
-      background: url('#{$asset-path}images/icons/information_colour_white.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/info.svg') no-repeat;
       background-size: 100% 100%;
 
-      &-dark {
-        background: url('#{$asset-path}images/icons/information_colour_black.svg') no-repeat;
-      }
-
       &-mono {
-        background: url('#{$asset-path}images/icons/information_colour_mono.svg') no-repeat;
+        background: url('#{$asset-path}images/icons/info-mono.svg') no-repeat;
       }
     }
 
     &.icon--loading {
-      background: url('#{$asset-path}images/icons/in_progress.png') no-repeat;
+      background: url('#{$asset-path}images/icons/loading.png') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--mount {
+      background: url('#{$asset-path}images/icons/mount.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--unmount {
+      background: url('#{$asset-path}images/icons/unmount.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--partition {
-      background: url('#{$asset-path}images/icons/add-partition.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/partition.svg') no-repeat;
       background-size: 100% 100%;
     }
 
@@ -117,16 +119,32 @@
     }
 
     &.icon--success {
-      background: url('#{$asset-path}images/icons/success_colour_white.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/success.svg') no-repeat;
       background-size: 100% 100%;
 
-      &-dark {
-        background: url('#{$asset-path}images/icons/success_colour_black.svg') no-repeat;
-      }
-
       &-mono {
-        background: url('#{$asset-path}images/icons/success_colour_mono.svg') no-repeat;
+        background: url('#{$asset-path}images/icons/success-mono.svg') no-repeat;
       }
+    }
+
+    &.icon--settings {
+      background: url('#{$asset-path}images/icons/settings.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--sync {
+      background: url('#{$asset-path}images/icons/sync.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--search {
+      background: url('#{$asset-path}images/icons/magnifying_glass.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--system-shutdown {
+      background: url('#{$asset-path}images/icons/system-shutdown.svg') no-repeat;
+      background-size: 100% 100%;
     }
 
     &.icon--tooltip {
@@ -134,24 +152,39 @@
       background-size: 100% 100%;
     }
 
+    &.icon--tags {
+      background: url('#{$asset-path}images/icons/tags.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--tick {
+      background: url('#{$asset-path}images/icons/tick.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &.icon--logical-volume {
-      background: url('#{$asset-path}images/icons/add-logical-volume.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/logical-volume.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--warning {
-      background: url('#{$asset-path}images/icons/warning_colour_white.svg') no-repeat;
+      background: url('#{$asset-path}images/icons/warning.svg') no-repeat;
       background-size: 100% 100%;
 
-      &-dark {
-        background: url('#{$asset-path}images/icons/warning_colour_black.svg') no-repeat;
-      }
-
       &-mono {
-        background: url('#{$asset-path}images/icons/warning_colour_mono.svg') no-repeat;
+        background: url('#{$asset-path}images/icons/warning-mono.svg') no-repeat;
       }
     }
-    // scss-lint:enable SelectorFormat
+
+    &.icon--open {
+      background: url('#{$asset-path}images/forms/chevron-down.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--close {
+      background: url('#{$asset-path}images/forms/chevron-up.svg') no-repeat;
+      background-size: 100% 100%;
+    }
   }
 
   /// Set a specific icon size
@@ -187,7 +220,6 @@
     }
   }
 
-  //scss-lint:disable SelectorFormat
   h4,
   h5,
   p,
@@ -203,7 +235,6 @@
       margin-top: -3px;
     }
   }
-  //scss-lint:enable SelectorFormat
 }
 
 @mixin icon-size($size) {

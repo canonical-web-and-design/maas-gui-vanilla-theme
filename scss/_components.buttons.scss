@@ -31,7 +31,6 @@
 }
 
 @mixin maas-button-group {
-  // scss-lint:disable SelectorFormat
   .button-group {
     position: relative;
     width: 100%;
@@ -39,7 +38,7 @@
     clear: both;
     min-width: 160px;
 
-    &.button-group--inline {
+    &--inline {
       display: inline-block;
       width: auto;
     }
@@ -49,7 +48,8 @@
       float: left;
       text-align: left;
 
-      .button-group__caret {
+      &::after {
+        content: '';
         display: inline-block;
         position: absolute;
         top: 15px;
@@ -87,7 +87,7 @@
       padding: 5px 10px;
       margin: 0;
 
-      a {
+      .button-group__item-link {
         color: $cool-grey;
         cursor: pointer;
         width: 100%;
@@ -106,7 +106,7 @@
 }
 
 %button-pattern {
-  line-height: #{$line-height-ratio};
+  line-height: 20px;
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
@@ -115,9 +115,10 @@
   padding: 8px 14px;
   height: 36px;
 
-  &:disabled,
+  &[disabled],
   &.button--disabled {
     pointer-events: none;
+    opacity: .5;
   }
 
   &.button--inline {

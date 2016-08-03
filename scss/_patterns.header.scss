@@ -7,9 +7,9 @@
 /// MAAS header styling
 /// @group maas header
 @mixin maas-header {
-  // scss-lint:disable NestingDepth
+
   .banner {
-    background-color: $white;
+    background-color: $black;
 
     @media only screen and (min-width: $navigation-threshold) {
       box-shadow: none;
@@ -19,7 +19,7 @@
 
         .logo {
           height: auto;
-          margin-top: 5px;
+          margin-top: 8px;
 
           a {
             border-bottom: 0;
@@ -29,26 +29,33 @@
         ul {
 
           li {
-            border-left: 1px solid $mid-grey;
+            border-left: 1px solid $cool-grey;
 
             &:last-child {
-              border-right: 1px solid $mid-grey;
-              border-left: 1px solid $mid-grey;
-            }
-
-            &:nth-child(2n+2) {
-              border-right: 0;
+              border-right: 1px solid $cool-grey;
+              border-left: 1px solid $cool-grey;
             }
 
             a,
             a:link,
             a:visited {
+              box-sizing: border-box;
               border-bottom: 0;
               border-left: 0;
 
               &:hover {
-                color: $white;
-                background-color: $link-hover;
+                background-color: rgba($cool-grey, .9);
+              }
+
+              &.active {
+                background-color: $transparent;
+                box-shadow: inset 0 -3px $link-hover;
+
+                // scss-lint:disable NestingDepth
+                &:hover {
+                  background-color: rgba($cool-grey, .9);
+                }
+                // scss-lint:enable NestingDepth
               }
             }
           }
@@ -56,5 +63,4 @@
       }
     }
   }
-  // scss-lint:enable NestingDepth
-} // @mixin maas-header
+}

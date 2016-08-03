@@ -7,22 +7,21 @@
 /// Display
 /// @group Display
 @mixin maas-display {
-  .u-align {
+  .u-text {
 
     &--right {
-      text-align: right;
+      text-align: right !important;
     }
 
     &--left {
-      text-align: left;
+      text-align: left !important;
     }
 
     &--center {
-      text-align: center;
+      text-align: center !important;
     }
   }
 
-  // scss-lint:disable ImportantRule
   .u-float {
 
     &--right {
@@ -39,12 +38,12 @@
   }
 
   .u-muted {
-    opacity: .5;
-    filter: alpha(opacity = 50);
+    opacity: .5 !important;
+    filter: alpha(opacity = 50) !important;
   }
 
   .u-clear {
-    clear: both;
+    clear: both !important;
   }
 
   .u-display {
@@ -65,5 +64,31 @@
       display: none !important;
     }
   }
-  // scss-lint:enable ImportantRule
+
+  .u-width {
+
+    &--full {
+      width: 100% !important;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    &--half {
+      width: 50% !important;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    &--third {
+      width: calc(100%/3) !important;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    &--quarter {
+      width: 25% !important;
+      box-sizing: border-box;
+      float: left;
+    }
+  }
 }
