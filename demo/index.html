@@ -1836,6 +1836,169 @@
         <section class="row">
             <div class="wrapper--inner">
                 <div class="eight-col">
+                    <h2>Table - Interactive</h2>
+                </div>
+                <div class="twelve-col">
+                    <h5 class="u-text--right">Example</h5>
+                    <div class="docs-example">
+                        <div class="docs-example__item">
+                            <section class="table margin-bottom">
+                                <header class="table__head">
+                                    <div class="table__row">
+                                        <div class="table__header table-col--3">
+                                            <input class="checkbox" id="available-check-all" data-ng-hide="isAllStorageDisabled()" data-ng-checked="availableAllSelected" data-ng-click="toggleAvailableAllSelect()" data-ng-disabled="isAvailableDisabled()" type="checkbox">
+                                            <label for="available-check-all"></label>
+                                        </div>
+                                        <div class="table__header table-col--16">
+                                            <a class="table__header-link active" data-ng-click="column = 'name'" data-ng-class="{active: column === 'name'}">Name</a>
+                                            <span class="divide"></span>
+                                            <a class="table__header-link" data-ng-click="column = 'model'" data-ng-class="{active: column === 'model'}">Model</a>
+                                            <span class="divide"></span>
+                                            <a class="table__header-link" data-ng-click="column = 'serial'" data-ng-class="{active: column === 'serial'}">Serial</a>
+                                        </div>
+                                        <div class="table__header table-col--4">Boot</div>
+                                        <div class="table__header table-col--15">Size</div>
+                                        <div class="table__header table-col--15">Device Type</div>
+                                        <div class="table__header table-col--10">Filesystem</div>
+                                        <div class="table__header table-col--25">Tags</div>
+                                        <div class="table__header table-col--12"></div>
+                                    </div>
+                                </header>
+                                <main class="table__body">
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input class="checkbox" id="name-AlJbgY-part2" type="checkbox">
+                                            <label for="name-AlJbgY-part2"></label>
+                                        </div>
+                                        <div class="table__data table-col--16">
+                                            <span>name-AlJbgY-part2</span>
+                                        </div>
+                                        <div class="table__data table-col--4"></div>
+                                        <div class="table__data table-col--15">1.5 GB</div>
+                                        <div class="table__data table-col--15">Partition</div>
+                                        <div class="table__data table-col--10">ext2</div>
+                                        <div class="table__data table-col--25">
+                                            <a href="#">tag-R04rO1</a>
+                                            <a href="#">tag-kubehf89eowr87</a>
+                                            <a href="#">tag-WF345sdf5hR</a>
+                                        </div>
+                                        <div class="table__data table-col--12">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition tooltip" aria-label="Partition">Partition</a>
+                                                <a class="icon icon--edit tooltip" aria-label="Edit">
+                                                    &gt;Edit</a>
+                                                <a class="icon icon--delete tooltip u-margin--left">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row">
+                                        <div class="table__data table-col--3">
+                                            <input class="checkbox" id="name-AlJbgY-part2" type="checkbox">
+                                            <label for="name-AlJbgY-part2"></label>
+                                        </div>
+                                        <div class="table__data table-col--16">
+                                            <span>name-AlJbgY-part1</span>
+                                        </div>
+                                        <div class="table__data table-col--4"></div>
+                                        <div class="table__data table-col--15">1.5 GB</div>
+                                        <div class="table__data table-col--15">Partition</div>
+                                        <div class="table__data table-col--10">ext2</div>
+                                        <div class="table__data table-col--25">
+                                            <a href="#">tag-R04rO1</a>
+                                            <a href="#">tag-kubehf89eowr87</a>
+                                            <a href="#">tag-WF345sdf5hR</a>
+                                        </div>
+                                        <div class="table__data table-col--12">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition tooltip" aria-label="Partition">Partition</a>
+                                                <a class="icon icon--edit tooltip" aria-label="Edit">
+                                                    &gt;Edit</a>
+                                                <a class="icon icon--delete tooltip u-margin--left">Remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table__row is-active">
+                                        <div class="table__data table-col--3">
+                                            <input class="checkbox" id="name-AlJbgY-part2" type="checkbox">
+                                            <label for="name-AlJbgY-part2"></label>
+                                        </div>
+                                        <div class="table__data table-col--16">
+                                            <span>name-AlJbgY-part1</span>
+                                        </div>
+                                        <div class="table__data table-col--4"></div>
+                                        <div class="table__data table-col--15">1.5 GB</div>
+                                        <div class="table__data table-col--15">Partition</div>
+                                        <div class="table__data table-col--10">ext2</div>
+                                        <div class="table__data table-col--25">
+                                            <a href="#">tag-R04rO1</a>
+                                            <a href="#">tag-kubehf89eowr87</a>
+                                            <a href="#">tag-WF345sdf5hR</a>
+                                        </div>
+                                        <div class="table__data table-col--12">
+                                            <div class="table__controls">
+                                                <a class="icon icon--partition tooltip" aria-label="Partition">Partition</a>
+                                                <a class="icon icon--edit tooltip" aria-label="Edit">
+                                                    &gt;Edit</a>
+                                                <a class="icon icon--delete tooltip u-margin--left">Remove</a>
+                                            </div>
+                                        </div>
+                                        <div class="table__row table__dropdown form form--stack is-active">
+                                            <div class="table__row u-padding--small">
+                                                <dl class="form__fieldset six-col u-padding--left-large">
+                                                    <dt class="two-col">Size</dt>
+                                                        <dd class="four-col last-col ng-binding">1.6 GB</dd>
+                                                    <dt class="two-col">Type</dt>
+                                                        <dd class="four-col last-col ng-binding">Partition</dd>
+                                                </dl>
+                                                <div class="form__fieldset six-col last-col u-margin--bottom-none">
+                                                    <div class="form__group">
+                                                        <label for="filesys" class="form__group-label two-col">Filesystem</label>
+                                                        <div class="form__group-input three-col last-col">
+                                                            <select name="filesys">
+                                                                <option class="" value="" selected="selected">Unformatted</option>
+                                                                <option label="ext2" value="0">ext2</option>
+                                                                <option label="ext4" value="1">ext4</option>
+                                                                <option label="xfs" value="2">xfs</option>
+                                                                <option label="fat32" value="3">fat32</option>
+                                                                <option label="vfat" value="4">vfat</option>
+                                                                <option label="swap" value="5">swap</option>
+                                                                <option label="ramfs" value="6">ramfs</option>
+                                                                <option label="tmpfs" value="7">tmpfs</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="mount-point" class="form__group-label two-col">Mount point</label>
+                                                        <div class="form__group-input three-col last-col">
+                                                            <input disabled="disabled" id="mount-point" placeholder="Absolute path" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form__group">
+                                                        <label for="mount-options" class="form__group-label two-col">Mount options</label>
+                                                        <div class="form__group-input three-col last-col">
+                                                            <input disabled="disabled" id="mount-options" placeholder="Separated by commas, no spaces" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table__row">
+                                                <div class="u-padding--small u-float--right">
+                                                    <a class="button--base button--inline" data-ng-click="availableCancel(item)">Cancel</a>
+                                                    <button class="button--primary button--inline" data-ng-disabled="isMountPointInvalid(item.$options.mountPoint) || isNameInvalid(item)" data-ng-click="availableConfirmEdit(item)">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="wrapper--inner">
+                <div class="eight-col">
                     <h2>Navigation</h2>
                     <p>Standard main navigation header.</p>
                 </div>
