@@ -18,6 +18,7 @@
     &[type='email'],
     &[type='url'],
     &[type='tel'] {
+      @extend %input-elements;
       padding: 7px 10px;
       box-shadow: none;
       width: 100%;
