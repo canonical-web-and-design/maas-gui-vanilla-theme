@@ -1,11 +1,15 @@
 ////
 /// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-header
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-table
 /// @since        0.0.3
 ////
 
 /// MAAS table styling
 /// @group maas table
+@mixin maas-table {
+  @include tables($alto-grey, $warm-grey, 16px, 13px);
+  @include table-columns(100);
+}
 
 // scss-lint:disable SelectorFormat
 @mixin tables($table-border-color, $table-header-color, $table-font-size, $table-header-size) {
@@ -54,7 +58,7 @@
       border-bottom: 1px solid;
 
       &:hover {
-        background-color: $transparent;
+        background-color: transparent;
       }
     }
 
@@ -81,20 +85,20 @@
     // Table header hyperlink styles
     %table-header-link {
       color: $table-header-color;
+      border-bottom: 0;
 
       &:hover {
         color: $text-color;
         text-decoration: none;
-        border-bottom: 1px solid $text-color;
       }
 
-      // Sorting and is-active styles when filtering a table
+      // Sorting and active styles when filtering a table
       &.is-active {
         color: $text-color;
         text-decoration: none;
       }
 
-      &.sort {
+      &.is-sorted {
         border-bottom: 1px solid $text-color;
       }
     }
@@ -114,11 +118,6 @@
 
     // Generic table form elements, covers general alignment of common form
     // elements which can be found in all tables.
-    input,
-    select {
-      margin: 0 0 0 -14px;
-    }
-
     input {
 
       &[type="radio"],
@@ -182,11 +181,11 @@
       a:link,
       a:visited {
         color: $text-color;
-        border-bottom: 1px solid $silk;
+        border-bottom: 1px solid $link-border;
 
         &:hover {
           text-decoration: none;
-          color: $link-color;
+          color: $link-hover;
         }
       }
     }
@@ -276,6 +275,17 @@
             opacity: 1;
           }
         }
+
+        .table__dropdown {
+
+          .table__row {
+            display: none;
+
+            &.is-active {
+              display: block;
+            }
+          }
+        }
       }
     }
 
@@ -291,11 +301,11 @@
       a:link,
       a:visited {
         color: $text-color;
-        border-bottom: 1px solid $silk;
+        border-bottom: 1px solid $link-border;
 
         &:hover {
           text-decoration: none;
-          color: $link-color;
+          color: $link-hover;
         }
       }
     }
@@ -331,29 +341,6 @@
       display: table-footer-group;
     }
 
-    &.table--hover {
-
-      .table__row {
-
-        .table__input {
-          display: inline-block;
-          margin: -7px 0 -8px -10px;
-          background-color: $transparent;
-          border-color: $transparent;
-          background-position: -9999px -9999px;
-        }
-
-        &:hover {
-
-          .table__input {
-            background-color: $white;
-            border-color: $silk;
-            background-position: right 10px top 16px;
-          }
-        }
-      }
-    }
-
     // Table label style used as secondary information with in a table cell. Can
     // also be used as a toggle.
     //
@@ -365,7 +352,7 @@
     //    </span>
     // </div>
     //
-    // <div class="table__data is-active">
+    // <div class="table__data active">
     //     ...
     //     <span class="table__label">
     //         <a href="#">Hide</a>
@@ -428,17 +415,17 @@
       a:link,
       a:visited {
         color: $text-color;
-        border-bottom: 1px solid $silk;
+        border-bottom: 1px solid $link-border;
 
         &:hover {
           text-decoration: none;
-          color: $link-color;
+          color: $link-hover;
         }
       }
     }
 
     // Table input styles act in a similar way to table controls. They are only
-    // is-active on hover. This style can effect input boxes or select boxes.
+    // active on hover. This style can effect input boxes or select boxes.
     //
     // @example
     // <div class="table">
@@ -453,14 +440,13 @@
     // </div>
     .table__input {
       display: inline-block;
-      margin: -7px 0 -7px -14px;
       background-color: $white;
       border-color: $alto-grey;
       background-position: right 10px top 16px;
 
       &[disabled] {
-        background-color: $transparent;
-        border-color: $transparent;
+        background-color: transparent;
+        border-color: transparent;
         pointer-events: none;
         background-position: -9999px -9999px;
         color: $text-color;
@@ -473,7 +459,7 @@
     //
     // @example
     // <div class="table">
-    //     <div class="table__row is-active">
+    //     <div class="table__row active">
     //         <div class="table__data">
     //             ...
     //         </div>
@@ -498,30 +484,18 @@
     .table__dropdown {
       width: 100%;
 
-      &.is-active {
-
-        .table__row {
-          display: block;
-        }
-
-        .table__input {
-          background-color: $white;
-          border-color: $alto-grey;
-          background-position: right 10px top 16px;
-          pointer-events: all;
-
-          &[disabled] {
-            border-color: $transparent;
-            cursor: pointer;
-          }
-        }
-      }
-
       // Table dropdown row style, add class to .table__row
       .table__row {
         border-bottom: 0;
         display: none;
         position: relative;
+
+        &--indent {
+          padding-left: 41px !important;
+          float: left;
+          width: 100%;
+          box-sizing: border-box;
+        }
 
         &:before {
           display: block;
@@ -535,19 +509,8 @@
           left: 10px;
         }
 
-        &--indent {
-          padding-left: 41px !important;
-          float: left;
-          width: 100%;
-          box-sizing: border-box;
-
-          &:before {
-            display: none;
-          }
-        }
-
         // Table dropdown header row removes border styling from .table__row
-        &.table__dropdown-row--head {
+        &.table__row--head {
           border-bottom: 0;
 
           .table__header {
@@ -557,14 +520,14 @@
         }
 
         // If no borders are required, removes all borders and before elements
-        &.no-border {
+        &.u-border--none {
 
           &:before {
             display: none;
           }
         }
 
-        &.border {
+        &.u-border {
 
           &:before {
             display: block;
@@ -578,10 +541,25 @@
             left: 10px;
           }
         }
+
+        &.is-active {
+
+          .table__input {
+            background-color: $white;
+            border-color: $alto-grey;
+            background-position: right 10px top 16px;
+            pointer-events: all;
+
+            &[disabled] {
+              border-color: transparent;
+              cursor: pointer;
+            }
+          }
+        }
       }
 
       // .table__dropdown--info Information style dropdown sets all colours
-      // styles to pale to inform users this is not an interis-active table
+      // styles to pale to inform users this is not an interactive table
       &--info {
 
         .table__row {
@@ -630,7 +608,7 @@
 }
 
 // Generates column classes use for tables
-// the column class generated will look like '.table-col--1'
+// the column class generated will look like '.table__column--1'
 // Number value at the end signifies the width percentage
 @mixin table-columns($table-columns) {
 
@@ -640,9 +618,3 @@
     }
   }
 }
-
-@mixin maas-table {
-  @include tables($alto-grey, $warm-grey, 16px, 13px);
-  @include table-columns(100);
-}
-// scss-lint:enable SelectorFormat

@@ -7,9 +7,17 @@
 /// Buttons element styles
 /// @group Forms
 @mixin maas-buttons {
+  // .button--primary {
+  //   line-height: 20px;
+  // }
+
   .button--primary,
   .button--secondary {
     @extend %button-pattern;
+  }
+
+  .button--secondary {
+    line-height: 18px;
   }
 
   .button--primary,
@@ -38,7 +46,7 @@
     clear: both;
     min-width: 160px;
 
-    &--inline {
+    &.button-group--inline {
       display: inline-block;
       width: auto;
     }
@@ -47,6 +55,7 @@
       display: inline-block;
       float: left;
       text-align: left;
+      padding-right: 35px;
 
       &::after {
         content: '';
@@ -114,6 +123,7 @@
   user-select: none;
   padding: 8px 14px;
   height: 36px;
+  box-sizing: border-box;
 
   &[disabled],
   &.button--disabled {

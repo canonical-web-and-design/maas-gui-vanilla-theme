@@ -12,34 +12,18 @@
 
     &--top {
       border-top: $border-width dotted $border-color !important;
-
-      &-none {
-        border-top: 0 !important;
-      }
     }
 
     &--right {
       border-right: $border-width dotted $border-color !important;
-
-      &-none {
-        border-right: 0 !important;
-      }
     }
 
     &--bottom {
       border-bottom: $border-width dotted $border-color !important;
-
-      &-none {
-        border-bottom: 0 !important;
-      }
     }
 
     &--left {
       border-left: $border-width dotted $border-color !important;
-
-      &-none {
-        border-left: 0 !important;
-      }
     }
 
     &--dotted {

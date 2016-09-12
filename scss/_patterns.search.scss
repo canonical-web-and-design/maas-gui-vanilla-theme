@@ -20,11 +20,11 @@
       box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
       width: 100%;
       border: 0;
-      padding: 10px 15px;
+      padding: 15px;
       appearance: textfield;
 
       &::placeholder {
-        color: $ash;
+        color: $warm-grey;
       }
 
       // IE10+
@@ -55,7 +55,7 @@
 
     .search__submit {
       position: absolute;
-      top: 10px;
+      top: 15px;
       right: 15px;
       background-color: $transparent;
       background-image: url('#{$asset-path}images/icons/magnifying_glass.svg');

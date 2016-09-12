@@ -28,10 +28,10 @@
         }
       }
 
-      &--subtle {
+      &.form__group--subtle {
 
         .form__group-label {
-          color: $ash;
+          color: $warm-grey;
         }
 
         input,
@@ -48,7 +48,7 @@
 
           &:active,
           &:focus {
-            border-color: $ash;
+            border-color: $warm-grey;
             background-color: $white;
             outline: none;
           }
@@ -66,7 +66,6 @@
     .form__siblings {
       float: left;
       width: 100%;
-      margin-bottom: 10px;
 
       &:hover {
 
@@ -79,6 +78,10 @@
             background-color: $white;
             outline: none;
           }
+        }
+
+        + .form__group {
+          margin-bottom: 10px;
         }
       }
 
@@ -97,7 +100,7 @@
       }
     }
 
-    &--stack {
+    &.form--stack {
 
       .form__group {
         width: 100%;
@@ -113,10 +116,18 @@
           line-height: 34px;
           vertical-align: top;
         }
+
+        .form__group-input {
+          min-height: 34px;
+
+          .onoffswitch {
+            margin-top: 9px;
+          }
+        }
       }
     }
 
-    &--inline {
+    &.form--inline {
 
       .form__fieldset {
         display: inline-block;
@@ -143,18 +154,16 @@
           width: auto;
         }
 
-        // scss-lint:disable QualifyingElement
-        input[type='checkbox'] + label,
-        input[type='radio'] + label {
+        [type='checkbox'] + label,
+        [type='radio'] + label {
           line-height: 34px;
         }
-        // scss-lint:enable QualifyingElement
       }
     }
 
     .form__help-text {
       @include font-size(14px);
-      color: $ash;
+      color: $warm-grey;
     }
   }
 

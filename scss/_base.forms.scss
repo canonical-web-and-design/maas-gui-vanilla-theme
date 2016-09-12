@@ -23,11 +23,11 @@
       width: 100%;
 
       &::placeholder {
-        color: $ash;
+        color: $warm-grey;
       }
 
       &[disabled] {
-        color: $ash;
+        color: $warm-grey;
         background-color: $transparent;
       }
     }
@@ -67,11 +67,11 @@
     width: 100%;
 
     &::placeholder {
-      color: $ash;
+      color: $warm-grey;
     }
 
     &[disabled] {
-      color: $ash;
+      color: $warm-grey;
       background-color: $transparent;
     }
   }
@@ -105,7 +105,7 @@
     }
 
     &[disabled] {
-      color: $ash;
+      color: $warm-grey;
       background-image: none;
       background-color: $transparent;
     }
@@ -235,6 +235,132 @@
         background: $input-checked;
         border-radius: 50%;
       }
+    }
+  }
+
+  .tags {
+    width: 100%;
+
+    .tag-list {
+      width: 100%;
+      margin: 0;
+
+      .tag-item {
+        display: inline-block;
+        float: left;
+        line-height: 36px;
+        margin-bottom: 0;
+        margin-right: 10px;
+        word-wrap: break-word;
+
+        .remove-button {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .input {
+      width: 100% !important;
+    }
+  }
+
+  .onoffswitch {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    //scss-lint:disable VendorPrefixes
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    //scss-lint:enable VendorPrefixes
+
+    &[disabled] {
+
+      .onoffswitch-checkbox,
+      .onoffswitch-label {
+        opacity: .5;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .onoffswitch-checkbox {
+    display: none !important;
+  }
+
+  .onoffswitch-label {
+    display: block !important;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    padding-left: 0 !important;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  .onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin .3s ease-in 0s;
+
+    &:before,
+    &:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 18px;
+      padding: 0;
+      line-height: 18px;
+      font-size: 14px;
+      color: $white;
+      font-family: Trebuchet, Arial, sans-serif;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      content: '';
+      padding-left: 10px;
+      background-color: $input-checked;
+      color: $white;
+    }
+
+    &:after {
+      content: '';
+      padding-right: 10px;
+      background-color: $gallery-grey;
+      color: $warm-grey;
+      text-align: right;
+    }
+  }
+
+  .onoffswitch-switch {
+    display: block;
+    width: 19px;
+    height: 16px;
+    margin: 0;
+    background: $white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 17px;
+    border: 1px solid $outline;
+    border-radius: 2px;
+    transition: all .3s ease-in 0s;
+  }
+
+  .onoffswitch-checkbox:checked + .onoffswitch-label {
+    .onoffswitch-inner {
+      margin-left: 0;
+    }
+
+    .onoffswitch-switch {
+      right: 0;
     }
   }
 }

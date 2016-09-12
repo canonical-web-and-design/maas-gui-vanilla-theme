@@ -25,33 +25,34 @@ $line-height-ratio:     $base-line-height / $base-font-size;
 $text-color:            $cool-grey;
 $headline-color:        $cool-grey;
 $alt-headline-color:    $warm-grey;
-$link-color:            $cool-grey;
-$link-border:           $silk;
-$link-hover:            $orange;
+$link-color:            $brand-color;
+$link-border:           #c2c2c2;
+$link-hover:            #dd4814;
 
 // MAAS colours
+$off-white:             #fafafa!default;
 $pale-grey:             #bcbcbc!default;
 $muted-grey:            #b2b2b2!default;
 $gallery-grey:          #eee!default;
 $mercury-grey:          #e3e3e3!default;
-$off-white:             $silk!default;
+$off-white:             #f8f8f8!default;
 
-$loading:               $blue!default;
-$error:                 $red!default;
-$information:           $blue!default;
-$outline:               $silk!default;
-$success:               $green!default;
+$loading:               #2ab7ec!default;
+$error:                 #d83832!default;
+$information:           #2ab7ec!default;
+$outline:               #d2d2d2!default;
+$success:               #38b44a!default;
 $disabled:              $gallery-grey;
 $editable:              $white;
 
-
 /// MAAS Form colours
-$primary-button-color:  $orange;
+$primary-button-color:  #dd4814;
 $secondary-button-color: $white;
-$input-checked:         $orange;
+$input-checked:         #dd4814;
 
 // MAAS Tab colours
-$tab-active-state:      $orange!default;
+$tab-active-state:      #dd4814!default;
+
 
 // Header variables
 $header-link-color:     $white;
@@ -60,13 +61,20 @@ $header-link-color:     $white;
 $site-max-width:        1440px;
 $breakpoint-large:      $site-max-width;
 
-// MAAS states
+// MAAS form states
 $states: (
   error: $error,
-  off: $silk,
+  off: $outline,
   warning: $warning,
   success: $success,
   on: $success,
   information: $information,
   loading: $loading
 );
+
+// MAAS Status icon colours
+$status-failed:        #ed3146!default;
+$status-in-progress:   #19b6ee!default;
+$status-queued:        #888!default;
+$status-succeeded:     #3eb34f!default;
+$status-waiting:       #f99b0f!default;

@@ -12,6 +12,7 @@
     box-sizing: border-box;
     background: $white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    padding: 0 20px;
     width: 100%;
     float: left;
     margin-bottom: 20px;
@@ -81,7 +82,7 @@
       display: inline-block;
       position: relative;
       margin-left: 20px;
-      color: $ash;
+      color: $warm-grey;
 
       .page-header__status-check {
         @include font-size(16px);
@@ -99,30 +100,41 @@
       padding: 40px 0;
       display: inline-block;
       float: right;
+
+      .page-header__controls-feedback {
+        color: $cool-grey;
+        text-decoration: none;
+        border-bottom: 1px solid $link-border;
+
+        &:hover {
+          text-decoration: none;
+          color: $link-hover;
+          cursor: pointer;
+        }
+      }
     }
 
     .page-header__dropdown {
       max-height: 0;
       overflow: hidden;
-      // scss-lint:disable VendorPrefixes
+      //scss-lint:disable VendorPrefixes
       -webkit-transition: max-height .3s ease;
       -moz-transition: max-height .3s ease;
       transition: max-height .3s ease;
-      // scss-lint:enable VendorPrefixes
+      //scss-lint:enable VendorPrefixes
 
       &.is-open {
         max-height: 1000px;
       }
 
       .page-header__section {
-        border-top: 1px dotted $ash;
+        border-top: 1px dotted $warm-grey;
         padding-top: 20px;
         padding-bottom: 20px;
       }
 
       .page-header__message {
         width: auto;
-        vertical-align: top;
         display: inline-block;
         float: none;
         margin: 0 20px 0 0;
@@ -130,7 +142,6 @@
       }
 
       .page-header__message--error {
-        color: $error;
         background: url('#{$asset-path}images/icons/error.svg') no-repeat;
         background-size: 16px 16px;
         background-position: 0 10px;
