@@ -36,7 +36,7 @@
     "sassdoc": "2.1.7"
   },
   "dependencies": {
-    "cloud-vanilla-theme": ">=0.0.18"
+    "cloud-vanilla-theme": "0.0.22"
   },
   "license": "LGPL-3.0",
   "name": "maas-gui-vanilla-theme",

@@ -319,6 +319,21 @@
                             <div class="one-col u-text--center">
                                 <i class="icon icon--close"></i>
                             </div>
+                            <div class="one-col u-text--center">
+                                <i class="icon icon--status-failed"></i>
+                            </div>
+                            <div class="one-col u-text--center">
+                                <i class="icon icon--status-in-progress"></i>
+                            </div>
+                            <div class="one-col u-text--center">
+                                <i class="icon icon--status-queued"></i>
+                            </div>
+                            <div class="one-col u-text--center">
+                                <i class="icon icon--status-succeeded"></i>
+                            </div>
+                            <div class="one-col u-text--center">
+                                <i class="icon icon--status-waiting"></i>
+                            </div>
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
 <code>&lt;i class="icon icon--add"&gt;...&lt;/i&gt;</code>
@@ -350,7 +365,12 @@
 <code>&lt;i class="icon icon--tooltip"&gt;...&lt;/i&gt;</code>
 <code>&lt;i class="icon icon--warning"&gt;...&lt;/i&gt;</code>
 <code>&lt;i class="icon icon--open"&gt;...&lt;/i&gt;</code>
-<code>&lt;i class="icon icon--close"&gt;...&lt;/i&gt;</code></pre>
+<code>&lt;i class="icon icon--close"&gt;...&lt;/i&gt;</code>
+<code>&lt;i class="icon icon--status-failed"&gt;..&lt;/i&gt;</code>
+<code>&lt;i class="icon icon--status-in-progress"&gt;..&lt;/i&gt;</code>
+<code>&lt;i class="icon icon--status-queued"&gt;..&lt;/i&gt;</code>
+<code>&lt;i class="icon icon--status-succeeded"&gt;..&lt;/i&gt;</code>
+<code>&lt;i class="icon icon--status-waiting"&gt;..&lt;/i&gt;</code></pre>
                     </div>
                 </div>
                 <div class="eight-col">
@@ -1479,11 +1499,33 @@
                                         </div>
                                         <div class="table__dropdown">
                                             <div class="table__row is-active">
-                                                <form class="form form--stack">
+                                                <form class="table__data u-padding--top table-col--100 form form--stack">
                                                     <fieldset class="form__fieldset six-col">
                                                         <div class="form__group">
-                                                            <label class="two-col" for="mount-point">Mount point</label>
-                                                            <input class="table__input three-col" type="text" id="mount-point" placeholder="Absolute path">
+                                                            <label class="two-col" for="example-input">Example input</label>
+                                                            <input class="table__input three-col" type="text" id="example-input" placeholder="Example">
+                                                        </div>
+                                                        <div class="form__group">
+                                                            <label class="two-col" for="example-input">Example input</label>
+                                                            <input class="table__input three-col" type="text" id="example-input" placeholder="Example">
+                                                        </div>
+                                                        <div class="form__group">
+                                                            <label class="two-col" for="example-input">Example input</label>
+                                                            <input class="table__input three-col" type="text" id="example-input" placeholder="Example">
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset class="form__fieldset six-col last-col">
+                                                        <div class="form__group">
+                                                            <label class="two-col" for="example-input">Example input</label>
+                                                            <input class="table__input three-col" type="text" id="example-input" placeholder="Example">
+                                                        </div>
+                                                        <div class="form__group">
+                                                            <label class="two-col" for="example-input">Example input</label>
+                                                            <input class="table__input three-col" type="text" id="example-input" placeholder="Example">
+                                                        </div>
+                                                        <div class="form__group">
+                                                            <label class="two-col" for="example-input">Example input</label>
+                                                            <input class="table__input three-col" type="text" id="example-input" placeholder="Example">
                                                         </div>
                                                     </fieldset>
                                                 </form>
@@ -1588,7 +1630,7 @@
                             </section>
                         </div>
                         <pre class="docs-example__item docs-example__item--code">
-&lt;section class="table table--hover"&gt;
+&lt;section class="table"&gt;
     &lt;header class="table__head"&gt;
         &lt;div class="table__row"&gt;
             &lt;div class="table__header table-col--3"&gt;
@@ -1656,20 +1698,37 @@
                 &lt;/div&gt;
             &lt;/div&gt;
             &lt;div class="table__dropdown"&gt;
-                &lt;div class="table__row table__dropdown-row u-padding--bottom-small is-active"&gt;
-                    &lt;div class="table__data table-col--3"&gt;&lt;/div&gt;
-                    &lt;div class="table__data table-col--15"&gt;
-                        &lt;label for="filesys"&gt;Filesystem&lt;/label&gt;
-                        &lt;select name="filesys" id="filesys"&gt;
-                            &lt;option value="fat32"&gt;fat32&lt;/option&gt;
-                        &lt;/select&gt;
-                    &lt;/div&gt;
-                    &lt;div class="table__data table-col--30"&gt;
-                        &lt;label for="mountpoint"&gt;Mountpoint&lt;/label&gt;
-                        &lt;input type="text" id="mountpoint"&gt;
-                    &lt;/div&gt;
-                    &lt;div class="table__data table-col--52"&gt;
-                    &lt;/div&gt;
+                &lt;div class="table__row is-active"&gt;
+                    &lt;form class="table__data u-padding--top table-col--100 form form--stack"&gt;
+                        &lt;fieldset class="form__fieldset six-col"&gt;
+                            &lt;div class="form__group"&gt;
+                                &lt;label class="two-col" for="example-input"&gt;Example input&lt;/label&gt;
+                                &lt;input class="table__input three-col" type="text" id="example-input" placeholder="Example"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="form__group"&gt;
+                                &lt;label class="two-col" for="example-input"&gt;Example input&lt;/label&gt;
+                                &lt;input class="table__input three-col" type="text" id="example-input" placeholder="Example"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="form__group"&gt;
+                                &lt;label class="two-col" for="example-input"&gt;Example input&lt;/label&gt;
+                                &lt;input class="table__input three-col" type="text" id="example-input" placeholder="Example"&gt;
+                            &lt;/div&gt;
+                        &lt;/fieldset&gt;
+                        &lt;fieldset class="form__fieldset six-col last-col"&gt;
+                            &lt;div class="form__group"&gt;
+                                &lt;label class="two-col" for="example-input"&gt;Example input&lt;/label&gt;
+                                &lt;input class="table__input three-col" type="text" id="example-input" placeholder="Example"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="form__group"&gt;
+                                &lt;label class="two-col" for="example-input"&gt;Example input&lt;/label&gt;
+                                &lt;input class="table__input three-col" type="text" id="example-input" placeholder="Example"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="form__group"&gt;
+                                &lt;label class="two-col" for="example-input"&gt;Example input&lt;/label&gt;
+                                &lt;input class="table__input three-col" type="text" id="example-input" placeholder="Example"&gt;
+                            &lt;/div&gt;
+                        &lt;/fieldset&gt;
+                    &lt;/form&gt;
                 &lt;/div&gt;
                 &lt;div class="table__row table__dropdown-row is-active"&gt;
                     &lt;div class="table__data u-float--right"&gt;
@@ -1678,6 +1737,7 @@
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
+        &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class="table__row"&gt;
             &lt;div class="table__data table-col--3"&gt;
