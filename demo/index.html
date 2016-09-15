@@ -422,6 +422,8 @@
                 </div>
                 <div class="twelve-col">
                     <h2>Wrapper &amp; rows</h2>
+                    <p>The default wrapper and rows are combined to create content rows. Each row should contain a <code class="docs-code">.wrapper--inner</code> to set the content width inside and center it to the page. <code class="docs-code">.wrapper--inner</code> is set to <code class="docs-code">1440px</code> wide and mainly used for page content blocks such as a summary of content.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i>Avoid small break down of content areas, a row should be used as a whole and not in a granular fashion.</p>
                 </div>
                 <div class="twelve-col">
                     <h3>Wrapper</h3>
@@ -461,7 +463,9 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Grid</h2>
-                    <p>The default grid has 12 column (“col”) units and 20px gutters. Each col unit takes up 6.3053% of the total width.</p>
+                    <p>Vanilla's default grid has 12 columns and 20px gutters. On large screens, each column takes up 6.3053% of the total width. Layouts can be created combining rows with different number of columns to an ideal maximum of 4 columns per row. Each column should span a minimum of 3 column units.</p>
+                    <p>Used To create two or three column layouts, dropdown forms on tables or the page header controls. Also used to align content blocks side by side and to create a responsive layout.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i>Avoid going lower than 3 column units as content will get too small and not flow correctly.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -510,8 +514,13 @@
                     </div>
                 </div>
                 <div class="eight-col">
+                    <h2>Padding &amp; margin classes</h2>
+                    <p>Spacing can be applied using either margin or padding. Both margin and padding share the same predefined scale. There are 6 available spacing sizes; tiny, small, default, large, huge and none. There are also 4 directions prefix with; top, right, bottom, left.</p>
+                </div>
+                <div class="eight-col">
                     <h3>Padding classes</h3>
                     <p>Overrides an padding for an element or a direction. Base value is set to <code class="docs-code">20px</code>.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i>Shouldn’t be used to override a patterns padding unless advised, used to add spacing to blocks or elements which lack enough padding.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -555,6 +564,8 @@
                 <div class="eight-col">
                     <h3>Margin classes</h3>
                     <p>Overrides the margins for an element or a direction of the element. Base value is set to <code class="docs-code">20px</code>.</p>
+                    <p>Used to add spacing between two elements when required e.g. between a delete and edit icon or two buttons next to each other.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i>Shouldn’t be used to override a patterns margin unless advised.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
