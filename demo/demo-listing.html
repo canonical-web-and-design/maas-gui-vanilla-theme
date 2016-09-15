@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Canonical webteam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="../assets/images/logos/favicon.ico" type="image/x-icon" />
+
+    <title>MAAS GUI | Demo listing page</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../build/css/build.css" />
+</head>
+<body>
+    <header class="banner global" role="banner">
+        <nav role="navigation" class="nav-primary">
+            <span class="accessibility-aid">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+            <div class="logo">
+                <a href="/">
+                    <svg class="docs-nav__logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="30px" viewBox="90.64 28.138 100 30" enable-background="new 90.64 28.138 100 30" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path fill="#DD4813" d="M121.464,43.138c0,8.285-6.9,15-15.413,15 c-8.512,0-15.412-6.716-15.412-15c0-8.284,6.9-15,15.412-15C114.564,28.138,121.464,34.854,121.464,43.138"></path>
+                                <path fill="#FFFFFF" d="M98.344,36.26c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232c0.01-0.69-0.557-1.258-1.266-1.268 c-0.012,0-0.024,0-0.037,0H98.344"></path>
+                                <path fill="#FFFFFF" d="M98.344,40.01c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.691,0.557,1.258,1.266,1.268c0.013,0,0.025,0,0.037,0h15.412c0.71,0.01,1.293-0.542,1.303-1.232 c0.01-0.69-0.557-1.258-1.266-1.268c-0.012,0-0.024,0-0.037,0H98.344"></path>
+                                <path fill="#FFFFFF" d="M98.344,43.76c-0.709-0.01-1.292,0.542-1.302,1.232 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.541,1.303-1.231s-0.557-1.258-1.266-1.268h-0.037H98.344"></path>
+                                <path fill="#FFFFFF" d="M98.344,47.511c-0.709-0.011-1.292,0.541-1.302,1.231 c-0.01,0.69,0.557,1.258,1.266,1.268h0.037h15.412c0.71,0.01,1.293-0.542,1.303-1.232s-0.557-1.258-1.266-1.267 c-0.012-0.001-0.024-0.001-0.037,0H98.344"></path>
+                                <path fill="#FFFFFF" d="M137.043,48.857c-0.152-0.356-0.354-0.807-0.605-1.354 c-0.251-0.548-0.521-1.14-0.81-1.776c-0.288-0.636-0.596-1.291-0.923-1.964c-0.327-0.674-0.635-1.311-0.924-1.909 c-0.289-0.6-0.559-1.136-0.809-1.609c-0.251-0.474-0.453-0.836-0.605-1.088c-0.167,1.746-0.304,3.637-0.41,5.671 c-0.107,2.035-0.198,4.088-0.274,6.159h-2.167c0.061-1.332,0.129-2.675,0.206-4.028c0.075-1.354,0.163-2.686,0.262-3.996 c0.098-1.309,0.205-2.585,0.319-3.829c0.113-1.243,0.239-2.419,0.376-3.529h1.938c0.411,0.652,0.852,1.421,1.323,2.308 c0.471,0.888,0.942,1.817,1.414,2.786c0.472,0.97,0.927,1.939,1.369,2.909c0.441,0.969,0.844,1.853,1.209,2.652 c0.365-0.799,0.768-1.683,1.209-2.652c0.44-0.97,0.897-1.939,1.368-2.909c0.472-0.969,0.942-1.898,1.414-2.786 c0.472-0.887,0.912-1.656,1.323-2.308h1.939c0.516,4.958,0.904,10.085,1.163,15.382h-2.167c-0.076-2.071-0.168-4.124-0.274-6.159 c-0.106-2.034-0.243-3.925-0.41-5.671c-0.151,0.251-0.354,0.614-0.604,1.088c-0.251,0.474-0.521,1.01-0.81,1.609 c-0.289,0.599-0.597,1.235-0.924,1.909c-0.327,0.673-0.635,1.327-0.923,1.964c-0.29,0.636-0.559,1.229-0.811,1.776 c-0.251,0.547-0.452,0.998-0.604,1.354H137.043"></path>
+                                <path fill="#FFFFFF" d="M160.375,50.987c-0.259-0.666-0.502-1.32-0.73-1.964 c-0.229-0.645-0.464-1.298-0.707-1.965h-7.161l-1.438,3.929h-2.304c0.608-1.627,1.179-3.133,1.711-4.517 c0.532-1.385,1.053-2.697,1.562-3.94s1.016-2.431,1.517-3.562c0.5-1.132,1.026-2.253,1.573-3.363h2.029 c0.548,1.11,1.073,2.23,1.574,3.363c0.501,1.132,1.008,2.319,1.517,3.562s1.03,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.71,4.517H160.375L160.375,50.987z M158.299,45.283c-0.486-1.288-0.969-2.534-1.447-3.74 c-0.479-1.206-0.978-2.364-1.494-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.425,3.74H158.299 L158.299,45.283z"></path>
+                                <path fill="#FFFFFF" d="M176.249,50.987c-0.26-0.666-0.502-1.32-0.73-1.964 c-0.228-0.645-0.463-1.298-0.708-1.965h-7.161l-1.438,3.929h-2.303c0.608-1.627,1.178-3.133,1.711-4.517 c0.531-1.385,1.052-2.697,1.562-3.94c0.511-1.243,1.016-2.431,1.517-3.562c0.502-1.132,1.026-2.253,1.574-3.363h2.03 c0.546,1.11,1.071,2.23,1.572,3.363c0.503,1.132,1.008,2.319,1.517,3.562c0.511,1.243,1.031,2.556,1.562,3.94 c0.532,1.384,1.103,2.89,1.712,4.517H176.249L176.249,50.987z M174.173,45.283c-0.487-1.288-0.97-2.534-1.448-3.74 c-0.479-1.206-0.978-2.364-1.493-3.474c-0.533,1.11-1.038,2.268-1.518,3.474c-0.479,1.206-0.954,2.453-1.426,3.74H174.173 L174.173,45.283z"></path>
+                                <path fill="#FFFFFF" d="M184.848,49.456c2.31,0,3.466-0.77,3.466-2.309 c0-0.474-0.103-0.877-0.308-1.209c-0.206-0.333-0.483-0.622-0.833-0.866c-0.351-0.244-0.749-0.455-1.197-0.633 c-0.449-0.177-0.923-0.355-1.425-0.533c-0.579-0.192-1.125-0.411-1.643-0.655s-0.966-0.533-1.346-0.866s-0.682-0.729-0.901-1.188 c-0.221-0.458-0.33-1.013-0.33-1.665c0-1.346,0.471-2.397,1.414-3.152c0.942-0.755,2.242-1.132,3.899-1.132 c0.959,0,1.827,0.101,2.612,0.3c0.782,0.199,1.356,0.418,1.722,0.655l-0.708,1.753c-0.319-0.192-0.795-0.38-1.426-0.566 c-0.63-0.185-1.364-0.277-2.2-0.277c-0.425,0-0.82,0.044-1.186,0.133s-0.685,0.223-0.958,0.4s-0.489,0.403-0.649,0.677 c-0.161,0.274-0.24,0.596-0.24,0.966c0,0.414,0.083,0.762,0.252,1.043c0.166,0.281,0.402,0.529,0.706,0.743 c0.304,0.215,0.658,0.411,1.061,0.588c0.403,0.178,0.848,0.355,1.335,0.532c0.685,0.267,1.312,0.533,1.881,0.799 c0.57,0.267,1.064,0.585,1.482,0.955c0.418,0.37,0.741,0.81,0.969,1.321c0.229,0.51,0.343,1.128,0.343,1.853 c0,1.347-0.506,2.383-1.517,3.107c-1.011,0.726-2.437,1.089-4.275,1.089c-0.625,0-1.199-0.042-1.723-0.123 c-0.525-0.081-0.992-0.178-1.402-0.288c-0.411-0.111-0.765-0.229-1.062-0.355c-0.297-0.125-0.528-0.233-0.695-0.322l0.662-1.775 c0.349,0.192,0.881,0.407,1.596,0.644C182.938,49.338,183.812,49.456,184.848,49.456"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div id="nav">
+                <div class="nav-toggle">
+                    <a href="#nav" class="nav-toggle__link open"></a>
+                    <a href="#" class="nav-toggle__link close"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html">Documentation</a></li>
+                    <li><a href="demo-listing.html" class="active">Demo listing page</a></li>
+                    <li><a href="demo-details.html">Demo details page</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <header class="page-header">
+            <div class="wrapper--inner">
+                <h1 class="page-header__title">MAAS test title</h1>
+                <ul class="tabs">
+                    <li class="tabs__tab is-active">
+                        <a href="" class="tabs__tab-link">Machines</a>
+                    </li>
+                    <li class="tabs__tab">
+                        <a href="" class="tabs__tab-link">Devices</a>
+                    </li>
+                    <li class="tabs__tab">
+                        <a href="" class="tabs__tab-link">Controllers</a>
+                    </li>
+                </ul>
+                <p class="page-header__status">
+                    <span class="u-margin--left-small u-text--loading">
+                        <i class="icon u-margin--right-tiny icon--loading u-animation--spin"></i>Loading
+                    </span>
+                </p>
+                <div class="page-header__controls">
+                    <span class="page-header__controls-feedback u-margin--right">1 Selected</span>
+                    <div class="button-group button-group--inline">
+                        <a href="" class="button-group__link button--primary">Actions</a>
+                        <ul class="button-group__dropdown">
+                            <li class="button-group__item">
+                                <a href="" class="button-group__item-link">Add hardware</a>
+                            </li>
+                            <li class="button-group__item">
+                                <a href="" class="button-group__item-link">Remove hardware</a>
+                            </li>
+                            <li class="button-group__item">
+                                <a href="" class="button-group__item-link">Commission</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-header__dropdown is-open">
+                    <section class="page-header__section twelve-col u-margin--bottom-none">
+                        <h3 class="page-header__dropdown-title">Add machine</h3>
+                        <form class="form form--stack">
+                            <fieldset class="form__fieldset u-margin--bottom-none six-col">
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                        <span class="form__group-remove"></span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset u-margin--bottom-none six-col last-col">
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <label for="machine-name" class="form__group-label two-col">Machine name</label>
+                                    <div class="form__group-input three-col">
+                                        <input id="machine-name" placeholder="Choose a machine name (optional)" type="text">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+                    <div class="page-header__section twelve-col u-margin--bottom-none">
+                        <div class="page-header__controls">
+                            <a href="" class="button--base button--inline">Cancel</a>
+                            <button class="button--secondary button--inline">Save and add another</button>
+                            <button class="button--primary button--inline">Save machine</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="row u-padding--top">
+            <div class="wrapper--inner">
+                <div class="twelve-col">
+                    <ul class="flash-messages">
+                        <li class="flash-messages__item flash-messages__item--error">Error flash message</li>
+                    </ul>
+                </div>
+                <div class="accordion three-col">
+                    <h3 class="accordion__title">Filter by</h3>
+                    <div class="accordion__tab">
+                        <h4 class="accordion__tab-title">Lorem</h4>
+                        <div class="accordion__tab-content">
+                            <ul class="accordion__tab-list">
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Sit amet</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Consectetur</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__tab">
+                        <h4 class="accordion__tab-title is-active">Ipsum</h4>
+                        <div class="accordion__tab-content">
+                            <ul class="accordion__tab-list">
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                </li>
+                                <li class="accordion__tab-item is-active">
+                                    <a class="accordion__tab-link" href="">Sit amet</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Consectetur</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__tab">
+                        <h4 class="accordion__tab-title">Dolor</h4>
+                        <div class="accordion__tab-content">
+                            <ul class="accordion__tab-list">
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Sit amet</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Consectetur</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion__tab">
+                        <h4 class="accordion__tab-title">Sit amet</h4>
+                        <div class="accordion__tab-content">
+                            <ul class="accordion__tab-list">
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Lorem ipsum dolor</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Sit amet</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Consectetur</a>
+                                </li>
+                                <li class="accordion__tab-item">
+                                    <a class="accordion__tab-link" href="">Adipisicing elit</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nine-col last-col">
+                    <div class="search nine-col">
+                        <input placeholder="Search..." class="search__input" type="search">
+                        <input class="search__submit" type="submit">
+                    </div>
+                    <table>
+                        <thead>
+                              <tr>
+                                  <th>Table heading</th>
+                                  <th>
+                                      <a href="#">Table heading</a>
+                                      <span class="divide"></span>
+                                      <a href="">Table heading</a>
+                                  </th>
+                                  <th>lorem 2</th>
+                                  <th>lorem 3</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr class="table--success">
+                                  <td><i class="icon u-margin--right-small icon--success"></i> test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr><tr>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr class="table--warning">
+                                  <td><i class="icon u-margin--right-small icon--warning"></i> test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr class="table--error">
+                                  <td><i class="icon u-margin--right-small icon--error"></i> test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr class="table--information">
+                                  <td><i class="icon u-margin--right-small icon--info"></i> test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <input type="checkbox" id="exampleCheckbox">
+                                      <label for="exampleCheckbox"></label>
+                                  test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                                  <td>test</td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="u-padding--top u-border--top">
+        <div class="wrapper--inner clearfix">
+            <div class="eight-col">
+                <p>
+                    <small>
+                        <strong class="u-margin--right">MAAS Version 1.0.0</strong>&nbsp;<a href="#">View release
+                        notes</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">View documentation</a>
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        &copy; 2016 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.
+                    </small>
+                </p>
+            </div>
+            <div class="four-col last-col">
+                <svg version="1.1" id="ubuntu__x5F__orange" class="u-float--right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                	 x="0px" y="0px" width="107.208px" height="24.076px" viewBox="70.867 73.051 107.208 24.076"
+                	 enable-background="new 70.867 73.051 107.208 24.076" xml:space="preserve">
+                <g>
+                	<circle fill="#DD4814" cx="171.657" cy="79.468" r="6.417"/>
+                	<path fill="#FFFFFF" d="M167.656,78.697c-0.426,0-0.77,0.345-0.77,0.771c0,0.424,0.344,0.771,0.77,0.771
+                		c0.427,0,0.771-0.346,0.771-0.771C168.427,79.041,168.082,78.697,167.656,78.697z M173.161,82.201
+                		c-0.37,0.211-0.495,0.683-0.283,1.051c0.212,0.37,0.684,0.496,1.053,0.283s0.495-0.684,0.282-1.053S173.529,81.987,173.161,82.201z
+                		 M169.331,79.468c0-0.762,0.377-1.436,0.956-1.843l-0.562-0.944c-0.675,0.451-1.178,1.14-1.386,1.947
+                		c0.245,0.199,0.399,0.501,0.399,0.841c0,0.338-0.154,0.64-0.399,0.839c0.208,0.807,0.711,1.496,1.386,1.946l0.562-0.944
+                		C169.709,80.902,169.331,80.229,169.331,79.468z M171.582,77.215c1.177,0,2.142,0.902,2.243,2.054l1.099-0.019
+                		c-0.055-0.848-0.425-1.611-0.996-2.171c-0.293,0.11-0.632,0.095-0.924-0.075c-0.293-0.169-0.477-0.454-0.528-0.764
+                		c-0.285-0.078-0.584-0.122-0.895-0.122c-0.533,0-1.037,0.126-1.483,0.347l0.535,0.959C170.923,77.29,171.244,77.215,171.582,77.215
+                		z M171.582,81.718c-0.338,0-0.66-0.074-0.949-0.209l-0.535,0.96c0.447,0.223,0.951,0.346,1.483,0.346
+                		c0.31,0,0.609-0.042,0.895-0.121c0.051-0.31,0.234-0.595,0.528-0.765c0.293-0.168,0.631-0.185,0.924-0.074
+                		c0.57-0.561,0.941-1.323,0.996-2.173l-1.099-0.015C173.724,80.817,172.759,81.718,171.582,81.718z M173.161,76.734
+                		c0.368,0.212,0.839,0.086,1.052-0.283c0.213-0.367,0.087-0.839-0.282-1.052c-0.369-0.212-0.84-0.086-1.053,0.282
+                		C172.666,76.05,172.791,76.521,173.161,76.734z"/>
+                	<g>
+                		<path fill="#333333" d="M83.699,96.303c-0.652,0.163-1.512,0.336-2.581,0.519c-1.071,0.183-2.308,0.275-3.713,0.275
+                			c-1.222,0-2.251-0.178-3.086-0.535c-0.835-0.355-1.508-0.86-2.017-1.512c-0.51-0.651-0.875-1.42-1.1-2.307
+                			c-0.225-0.886-0.336-1.869-0.336-2.948v-8.922h2.842v8.311c0,1.936,0.305,3.32,0.917,4.154c0.61,0.837,1.639,1.254,3.085,1.254
+                			c0.306,0,0.621-0.011,0.947-0.031c0.325-0.021,0.632-0.046,0.917-0.076c0.285-0.031,0.544-0.062,0.779-0.092
+                			c0.234-0.03,0.402-0.065,0.504-0.107V80.873H83.7L83.699,96.303L83.699,96.303z"/>
+                		<path fill="#333333" d="M90.635,81.575c0.346-0.223,0.872-0.458,1.574-0.702c0.703-0.244,1.512-0.366,2.429-0.366
+                			c1.141,0,2.154,0.204,3.041,0.61c0.886,0.408,1.635,0.978,2.246,1.71c0.611,0.734,1.074,1.61,1.39,2.627
+                			c0.315,1.02,0.474,2.14,0.474,3.362c0,1.283-0.189,2.439-0.565,3.467c-0.377,1.029-0.912,1.899-1.604,2.612
+                			c-0.693,0.713-1.528,1.263-2.506,1.65c-0.977,0.387-2.078,0.581-3.3,0.581c-1.324,0-2.495-0.092-3.513-0.276
+                			c-1.018-0.183-1.854-0.366-2.505-0.55v-22.76l2.841-0.489L90.635,81.575L90.635,81.575z M90.635,94.285
+                			c0.286,0.082,0.688,0.159,1.207,0.229c0.52,0.072,1.166,0.107,1.94,0.107c1.528,0,2.75-0.504,3.667-1.512
+                			c0.917-1.008,1.375-2.439,1.375-4.292c0-0.814-0.082-1.578-0.244-2.292c-0.164-0.712-0.429-1.329-0.795-1.848
+                			c-0.366-0.52-0.84-0.927-1.42-1.223c-0.581-0.295-1.279-0.443-2.093-0.443c-0.775,0-1.487,0.133-2.138,0.397
+                			c-0.653,0.265-1.152,0.541-1.498,0.826V94.285L90.635,94.285z"/>
+                		<path fill="#333333" d="M117.643,96.303c-0.652,0.163-1.513,0.336-2.581,0.519c-1.069,0.183-2.308,0.275-3.712,0.275
+                			c-1.222,0-2.25-0.178-3.086-0.535c-0.835-0.355-1.507-0.86-2.016-1.512c-0.51-0.651-0.875-1.42-1.101-2.307
+                			c-0.224-0.886-0.336-1.869-0.336-2.948v-8.922h2.841v8.311c0,1.936,0.307,3.32,0.917,4.154c0.612,0.837,1.64,1.254,3.085,1.254
+                			c0.307,0,0.622-0.011,0.947-0.031c0.326-0.021,0.631-0.046,0.917-0.076c0.285-0.031,0.545-0.062,0.78-0.092
+                			c0.234-0.03,0.402-0.065,0.503-0.107V80.873h2.842L117.643,96.303L117.643,96.303z"/>
+                		<path fill="#333333" d="M121.737,81.332c0.651-0.164,1.516-0.336,2.597-0.52c1.079-0.183,2.321-0.275,3.727-0.275
+                			c1.263,0,2.312,0.178,3.146,0.535c0.835,0.356,1.502,0.855,2.002,1.497c0.498,0.642,0.85,1.411,1.054,2.306
+                			c0.203,0.897,0.306,1.885,0.306,2.964v8.921h-2.842V88.45c0-0.977-0.066-1.812-0.198-2.504c-0.133-0.694-0.352-1.253-0.657-1.68
+                			c-0.306-0.429-0.713-0.739-1.222-0.933c-0.508-0.194-1.141-0.291-1.894-0.291c-0.307,0-0.622,0.01-0.947,0.031
+                			c-0.327,0.021-0.637,0.045-0.932,0.077c-0.296,0.03-0.56,0.066-0.795,0.106c-0.234,0.042-0.401,0.072-0.503,0.091V96.76h-2.841
+                			V81.332L121.737,81.332z"/>
+                		<path fill="#333333" d="M141.137,80.873h6.018v2.383h-6.018v7.333c0,0.794,0.061,1.452,0.183,1.971
+                			c0.123,0.519,0.306,0.927,0.55,1.222c0.245,0.295,0.55,0.503,0.917,0.626s0.794,0.184,1.283,0.184
+                			c0.875,0,1.568-0.097,2.078-0.292c0.508-0.193,0.855-0.331,1.039-0.412l0.611,2.322c-0.286,0.143-0.79,0.326-1.513,0.55
+                			c-0.723,0.224-1.542,0.336-2.459,0.336c-1.081,0-1.971-0.137-2.674-0.412c-0.701-0.276-1.267-0.688-1.694-1.238
+                			c-0.428-0.549-0.729-1.227-0.902-2.032c-0.174-0.804-0.26-1.736-0.26-2.795V76.444l2.842-0.489V80.873L141.137,80.873z"/>
+                		<path fill="#333333" d="M162.615,96.303c-0.653,0.163-1.513,0.336-2.582,0.519c-1.069,0.183-2.308,0.275-3.712,0.275
+                			c-1.222,0-2.251-0.178-3.086-0.535c-0.835-0.355-1.508-0.86-2.016-1.512c-0.51-0.651-0.876-1.42-1.101-2.307
+                			c-0.224-0.886-0.336-1.869-0.336-2.948v-8.922h2.842v8.311c0,1.936,0.306,3.32,0.917,4.154c0.61,0.837,1.639,1.254,3.086,1.254
+                			c0.306,0,0.621-0.011,0.947-0.031c0.325-0.021,0.63-0.046,0.916-0.076c0.286-0.031,0.545-0.062,0.78-0.092
+                			c0.233-0.03,0.402-0.065,0.504-0.107V80.873h2.842L162.615,96.303L162.615,96.303z"/>
+                	</g>
+                </g>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>

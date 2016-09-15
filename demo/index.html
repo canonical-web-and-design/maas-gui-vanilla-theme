@@ -31,7 +31,10 @@
                 </g>
             </g>
         </svg>
-        <h1 class="docs-nav__title">GUI Framework</h1>
+        <h1 class="docs-nav__title u-padding--right-large">GUI Framework</h1>
+        <a class="docs-nav__title" href="index.html">Documentation</a>
+        <a class="docs-nav__title" href="demo-listing.html">Demo listing page</a>
+        <a class="docs-nav__title" href="demo-details.html">Demo details page</a>
     </header>
     <div class="wrapper u-padding--top-huge">
         <!-- Start Introduction -->
@@ -614,7 +617,8 @@
                 </div>
                 <div class="eight-col">
                     <h2>Tooltips</h2>
-                    <p>Adds a tooltip element which is visible on hover and in a set direction.</p>
+                    <p>Tooltips are text labels that appear when the user hovers over, focuses on, or touches an element on the screen. Can be used to provide information of concepts/terms/actions that are not self explanatory or well known. Can be introduced to provide information of a disabled actionable element, e.g. for disabled buttons provide information why why they are disabled.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i> Avoid using tooltips to provide instructions or guidance. They shouldn't be used to show rich information including images and formatted text and avoid placing over plain text or other places where they are not discoverable.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -646,7 +650,8 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>List tree</h2>
-                    <p>Used to list out an content which also requires sub list items.</p>
+                    <p>To display nested content in a list. This can be used to show nested services of a device or app, to show a file structure or an IA hierarchy in a site map.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i>Avoid using this to display lists of data content or as a main navigation style.</p>
                 </div>
                 <div class="twelve-col">
                     <div class="docs-example">
@@ -706,7 +711,10 @@
                 <div class="twelve-col">
                     <h2>Buttons</h2>
                     <div class="eight-col">
-                        <p>The main button style can be used in form submission buttons and other important call to actions. Apply using the class.</p>
+                        <p>The main button style can be used in form submission buttons and other important call to actions. Apply using the class. Primary button styles are for the critical, or most important action on a form/page. Use the secondary button as the general button style. Button text are for non-critical actions or for keeping the interface simple.</p>
+                        <p>Apply <code class="docs-code">disabled</code> when the action cannot be performed (note: if it is not clear why an action is disabled, accompany with a tooltip).</p>
+                        <p><i class="icon icon--warning u-margin--right-small"></i>Avoid using more that one primary button in a page and try to not overload the page with buttons.
+</p>
                     </div>
                     <div class="twelve-col">
                         <h5 class="u-text--right">Example</h5>
@@ -728,7 +736,8 @@
                 <div class="twelve-col">
                     <h3>Button groups</h3>
                     <div class="eight-col">
-                        <p>Button groups can be used when a multi button option is required.</p>
+                        <p>A drop down button selects between multiple selections. The button displays the current state and a down arrow. Use for high-level multiple actions on a page. Use this button style if a section has two or more actions and if possible actions are placed in order of importance. therwise they are alphabetically ordered. If the actions exceed the maximum displayable number (to be decided) add a scrollbar in the dropdown.</p>
+                        <p><i class="icon icon--warning u-margin--right-small"></i>Avoid using this pattern for one action buttons.</p>
                     </div>
                     <div class="twelve-col">
                         <h5 class="u-text--right">Example</h5>
@@ -801,7 +810,8 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Forms</h2>
-                    <p>The default form is stacked vertically (labels above inputs).</p>
+                    <p>Form controls have global styling defined at the <code class="docs-code">html</code> element level. Labels and most input types are set to 100% width of the <code class="docs-code">form</code> parent element. All form controls are wrapped in <code class="docs-code">.form-group</code> for other modifier classes to change the layout.</p>
+                    <p>Used for controlling change in content or to submit new data to a web server. E.g updating settings or to request new data.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -885,7 +895,10 @@
                 </div>
                 <div class="eight-col">
                     <h3>Forms - inline</h3>
+                    <p>Inline form styles are a layout change and keep all form elements inline with each other including form responses. Use for forms which are concealed in dropdowns and do not need to take up a lot of space or small forms i.e login forms.</p>
                     <p>Add <code class="docs-code">.form--inline</code> to your form for left-aligned and inline-block form elements.</p>
+                    <p><i class="icon icon--warning u-margin--right-small"></i>Avoid using this style with forms which contain a large amount of controls or complexity. Not advised to be used with <code class="docs-code">textarea</code>.
+</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -935,7 +948,9 @@
                 </div>
                 <div class="eight-col">
                     <h3>Forms - stacked</h3>
-                    <p>Add <code class="docs-code">.form--stacked</code> and our grid system to your form for stacked inline form elements</p></div>
+                    <p>Add <code class="docs-code">.form--stacked</code> and our grid system to your form for stacked inline form elements. Used for large form control blocks such as; system details, address forms or setting control layouts. It supports all form controls in any layout.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid using this layout for smaller forms such as login or one input forms. Resort to using the inline form style.</p>
+                </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
                     <div class="docs-example">
@@ -1014,7 +1029,8 @@
                 </div>
                 <div class="eight-col">
                     <h3>Forms - subtle</h3>
-                    <p>Add <code class="docs-code">.form--group--subtle</code> provides an on hover effect and makes non hover items subtle in the form</p>
+                    <p>Using <code class="docs-code">form__group­-subtle</code> will change the design of any form control and apply a new hover state to the control. Used for form controls which auto update on input change and blur.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Not to be used with forms which have an active save control or any type of submit changes button.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -1059,6 +1075,7 @@
                 <div class="eight-col">
                     <h3>Forms - Sibling</h3>
                     <p>Wrap <code class="docs-code">.form__siblings</code> around two subtle form group elements to link their hover and active effects.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid using with forms which have an active save control or any type of submit changes button. Alos not to be used with form controls which haven’t had the subtle class applied.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -1118,7 +1135,9 @@
                 </div>
                 <div class="eight-col">
                     <h3>Forms - disabled</h3>
-                    <p>Disabled form style</p>
+                    <p>Add the <code class="docs-code">disabled</code> state to any form control and it will prevent any user interaction. It will make the input appear lighter and any hover effect will come up with a no action cursor to show nothing can be done to the user.</p>
+                    <p>Can be used on <code class="docs-code">input</code>, <code class="docs-code">textarea</code> or <code class="docs-code">button</code> and other form controls.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Do not use to prevent users interacting with the content use <code class="docs-code">readonly</code> instead.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -1166,7 +1185,9 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Tabs</h2>
-                    <p>Used as a secondary navigation with in a page or content area.</p>
+                    <p>Use tabs when there are multiple categories/views/panes of content, but there is the need to only show one pane at a time.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Don’t use tabs for pagination of content or cases involve viewing content, not
+navigating between groups of content. Tabs can not be nested or be mixed with icons or button styles.</p>
                 </div>
                 <div class="twelve-col">
                     <div class="docs-example">
@@ -1203,7 +1224,8 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Code block</h2>
-                    <p>Used to hold snippets of code or machine / log output with numberd lines</p>
+                    <p>Used to hold snippets of code or machine / log output with numberd lines. Primarly used to display code or machine output which is non editible.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid using for areas which users may require to edit the content or for long code files.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -1255,7 +1277,9 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Tables</h2>
-                    <p>For basic tables use the standard html elements.</p>
+                    <p>Users need to see structured data in a manner that makes the data readable, scannable, and comparable. Tables can include non-text elements such as icons as well as form elements such as checkboxes or radio buttons. For non primary content, load [x] more pattern can be used to avoid long
+tables. Tab headers can be used to set which column is visible within a table if nessicary.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid trying to paginate table content or applying loading more links on primary content tables.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -1423,7 +1447,7 @@
                 </div>
                 <div class="eight-col">
                     <h3>Table - row classes</h3>
-                    <p>Context classes are to be used on rows to show content feedback.</p>
+                    <p>Context classes are to be used on rows to show content feedback. Use feedback styles to provide feedback on a row action. This will replace the standard style of the row with the feedback style.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right"></h5>
@@ -1437,7 +1461,8 @@
                 </div>
                 <div class="eight-col">
                     <h3>Table - column classes</h3>
-                    <p>Column classes are used to set a cell width from <code class="docs-code">1%</code> to <code class="docs-code">100%</code>.</p>
+                    <p>Column classes are used to set a cell width from <code class="docs-code">1%</code> to <code class="docs-code">100%</code>. Use appropriate widths to show all the content if possible.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid creating columns that the collective value exceeds 100%.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right"></h5>
@@ -1451,6 +1476,8 @@
                 <div class="eight-col">
                     <h3>Table - Interactive</h3>
                     <p>Using <code class="docs-code">.table</code> on block elements creates a pseudo table style which can be used to create powerful interactive tables which wouldn't be possible using standard <code class="docs-code">&lt;table&gt;</code> elements.</p>
+                    <p>This pattern should be used when a table requires configuration fields (add, edit). Expandable rows can also be used to supply additional information not visible on the table row.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Aviid using this pattern for standard data tables.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -1862,171 +1889,8 @@
         <section class="row">
             <div class="wrapper--inner">
                 <div class="eight-col">
-                    <h2>Table - Interactive</h2>
-                </div>
-                <div class="twelve-col">
-                    <h5 class="u-text--right">Example</h5>
-                    <div class="docs-example">
-                        <div class="docs-example__item">
-                            <section class="table margin-bottom">
-                                <header class="table__head">
-                                    <div class="table__row">
-                                        <div class="table__header table-col--3">
-                                            <input class="checkbox" id="available-check-all" data-ng-hide="isAllStorageDisabled()" data-ng-checked="availableAllSelected" data-ng-click="toggleAvailableAllSelect()" data-ng-disabled="isAvailableDisabled()" type="checkbox">
-                                            <label for="available-check-all"></label>
-                                        </div>
-                                        <div class="table__header table-col--16">
-                                            <a class="table__header-link active" data-ng-click="column = 'name'" data-ng-class="{active: column === 'name'}">Name</a>
-                                            <span class="divide"></span>
-                                            <a class="table__header-link" data-ng-click="column = 'model'" data-ng-class="{active: column === 'model'}">Model</a>
-                                            <span class="divide"></span>
-                                            <a class="table__header-link" data-ng-click="column = 'serial'" data-ng-class="{active: column === 'serial'}">Serial</a>
-                                        </div>
-                                        <div class="table__header table-col--4">Boot</div>
-                                        <div class="table__header table-col--15">Size</div>
-                                        <div class="table__header table-col--15">Device Type</div>
-                                        <div class="table__header table-col--10">Filesystem</div>
-                                        <div class="table__header table-col--25">Tags</div>
-                                        <div class="table__header table-col--12"></div>
-                                    </div>
-                                </header>
-                                <main class="table__body">
-                                    <div class="table__row">
-                                        <div class="table__data table-col--3">
-                                            <input class="checkbox" id="name-AlJbgY-part2" type="checkbox">
-                                            <label for="name-AlJbgY-part2"></label>
-                                        </div>
-                                        <div class="table__data table-col--16">
-                                            <span>name-AlJbgY-part2</span>
-                                        </div>
-                                        <div class="table__data table-col--4"></div>
-                                        <div class="table__data table-col--15">1.5 GB</div>
-                                        <div class="table__data table-col--15">Partition</div>
-                                        <div class="table__data table-col--10">ext2</div>
-                                        <div class="table__data table-col--25">
-                                            <a href="#">tag-R04rO1</a>
-                                            <a href="#">tag-kubehf89eowr87</a>
-                                            <a href="#">tag-WF345sdf5hR</a>
-                                        </div>
-                                        <div class="table__data table-col--12">
-                                            <div class="table__controls">
-                                                <a class="icon icon--partition tooltip" aria-label="Partition">Partition</a>
-                                                <a class="icon icon--edit tooltip" aria-label="Edit">
-                                                    &gt;Edit</a>
-                                                <a class="icon icon--delete tooltip u-margin--left">Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table__row">
-                                        <div class="table__data table-col--3">
-                                            <input class="checkbox" id="name-AlJbgY-part2" type="checkbox">
-                                            <label for="name-AlJbgY-part2"></label>
-                                        </div>
-                                        <div class="table__data table-col--16">
-                                            <span>name-AlJbgY-part1</span>
-                                        </div>
-                                        <div class="table__data table-col--4"></div>
-                                        <div class="table__data table-col--15">1.5 GB</div>
-                                        <div class="table__data table-col--15">Partition</div>
-                                        <div class="table__data table-col--10">ext2</div>
-                                        <div class="table__data table-col--25">
-                                            <a href="#">tag-R04rO1</a>
-                                            <a href="#">tag-kubehf89eowr87</a>
-                                            <a href="#">tag-WF345sdf5hR</a>
-                                        </div>
-                                        <div class="table__data table-col--12">
-                                            <div class="table__controls">
-                                                <a class="icon icon--partition tooltip" aria-label="Partition">Partition</a>
-                                                <a class="icon icon--edit tooltip" aria-label="Edit">
-                                                    &gt;Edit</a>
-                                                <a class="icon icon--delete tooltip u-margin--left">Remove</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table__row is-active">
-                                        <div class="table__data table-col--3">
-                                            <input class="checkbox" id="name-AlJbgY-part2" type="checkbox">
-                                            <label for="name-AlJbgY-part2"></label>
-                                        </div>
-                                        <div class="table__data table-col--16">
-                                            <span>name-AlJbgY-part1</span>
-                                        </div>
-                                        <div class="table__data table-col--4"></div>
-                                        <div class="table__data table-col--15">1.5 GB</div>
-                                        <div class="table__data table-col--15">Partition</div>
-                                        <div class="table__data table-col--10">ext2</div>
-                                        <div class="table__data table-col--25">
-                                            <a href="#">tag-R04rO1</a>
-                                            <a href="#">tag-kubehf89eowr87</a>
-                                            <a href="#">tag-WF345sdf5hR</a>
-                                        </div>
-                                        <div class="table__data table-col--12">
-                                            <div class="table__controls">
-                                                <a class="icon icon--partition tooltip" aria-label="Partition">Partition</a>
-                                                <a class="icon icon--edit tooltip" aria-label="Edit">
-                                                    &gt;Edit</a>
-                                                <a class="icon icon--delete tooltip u-margin--left">Remove</a>
-                                            </div>
-                                        </div>
-                                        <div class="table__row table__dropdown form form--stack is-active">
-                                            <div class="table__row u-padding--small">
-                                                <dl class="form__fieldset six-col u-padding--left-large">
-                                                    <dt class="two-col">Size</dt>
-                                                        <dd class="four-col last-col ng-binding">1.6 GB</dd>
-                                                    <dt class="two-col">Type</dt>
-                                                        <dd class="four-col last-col ng-binding">Partition</dd>
-                                                </dl>
-                                                <div class="form__fieldset six-col last-col u-margin--bottom-none">
-                                                    <div class="form__group">
-                                                        <label for="filesys" class="form__group-label two-col">Filesystem</label>
-                                                        <div class="form__group-input three-col last-col">
-                                                            <select name="filesys">
-                                                                <option class="" value="" selected="selected">Unformatted</option>
-                                                                <option label="ext2" value="0">ext2</option>
-                                                                <option label="ext4" value="1">ext4</option>
-                                                                <option label="xfs" value="2">xfs</option>
-                                                                <option label="fat32" value="3">fat32</option>
-                                                                <option label="vfat" value="4">vfat</option>
-                                                                <option label="swap" value="5">swap</option>
-                                                                <option label="ramfs" value="6">ramfs</option>
-                                                                <option label="tmpfs" value="7">tmpfs</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form__group">
-                                                        <label for="mount-point" class="form__group-label two-col">Mount point</label>
-                                                        <div class="form__group-input three-col last-col">
-                                                            <input disabled="disabled" id="mount-point" placeholder="Absolute path" type="text">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form__group">
-                                                        <label for="mount-options" class="form__group-label two-col">Mount options</label>
-                                                        <div class="form__group-input three-col last-col">
-                                                            <input disabled="disabled" id="mount-options" placeholder="Separated by commas, no spaces" type="text">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="table__row">
-                                                <div class="u-padding--small u-float--right">
-                                                    <a class="button--base button--inline" data-ng-click="availableCancel(item)">Cancel</a>
-                                                    <button class="button--primary button--inline" data-ng-disabled="isMountPointInvalid(item.$options.mountPoint) || isNameInvalid(item)" data-ng-click="availableConfirmEdit(item)">Save</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </main>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="row">
-            <div class="wrapper--inner">
-                <div class="eight-col">
                     <h2>Navigation</h2>
-                    <p>Standard main navigation header.</p>
+                    <p>Navigation guides users through different parts MAAS. Ideal to prioritise the navigation items based on common user tasks. Will indicate the current position of the user.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2154,7 +2018,9 @@
                 </div>
                 <div class="eight-col">
                     <h2>Page header</h2>
-                    <p>Secondard header to be used as a focal point of global controls, page title, tabs and any page status information.</p>
+                    <p>The header is used as a focal point of page title, global controls, tabs and any page status information. Is to be used consistently on all pages, should contain the main page title.</p>
+                    <p>All form controls which are contained in the page header section should be relevant to the entire page.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid using the page header to raise global or local error notifications. Controls in the header shouldn't reflect one specified section on the page.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2447,7 +2313,9 @@
                 </div>
                 <div class="eight-col">
                     <h2>Page header - Feedback types</h2>
-                    <p>Feedback examples follow the four styles similar to the flashmessage feedback pattern.</p>
+                    <p>Feedback examples follow the four styles similar to the flashmessage feedback pattern. Feedback should be used when adding an entity use for confirmation messages, eg. Are you sure you want to delete this item? Or when performing an action from the header, use to provide feedback information for the action</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Do not use to provide feedback for an action initiated somewhere else on the
+page.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2603,7 +2471,8 @@
                 </div>
                 <div class="eight-col">
                     <h3>Page header - status</h3>
-                    <p>Various system status found within MAAS. Including the loading status.</p>
+                    <p>Various system status found within MAAS. Should be used to show the status of the page and a place to indicate the page is loading.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Do not use for the status of individual items of a list in the page.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2771,7 +2640,9 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Flash messages</h2>
-                    <p>Global or section responses and to be used to inform a user of any alert.</p>
+                    <p>Global or section responses and to be used to inform a user of any alert. Used to show error, warning, information and success messages. Should be placed at the top of the page for page specific messages and in row for section messages.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Do not use for generic form feedback, use any form error handling to show
+form responses.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2801,7 +2672,8 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Global search</h2>
-                    <p>Global search style, used on listing pages or to filter content such as system logs in a table.</p>
+                    <p>Global search style, used on listing pages or to filter content such as system logs in a table. Should accompany pages which contain large tables of listing data. Searching should filter any content on the page. Consistantly should be placed at the top of the page under a page header section.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid using for system wide page search and do not carry the text of a local/ section search field to other pages.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2821,7 +2693,8 @@
                 </div>
                 <div class="eight-col">
                     <h3>Global search - Remove / clear</h3>
-                    <p>Clear style used on the submit button of the global styles.</p>
+                    <p>Clear style used on the submit button of the global search. Should be visible when a single character has been entered to the global search and clears all content when clicked.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Avoid using this style with generic form controls.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2841,7 +2714,9 @@
                 </div>
                 <div class="eight-col">
                     <h3>Global search - Disabled</h3>
-                    <p>Disabled state of the global search.</p>
+                    <p>Disabled state of the global search. Use when global search functions don’t need to be active and if another primary action is in progress disable the global search.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Only use the disabled state when required and not as a form response or to
+take focus away from the input.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -2865,7 +2740,8 @@
             <div class="wrapper--inner">
                 <div class="eight-col">
                     <h2>Accordion</h2>
-                    <p>Side bar accordion, used in listing pages or as navigation. Can hold multiple navigation items or to be used as a filter of content.</p>
+                    <p>Side bar accordion, used in listing pages or as navigation. Can hold multiple navigation items or to be used as a filter of content. Use to hold filtering items (header and content if available).</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Do not use to display page content.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -3035,7 +2911,7 @@
                 </div>
                 <div class="eight-col">
                     <h3>Accordion - Disabled</h3>
-                    <p>Using <code class="docs-code">.is-disabled</code> will leave the accordion unuseable.</p>
+                    <p>Using <code class="docs-code">.is-disabled</code> will leave the accordion unuseable. If a primary action is in progress disable the filtering accordion.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>
@@ -3210,6 +3086,7 @@
                 <div class="eight-col">
                     <h2>Action card</h2>
                     <p>Similar style as the page header dropdown, to be used for in page actions or as an important form container.</p>
+                    <p><span class="icon icon--warning u-margin--right-small"></span>Do not use outside of a container, such as a table, header etc.</p>
                 </div>
                 <div class="twelve-col">
                     <h5 class="u-text--right">Example</h5>

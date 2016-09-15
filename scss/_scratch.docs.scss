@@ -8,14 +8,22 @@
   z-index: 10;
 
   .docs-nav__logo {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .docs-nav__title {
     font-size: 16px;
     margin: 0 0 0 10px;
-    line-height: 34px;
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .docs-nav__link {
+    font-size: 16px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
