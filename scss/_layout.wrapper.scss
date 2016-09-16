@@ -25,7 +25,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: url('#{$asset-path}images/backgrounds/background-paper.png');
+      background: url('#{$asset-path}f8a323a7-background-paper.png');
       height: 100%;
       width: 100%;
       z-index: -1;
@@ -50,7 +50,7 @@
 
       &-content {
         flex: 1 1 auto;
-        position: relative; // need this to position inner content 
+        position: relative; // need this to position inner content
         overflow-y: auto;
       }
     }

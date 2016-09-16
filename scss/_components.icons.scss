@@ -11,120 +11,119 @@
   .icon {
     @include icon-size(16px);
     padding: 0;
-    border-bottom: 0 !important;
+    border-bottom: 0;
     display: inline-block;
     vertical-align: middle;
     text-indent: 999em;
 
-    &.icon--add {
-      background: url('data:image/svg+xml;utf8, <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Storage-buttons-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="04.2-creating-lv" sketch:type="MSArtboardGroup" transform="translate(-1212.000000, -1844.000000)" fill="#B2B2B2"><g id="Normal" sketch:type="MSLayerGroup" transform="translate(-16.000000, -11.000000)"><g id="Storage-Copy" transform="translate(14.000000, 1273.000000)" sketch:type="MSShapeGroup"><g id="Avilable-disks-and-partitions" transform="translate(202.000000, 258.000000)"><g id="table-all"><g id="network-row-copy-3" transform="translate(0.000000, 313.000000)"><g id="actions-copy-5" transform="translate(990.000000, 10.000000)"><path d="M37.1483077,4 L31.4190769,9.72923077 L25.6898462,4 L24,5.68984615 L29.7292308,11.4203077 L24,17.1495385 L25.6898462,18.8393846 L31.4190769,13.1101538 L37.1483077,18.8393846 L38.8393846,17.1495385 L33.1089231,11.4203077 L38.8393846,5.68984615 L37.1483077,4 Z" id="remove-icon-copy" transform="translate(32.000000, 12.000000) rotate(-315.000000) translate(-32.000000, -12.000000) "></path></g></g></g></g></g></g></g></g></svg>') no-repeat;
-      background-size: 100% 100%;
-    }
-
     &.icon--account {
-      background: url('#{$asset-path}images/icons/account.svg') no-repeat;
+      background: url('#{$asset-path}9dcb63da-account.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--cross {
-      background: url('#{$asset-path}images/icons/cross.svg') no-repeat;
+    &.icon--add {
+      background: url('#{$asset-path}b7f0f831-add.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--cross-orange {
-      background: url('#{$asset-path}images/icons/cross-orange.svg') no-repeat;
+      background: url('#{$asset-path}557b45a3-cross-orange.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--cross {
+      background: url('#{$asset-path}73fb3728-cross.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--debug {
-      background: url('#{$asset-path}images/icons/debug.svg') no-repeat;
+      background: url('#{$asset-path}dfe8c043-debug.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--delete {
-      background: url('#{$asset-path}images/icons/delete.svg') no-repeat;
+      background: url('#{$asset-path}2a1abd77-delete.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--edit {
-      background: url('#{$asset-path}images/icons/edit.svg') no-repeat;
+      background: url('#{$asset-path}9f2dd30d-edit.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--error {
-      background: url('#{$asset-path}images/icons/error.svg') no-repeat;
+      background: url('#{$asset-path}f5366577-error.svg') no-repeat;
       background-size: 100% 100%;
 
       &-mono {
-        background: url('#{$asset-path}images/icons/error-mono.svg') no-repeat;
+        background: url('#{$asset-path}14705925-error-mono.svg') no-repeat;
       }
     }
 
     &.icon--help {
-      background: url('#{$asset-path}images/icons/help.svg') no-repeat;
+      background: url('#{$asset-path}4bc397b0-help.svg') no-repeat;
       background-size: 100% 100%;
 
       &-mono {
-        background: url('#{$asset-path}images/icons/help-mono.svg') no-repeat;
+        background: url('#{$asset-path}b570a10b-help-mono.svg') no-repeat;
       }
     }
 
     &.icon--info {
-      background: url('#{$asset-path}images/icons/info.svg') no-repeat;
+      background: url('#{$asset-path}ea90dd64-info.svg') no-repeat;
       background-size: 100% 100%;
 
       &-mono {
-        background: url('#{$asset-path}images/icons/info-mono.svg') no-repeat;
+        background: url('#{$asset-path}9753b192-info-mono.svg') no-repeat;
       }
     }
 
     &.icon--loading {
-      background: url('#{$asset-path}images/icons/loading.png') no-repeat;
+      background: url('#{$asset-path}8b7b3046-loading.png') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--mount {
-      background: url('#{$asset-path}images/icons/mount.svg') no-repeat;
+      background: url('#{$asset-path}82993327-mount.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--unmount {
-      background: url('#{$asset-path}images/icons/unmount.svg') no-repeat;
+      background: url('#{$asset-path}e5d8a2bf-unmount.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--partition {
-      background: url('#{$asset-path}images/icons/partition.svg') no-repeat;
+      background: url('#{$asset-path}fd624514-partition.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--power-error {
-      background: url('#{$asset-path}images/icons/power-error.svg') no-repeat;
+      background: url('#{$asset-path}e5ade4a5-power-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--power-off {
-      background: url('#{$asset-path}images/icons/power-off.svg') no-repeat;
+      background: url('#{$asset-path}0c046ad4-power-off.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--power-on {
-      background: url('#{$asset-path}images/icons/power-on.svg') no-repeat;
+      background: url('#{$asset-path}f8836635-power-on.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--remove {
-      background: url('#{$asset-path}images/icons/remove.svg') no-repeat;
+      background: url('#{$asset-path}44221cb1-remove.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--success {
-      background: url('#{$asset-path}images/icons/success.svg') no-repeat;
+      background: url('#{$asset-path}2477be54-success.svg') no-repeat;
       background-size: 100% 100%;
 
       &-mono {
-        background: url('#{$asset-path}images/icons/success-mono.svg') no-repeat;
-        background-size: 100% 100%;
+        background: url('#{$asset-path}a5cbd685-success-mono.svg') no-repeat;
       }
 
       &-grey {
@@ -134,61 +133,61 @@
     }
 
     &.icon--settings {
-      background: url('#{$asset-path}images/icons/settings.svg') no-repeat;
+      background: url('#{$asset-path}08f37fb1-settings.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--sync {
-      background: url('#{$asset-path}images/icons/sync.svg') no-repeat;
+      background: url('#{$asset-path}03edae28-sync.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--search {
-      background: url('#{$asset-path}images/icons/magnifying_glass.svg') no-repeat;
+      background: url('#{$asset-path}e6dccddb-magnifying_glass.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--system-shutdown {
-      background: url('#{$asset-path}images/icons/system-shutdown.svg') no-repeat;
+      background: url('#{$asset-path}4574f6cf-system-shutdown.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--tooltip {
-      background: url('#{$asset-path}images/icons/tooltip.svg') no-repeat;
+      background: url('#{$asset-path}6a7949e6-tooltip.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--tags {
-      background: url('#{$asset-path}images/icons/tags.svg') no-repeat;
+      background: url('#{$asset-path}1f9f62c6-tags.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--tick {
-      background: url('#{$asset-path}images/icons/tick.svg') no-repeat;
+      background: url('#{$asset-path}87f100d4-tick.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--logical-volume {
-      background: url('#{$asset-path}images/icons/logical-volume.svg') no-repeat;
+      background: url('#{$asset-path}5152499a-logical-volume.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--warning {
-      background: url('#{$asset-path}images/icons/warning.svg') no-repeat;
+      background: url('#{$asset-path}7eed27e0-warning.svg') no-repeat;
       background-size: 100% 100%;
 
       &-mono {
-        background: url('#{$asset-path}images/icons/warning-mono.svg') no-repeat;
+        background: url('#{$asset-path}704658b0-warning-mono.svg') no-repeat;
       }
     }
 
     &.icon--open {
-      background: url('#{$asset-path}images/forms/chevron-down.svg') no-repeat;
+      background: url('#{$asset-path}04d2075a-chevron-down.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--close {
-      background: url('#{$asset-path}images/forms/chevron-up.svg') no-repeat;
+      background: url('#{$asset-path}f3f43376-chevron-up.svg') no-repeat;
       background-size: 100% 100%;
     }
 
