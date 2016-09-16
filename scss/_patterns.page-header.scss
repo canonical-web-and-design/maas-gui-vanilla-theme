@@ -139,6 +139,7 @@
         float: none;
         margin: 0 20px 0 0;
         line-height: 36px;
+        vertical-align: middle;
       }
 
       .page-header__message--error {
@@ -172,6 +173,7 @@
       .page-header__controls {
         padding: 0;
         float: right;
+        vertical-align: middle;
       }
     }
   }
