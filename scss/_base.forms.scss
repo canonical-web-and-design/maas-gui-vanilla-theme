@@ -303,7 +303,7 @@
     cursor: pointer;
     border-radius: 2px;
     padding-left: 0 !important;
-    margin: 0;
+    margin: 0 !important;
 
     &:before,
     &:after {
@@ -357,10 +357,11 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 14px;
+    right: 19px;
     border: 1px solid $outline;
     border-radius: 2px;
     transition: all .3s ease-in 0s;
+    box-sizing: border-box;
   }
 
   .onoffswitch-checkbox:checked + .onoffswitch-label {

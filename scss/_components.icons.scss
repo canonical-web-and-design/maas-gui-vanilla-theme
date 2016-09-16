@@ -184,12 +184,14 @@
 
     &.icon--open {
       background: url('#{$asset-path}images/forms/chevron-down.svg') no-repeat;
-      background-size: 100% 100%;
+      background-size: 10px 4px;
+      background-position: center 4px;
     }
 
     &.icon--close {
       background: url('#{$asset-path}images/forms/chevron-up.svg') no-repeat;
-      background-size: 100% 100%;
+      background-size: 10px 4px;
+      background-position: center 4px;
     }
 
     &--status-failed {
