@@ -38,5 +38,21 @@
       clear: both;
       display: block;
     }
+
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &-header {
+        flex: 0 0 auto;
+      }
+
+      &-content {
+        flex: 1 1 auto;
+        position: relative; // need this to position inner content 
+        overflow-y: auto;
+      }
+    }
   }
 }
