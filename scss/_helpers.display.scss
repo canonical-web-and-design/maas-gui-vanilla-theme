@@ -69,18 +69,26 @@
 
     &--full {
       width: 100% !important;
+      box-sizing: border-box;
+      float: left;
     }
 
     &--half {
       width: 50% !important;
+      box-sizing: border-box;
+      float: left;
     }
 
     &--third {
       width: calc(100%/3) !important;
+      box-sizing: border-box;
+      float: left;
     }
 
-    &--quater {
+    &--quarter {
       width: 25% !important;
+      box-sizing: border-box;
+      float: left;
     }
   }
 }

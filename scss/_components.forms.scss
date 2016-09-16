@@ -155,6 +155,16 @@
         [type='radio'] + label {
           line-height: 34px;
         }
+
+        .onoffswitch {
+          margin: 0 5px 0 0;
+        }
+
+        .onoffswitch-external-label {
+          margin: 0;
+          vertical-align: middle;
+          line-height: 34px;
+        }
       }
     }
 

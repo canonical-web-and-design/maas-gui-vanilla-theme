@@ -144,6 +144,7 @@
     }
 
     + label {
+      height: 16px;
       position: relative;
       padding-left: 25px;
       cursor: pointer;
@@ -270,6 +271,7 @@
     display: inline-block;
     vertical-align: middle;
     width: 38px;
+    margin: 0 0 4px;
     //scss-lint:disable VendorPrefixes
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -286,6 +288,11 @@
     }
   }
 
+  .onoffswitch-external-label {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
   .onoffswitch-checkbox {
     display: none !important;
   }
@@ -296,6 +303,7 @@
     cursor: pointer;
     border-radius: 2px;
     padding-left: 0 !important;
+    margin: 0;
 
     &:before,
     &:after {
@@ -327,7 +335,7 @@
     &:before {
       content: '';
       padding-left: 10px;
-      background-color: $input-checked;
+      background-color: $success;
       color: $white;
     }
 
@@ -349,7 +357,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 17px;
+    right: 14px;
     border: 1px solid $outline;
     border-radius: 2px;
     transition: all .3s ease-in 0s;
