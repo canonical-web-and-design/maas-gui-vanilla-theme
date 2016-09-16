@@ -54,14 +54,14 @@ hr {
 
   &--success {
     padding-left: 30px;
-    background: url('#{$asset-path}images/icons/info.svg') no-repeat;
+    background: url('#{$asset-path}ea90dd64-info.svg') no-repeat;
     background-size: 16px 16px;
     background-position: 0 4px;
   }
 
   &--avoid {
     padding-left: 30px;
-    background: url('#{$asset-path}images/icons/error.svg') no-repeat;
+    background: url('#{$asset-path}f5366577-error.svg') no-repeat;
     background-size: 16px 16px;
     background-position: 0 4px;
   }

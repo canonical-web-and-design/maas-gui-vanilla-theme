@@ -143,28 +143,28 @@
       }
 
       .page-header__message--error {
-        background: url('#{$asset-path}images/icons/error.svg') no-repeat;
+        background: url('#{$asset-path}f5366577-error.svg') no-repeat;
         background-size: 16px 16px;
         background-position: 0 10px;
         padding-left: 25px;
       }
 
       .page-header__message--info {
-        background: url('#{$asset-path}images/icons/info.svg') no-repeat;
+        background: url('#{$asset-path}ea90dd64-info.svg') no-repeat;
         background-size: 16px 16px;
         background-position: 0 10px;
         padding-left: 25px;
       }
 
       .page-header__message--warning {
-        background: url('#{$asset-path}images/icons/warning.svg') no-repeat;
+        background: url('#{$asset-path}7eed27e0-warning.svg') no-repeat;
         background-size: 16px 16px;
         background-position: 0 10px;
         padding-left: 25px;
       }
 
       .page-header__message--success {
-        background: url('#{$asset-path}images/icons/success.svg') no-repeat;
+        background: url('#{$asset-path}7eed27e0-warning.svg') no-repeat;
         background-size: 16px 16px;
         background-position: 0 10px;
         padding-left: 25px;
