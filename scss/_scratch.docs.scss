@@ -100,6 +100,8 @@ hr {
       color: $ash;
       background-color: lighten($silk, 15%);
       white-space: pre-wrap;
+      padding-right: 0;
+      overflow-x: scroll;
 
       code {
         white-space: pre-wrap;

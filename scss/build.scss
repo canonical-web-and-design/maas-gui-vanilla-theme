@@ -48,6 +48,7 @@
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
   @include cloud-vanilla-theme;
+  @include maas-fonts;
   @include maas-main;
   @include maas-typography;
   @include maas-forms;
