@@ -1,4 +1,4 @@
-# MAAS GUI Framework vanilla theme
+# Dashboard Vanilla Theme
 
 A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/).
 
@@ -20,6 +20,6 @@ You can override any of the settings in [_settings.defaults.scss](scss/_settings
 
 ## Demo
 
-To see the latest changes and updates live please view the [demo page](http://ubuntudesign.github.io/maas-gui-vanilla-theme/)
+To see the latest changes and updates live please view the [demo page](http://ubuntudesign.github.io/dashboard-vanilla-theme/)
 
 Code licensed [LGPLv3](http://opensource.org/licenses/lgpl-3.0.html) by [Canonical Ltd.](http://www.canonical.com/).
