@@ -1,5 +1,5 @@
 {
-  "name": "maas-gui-vanilla-theme",
+  "name": "dashboard-vanilla-theme",
   "version": "1.0.0",
   "description": "A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/).",
   "author": {
@@ -34,7 +34,7 @@
   "dependencies": {
     "vanilla-framework": "1.0.1"
   },
-  "homepage": "http://ubuntudesign.github.io/vanilla-dashboard-theme/",
+  "homepage": "http://ubuntudesign.github.io/dashboard-vanilla-theme/",
   "keywords": [
     "ubuntu",
     "vanilla",
@@ -55,10 +55,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ubuntudesign/maas-gui-vanilla-theme.git"
+    "url": "git+https://github.com/ubuntudesign/dashboard-vanilla-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/ubuntudesign/maas-gui-vanilla-theme/issues"
-  },
-  "homepage": "https://github.com/ubuntudesign/maas-gui-vanilla-theme#readme"
+    "url": "https://github.com/ubuntudesign/dashboard-vanilla-theme/issues"
+  }
 }
