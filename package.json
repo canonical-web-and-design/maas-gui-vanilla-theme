@@ -1,4 +1,7 @@
 {
+  "name": "maas-gui-vanilla-theme",
+  "version": "1.0.0",
+  "description": "A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/).",
   "author": {
     "email": "webteam@canonical.com",
     "name": "Canonical Webteam",
@@ -10,11 +13,6 @@
       "email": "richard.mccartney@canonical.com"
     }
   ],
-  "bugs": {
-    "email": "webteam@canonical.com",
-    "url": "http://github.com/ubuntudesign/vanilla-dashboard-theme/issues"
-  },
-  "description": "A theme of Vanilla Framework, built for creating admin and dashboard UI's",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "es6-promise": "^3.2.1",
@@ -52,13 +50,15 @@
     "Landscape"
   ],
   "license": "LGPL-3.0",
-  "name": "vanilla-dashboard-theme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ubuntudesign/vanilla-dashboard-theme"
-  },
   "scripts": {
     "clean": "rm -r build; rm -r node_modules"
   },
-  "version": "1.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubuntudesign/maas-gui-vanilla-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ubuntudesign/maas-gui-vanilla-theme/issues"
+  },
+  "homepage": "https://github.com/ubuntudesign/maas-gui-vanilla-theme#readme"
 }
