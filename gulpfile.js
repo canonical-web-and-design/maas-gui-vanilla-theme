@@ -5,6 +5,14 @@ require('es6-promise').polyfill();
 var gulp = require('gulp');
 var wrench = require('wrench');
 
+/*
+  concatenate all *.js / *.coffee files in the 'gulp' folder
+ */
+wrench.readdirSyncRecursive('./gulp').filter(function(file) {
+  return (/\.(js|coffee)$/i).test(file);
+}).map(function(file) {
+  require('./gulp/' + file);
+});
 
 /* Gulp help instructions triggered as Gulp default task */
 gulp.task('help', function() {
