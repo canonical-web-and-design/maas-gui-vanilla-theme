@@ -2,48 +2,45 @@
 @import '../node_modules/cloud-vanilla-theme/scss/theme';
 
 // Theme variables
-@import 'settings.colors';
-@import 'settings.fonts';
-@import 'settings.defaults';
+@import 'settings_colors';
+@import 'settings_fonts';
+@import 'settings_defaults';
 
 // Theme base styles
-@import 'base.main';
-@import 'base.typography';
-@import 'base.forms';
-@import 'base.definition-list';
+@import 'base_main';
+@import 'base_typography';
+@import 'base_forms';
+@import 'base_definition-list';
 
 // Theme layout styles
-@import 'layout.wrapper';
-@import 'layout.row';
-
-// Theme component styles
-@import 'components.buttons';
-@import 'components.forms';
-@import 'components.code';
-@import 'components.flashmessages';
-@import 'components.icons';
-@import 'components.list-tree';
-@import 'components.tables';
-@import 'components.tooltips';
-@import 'components.tabs';
+@import 'layout_wrapper';
+@import 'layout_row';
 
 // Theme pattern styles
-@import 'patterns.accordion';
-@import 'patterns.action-card';
-@import 'patterns.header';
-@import 'patterns.page-header';
-@import 'patterns.search';
+@import 'patterns_buttons';
+@import 'patterns_forms';
+@import 'patterns_code';
+@import 'patterns_flashmessages';
+@import 'patterns_icons';
+@import 'patterns_list-tree';
+@import 'patterns_tables';
+@import 'patterns_tooltips';
+@import 'patterns_tabs';
+@import 'patterns_accordion';
+@import 'patterns_action-card';
+@import 'patterns_header';
+@import 'patterns_page-header';
+@import 'patterns_search';
 
 // Theme helper styles
-@import 'helpers.animations';
-@import 'helpers.borders';
-@import 'helpers.display';
-@import 'helpers.spacing';
-@import 'helpers.state';
-@import 'helpers.vertical-alignment';
-@import 'helpers.mixins';
+@import 'utilities_animations';
+@import 'utilities_borders';
+@import 'utilities_display';
+@import 'utilities_spacing';
+@import 'utilities_state';
+@import 'utilities_mixins';
 
-@import 'scratch.docs';
+@import 'scratch_docs';
 
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
@@ -75,7 +72,6 @@
   @include maas-display;
   @include maas-spacing;
   @include maas-state;
-  @include maas-vertical-alignment;
 }
 
 // Build the MAAS theme
