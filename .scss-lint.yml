@@ -1,253 +1,131 @@
-# Default application configuration that all configurations inherit from.
-
-scss_files: "**/*.scss"
-plugin_directories: ['.scss-linters']
-
-# List of gem names to load custom linters from (make sure they are already
-# installed)
-plugin_gems: []
-
-# Default severity of all linters.
-severity: warning
-
-linters:
-  BangFormat:
-    enabled: true
-    space_before_bang: true
-    space_after_bang: false
-
-  BemDepth:
-    enabled: true
-    max_elements: 4
-
-  BorderZero:
-    enabled: true
-    convention: zero # or `none`
-
-  ChainedClasses:
-    enabled: false
-
-  ColorKeyword:
-    enabled: true
-
-  ColorVariable:
-    enabled: true
-
-  Comment:
-    enabled: true
-    style: silent
-
-  DebugStatement:
-    enabled: true
-
-  DeclarationOrder:
-    enabled: true
-
-  DisableLinterReason:
-    enabled: false
-
-  DuplicateProperty:
-    enabled: true
-
-  ElsePlacement:
-    enabled: true
-    style: same_line # or 'new_line'
-
-  EmptyLineBetweenBlocks:
-    enabled: true
-    ignore_single_line_blocks: true
-
-  EmptyRule:
-    enabled: true
-
-  ExtendDirective:
-    enabled: false
-
-  FinalNewline:
-    enabled: true
-    present: true
-
-  HexLength:
-    enabled: true
-    style: short # or 'long'
-
-  HexNotation:
-    enabled: true
-    style: lowercase # or 'uppercase'
-
-  HexValidation:
-    enabled: true
-
-  IdSelector:
-    enabled: true
-
-  ImportantRule:
-    enabled: false
-
-  ImportPath:
-    enabled: true
-    leading_underscore: false
-    filename_extension: false
-
-  Indentation:
-    enabled: true
-    allow_non_nested_indentation: false
-    character: space # or 'tab'
-    width: 2
-
-  LeadingZero:
-    enabled: true
-    style: exclude_zero # or 'include_zero'
-
-  MergeableSelector:
-    enabled: true
-    force_nesting: true
-
-  NameFormat:
-    enabled: false
-    allow_leading_underscore: true
-    convention: hyphenated_lowercase # or 'camel_case', or 'snake_case', or a regex pattern
-
-  NestingDepth:
-    enabled: true
-    max_depth: 6
-    ignore_parent_selectors: false
-
-  PlaceholderInExtend:
-    enabled: true
-
-  PrivateNamingConvention:
-    enabled: false
-    prefix: _
-
-  PropertyCount:
-    enabled: false
-    include_nested: false
-    max_properties: 10
-
-  PropertySortOrder:
-    enabled: false
-    ignore_unspecified: false
-    min_properties: 2
-    separate_groups: false
-
-  PropertySpelling:
-    enabled: true
-    extra_properties: []
-    disabled_properties: []
-
-  PropertyUnits:
-    enabled: true
-    global: [
-      'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
-      'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
-      'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
-      'deg', 'grad', 'rad', 'turn',            # Angle
-      'ms', 's',                               # Duration
-      'Hz', 'kHz',                             # Frequency
-      'dpi', 'dpcm', 'dppx',                   # Resolution
-      '%']                                     # Other
-    properties: {}
-
-  PseudoElement:
-    enabled: true
-
-  QualifyingElement:
-    enabled: true
-    allow_element_with_attribute: false
-    allow_element_with_class: false
-    allow_element_with_id: false
-
-  SelectorDepth:
-    enabled: true
-    max_depth: 6
-
-  SelectorFormat:
-    enabled: false
-    convention: hyphenated_lowercase # or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
-
-  Shorthand:
-    enabled: true
-    allowed_shorthands: [1, 2, 3, 4]
-
-  SingleLinePerProperty:
-    enabled: true
-    allow_single_line_rule_sets: true
-
-  SingleLinePerSelector:
-    enabled: true
-
-  SpaceAfterComma:
-    enabled: true
-    style: one_space # or 'no_space', or 'at_least_one_space'
-
-  SpaceAfterPropertyColon:
-    enabled: true
-    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
-
-  SpaceAfterPropertyName:
-    enabled: true
-
-  SpaceAfterVariableColon:
-    enabled: false
-    style: one_space # or 'no_space', 'at_least_one_space' or 'one_space_or_newline'
-
-  SpaceAfterVariableName:
-    enabled: true
-
-  SpaceAroundOperator:
-    enabled: true
-    style: one_space # or 'at_least_one_space', or 'no_space'
-
-  SpaceBeforeBrace:
-    enabled: true
-    style: space # or 'new_line'
-    allow_single_line_padding: false
-
-  SpaceBetweenParens:
-    enabled: true
-    spaces: 0
-
-  StringQuotes:
-    enabled: true
-    style: single_quotes # or double_quotes
-
-  TrailingSemicolon:
-    enabled: true
-
-  TrailingWhitespace:
-    enabled: true
-
-  TrailingZero:
-    enabled: false
-
-  TransitionAll:
-    enabled: false
-
-  UnnecessaryMantissa:
-    enabled: true
-
-  UnnecessaryParentReference:
-    enabled: true
-
-  UrlFormat:
-    enabled: true
-
-  UrlQuotes:
-    enabled: true
-
-  VariableForProperty:
-    enabled: false
-    properties: []
-
-  VendorPrefix:
-    enabled: false
-    identifier_list: base
-    additional_identifiers: []
-    excluded_identifiers: []
-
-  ZeroUnit:
-    enabled: true
-
-  Compass::*:
-    enabled: false
+# Default config: https://github.com/sasstools/sass-lint/blob/master/lib/config/sass-lint.yml
+# Example config: https://github.com/sasstools/sass-lint/blob/master/docs/sass-lint.yml
+
+files:
+  include: 'scss/**/*.s+(a|c)ss'
+  ignore:
+    - 'scss/_base_reset.scss'
+    - 'scss/grid/**/*'
+    - 'scss/_layout_grid.scss'
+rules:
+  # Documentation: https://github.com/sasstools/sass-lint/tree/master/docs/rules
+
+  # Strict rules
+  # ===
+
+  # Name formats
+  class-name-format:
+    - 2
+    -
+      convention: hyphenatedbem
+
+  # Extends and mixins
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  # Disallows
+  no-color-keywords: 2
+  no-css-comments: 2
+  no-debug: 2
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-invalid-hex: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 2
+  no-trailing-whitespace: 2
+  no-trailing-zero: 2
+  no-url-protocols: 2
+
+  # Line Spacing
+  one-declaration-per-line: 2
+  empty-line-between-blocks: 2
+  single-line-per-selector: 2
+
+  # Disallows
+  no-ids: 2
+  no-qualifying-elements:
+    - 2
+    - allow-element-with-attribute: true
+
+  # Name Formats
+  function-name-format: 2
+  mixin-name-format: 2
+  placeholder-name-format: 2
+  variable-name-format: 2
+
+  # Style Guide
+  attribute-quotes: 2
+  bem-depth: 2
+  border-zero: 2
+  brace-style: 2
+  clean-import-paths: 2
+  empty-args: 2
+  hex-length: 2
+  hex-notation: 2
+  indentation: 2
+  leading-zero: 2
+  nesting-depth: 2
+  pseudo-element: 2
+  quotes: 0
+  url-quotes: 2
+  zero-unit: 2
+
+  # Inner Spacing
+  space-after-comma: 2
+  space-before-colon: 2
+  space-after-colon: 2
+  space-before-brace: 2
+  space-before-bang: 2
+  space-after-bang: 2
+  space-between-parens: 2
+  space-around-operator: 2
+
+  # Final Items
+  trailing-semicolon: 2
+  final-newline: 2
+
+  # Warnings
+  # ===
+
+  # Extends and mixins
+  placeholder-in-extend: 1
+
+  # Disallows
+  no-color-literals: 1
+  no-transition-all: 1
+  no-universal-selectors: 0
+  no-vendor-prefixes: 1
+
+  # Style guide
+  property-sort-order: 1
+
+  # Disabled rules
+  # ===
+
+  # Disallows
+  no-attribute-selectors: 0
+  no-color-hex: 0
+  no-combinators: 0
+  no-disallowed-properties: 0
+  no-extends: 0
+  no-important: 0
+  no-warn: 0
+  property-units: 0
+
+  # Nesting
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+
+  # Name Formats
+  id-name-format: 0
+
+  # Style guide
+  shorthand-values: 0
+  variable-for-property: 0
