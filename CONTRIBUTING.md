@@ -5,9 +5,9 @@ So, you'd like to contribute to the Dashboard Vanilla Theme? Great!
 
 ## Bugs and issues
 
-We use the [Issues tracker](https://github.com/ubuntudesign/dashboard-vanilla-theme/issues) to track all our bugs and feature requests, collectively known as 'issues'.
+We use the [Issues tracker](https://github.com/ubuntudesign/maas-gui-vanilla-theme/issues) to track all our bugs and feature requests, collectively known as 'issues'.
 
-When [submitting a new issue](https://github.com/ubuntudesign/dashboard-vanilla-theme/issues/new), please check that it hasn't already been raised by someone else. We've provided a template for new issues which will help you structure your issue to ensure it can be picked up and actioned with minimum fuss.
+When [submitting a new issue](https://github.com/ubuntudesign/maas-gui-vanilla-theme/issues/new), please check that it hasn't already been raised by someone else. We've provided a template for new issues which will help you structure your issue to ensure it can be picked up and actioned with minimum fuss.
 
 Please provide as much information possible detailing what you're currently experiencing and what you'd expect to experience.
 
