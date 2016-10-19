@@ -6,11 +6,14 @@
 @import 'settings_fonts';
 @import 'settings_defaults';
 
+// Global mixins or functions
+@import 'global_mixins';
+
 // Theme base styles
 @import 'base_main';
 @import 'base_typography';
 @import 'base_forms';
-@import 'base_definition-list';
+@import 'base_definition-lists';
 
 // Theme layout styles
 @import 'layout_wrapper';
@@ -38,7 +41,6 @@
 @import 'utilities_display';
 @import 'utilities_spacing';
 @import 'utilities_state';
-@import 'utilities_mixins';
 
 @import 'scratch_docs';
 

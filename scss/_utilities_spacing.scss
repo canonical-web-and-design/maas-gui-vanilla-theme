@@ -7,39 +7,43 @@
 /// Spacing
 /// @group Spacing
 @mixin maas-spacing {
-  @include spacing(margin, $base-spacing-unit);
-  @include spacing(padding, $base-spacing-unit);
+  @include spacing($base-spacing-unit);
 }
 
-@mixin spacing($spacing, $spacing-unit) {
+@mixin spacing($spacing-unit) {
 
+  $spacing:                       margin padding;
   $directions:                    top right bottom left;
   $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
 
-  .u-#{$spacing} {
-    #{$spacing}: $spacing-unit;
+  @each $space in $spacing {
+    .u-#{$space} {
+      #{$space}: $spacing-unit;
 
-    &--none {
-      #{$spacing}: 0 !important;
-    }
-
-    @each $size, $division in $sizes {
-      &--#{$size} {
-        #{$spacing}: $division !important;
+      &--none {
+        #{$space}: 0 !important;
       }
-    }
 
-    @each $direction in $directions {
-      &--#{$direction} {
-        #{$spacing}-#{$direction}: $spacing-unit !important;
-
-        &-none {
-          #{$spacing}-#{$direction}: 0 !important;
+      @each $size, $division in $sizes {
+        &--#{$size} {
+          #{$space}: $division !important;
         }
+      }
 
-        @each $size, $division in $sizes {
-          &-#{$size} {
-            #{$spacing}-#{$direction}: $division !important;
+      @each $direction in $directions {
+        $direction-property: #{$space}-#{$direction};
+
+        &--#{$direction} {
+          #{$direction-property}: $spacing-unit !important;
+
+          &-none {
+            #{$direction-property}: 0 !important;
+          }
+
+          @each $size, $division in $sizes {
+            &-#{$size} {
+              #{$direction-property}: $division !important;
+            }
           }
         }
       }
