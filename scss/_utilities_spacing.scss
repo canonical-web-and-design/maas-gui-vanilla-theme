@@ -1,0 +1,56 @@
+////
+/// @author       Web Team at Canonical Ltd
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-spacing
+/// @since        0.0.1
+////
+
+/// Spacing
+/// @group Spacing
+@mixin maas-spacing {
+  @include spacing($base-spacing-unit);
+}
+
+@mixin spacing($spacing-unit) {
+  $spacing: margin padding;
+  $directions: top right bottom left;
+  $sizes: (
+    tiny: $spacing-unit / 4,
+    small: $spacing-unit / 2,
+    large: $spacing-unit * 2,
+    huge: $spacing-unit * 4
+  );
+
+  @each $space in $spacing {
+    .u-#{$space} {
+      #{$space}: $spacing-unit;
+
+      &--none {
+        #{$space}: 0 !important;
+      }
+
+      @each $size, $division in $sizes {
+        &--#{$size} {
+          #{$space}: $division !important;
+        }
+      }
+
+      @each $direction in $directions {
+        $direction-property: #{$space}-#{$direction};
+
+        &--#{$direction} {
+          #{$direction-property}: $spacing-unit !important;
+
+          &-none {
+            #{$direction-property}: 0 !important;
+          }
+
+          @each $size, $division in $sizes {
+            &-#{$size} {
+              #{$direction-property}: $division !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
