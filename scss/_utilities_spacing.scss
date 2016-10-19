@@ -11,10 +11,14 @@
 }
 
 @mixin spacing($spacing-unit) {
-
-  $spacing:                       margin padding;
-  $directions:                    top right bottom left;
-  $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
+  $spacing: margin padding;
+  $directions: top right bottom left;
+  $sizes: (
+    tiny: $spacing-unit / 4,
+    small: $spacing-unit / 2,
+    large: $spacing-unit * 2,
+    huge: $spacing-unit * 4
+  );
 
   @each $space in $spacing {
     .u-#{$space} {
