@@ -1,5 +1,5 @@
 // import required files
-@import '../node_modules/cloud-vanilla-theme/scss/theme';
+@import '../node_modules/vanilla-framework/scss/vanilla';
 
 // Theme variables
 @import 'settings_colors';
@@ -46,7 +46,7 @@
 
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
-  @include cloud-vanilla-theme;
+  @include vanilla;
   @include maas-fonts;
   @include maas-main;
   @include maas-typography;
