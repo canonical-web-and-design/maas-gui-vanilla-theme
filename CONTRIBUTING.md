@@ -1,6 +1,6 @@
-# Contributing to Dashboard Vanilla Theme
+# Contributing to MAAS GUI Vanilla Theme
 
-So, you'd like to contribute to the Dashboard Vanilla Theme? Great!
+So, you'd like to contribute to the MAAS GUI Vanilla Theme? Great!
 
 
 ## Bugs and issues
