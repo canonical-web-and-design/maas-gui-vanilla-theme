@@ -24,8 +24,8 @@ $line-height-ratio:     $base-line-height / $base-font-size;
 /// MAAS Text styles
 $text-color:            $cool-grey;
 $headline-color:        $cool-grey;
-$alt-headline-color:    $warm-grey;
-$link-color:            $brand-color;
+$alt-headline-color:    $color-mid-dark;
+$link-color:            $color-dark;
 $link-border:           #c2c2c2;
 $link-hover:            #dd4814;
 
@@ -63,9 +63,9 @@ $breakpoint-large:      $site-max-width;
 
 // MAAS form states
 $states: (
-  error: $error,
+  error: $color-negative,
   off: $outline,
-  warning: $warning,
+  warning: $color-warning,
   success: $success,
   on: $success,
   information: $information,

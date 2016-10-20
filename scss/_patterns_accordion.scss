@@ -90,7 +90,7 @@
               font-weight: 400;
 
               .accordion__tab-link {
-                background: $transparent url('#{$asset-path}images/icons/cross.svg') top 7px right 0 no-repeat;
+                background: $color-transparent url('#{$asset-path}images/icons/cross.svg') top 7px right 0 no-repeat;
                 text-decoration: none;
               }
 
@@ -113,9 +113,9 @@
   %accordion__tab-title {
     padding: 12px 20px;
     margin: 0;
-    color: $warm-grey;
+    color: $color-mid-dark;
     cursor: pointer;
-    background: $transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
+    background: $color-transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
   }
   // scss-lint:enable NestingDepth SelectorDepth
 }

@@ -24,7 +24,7 @@
       appearance: textfield;
 
       &::placeholder {
-        color: $warm-grey;
+        color: $color-mid-dark;
       }
 
       // IE10+
@@ -57,7 +57,7 @@
       position: absolute;
       top: 15px;
       right: 15px;
-      background-color: $transparent;
+      background-color: $color-transparent;
       background-image: url('#{$asset-path}images/icons/magnifying_glass.svg');
       background-position: center;
       background-repeat: no-repeat;
@@ -72,7 +72,7 @@
       border: 0;
 
       &:hover {
-        background-color: $transparent;
+        background-color: $color-transparent;
         background-image: url('#{$asset-path}images/icons/magnifying_glass.svg');
       }
 

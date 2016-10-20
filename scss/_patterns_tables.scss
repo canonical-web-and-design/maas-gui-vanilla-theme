@@ -7,7 +7,7 @@
 /// MAAS table styling
 /// @group maas table
 @mixin maas-table {
-  @include tables($alto-grey, $warm-grey, 16px, 13px);
+  @include tables($color-mid-light, $color-mid-dark, 16px, 13px);
   @include table-columns(100);
 }
 
@@ -440,7 +440,7 @@
     .table__input {
       display: inline-block;
       background-color: $white;
-      border-color: $alto-grey;
+      border-color: $color-mid-light;
       background-position: right 10px top 16px;
       margin: -7px 0;
 
@@ -501,7 +501,7 @@
           display: block;
           margin: 0 auto;
           width: calc(100% - 20px);
-          border-top: 1px dotted $alto-grey;
+          border-top: 1px dotted $color-mid-light;
           position: absolute;
           height: 1px;
           content: '';
@@ -533,7 +533,7 @@
             display: block;
             margin: 0 auto;
             width: calc(100% - 20px);
-            border-top: 1px dotted $alto-grey;
+            border-top: 1px dotted $color-mid-light;
             position: absolute;
             height: 1px;
             content: '';
@@ -546,7 +546,7 @@
 
           .table__input {
             background-color: $white;
-            border-color: $alto-grey;
+            border-color: $color-mid-light;
             background-position: right 10px top 16px;
             pointer-events: all;
 
@@ -586,7 +586,7 @@
 
   $states: (
     error: $error,
-    warning: $warning,
+    warning: $color-warning,
     success: $success,
     information: $information
   );

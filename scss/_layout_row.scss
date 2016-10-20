@@ -9,8 +9,8 @@
 @mixin maas-row {
 
   .row {
-    background-color: $transparent;
-    border-top: 1px dotted $mid-grey;
+    background-color: $color-transparent;
+    border-top: 1px dotted $color-mid-light;
 
     &:first-of-type {
       border-top: 0;
