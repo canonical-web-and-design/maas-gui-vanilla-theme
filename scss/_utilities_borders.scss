@@ -6,7 +6,7 @@
 
 /// Borders
 /// @group Borders
-@mixin maas-borders($border-color: $mid-grey, $border-width: 1px) {
+@mixin maas-borders($border-color: $color-mid-light, $border-width: 1px) {
   .u-border {
     border: $border-width dotted $border-color !important;
 

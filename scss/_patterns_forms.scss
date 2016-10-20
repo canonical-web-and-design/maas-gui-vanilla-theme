@@ -39,7 +39,7 @@
       &.form__group--subtle {
 
         .form__group-label {
-          color: $warm-grey;
+          color: $color-mid-dark;
         }
 
         input,
@@ -49,14 +49,14 @@
           background-color: transparent;
 
           &:hover {
-            border-color: $mid-grey;
+            border-color: $color-mid-light;
             background-color: $white;
             outline: none;
           }
 
           &:active,
           &:focus {
-            border-color: $warm-grey;
+            border-color: $color-mid-dark;
             background-color: $white;
             outline: none;
           }
@@ -83,7 +83,7 @@
           input,
           select,
           textarea {
-            border-color: $mid-grey;
+            border-color: $color-mid-light;
             background-color: $white;
             outline: none;
           }
@@ -97,7 +97,7 @@
           input,
           select,
           textarea {
-            border-color: $mid-grey;
+            border-color: $color-mid-light;
             background-color: $white;
             outline: none;
           }
@@ -180,7 +180,7 @@
 
     .form__help-text {
       @include font-size(14px);
-      color: $warm-grey;
+      color: $color-mid-dark;
     }
   }
 

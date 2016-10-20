@@ -24,12 +24,12 @@
       width: 100%;
 
       &::placeholder {
-        color: $warm-grey;
+        color: $color-mid-dark;
       }
 
       &[disabled] {
-        color: $warm-grey;
-        background-color: $transparent;
+        color: $color-mid-dark;
+        background-color: $color-transparent;
       }
     }
 
@@ -68,12 +68,12 @@
     width: 100%;
 
     &::placeholder {
-      color: $warm-grey;
+      color: $color-mid-dark;
     }
 
     &[disabled] {
-      color: $warm-grey;
-      background-color: $transparent;
+      color: $color-mid-dark;
+      background-color: $color-transparent;
     }
   }
 
@@ -106,9 +106,9 @@
     }
 
     &[disabled] {
-      color: $warm-grey;
+      color: $color-mid-dark;
       background-image: none;
-      background-color: $transparent;
+      background-color: $color-transparent;
     }
 
     // Removes firefox dotted outline focusing
@@ -156,7 +156,7 @@
         top: 3px;
         width: 11px;
         height: 11px;
-        border: 1px solid $mid-grey;
+        border: 1px solid $color-mid-light;
         background: $white;
         border-radius: 2px;
       }
@@ -219,7 +219,7 @@
         top: 1px;
         width: 13px;
         height: 13px;
-        border: 1px solid $mid-grey;
+        border: 1px solid $color-mid-light;
         background: $white;
         border-radius: 50%;
       }
@@ -343,7 +343,7 @@
       content: '';
       padding-right: 10px;
       background-color: $gallery-grey;
-      color: $warm-grey;
+      color: $color-mid-dark;
       text-align: right;
     }
   }

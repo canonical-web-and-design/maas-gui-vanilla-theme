@@ -11,7 +11,7 @@
   .banner {
     background-color: $black;
 
-    @media only screen and (min-width: $navigation-threshold) {
+    @media only screen and (min-width: $breakpoint-medium) {
       box-shadow: none;
 
       .nav-primary {
@@ -46,7 +46,7 @@
             }
 
             &.active {
-              background-color: $transparent;
+              background-color: $color-transparent;
               box-shadow: inset 0 -3px $link-hover;
 
               &:hover {

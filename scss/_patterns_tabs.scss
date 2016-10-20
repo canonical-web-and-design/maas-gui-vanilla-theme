@@ -16,13 +16,13 @@
       list-style-type: none;
 
       .tabs__tab-link {
-        color: $warm-grey;
+        color: $color-mid-dark;
         text-decoration: none;
         border-bottom: 0;
       }
 
       &:hover .tabs__tab-link {
-        border-bottom: 3px solid $warm-grey;
+        border-bottom: 3px solid $color-mid-dark;
       }
 
       &:after {
