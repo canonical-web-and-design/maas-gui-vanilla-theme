@@ -1,4 +1,4 @@
-# Dashboard Vanilla Theme
+# MAAS GUI Vanilla theme
 
 A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/).
 
