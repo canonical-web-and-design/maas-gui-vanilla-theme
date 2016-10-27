@@ -7,30 +7,30 @@
 /// Buttons element styles
 /// @group Forms
 @mixin maas-buttons {
-  // .button--primary {
+  // .p-button--primary {
   //   line-height: 20px;
   // }
 
-  .button--primary,
-  .button--secondary {
+  .p-button--primary,
+  .p-button--secondary {
     @extend %button-pattern;
   }
 
-  .button--secondary {
+  .p-button--secondary {
     line-height: 18px;
   }
 
-  .button--primary,
-  .button--destructive,
-  .button--positive {
+  .p-button--primary,
+  .p-button--destructive,
+  .p-button--positive {
 
     &:hover {
       color: $white;
     }
   }
 
-  .button--base,
-  .button--neutral {
+  .p-button--base,
+  .p-button--neutral {
 
     &:hover {
       color: $cool-grey;
@@ -39,70 +39,70 @@
 }
 
 @mixin maas-button-group {
-  .button-group {
-    position: relative;
-    width: 100%;
-    vertical-align: middle;
+  .p-button-group {
     clear: both;
     min-width: 160px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
 
-    &.button-group--inline {
+    &.p-button-group--inline {
       display: inline-block;
       width: auto;
     }
 
-    .button-group__link {
+    .p-button-group__link {
       display: inline-block;
       float: left;
-      text-align: left;
       padding-right: 35px;
+      text-align: left;
 
       &::after {
+        border-bottom: 1px solid;
+        border-right: 1px solid;
         content: '';
         display: inline-block;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 4px;
         height: 4px;
-        vertical-align: middle;
-        border-right: 1px solid;
-        border-bottom: 1px solid;
+        position: absolute;
+        right: 15px;
+        top: 15px;
         transform: rotate(45deg);
+        vertical-align: middle;
+        width: 4px;
       }
     }
 
-    .button-group__dropdown {
-      border-radius: 3px;
-      right: 0;
-      margin: 0;
-      list-style: none;
+    .p-button-group__dropdown {
       background: $white;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-      z-index: 20;
+      border-radius: 3px;
+      box-shadow: 0 1px 1px $color-border-shadow;
+      clear: both;
+      list-style: none;
+      margin: 0;
       max-height: 1000px;
-      transition: max-height .3s ease-in;
+      min-width: 160px;
       overflow: hidden;
       position: absolute;
+      right: 0;
       top: 36px;
-      clear: both;
+      transition: max-height .3s ease-in;
       width: 100%;
-      min-width: 160px;
+      z-index: 20;
     }
 
-    .button-group__item {
-      float: left;
+    .p-button-group__item {
       clear: both;
-      padding: 5px 10px;
+      float: left;
       margin: 0;
+      padding: 5px 10px;
 
-      .button-group__item-link {
+      .p-button-group__item-link {
+        border: 0;
         color: $cool-grey;
         cursor: pointer;
-        width: 100%;
         float: left;
         margin: 0;
-        border: 0;
+        width: 100%;
 
         &:hover {
           color: $link-hover;
@@ -115,23 +115,23 @@
 }
 
 %button-pattern {
-  line-height: 20px;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
-  padding: 8px 14px;
-  height: 36px;
   box-sizing: border-box;
+  cursor: pointer;
+  height: 36px;
+  line-height: 20px;
+  padding: 8px 14px;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 
   &[disabled],
-  &.button--disabled {
-    pointer-events: none;
+  &.p-button--disabled {
     opacity: .5;
+    pointer-events: none;
   }
 
-  &.button--inline {
+  &.p-button--inline {
     display: inline-block;
     width: auto;
   }

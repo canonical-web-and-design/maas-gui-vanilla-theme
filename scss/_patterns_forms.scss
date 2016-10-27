@@ -7,84 +7,84 @@
 /// Form layout element styles
 /// @group Forms
 @mixin maas-form-layouts {
-  .form {
+  .p-form {
 
-    .form__group {
+    .p-form__group {
       margin-bottom: 10px;
 
-      .form__group-input {
+      .p-form__group-input {
         position: relative;
 
-        .form__group-remove {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-          height: 16px;
-          width: 16px;
+        .p-form__group-remove {
           background: url('#{$asset-path}images/icons/remove.svg') no-repeat;
-          background-size: 75% 75%;
           background-position: center;
+          background-size: 75% 75%;
+          cursor: pointer;
           display: inline-block;
+          height: 16px;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          width: 16px;
         }
 
         .icon {
-          position: absolute;
-          top: 10px;
-          right: 10px;
           display: inline-block;
+          position: absolute;
+          right: 10px;
+          top: 10px;
         }
       }
 
-      &.form__group--subtle {
+      &.p-form__group--subtle {
 
-        .form__group-label {
+        .p-form__group-label {
           color: $color-mid-dark;
         }
 
         input,
         select,
         textarea {
-          border-color: $mercury-grey;
           background-color: transparent;
+          border-color: $mercury-grey;
 
           &:hover {
-            border-color: $color-mid-light;
             background-color: $white;
+            border-color: $color-mid-light;
             outline: none;
           }
 
           &:active,
           &:focus {
-            border-color: $color-mid-dark;
             background-color: $white;
+            border-color: $color-mid-dark;
             outline: none;
           }
         }
       }
     }
 
-    .form__fieldset {
+    .p-form__fieldset {
 
-      .form__group:last-of-type {
+      .p-form__group:last-of-type {
         margin-bottom: 0;
       }
     }
 
-    .form__siblings {
+    .p-form__siblings {
       float: left;
-      width: 100%;
       margin-bottom: 10px;
+      width: 100%;
 
       &:hover {
 
-        .form__group--subtle {
+        .p-form__group--subtle {
 
           input,
           select,
           textarea {
-            border-color: $color-mid-light;
             background-color: $white;
+            border-color: $color-mid-light;
             outline: none;
           }
         }
@@ -92,37 +92,37 @@
 
       &.is-active {
 
-        .form__group--subtle {
+        .p-form__group--subtle {
 
           input,
           select,
           textarea {
-            border-color: $color-mid-light;
             background-color: $white;
+            border-color: $color-mid-light;
             outline: none;
           }
         }
       }
     }
 
-    &.form--stack {
+    &.p-form--stack {
 
-      .form__group {
-        width: 100%;
+      .p-form__group {
         float: left;
+        width: 100%;
 
         [class*='-col'] {
           margin-bottom: 0;
         }
 
-        .form__group-label {
-          margin-top: 0;
-          margin-bottom: 0;
+        .p-form__group-label {
           line-height: 34px;
+          margin-bottom: 0;
+          margin-top: 0;
           vertical-align: top;
         }
 
-        .form__group-input {
+        .p-form__group-input {
           min-height: 34px;
 
           .onoffswitch {
@@ -132,33 +132,33 @@
       }
     }
 
-    &.form--inline {
+    &.p-form--inline {
 
-      .form__fieldset {
+      .p-form__fieldset {
         display: inline-block;
-        width: auto;
         margin: 0;
         vertical-align: middle;
+        width: auto;
       }
 
-      .form__group {
+      .p-form__group {
         display: inline-block;
         margin: 0 20px 0 0;
         vertical-align: top;
 
-        .form__group-label {
+        .p-form__group-label {
+          line-height: 34px;
           margin-bottom: 0;
           margin-right: 10px;
           vertical-align: top;
-          line-height: 34px;
         }
 
         input,
         select,
-        .form__group-input {
+        .p-form__group-input {
           display: inline-block;
-          width: auto;
           min-height: 34px;
+          width: auto;
         }
 
         [type='checkbox'] + label,
@@ -171,24 +171,24 @@
         }
 
         .onoffswitch-external-label {
+          line-height: 34px;
           margin: 0;
           vertical-align: middle;
-          line-height: 34px;
         }
       }
     }
 
-    .form__help-text {
+    .p-form__help-text {
       @include font-size(14px);
       color: $color-mid-dark;
     }
   }
 
-  .form__error {
-    margin: 0;
+  .p-form__error {
     color: $error;
+    margin: 0;
 
-    .form__error-item {
+    .p-form__error-item {
       margin: 6px 0;
     }
   }

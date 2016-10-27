@@ -7,32 +7,32 @@
 /// MAAS tabs
 /// @group maas tabs
 @mixin maas-tabs {
-  .tabs {
+  .p-tabs {
     display: inline-block;
 
-    .tabs__tab {
+    .p-tabs__tab {
       @include font-size(18px);
       display: inline-block;
       list-style-type: none;
 
-      .tabs__tab-link {
+      .p-tabs__tab-link {
+        border-bottom: 0;
         color: $color-mid-dark;
         text-decoration: none;
-        border-bottom: 0;
       }
 
-      &:hover .tabs__tab-link {
+      &:hover .p-tabs__tab-link {
         border-bottom: 3px solid $color-mid-dark;
       }
 
-      &:after {
-        content: '';
-        width: 1px;
-        display: inline-block;
+      &::after {
         background: $outline;
+        content: '';
+        display: inline-block;
         height: 11px;
-        padding: 0;
         margin: 0 5px;
+        padding: 0;
+        width: 1px;
       }
 
       &:last-child::after {
@@ -42,8 +42,8 @@
 
     .is-active {
 
-      .tabs__tab-link,
-      &:hover .tabs__tab-link {
+      .p-tabs__tab-link,
+      &:hover .p-tabs__tab-link {
         border-bottom: 3px solid $tab-active-state;
       }
     }

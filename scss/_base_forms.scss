@@ -7,7 +7,7 @@
 /// Form element styles
 /// @group Forms
 @mixin maas-forms {
-  //scss-lint: disable no-vendor-prefixes
+
   input {
     &[type='text'],
     &[type='number'],
@@ -255,10 +255,10 @@
         margin-bottom: 0;
         margin-right: 10px;
         word-wrap: break-word;
+      }
 
-        .remove-button {
-          border-bottom: 0;
-        }
+      .remove-button {
+        border-bottom: 0;
       }
     }
 
@@ -372,5 +372,4 @@
       }
     }
   }
-  //scss-lint: enable no-vendor-prefixes
 }
