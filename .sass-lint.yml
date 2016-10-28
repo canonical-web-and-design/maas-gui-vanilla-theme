@@ -20,6 +20,8 @@ rules:
     - 2
     -
       convention: hyphenatedbem
+      ignore:
+        - u---none
 
   # Extends and mixins
   extends-before-mixins: 2
@@ -95,7 +97,7 @@ rules:
   space-before-bang: 2
   space-after-bang: 2
   space-between-parens: 2
-  space-around-operator: 2
+  space-around-operator: 0
 
   # Final Items
   trailing-semicolon: 2

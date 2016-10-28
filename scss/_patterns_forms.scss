@@ -28,7 +28,7 @@
           width: 16px;
         }
 
-        .icon {
+        .p-icon {
           display: inline-block;
           position: absolute;
           right: 10px;
@@ -65,6 +65,7 @@
     }
 
     .p-form__fieldset {
+      border: 0;
 
       .p-form__group:last-of-type {
         margin-bottom: 0;

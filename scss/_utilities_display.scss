@@ -38,8 +38,8 @@
   }
 
   .u-muted {
-    opacity: .5 !important;
     filter: alpha(opacity = 50) !important;
+    opacity: .5 !important;
   }
 
   .u-clear {
@@ -68,27 +68,27 @@
   .u-width {
 
     &--full {
-      width: 100% !important;
       box-sizing: border-box;
       float: left;
+      width: 100% !important;
     }
 
     &--half {
-      width: 50% !important;
       box-sizing: border-box;
       float: left;
+      width: 50% !important;
     }
 
     &--third {
-      width: calc(100%/3) !important;
       box-sizing: border-box;
       float: left;
+      width: calc(100%/3) !important;
     }
 
     &--quarter {
-      width: 25% !important;
       box-sizing: border-box;
       float: left;
+      width: 25% !important;
     }
   }
 }
