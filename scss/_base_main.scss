@@ -11,6 +11,7 @@
   html {
     color: $text-color;
     font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} $base-font-family;
+    font-weight: 300;
     height: 100%;
     min-height: 100%;
     overflow-x: hidden;

@@ -25,7 +25,7 @@
       @include font-size(20px);
       border-bottom: 1px dotted $muted-grey;
       margin: 0;
-      padding: 8px 20px 9px;
+      padding: 11px 20px 11px;
     }
 
     // accordion data block, contains all filter links and controls.
@@ -110,10 +110,11 @@
 
   // Accordion patterns
   %accordion-tab-title {
+    @include font-size(16px);
     background: $color-transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
     color: $color-mid-dark;
     cursor: pointer;
     margin: 0;
-    padding: 12px 20px;
+    padding: 14px 20px;
   }
 }

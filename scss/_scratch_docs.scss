@@ -89,7 +89,7 @@ hr {
 }
 
 .docs-example {
-  border: 1px solid $color-mid-dark;
+  border: 1px solid $color-mid-light;
   margin-bottom: 20px;
   border-radius: 5px;
   float: left;
@@ -98,7 +98,7 @@ hr {
   background-color: $color-light;
 
   .docs-example__item {
-    border-bottom: 1px solid $color-mid-dark;
+    border-bottom: 1px solid $color-mid-light;
     box-sizing: border-box;
     padding: 20px;
     float: left;

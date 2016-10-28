@@ -10,7 +10,8 @@
 
   a {
     border-bottom: 1px solid $link-border;
-    color: $cool-grey;
+    color: $color-dark;
+    font-weight: 300;
     text-decoration: none;
 
     &:hover {

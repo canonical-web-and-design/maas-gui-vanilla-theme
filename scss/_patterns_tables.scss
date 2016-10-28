@@ -75,7 +75,7 @@
 
           + label {
             margin: 0;
-            top: -3px;
+            top: -18px;
           }
         }
       }
@@ -124,7 +124,7 @@
 
         + label {
           margin: 0;
-          top: -1px;
+          top: -18px;
         }
       }
     }
@@ -279,6 +279,7 @@
 
           .p-table__row {
             display: none;
+            padding: 10px 0;
 
             &.is-active {
               display: block;
@@ -592,7 +593,7 @@
   );
 
   @each $state, $color in $states {
-    .table--#{$state} {
+    .p-table--#{$state} {
       border-color: $color;
 
       .p-table__header,
@@ -613,7 +614,7 @@
 @mixin table-columns($table-columns) {
 
   @for $i from 1 through $table-columns {
-    .table-col--#{$i} {
+    .p-table-col--#{$i} {
       width: percentage($i / 100);
     }
   }
