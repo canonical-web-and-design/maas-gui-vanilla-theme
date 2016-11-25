@@ -68,19 +68,19 @@
             .p-accordion__tab-link {
               border-bottom: 0;
               box-sizing: border-box;
-              color: $cool-grey;
+              color: $color-dark;
               display: inline-block;
               outline: 0;
               padding-right: 20px;
               width: 100%;
 
               &:hover {
-                color: $link-hover;
+                color: $color-primary-action;
                 text-decoration: none;
               }
 
               .disabled & {
-                color: $cool-grey;
+                color: $color-dark;
               }
             }
 
@@ -98,7 +98,7 @@
 
                 .p-accordion__tab-link {
                   background-image: url('#{$asset-path}images/icons/cross-orange.svg');
-                  color: $link-hover;
+                  color: $color-primary-action;
                 }
               }
             }

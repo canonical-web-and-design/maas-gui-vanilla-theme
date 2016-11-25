@@ -18,7 +18,7 @@
   }
 
   .p-button--primary {
-    background-color: $link-hover;
+    background-color: $color-primary-action;
     border: 0;
     color: $color-x-light !important;
   }
@@ -45,7 +45,7 @@
   .p-button--neutral {
 
     &:hover {
-      color: $cool-grey;
+      color: $color-dark;
     }
   }
 }
@@ -116,14 +116,14 @@
 
       .p-button-group__item-link {
         border: 0;
-        color: $cool-grey;
+        color: $color-dark;
         cursor: pointer;
         float: left;
         margin: 0;
         width: 100%;
 
         &:hover {
-          color: $link-hover;
+          color: $color-primary-action;
           text-decoration: none;
         }
       }

@@ -28,7 +28,7 @@
         border: 1px solid $color-transparent;
         border-radius: 2px;
         box-sizing: border-box;
-        color: $cool-grey;
+        color: $color-dark;
         cursor: default;
         display: inline-block;
         margin: -20px 0 -20px -10px;
@@ -103,11 +103,11 @@
 
       .p-page-header__controls-feedback {
         border-bottom: 1px solid $link-border;
-        color: $cool-grey;
+        color: $color-dark;
         text-decoration: none;
 
         &:hover {
-          color: $link-hover;
+          color: $color-primary-action;
           cursor: pointer;
           text-decoration: none;
         }

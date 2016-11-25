@@ -44,8 +44,8 @@ hr {
   margin-bottom: 20px;
 
   $colors: (
-    black: $black,
-    cool-grey: $cool-grey,
+    black: $color-x-dark,
+    cool-grey: $color-dark,
     ash: $ash,
     silk: $silk,
     porcelain: $porcelain,
@@ -82,7 +82,7 @@ hr {
 }
 
 .docs-code {
-  color: $cool-grey;
+  color: $color-dark;
   background-color: darken($color-mid-light, 5%);
   padding: 2px 3px;
   border-radius: 3px;

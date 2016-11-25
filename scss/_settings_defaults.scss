@@ -22,40 +22,21 @@ $half-spacing-unit:     $base-spacing-unit / 2 !default;
 $line-height-ratio:     $base-line-height / $base-font-size;
 
 /// MAAS Text styles
-$text-color:            $cool-grey;
-$headline-color:        $cool-grey;
-$alt-headline-color:    $color-mid-dark;
-$link-color:            $color-dark;
-$link-border:           #c2c2c2;
-$link-hover:            #dd4814;
-
-// MAAS colours
-$off-white:             #fafafa !default;
-$pale-grey:             #bcbcbc !default;
-$muted-grey:            #b2b2b2 !default;
-$gallery-grey:          #eee !default;
-$mercury-grey:          #e3e3e3 !default;
-$off-white:             #f8f8f8 !default;
-
-$loading:               #2ab7ec !default;
-$error:                 #d83832 !default;
-$information:           #2ab7ec !default;
-$outline:               #d2d2d2 !default;
-$success:               #38b44a !default;
-$disabled:              $gallery-grey;
-$editable:              $white;
+$color-primary-action:  #dd4814 !default;
+$disabled:              lighten($color-mid-light, 30%);
+$editable:              $color-x-light;
 
 /// MAAS Form colours
-$primary-button-color:  #dd4814;
-$secondary-button-color: $white;
-$input-checked:         #dd4814;
+$primary-button-color:  $color-primary-action;
+$secondary-button-color: $color-x-light;
+$input-checked:         $color-primary-action;
 
 // MAAS Tab colours
-$tab-active-state:      #dd4814 !default;
+$tab-active-state:      $color-primary-action !default;
 
 
 // Header variables
-$header-link-color:     $white;
+$header-link-color:     $color-x-light;
 
 // MAAS structure
 $site-max-width:        1440px;
