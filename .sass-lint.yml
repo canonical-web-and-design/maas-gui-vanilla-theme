@@ -16,16 +16,14 @@ rules:
   # Name formats
   class-name-format:
     - 2
-    -
-      convention: hyphenatedbem
+    - convention: hyphenatedbem
 
   # Extends and mixins
   extends-before-mixins: 2
   extends-before-declarations: 2
   mixins-before-declarations:
     - 2
-    -
-      exclude:
+    - exclude:
         - breakpoint
         - mq
 
@@ -33,7 +31,11 @@ rules:
   no-color-keywords: 2
   no-css-comments: 2
   no-debug: 2
-  no-duplicate-properties: 2
+  no-duplicate-properties:
+    - 2
+    - exclude:
+        - font-size
+        - height
   no-empty-rulesets: 2
   no-invalid-hex: 2
   no-mergeable-selectors: 2
@@ -70,7 +72,7 @@ rules:
   hex-notation: 2
   indentation: 2
   leading-zero: 2
-  nesting-depth: 2
+  nesting-depth: 4
   pseudo-element: 2
   quotes: 0
   url-quotes: 2
@@ -100,7 +102,7 @@ rules:
   no-color-literals: 1
   no-transition-all: 1
   no-universal-selectors: 0
-  no-vendor-prefixes: 1
+  no-vendor-prefixes: 0
 
   # Style guide
   property-sort-order: 1

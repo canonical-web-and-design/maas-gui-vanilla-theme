@@ -6,10 +6,8 @@
 
 // Creates REM and PX font size
 @mixin font-size($size) {
-  // scss-lint:disable DuplicateProperty
   font-size: $size;
   font-size: calculate-rem($size);
-  // scss-lint:enable DuplicateProperty
 }
 
 // Keyframe mixin

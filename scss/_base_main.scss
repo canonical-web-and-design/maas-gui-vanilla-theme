@@ -9,16 +9,16 @@
 @mixin maas-main {
 
   html {
-    overflow-x: hidden;
+    color: $text-color;
+    font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} $base-font-family;
     height: 100%;
     min-height: 100%;
-    color: $text-color;
-    font: #{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
+    overflow-x: hidden;
   }
 
   body {
     background-image: none;
-    overflow: hidden;
     height: 100%;
+    overflow: hidden;
   }
 }

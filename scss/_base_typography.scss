@@ -9,70 +9,29 @@
 @mixin maas-typography {
 
   a {
+    border-bottom: 1px solid $link-border;
     color: $cool-grey;
     text-decoration: none;
-    border-bottom: 1px solid $link-border;
 
     &:hover {
-      text-decoration: none;
       color: $link-hover;
-    }
-  }
+      text-decoration: none;
 
-  p,
-  li,
-  code,
-  pre {
-    @include font-size(16px);
-    line-height: #{$line-height-ratio};
-    margin-bottom: .75em;
+    }
   }
 
   pre,
   code {
+    direction: ltr;
+    hyphens: none;
+    tab-size: 4;
     text-align: left;
     white-space: pre-line;
     word-spacing: normal;
     word-wrap: break-word;
-    tab-size: 4;
-    hyphens: none;
-    direction: ltr;
   }
 
   hr {
     margin-bottom: 20px;
-  }
-
-  // Heading required classes and sizes
-  $headings: h1, h2, h3, h4, h5;
-  $size: $h1, $h2, $h3, $h4, $h5;
-  $heading-size: zip($headings, $size);
-
-  // Shared heading styles
-  #{$headings()} {
-    margin: 10px 0;
-    font-weight: 300;
-    line-height: #{$line-height-ratio};
-    color: $headline-color;
-  }
-
-  // Create heading styles
-  @each $h in $heading-size {
-    #{nth($h, 1)} {
-      font-size: #{(nth($h, 2)/16px)*1em};
-
-      small {
-        font-size: 75%;
-      }
-    }
-  }
-
-  // Additional font sizes
-  .gigantic {
-    @include font-size($gigantic);
-  }
-
-  .mega {
-    @include font-size($mega);
   }
 }
