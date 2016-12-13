@@ -6,52 +6,52 @@
 
 /// Flash message styles
 /// @group maas flash messages
-@mixin maas-flash-messages {
-  .flash-messages {
-    width: 100%;
+@mixin maas-p-flash-messages {
+  .p-flash-messages {
     float: left;
     margin: 0;
+    width: 100%;
 
-    .flash-messages__item {
-      box-sizing: border-box;
-      border-radius: 2px;
-      list-style: none;
-      padding: 15px 20px;
-      margin: 0 0 20px;
+    .p-flash-messages__item {
       background: $white;
       background-position: top 50% left 15px;
       background-repeat: no-repeat;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+      border-radius: 2px;
+      box-shadow: 0 1px 1px $color-border-shadow;
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 15px 20px;
 
       &:last-of-type {
         margin-bottom: 0;
       }
 
-      &.flash-messages__item--error {
+      &.p-flash-messages__item--error {
         background: $white url('#{$asset-path}images/icons/error.svg') no-repeat;
-        background-size: 16px 16px;
         background-position: 15px center;
+        background-size: 16px 16px;
         padding-left: 45px;
       }
 
-      &.flash-messages__item--info {
+      &.p-flash-messages__item--info {
         background: $white url('#{$asset-path}images/icons/info.svg') no-repeat;
-        background-size: 16px 16px;
         background-position: 15px center;
+        background-size: 16px 16px;
         padding-left: 45px;
       }
 
-      &.flash-messages__item--warning {
+      &.p-flash-messages__item--warning {
         background: $white url('#{$asset-path}images/icons/warning.svg') no-repeat;
-        background-size: 16px 16px;
         background-position: 15px center;
+        background-size: 16px 16px;
         padding-left: 45px;
       }
 
-      &.flash-messages__item--success {
+      &.p-flash-messages__item--success {
         background: $white url('#{$asset-path}images/icons/success.svg') no-repeat;
-        background-size: 16px 16px;
         background-position: 15px center;
+        background-size: 16px 16px;
         padding-left: 45px;
       }
     }

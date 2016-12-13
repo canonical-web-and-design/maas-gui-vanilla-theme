@@ -8,50 +8,45 @@
 /// @group Icons
 @mixin maas-icons {
 
-  .icon {
-    @include icon-size(16px);
-    padding: 0;
-    border-bottom: 0 !important;
-    display: inline-block;
-    vertical-align: middle;
-    text-indent: 999em;
+  .p-icon {
+    @extend %icon;
 
-    &.icon--add {
+    &.p-icon--add {
       background: url('data:image/svg+xml;utf8, <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><g id="Storage-buttons-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="04.2-creating-lv" sketch:type="MSArtboardGroup" transform="translate(-1212.000000, -1844.000000)" fill="#B2B2B2"><g id="Normal" sketch:type="MSLayerGroup" transform="translate(-16.000000, -11.000000)"><g id="Storage-Copy" transform="translate(14.000000, 1273.000000)" sketch:type="MSShapeGroup"><g id="Avilable-disks-and-partitions" transform="translate(202.000000, 258.000000)"><g id="table-all"><g id="network-row-copy-3" transform="translate(0.000000, 313.000000)"><g id="actions-copy-5" transform="translate(990.000000, 10.000000)"><path d="M37.1483077,4 L31.4190769,9.72923077 L25.6898462,4 L24,5.68984615 L29.7292308,11.4203077 L24,17.1495385 L25.6898462,18.8393846 L31.4190769,13.1101538 L37.1483077,18.8393846 L38.8393846,17.1495385 L33.1089231,11.4203077 L38.8393846,5.68984615 L37.1483077,4 Z" id="remove-icon-copy" transform="translate(32.000000, 12.000000) rotate(-315.000000) translate(-32.000000, -12.000000) "></path></g></g></g></g></g></g></g></g></svg>') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--account {
+    &.p-icon--account {
       background: url('#{$asset-path}images/icons/account.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--cross {
+    &.p-icon--cross {
       background: url('#{$asset-path}images/icons/cross.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--cross-orange {
+    &.p-icon--cross-orange {
       background: url('#{$asset-path}images/icons/cross-orange.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--debug {
+    &.p-icon--debug {
       background: url('#{$asset-path}images/icons/debug.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--delete {
+    &.p-icon--delete {
       background: url('#{$asset-path}images/icons/delete.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--edit {
+    &.p-icon--edit {
       background: url('#{$asset-path}images/icons/edit.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--error {
+    &.p-icon--error {
       background: url('#{$asset-path}images/icons/error.svg') no-repeat;
       background-size: 100% 100%;
 
@@ -60,7 +55,7 @@
       }
     }
 
-    &.icon--help {
+    &.p-icon--help {
       background: url('#{$asset-path}images/icons/help.svg') no-repeat;
       background-size: 100% 100%;
 
@@ -69,7 +64,7 @@
       }
     }
 
-    &.icon--info {
+    &.p-icon--info {
       background: url('#{$asset-path}images/icons/info.svg') no-repeat;
       background-size: 100% 100%;
 
@@ -78,47 +73,47 @@
       }
     }
 
-    &.icon--loading {
+    &.p-icon--loading {
       background: url('#{$asset-path}images/icons/loading.png') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--mount {
+    &.p-icon--mount {
       background: url('#{$asset-path}images/icons/mount.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--unmount {
+    &.p-icon--unmount {
       background: url('#{$asset-path}images/icons/unmount.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--partition {
+    &.p-icon--partition {
       background: url('#{$asset-path}images/icons/partition.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--power-error {
+    &.p-icon--power-error {
       background: url('#{$asset-path}images/icons/power-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--power-off {
+    &.p-icon--power-off {
       background: url('#{$asset-path}images/icons/power-off.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--power-on {
+    &.p-icon--power-on {
       background: url('#{$asset-path}images/icons/power-on.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--remove {
+    &.p-icon--remove {
       background: url('#{$asset-path}images/icons/remove.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--success {
+    &.p-icon--success {
       background: url('#{$asset-path}images/icons/success.svg') no-repeat;
       background-size: 100% 100%;
 
@@ -133,47 +128,47 @@
       }
     }
 
-    &.icon--settings {
+    &.p-icon--settings {
       background: url('#{$asset-path}images/icons/settings.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--sync {
+    &.p-icon--sync {
       background: url('#{$asset-path}images/icons/sync.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--search {
+    &.p-icon--search {
       background: url('#{$asset-path}images/icons/magnifying_glass.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--system-shutdown {
+    &.p-icon--system-shutdown {
       background: url('#{$asset-path}images/icons/system-shutdown.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--tooltip {
+    &.p-icon--tooltip {
       background: url('#{$asset-path}images/icons/tooltip.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--tags {
+    &.p-icon--tags {
       background: url('#{$asset-path}images/icons/tags.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--tick {
+    &.p-icon--tick {
       background: url('#{$asset-path}images/icons/tick.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--logical-volume {
+    &.p-icon--logical-volume {
       background: url('#{$asset-path}images/icons/logical-volume.svg') no-repeat;
       background-size: 100% 100%;
     }
 
-    &.icon--warning {
+    &.p-icon--warning {
       background: url('#{$asset-path}images/icons/warning.svg') no-repeat;
       background-size: 100% 100%;
 
@@ -182,75 +177,65 @@
       }
     }
 
-    &.icon--open {
+    &.p-icon--open {
       background: url('#{$asset-path}images/forms/chevron-down.svg') no-repeat;
-      background-size: 10px 4px;
       background-position: center 4px;
+      background-size: 10px 4px;
     }
 
-    &.icon--close {
+    &.p-icon--close {
       background: url('#{$asset-path}images/forms/chevron-up.svg') no-repeat;
-      background-size: 10px 4px;
       background-position: center 4px;
+      background-size: 10px 4px;
     }
 
     &--status-failed {
-      //scss-lint:disable PlaceholderInExtend
-      @extend .icon;
-      //scss-link:enable PlaceholderInExtend
+      @extend %icon;
       content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-failed}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-failed}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
     }
 
     &--status-in-progress {
-      //scss-lint:disable PlaceholderInExtend
-      @extend .icon;
-      //scss-link:enable PlaceholderInExtend
+      @extend %icon;
       content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-in-progress}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-in-progress}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
     }
 
     &--status-queued {
-      //scss-lint:disable PlaceholderInExtend
-      @extend .icon;
-      //scss-link:enable PlaceholderInExtend
+      @extend %icon;
       content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-queued}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-queued}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
     }
 
     &--status-succeeded {
-      //scss-lint:disable PlaceholderInExtend
-      @extend .icon;
-      //scss-link:enable PlaceholderInExtend
+      @extend %icon;
       content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-succeeded}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-succeeded}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
     }
 
     &--status-waiting {
-      //scss-lint:disable PlaceholderInExtend
-      @extend .icon;
-      //scss-link:enable PlaceholderInExtend
+      @extend %icon;
       content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-waiting}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-waiting}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
     }
   }
 
   /// Set a specific icon size
-  .icon--small {
+  .p-icon--small {
     @include icon-size(14px);
   }
 
-  .icon--large {
+  .p-icon--large {
     @include icon-size(20px);
   }
 
-  .icon--mega {
+  .p-icon--mega {
     @include icon-size(23px);
   }
 
-  .icon--gigantic {
+  .p-icon--gigantic {
     @include icon-size(32px);
   }
 
   /// Icon alignment for headings / text
   h1 {
 
-    .icon {
+    .p-icon {
       margin-top: -6px;
     }
   }
@@ -258,7 +243,7 @@
   h2,
   h3 {
 
-    .icon {
+    .p-icon {
       margin-top: -5px;
     }
   }
@@ -274,13 +259,22 @@
   .table__header,
   .table__data {
 
-    .icon {
+    .p-icon {
       margin-top: -3px;
     }
   }
 }
 
 @mixin icon-size($size) {
-  width: $size;
   height: $size;
+  width: $size;
+}
+
+%icon {
+  @include icon-size(16px);
+  border-bottom: 0 !important;
+  display: inline-block;
+  padding: 0;
+  text-indent: 999em;
+  vertical-align: middle;
 }

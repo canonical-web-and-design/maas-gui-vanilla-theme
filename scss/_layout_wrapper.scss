@@ -8,35 +8,34 @@
 /// @group maas wrapper
 @mixin maas-wrapper {
   .wrapper {
-    min-height: 100%;
-    // scss-lint:disable DuplicateProperty
+    background: $color-transparent-white;
     height: auto !important; // This line and the next line are not necessary unless you need IE6 support
     height: 100%;
-    // scss-lint:enable DuplicateProperty
     margin: 0 auto;
+    min-height: 100%;
     position: relative;
-    background: rgba($white, .4);
 
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+
+    &::after {
       background: url('#{$asset-path}images/backgrounds/background-paper.png');
+      bottom: 0;
+      content: '';
+      display: block;
       height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
       width: 100%;
       z-index: -1;
     }
 
     &--inner {
-      max-width: $site-max-width;
-      width: 100%;
-      margin: 0 auto;
       clear: both;
       display: block;
+      margin: 0 auto;
+      max-width: $site-max-width;
+      width: 100%;
     }
 
     &--flex {
@@ -50,9 +49,9 @@
 
       &-content {
         flex: 1 1 auto;
-        position: relative; // need this to position inner content
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: auto;
+        position: relative; // need this to position inner content
       }
     }
   }

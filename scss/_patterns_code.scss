@@ -1,45 +1,45 @@
 ////
 /// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-code-block
+/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-p-code-block
 /// @since        0.0.1
 ////
 
 /// MAAS code block
 /// @group maas code block
-@mixin maas-code-block {
-  .code-block {
-    overflow: auto;
-    margin: .5em 0;
-    padding: 1em;
+@mixin maas-p-code-block {
+  .p-code-block {
+    background-color: $white;
     border: 1px solid $color-mid-light;
     border-radius: .5em;
-    background-color: $white;
     color: $cool-grey;
+    margin: .5em 0;
+    overflow: auto;
+    padding: 1em;
 
-    .code-block__line {
-      float: left;
+    .p-code-block__line {
       clear: both;
+      float: left;
       margin: 0;
     }
 
-    &.code-block--terminal {
-      color: $white;
-      border: 0;
+    &.p-code-block--terminal {
       background-color: $cool-grey;
+      border: 0;
+      color: $white;
     }
 
-    &.code-block--numbering {
+    &.p-code-block--numbering {
       counter-reset: line-numbering;
 
-      .code-block__line::before {
-        width: 1.5em;
-        padding-right: 1em; // space after numbers
+      .p-code-block__line::before {
         content: counter(line-numbering);
         counter-increment: line-numbering;
-        user-select: none;
-        text-align: right;
-        pointer-events: none;
         opacity: .5;
+        padding-right: 1em; // space after numbers
+        pointer-events: none;
+        text-align: right;
+        user-select: none;
+        width: 1.5em;
       }
     }
   }

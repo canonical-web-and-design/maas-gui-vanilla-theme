@@ -20,41 +20,41 @@
   // changed or amended here and will effect standard table markup / class based
   // div created tables.
   %table {
+    border-collapse: separate;
     border-color: $table-border-color;
     border-spacing: 0;
-    overflow-x: scroll;
     margin: 0 0 20px;
-    width: 100%;
+    overflow-x: scroll;
     text-align: left;
-    border-collapse: separate;
+    width: 100%;
 
     // Table row styles
     %table-row {
-      width: 100%;
-      border-color: rgb(178, 178, 178);
       border-bottom-style: dotted;
       border-bottom-width: 1px;
+      border-color: $color-mid-dark;
+      width: 100%;
     }
 
     // Table cell styles
     %table-cell {
       @include font-size($table-font-size);
-      padding: 10px;
-      box-sizing: border-box;
-      min-height: 21px;
+      backface-visibility: hidden;
       background: none;
       border: 0;
-      text-align: left;
       border-collapse: separate;
-      vertical-align: top;
-      backface-visibility: hidden;
+      box-sizing: border-box;
+      min-height: 21px;
+      padding: 10px;
       position: relative;
+      text-align: left;
+      vertical-align: top;
     }
 
     // Table header row styles
     %table-header-row {
-      color: $table-header-color;
       border-bottom: 1px solid;
+      color: $table-header-color;
 
       &:hover {
         background-color: transparent;
@@ -83,8 +83,8 @@
 
     // Table header hyperlink styles
     %table-header-link {
-      color: $table-header-color;
       border-bottom: 0;
+      color: $table-header-color;
 
       &:hover {
         color: $text-color;
@@ -104,11 +104,11 @@
 
     // Table divide is used for multiple table header options
     %table-divide {
-      width: 1px;
-      display: inline-block;
       background: $table-header-color;
+      display: inline-block;
       height: 10px;
       margin: 0 5px;
+      width: 1px;
     }
 
     .numerical {
@@ -168,23 +168,23 @@
     }
 
     th {
-      color: $table-header-color;
       border-bottom: 1px solid;
+      color: $table-header-color;
     }
 
     td {
-      border-color: rgb(178, 178, 178);
       border-bottom-style: dotted;
       border-bottom-width: 1px;
+      border-color: $color-mid-dark;
 
       a:link,
       a:visited {
-        color: $text-color;
         border-bottom: 1px solid $link-border;
+        color: $text-color;
 
         &:hover {
-          text-decoration: none;
           color: $link-hover;
+          text-decoration: none;
         }
       }
     }
@@ -240,44 +240,44 @@
     display: table;
 
     // Table row style
-    .table__row {
+    .p-table__row {
       @extend %table-row;
-      float: left;
       display: table-row;
+      float: left;
 
       // Table row hover style, this can reveal control elements
       &:hover {
         background-color: $white;
 
         // Set controls z-index and opacity so it is visible
-        .table__controls {
-          z-index: 1;
+        .p-table__controls {
           opacity: 1;
+          z-index: 1;
 
           &--secondary {
-            z-index: 1;
             opacity: 1;
+            z-index: 1;
           }
         }
       }
 
-      // Active state on .table__row
+      // Active state on .p-table__row
       &.is-active {
         background-color: $white;
 
-        .table__controls {
-          z-index: 1;
+        .p-table__controls {
           opacity: 1;
+          z-index: 1;
 
           &--secondary {
-            z-index: 1;
             opacity: 1;
+            z-index: 1;
           }
         }
 
-        .table__dropdown {
+        .p-table__dropdown {
 
-          .table__row {
+          .p-table__row {
             display: none;
 
             &.is-active {
@@ -288,55 +288,55 @@
       }
     }
 
-    .table__header,
-    .table__data {
+    .p-table__header,
+    .p-table__data {
       @extend %table-cell;
       display: table-cell;
       float: left;
     }
 
-    .table__data {
+    .p-table__data {
 
       a:link,
       a:visited {
-        color: $text-color;
         border-bottom: 1px solid $link-border;
+        color: $text-color;
 
         &:hover {
-          text-decoration: none;
           color: $link-hover;
+          text-decoration: none;
         }
       }
     }
 
-    .table__head {
+    .p-table__head {
+      box-sizing: border-box;
       display: table-head;
       width: 100%;
-      box-sizing: border-box;
 
-      .table__row {
+      .p-table__row {
         @extend %table-header-row;
       }
 
-      .table__header {
+      .p-table__header {
         @extend %table-header;
 
-        .table__header-link {
+        .p-table__header-link {
           @extend %table-header-link;
         }
       }
 
-      .table__header-divide,
+      .p-table__header-divide,
       .divide {
         @extend %table-divide;
       }
     }
 
-    .table__body {
+    .p-table__body {
       display: table-row-group;
     }
 
-    .table__footer {
+    .p-table__footer {
       display: table-footer-group;
     }
 
@@ -357,12 +357,12 @@
     //         <a href="#">Hide</a>
     //     </span>
     // </div>
-    .table__label {
+    .p-table__label {
       clear: both;
-      display: block;
-      margin-top: 5px;
-      line-height: 16px;
       color: $pale-grey;
+      display: block;
+      line-height: 16px;
+      margin-top: 5px;
 
       a {
         color: $pale-grey;
@@ -397,28 +397,28 @@
     //         </div>
     //     </div>
     // </div>
-    .table__controls {
-      width: 100%;
-      text-align: right;
+    .p-table__controls {
       opacity: 0;
+      text-align: right;
+      width: 100%;
       z-index: -1000;
 
       &--secondary {
         opacity: 0;
-        z-index: -1000;
-        width: auto;
         text-align: left;
+        width: auto;
+        z-index: -1000;
       }
 
       a,
       a:link,
       a:visited {
-        color: $text-color;
         border-bottom: 1px solid $link-border;
+        color: $text-color;
 
         &:hover {
-          text-decoration: none;
           color: $link-hover;
+          text-decoration: none;
         }
       }
     }
@@ -437,24 +437,24 @@
     //         </div>
     //     </div>
     // </div>
-    .table__input {
-      display: inline-block;
+    .p-table__input {
       background-color: $white;
-      border-color: $color-mid-light;
       background-position: right 10px top 16px;
+      border-color: $color-mid-light;
+      display: inline-block;
       margin: -7px 0;
 
       &[disabled] {
         background-color: transparent;
-        border-color: transparent;
-        pointer-events: none;
         background-position: -9999px -9999px;
+        border-color: transparent;
         color: $text-color;
+        pointer-events: none;
       }
     }
 
     // Table dropdowns are used for extra condenced information and to expand
-    // form elements. The class .table__dropdown must be within a .table__row and
+    // form elements. The class .p-table__dropdown must be within a .p-table__row and
     // acts as a container.
     //
     // @example
@@ -481,39 +481,39 @@
     //         </div>
     //     </div>
     // </div>
-    .table__dropdown {
+    .p-table__dropdown {
       width: 100%;
 
-      // Table dropdown row style, add class to .table__row
-      .table__row {
+      // Table dropdown row style, add class to .p-table__row
+      .p-table__row {
         border-bottom: 0;
         display: none;
         position: relative;
 
         &--indent {
-          padding-left: 41px !important;
-          float: left;
-          width: 100%;
           box-sizing: border-box;
+          float: left;
+          padding-left: 41px !important;
+          width: 100%;
         }
 
-        &:before {
-          display: block;
-          margin: 0 auto;
-          width: calc(100% - 20px);
+        &::before {
           border-top: 1px dotted $color-mid-light;
-          position: absolute;
-          height: 1px;
           content: '';
-          top: 0;
+          display: block;
+          height: 1px;
           left: 10px;
+          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          width: calc(100% - 20px);
         }
 
-        // Table dropdown header row removes border styling from .table__row
-        &.table__row--head {
+        // Table dropdown header row removes border styling from .p-table__row
+        &.p-table__row--head {
           border-bottom: 0;
 
-          .table__header {
+          .p-table__header {
             color: $pale-grey;
             font-size: 13px;
           }
@@ -522,32 +522,32 @@
         // If no borders are required, removes all borders and before elements
         &.u-border--none {
 
-          &:before {
+          &::before {
             display: none;
           }
         }
 
         &.u-border {
 
-          &:before {
-            display: block;
-            margin: 0 auto;
-            width: calc(100% - 20px);
+          &::before {
             border-top: 1px dotted $color-mid-light;
-            position: absolute;
-            height: 1px;
             content: '';
-            top: 0;
+            display: block;
+            height: 1px;
             left: 10px;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            width: calc(100% - 20px);
           }
         }
 
         &.is-active {
 
-          .table__input {
+          .p-table__input {
             background-color: $white;
-            border-color: $color-mid-light;
             background-position: right 10px top 16px;
+            border-color: $color-mid-light;
             pointer-events: all;
 
             &[disabled] {
@@ -558,15 +558,15 @@
         }
       }
 
-      // .table__dropdown--info Information style dropdown sets all colours
+      // .p-table__dropdown--info Information style dropdown sets all colours
       // styles to pale to inform users this is not an interactive table
       &--info {
 
-        .table__row {
+        .p-table__row {
           border-bottom: 0;
         }
 
-        .table__data {
+        .p-table__data {
           color: $pale-grey;
         }
       }
@@ -595,12 +595,12 @@
     .table--#{$state} {
       border-color: $color;
 
-      .table__header,
-      .table__data,
+      .p-table__header,
+      .p-table__data,
       th,
       td {
-        border-color: $color;
         background-color: lighten($color, 40%);
+        border-color: $color;
       }
     }
   }
@@ -608,7 +608,7 @@
 }
 
 // Generates column classes use for tables
-// the column class generated will look like '.table__column--1'
+// the column class generated will look like '.p-table__column--1'
 // Number value at the end signifies the width percentage
 @mixin table-columns($table-columns) {
 

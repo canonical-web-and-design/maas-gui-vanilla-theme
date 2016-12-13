@@ -7,13 +7,12 @@
 /// MAAS Accordion
 /// @group maas accordion
 @mixin maas-accordion {
-  // scss-lint:disable NestingDepth SelectorDepth
-  .accordion {
-    box-sizing: border-box;
-    border-radius: 2px;
-    list-style: none;
+  .p-accordion {
     background: $white;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    box-shadow: 0 1px 1px $color-border-shadow;
+    box-sizing: border-box;
+    list-style: none;
     margin-bottom: 40px;
 
     &.is-disabled {
@@ -22,15 +21,15 @@
     }
 
     // accordion main sidebar title
-    .accordion__title {
+    .p-accordion__title {
       @include font-size(20px);
       border-bottom: 1px dotted $muted-grey;
-      padding: 8px 20px 9px;
       margin: 0;
+      padding: 8px 20px 9px;
     }
 
     // accordion data block, contains all filter links and controls.
-    .accordion__tab {
+    .p-accordion__tab {
       border-bottom: 1px dotted $muted-grey;
 
       &:last-of-type {
@@ -38,14 +37,14 @@
       }
 
       // Block level title
-      .accordion__tab-title {
-        @extend %accordion__tab-title;
+      .p-accordion__tab-title {
+        @extend %accordion-tab-title;
 
         &.is-active {
-          @extend %accordion__tab-title;
+          @extend %accordion-tab-title;
           background-image: url('#{$asset-path}images/forms/chevron-up.svg');
 
-          + .accordion__tab-content {
+          + .p-accordion__tab-content {
             max-height: 400px;
             transition: max-height .5s ease-in;
           }
@@ -53,27 +52,27 @@
       }
 
       // Filter list
-      .accordion__tab-content {
+      .p-accordion__tab-content {
         max-height: 0;
-        transition: max-height .5s ease-out;
         overflow: auto;
+        transition: max-height .5s ease-out;
 
-        .accordion__tab-list {
+        .p-accordion__tab-list {
           list-style-type: none;
-          padding: 0 20px 14px;
           margin: 0;
+          padding: 0 20px 14px;
 
-          .accordion__tab-item {
+          .p-accordion__tab-item {
             margin-bottom: .15em;
 
-            .accordion__tab-link {
+            .p-accordion__tab-link {
+              border-bottom: 0;
               box-sizing: border-box;
               color: $cool-grey;
-              width: 100%;
               display: inline-block;
-              padding-right: 20px;
-              border-bottom: 0;
               outline: 0;
+              padding-right: 20px;
+              width: 100%;
 
               &:hover {
                 color: $link-hover;
@@ -86,10 +85,10 @@
             }
 
             &.is-active {
-              margin-bottom: .15em;
               font-weight: 400;
+              margin-bottom: .15em;
 
-              .accordion__tab-link {
+              .p-accordion__tab-link {
                 background: $color-transparent url('#{$asset-path}images/icons/cross.svg') top 7px right 0 no-repeat;
                 text-decoration: none;
               }
@@ -97,9 +96,9 @@
               &:hover {
                 color: $link-color;
 
-                .accordion__tab-link {
-                  color: $link-hover;
+                .p-accordion__tab-link {
                   background-image: url('#{$asset-path}images/icons/cross-orange.svg');
+                  color: $link-hover;
                 }
               }
             }
@@ -110,12 +109,11 @@
   }
 
   // Accordion patterns
-  %accordion__tab-title {
-    padding: 12px 20px;
-    margin: 0;
+  %accordion-tab-title {
+    background: $color-transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
     color: $color-mid-dark;
     cursor: pointer;
-    background: $color-transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
+    margin: 0;
+    padding: 12px 20px;
   }
-  // scss-lint:enable NestingDepth SelectorDepth
 }
