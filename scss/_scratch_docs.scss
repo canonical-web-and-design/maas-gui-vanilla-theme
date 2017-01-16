@@ -1,7 +1,7 @@
 hr {
   border-style: dotted;
   border-bottom: 0;
-  border-color: $pale-grey;
+  border-color: $color-mid-light;
   margin-top: 60px;
   margin-bottom: 60px !important;
   width: 100%;
@@ -11,7 +11,7 @@ hr {
 .docs-nav {
   box-sizing: border-box;
   width: 100%;
-  background-color: $white;
+  background-color: $color-x-light;
   padding: 20px;
   float: left;
   position: fixed;
@@ -43,6 +43,20 @@ hr {
   border-radius: 5px;
   margin-bottom: 20px;
 
+  $colors: (
+    black: $black,
+    cool-grey: $cool-grey,
+    ash: $ash,
+    silk: $silk,
+    porcelain: $porcelain,
+    white: $white,
+    blue: $blue,
+    green: $green,
+    red: $red,
+    orange: $orange,
+    yellow: $yellow
+  );
+
   @each $name, $color in $colors {
     &.docs-color--#{$name} {
       background-color: $color;
@@ -69,22 +83,22 @@ hr {
 
 .docs-code {
   color: $cool-grey;
-  background-color: darken($porcelain, 5%);
+  background-color: darken($color-mid-light, 5%);
   padding: 2px 3px;
   border-radius: 3px;
 }
 
 .docs-example {
-  border: 1px solid $silk;
+  border: 1px solid $color-mid-dark;
   margin-bottom: 20px;
   border-radius: 5px;
   float: left;
   width: 100%;
   box-sizing: border-box;
-  background-color: $porcelain;
+  background-color: $color-light;
 
   .docs-example__item {
-    border-bottom: 1px solid $silk;
+    border-bottom: 1px solid $color-mid-dark;
     box-sizing: border-box;
     padding: 20px;
     float: left;
@@ -97,9 +111,10 @@ hr {
     }
 
     &--code {
-      color: $ash;
-      background-color: lighten($silk, 15%);
+      color: $color-mid-dark;
+      background-color: darken($color-light, 5%);
       white-space: pre-wrap;
+      margin: 0;
       padding-right: 0;
       overflow-x: scroll;
 
@@ -111,7 +126,7 @@ hr {
 
   .docs-example__help-text {
     font-size: 14px;
-    color: $silk;
+    color: $color-mid-dark;
     margin: 0;
     width: 100%;
   }
@@ -119,4 +134,14 @@ hr {
 
 .docs-box {
   border: 0;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid $color-mid-light;
+}
+
+.col-12 {
+  float: left;
+  width: 100%;
 }

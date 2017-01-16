@@ -11,6 +11,8 @@
   .row {
     background-color: $color-transparent;
     border-top: 1px dotted $color-mid-light;
+    max-width: none;
+    padding: 60px 0 40px;
 
     &:first-of-type {
       border-top: 0;
