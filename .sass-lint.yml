@@ -28,8 +28,7 @@ rules:
   extends-before-declarations: 2
   mixins-before-declarations:
     - 2
-    -
-      exclude:
+    - exclude:
         - breakpoint
         - mq
 
@@ -39,8 +38,7 @@ rules:
   no-debug: 2
   no-duplicate-properties:
     - 2
-    -
-      exclude:
+    - exclude:
         - font-size
         - height
   no-empty-rulesets: 2

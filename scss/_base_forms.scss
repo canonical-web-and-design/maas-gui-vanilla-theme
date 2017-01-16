@@ -107,14 +107,16 @@
     }
 
     // Removes firefox dotted outline focusing
-    &:-focusring {
+    //scss-lint: disable no-vendor-prefixes
+    &:-moz-focusring {
       color: $color-transparent;
       text-shadow: 0 0 0 $black;
     }
 
-    &::-expand {
+    &::-ms-expand {
       display: none;
     }
+    //scss-lint: enable no-vendor-prefixes
   }
 
   fieldset {
