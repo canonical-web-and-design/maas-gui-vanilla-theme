@@ -27,7 +27,7 @@
       }
 
       &::after {
-        background: $outline;
+        background: lighten($color-mid-light, 2%);
         content: '';
         display: inline-block;
         height: 11px;

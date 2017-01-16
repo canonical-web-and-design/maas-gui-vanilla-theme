@@ -14,7 +14,7 @@
     .p-search__input {
       @include font-size(16px);
       appearance: textfield;
-      background: $white;
+      background: $color-x-light;
       border: 0;
       border-radius: 4px;
       box-shadow: 0 1px 1px $color-border-shadow;
@@ -42,7 +42,7 @@
 
       &:disabled,
       &.p-search--disabled {
-        background-color: $white;
+        background-color: $color-x-light;
         opacity: .5;
         pointer-events: none;
 

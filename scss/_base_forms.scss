@@ -90,7 +90,7 @@
   select {
     @extend %input-elements;
     appearance: none;
-    background-color: $white;
+    background-color: $color-x-light;
     background-image: url('#{$asset-path}images/forms/chevron-down.svg');
     background-position: top 14px right 10px;
     background-repeat: no-repeat;
@@ -119,14 +119,16 @@
     }
 
     // Removes firefox dotted outline focusing
-    &:-focusring {
+    //scss-lint: disable no-vendor-prefixes
+    &:-moz-focusring {
       color: $color-transparent;
       text-shadow: 0 0 0 $black;
     }
 
-    &::-expand {
+    &::-ms-expand {
       display: none;
     }
+    //scss-lint: enable no-vendor-prefixes
   }
 
   fieldset {
@@ -158,7 +160,7 @@
       width: auto;
 
       &::before {
-        background: $white;
+        background: $color-x-light;
         border: 1px solid $color-mid-light;
         border-radius: 2px;
         content: '';
@@ -180,7 +182,7 @@
         }
 
         &::after {
-          color: $white;
+          color: $color-x-light;
           content: '✔';
           font-size: 10px;
           left: 4px;
@@ -226,7 +228,7 @@
       width: auto;
 
       &::before {
-        background: $white;
+        background: $color-x-light;
         border: 1px solid $color-mid-light;
         border-radius: 50%;
         content: '';
@@ -331,7 +333,7 @@
     &::before,
     &::after {
       box-sizing: border-box;
-      color: $white;
+      color: $color-x-light;
       display: block;
       float: left;
       height: 18px;
@@ -340,14 +342,14 @@
     }
 
     &::before {
-      background-color: $success;
-      color: $white;
+      background-color: $color-positive;
+      color: $color-x-light;
       content: '';
       padding-left: 10px;
     }
 
     &::after {
-      background-color: $gallery-grey;
+      background-color: $color-light;
       color: $color-mid-dark;
       content: '';
       padding-right: 10px;
@@ -356,8 +358,8 @@
   }
 
   .onoffswitch-switch {
-    background: $white;
-    border: 1px solid $outline;
+    background: $color-x-light;
+    border: 1px solid $color-mid-light;
     border-radius: 2px;
     bottom: 0;
     box-sizing: border-box;

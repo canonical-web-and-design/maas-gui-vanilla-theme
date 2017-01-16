@@ -87,18 +87,18 @@
       color: $table-header-color;
 
       &:hover {
-        color: $text-color;
+        color: $color-dark;
         text-decoration: none;
       }
 
       // Sorting and active styles when filtering a table
       &.is-active {
-        color: $text-color;
+        color: $color-dark;
         text-decoration: none;
       }
 
       &.is-sorted {
-        border-bottom: 1px solid $text-color;
+        border-bottom: 1px solid $color-dark;
       }
     }
 
@@ -179,8 +179,8 @@
 
       a:link,
       a:visited {
-        border-bottom: 1px solid $link-border;
-        color: $text-color;
+        border-bottom: 1px solid $color-dark;
+        color: $color-dark;
 
         &:hover {
           color: $color-primary-action;
@@ -247,7 +247,7 @@
 
       // Table row hover style, this can reveal control elements
       &:hover {
-        background-color: $white;
+        background-color: $color-x-light;
 
         // Set controls z-index and opacity so it is visible
         .p-table__controls {
@@ -263,7 +263,7 @@
 
       // Active state on .p-table__row
       &.is-active {
-        background-color: $white;
+        background-color: $color-x-light;
 
         .p-table__controls {
           opacity: 1;
@@ -300,8 +300,8 @@
 
       a:link,
       a:visited {
-        border-bottom: 1px solid $link-border;
-        color: $text-color;
+        border-bottom: 1px solid $color-dark;
+        color: $color-dark;
 
         &:hover {
           color: $color-primary-action;
@@ -360,23 +360,23 @@
     // </div>
     .p-table__label {
       clear: both;
-      color: $pale-grey;
+      color: $color-mid-light;
       display: block;
       line-height: 16px;
       margin-top: 5px;
 
       a {
-        color: $pale-grey;
+        color: $color-mid-light;
 
         &:hover {
-          color: $link-color;
+          color: $color-dark;
         }
       }
 
       &.is-active {
 
         a {
-          color: $link-color;
+          color: $color-dark;
         }
       }
     }
@@ -414,8 +414,8 @@
       a,
       a:link,
       a:visited {
-        border-bottom: 1px solid $link-border;
-        color: $text-color;
+        border-bottom: 1px solid $color-dark;
+        color: $color-dark;
 
         &:hover {
           color: $color-primary-action;
@@ -439,7 +439,7 @@
     //     </div>
     // </div>
     .p-table__input {
-      background-color: $white;
+      background-color: $color-x-light;
       background-position: right 10px top 16px;
       border-color: $color-mid-light;
       display: inline-block;
@@ -449,7 +449,7 @@
         background-color: transparent;
         background-position: -9999px -9999px;
         border-color: transparent;
-        color: $text-color;
+        color: $color-dark;
         pointer-events: none;
       }
     }
@@ -515,7 +515,7 @@
           border-bottom: 0;
 
           .p-table__header {
-            color: $pale-grey;
+            color: $color-mid-light;
             font-size: 13px;
           }
         }
@@ -546,7 +546,7 @@
         &.is-active {
 
           .p-table__input {
-            background-color: $white;
+            background-color: $color-x-light;
             background-position: right 10px top 16px;
             border-color: $color-mid-light;
             pointer-events: all;
@@ -568,7 +568,7 @@
         }
 
         .p-table__data {
-          color: $pale-grey;
+          color: $color-mid-light;
         }
       }
     }
@@ -586,10 +586,10 @@
   }
 
   $states: (
-    error: $error,
+    error: $color-negative,
     warning: $color-warning,
-    success: $success,
-    information: $information
+    success: $color-positive,
+    information: $color-information
   );
 
   @each $state, $color in $states {

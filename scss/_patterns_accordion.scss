@@ -8,7 +8,7 @@
 /// @group maas accordion
 @mixin maas-accordion {
   .p-accordion {
-    background: $white;
+    background: $color-x-light;
     border-radius: 2px;
     box-shadow: 0 1px 1px $color-border-shadow;
     box-sizing: border-box;
@@ -23,14 +23,14 @@
     // accordion main sidebar title
     .p-accordion__title {
       @include font-size(20px);
-      border-bottom: 1px dotted $muted-grey;
+      border-bottom: 1px dotted $color-mid-light;
       margin: 0;
       padding: 11px 20px 11px;
     }
 
     // accordion data block, contains all filter links and controls.
     .p-accordion__tab {
-      border-bottom: 1px dotted $muted-grey;
+      border-bottom: 1px dotted $color-mid-light;
 
       &:last-of-type {
         border: 0;
@@ -94,7 +94,7 @@
               }
 
               &:hover {
-                color: $link-color;
+                color: $color-dark;
 
                 .p-accordion__tab-link {
                   background-image: url('#{$asset-path}images/icons/cross-orange.svg');

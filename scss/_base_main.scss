@@ -9,7 +9,7 @@
 @mixin maas-main {
 
   html {
-    color: $text-color;
+    color: $color-dark;
     font: #{($base-font-size / 16px) * 1em} / #{$line-height-ratio} $base-font-family;
     font-weight: 300;
     height: 100%;

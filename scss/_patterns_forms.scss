@@ -46,17 +46,17 @@
         select,
         textarea {
           background-color: transparent;
-          border-color: $mercury-grey;
+          border-color: darken($color-light, 8%);
 
           &:hover {
-            background-color: $white;
+            background-color: $color-x-light;
             border-color: $color-mid-light;
             outline: none;
           }
 
           &:active,
           &:focus {
-            background-color: $white;
+            background-color: $color-x-light;
             border-color: $color-mid-dark;
             outline: none;
           }
@@ -84,7 +84,7 @@
           input,
           select,
           textarea {
-            background-color: $white;
+            background-color: $color-x-light;
             border-color: $color-mid-light;
             outline: none;
           }
@@ -98,7 +98,7 @@
           input,
           select,
           textarea {
-            background-color: $white;
+            background-color: $color-x-light;
             border-color: $color-mid-light;
             outline: none;
           }
@@ -200,7 +200,7 @@
   }
 
   .p-form__error {
-    color: $error;
+    color: $color-negative;
     list-style: none;
     margin: 0;
     padding: 0;

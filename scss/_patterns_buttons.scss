@@ -37,7 +37,7 @@
   .p-button--positive {
 
     &:hover {
-      color: $white;
+      color: $color-x-light;
     }
   }
 
@@ -90,7 +90,7 @@
     }
 
     .p-button-group__dropdown {
-      background: $white;
+      background: $color-x-light;
       border-radius: 3px;
       box-shadow: 0 1px 1px $color-border-shadow;
       clear: both;
