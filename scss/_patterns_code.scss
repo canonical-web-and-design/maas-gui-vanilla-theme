@@ -8,10 +8,10 @@
 /// @group maas code block
 @mixin maas-code-block {
   .p-code-block {
-    background-color: $white;
+    background-color: $color-x-light;
     border: 1px solid $color-mid-light;
     border-radius: .5em;
-    color: $cool-grey;
+    color: $color-dark;
     margin: .5em 0;
     overflow: auto;
     padding: 1em;
@@ -23,9 +23,9 @@
     }
 
     &.p-code-block--terminal {
-      background-color: $cool-grey;
+      background-color: $color-dark;
       border: 0;
-      color: $white;
+      color: $color-x-light;
     }
 
     &.p-code-block--numbering {

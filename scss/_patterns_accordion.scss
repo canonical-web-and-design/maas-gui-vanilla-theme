@@ -8,7 +8,7 @@
 /// @group maas accordion
 @mixin maas-accordion {
   .p-accordion {
-    background: $white;
+    background: $color-x-light;
     border-radius: 2px;
     box-shadow: 0 1px 1px $color-border-shadow;
     box-sizing: border-box;
@@ -23,14 +23,14 @@
     // accordion main sidebar title
     .p-accordion__title {
       @include font-size(20px);
-      border-bottom: 1px dotted $muted-grey;
+      border-bottom: 1px dotted $color-mid-light;
       margin: 0;
-      padding: 8px 20px 9px;
+      padding: 11px 20px 11px;
     }
 
     // accordion data block, contains all filter links and controls.
     .p-accordion__tab {
-      border-bottom: 1px dotted $muted-grey;
+      border-bottom: 1px dotted $color-mid-light;
 
       &:last-of-type {
         border: 0;
@@ -68,19 +68,19 @@
             .p-accordion__tab-link {
               border-bottom: 0;
               box-sizing: border-box;
-              color: $cool-grey;
+              color: $color-dark;
               display: inline-block;
               outline: 0;
               padding-right: 20px;
               width: 100%;
 
               &:hover {
-                color: $link-hover;
+                color: $color-primary-action;
                 text-decoration: none;
               }
 
               .disabled & {
-                color: $cool-grey;
+                color: $color-dark;
               }
             }
 
@@ -94,11 +94,11 @@
               }
 
               &:hover {
-                color: $link-color;
+                color: $color-dark;
 
                 .p-accordion__tab-link {
                   background-image: url('#{$asset-path}images/icons/cross-orange.svg');
-                  color: $link-hover;
+                  color: $color-primary-action;
                 }
               }
             }
@@ -110,10 +110,11 @@
 
   // Accordion patterns
   %accordion-tab-title {
+    @include font-size(16px);
     background: $color-transparent url('#{$asset-path}images/forms/chevron-down.svg') top 20px right 20px no-repeat;
     color: $color-mid-dark;
     cursor: pointer;
     margin: 0;
-    padding: 12px 20px;
+    padding: 14px 20px;
   }
 }

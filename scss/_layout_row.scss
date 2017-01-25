@@ -17,5 +17,9 @@
     &:first-of-type {
       border-top: 0;
     }
+
+    @media (max-width: $breakpoint-medium) {
+      padding: 20px;
+    }
   }
 }

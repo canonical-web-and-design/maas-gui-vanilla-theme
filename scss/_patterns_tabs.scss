@@ -18,6 +18,7 @@
       .p-tabs__tab-link {
         border-bottom: 0;
         color: $color-mid-dark;
+        font-weight: 300;
         text-decoration: none;
       }
 
@@ -26,7 +27,7 @@
       }
 
       &::after {
-        background: $outline;
+        background: lighten($color-mid-light, 2%);
         content: '';
         display: inline-block;
         height: 11px;

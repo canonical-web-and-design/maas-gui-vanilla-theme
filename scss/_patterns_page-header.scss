@@ -9,7 +9,7 @@
 @mixin maas-page-header {
 
   .p-page-header {
-    background: $white;
+    background: $color-x-light;
     box-shadow: 0 1px 1px $color-border-shadow;
     box-sizing: border-box;
     float: left;
@@ -28,7 +28,7 @@
         border: 1px solid $color-transparent;
         border-radius: 2px;
         box-sizing: border-box;
-        color: $cool-grey;
+        color: $color-dark;
         cursor: default;
         display: inline-block;
         margin: -20px 0 -20px -10px;
@@ -37,15 +37,15 @@
 
         &.editmode,
         &.editable:hover {
-          border: 1px solid $outline;
+          border: 1px solid lighten($color-mid-light, 2%);
           cursor: text;
         }
 
         &.editmode:hover,
         &:active,
         &:focus {
-          background-color: $white;
-          border: 1px solid $muted-grey;
+          background-color: $color-x-light;
+          border: 1px solid $color-mid-light;
           outline: none;
         }
 
@@ -53,7 +53,7 @@
         &.invalid:hover,
         &.invalid:active,
         &.invalid:focus {
-          border-color: $error;
+          border-color: $color-negative;
         }
       }
 
@@ -102,12 +102,12 @@
       padding: 40px 0;
 
       .p-page-header__controls-feedback {
-        border-bottom: 1px solid $link-border;
-        color: $cool-grey;
+        border-bottom: 1px solid $color-dark;
+        color: $color-dark;
         text-decoration: none;
 
         &:hover {
-          color: $link-hover;
+          color: $color-primary-action;
           cursor: pointer;
           text-decoration: none;
         }
@@ -118,6 +118,7 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height .3s ease;
+      width: 100%;
 
       &.is-open {
         max-height: 1000px;

@@ -9,12 +9,13 @@
 @mixin maas-typography {
 
   a {
-    border-bottom: 1px solid $link-border;
-    color: $cool-grey;
+    border-bottom: 1px solid $color-mid-dark;
+    color: $color-dark;
+    font-weight: 300;
     text-decoration: none;
 
     &:hover {
-      color: $link-hover;
+      color: $color-primary-action;
       text-decoration: none;
 
     }

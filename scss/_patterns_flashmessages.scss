@@ -10,10 +10,11 @@
   .p-flash-messages {
     float: left;
     margin: 0;
+    padding: 0;
     width: 100%;
 
     .p-flash-messages__item {
-      background: $white;
+      background: $color-x-light;
       background-position: top 50% left 15px;
       background-repeat: no-repeat;
       border-radius: 2px;
@@ -28,28 +29,28 @@
       }
 
       &.p-flash-messages__item--error {
-        background: $white url('#{$asset-path}images/icons/error.svg') no-repeat;
+        background: $color-x-light url('#{$asset-path}images/icons/error.svg') no-repeat;
         background-position: 15px center;
         background-size: 16px 16px;
         padding-left: 45px;
       }
 
       &.p-flash-messages__item--info {
-        background: $white url('#{$asset-path}images/icons/info.svg') no-repeat;
+        background: $color-x-light url('#{$asset-path}images/icons/info.svg') no-repeat;
         background-position: 15px center;
         background-size: 16px 16px;
         padding-left: 45px;
       }
 
       &.p-flash-messages__item--warning {
-        background: $white url('#{$asset-path}images/icons/warning.svg') no-repeat;
+        background: $color-x-light url('#{$asset-path}images/icons/warning.svg') no-repeat;
         background-position: 15px center;
         background-size: 16px 16px;
         padding-left: 45px;
       }
 
       &.p-flash-messages__item--success {
-        background: $white url('#{$asset-path}images/icons/success.svg') no-repeat;
+        background: $color-x-light url('#{$asset-path}images/icons/success.svg') no-repeat;
         background-position: 15px center;
         background-size: 16px 16px;
         padding-left: 45px;

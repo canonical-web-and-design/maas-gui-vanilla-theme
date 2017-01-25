@@ -8,6 +8,17 @@
 /// @group Forms
 @mixin maas-forms {
 
+  form > *,
+  form div > *,
+  form fieldset > * {
+    margin-bottom: 0;
+  }
+
+  form fieldset {
+    border: 0;
+    margin: 0;
+  }
+
   input {
     &[type='text'],
     &[type='number'],
@@ -18,7 +29,7 @@
     &[type='tel'] {
       @extend %input-elements;
       box-shadow: none;
-      padding: 7px 10px;
+      padding: 4px 10px;
       width: 100%;
 
       &::placeholder {
@@ -79,7 +90,7 @@
   select {
     @extend %input-elements;
     appearance: none;
-    background-color: $white;
+    background-color: $color-x-light;
     background-image: url('#{$asset-path}images/forms/chevron-down.svg');
     background-position: top 14px right 10px;
     background-repeat: no-repeat;
@@ -88,7 +99,8 @@
     cursor: pointer;
     display: block;
     margin: 0;
-    padding: 7px 30px 7px 10px;
+    min-height: 0;
+    padding: 8px 30px 8px 10px;
     text-indent: .01px;
     text-overflow: '';
     width: 100%;
@@ -132,7 +144,7 @@
   }
 
   /// Base for label styling
-  [type='checkbox'] {
+  input[type='checkbox'] {
     &:not(:checked),
     &:checked {
       left: -9999px;
@@ -141,20 +153,22 @@
 
     + label {
       cursor: pointer;
-      height: 16px;
+      height: auto;
+      line-height: 34px;
       padding-left: 25px;
       position: relative;
+      width: auto;
 
       &::before {
-        background: $white;
+        background: $color-x-light;
         border: 1px solid $color-mid-light;
         border-radius: 2px;
         content: '';
-        height: 11px;
+        height: 16px;
         left: 0;
         position: absolute;
-        top: 3px;
-        width: 11px;
+        top: 8px;
+        width: 16px;
       }
     }
 
@@ -168,13 +182,13 @@
         }
 
         &::after {
-          color: $white;
+          color: $color-x-light;
           content: '✔';
           font-size: 10px;
-          left: 3px;
+          left: 4px;
           line-height: 13px;
           position: absolute;
-          top: 3px;
+          top: 9px;
           transition: .2s;
 
           // scss-lint:disable no-vendor-prefixes
@@ -200,7 +214,7 @@
     }
   }
 
-  [type='radio'] {
+  input[type='radio'] {
     &:not(:checked),
     &:checked {
       left: -9999px;
@@ -211,17 +225,18 @@
       cursor: pointer;
       padding-left: 25px;
       position: relative;
+      width: auto;
 
       &::before {
-        background: $white;
+        background: $color-x-light;
         border: 1px solid $color-mid-light;
         border-radius: 50%;
         content: '';
-        height: 13px;
+        height: 16px;
         left: 0;
         position: absolute;
-        top: 1px;
-        width: 13px;
+        top: 3px;
+        width: 16px;
       }
     }
 
@@ -233,11 +248,11 @@
           background: $input-checked;
           border-radius: 50%;
           content: '';
-          height: 9px;
-          left: 3px;
+          height: 8px;
+          left: 4px;
           position: absolute;
-          top: 4px;
-          width: 9px;
+          top: 7px;
+          width: 8px;
         }
       }
     }
@@ -318,7 +333,7 @@
     &::before,
     &::after {
       box-sizing: border-box;
-      color: $white;
+      color: $color-x-light;
       display: block;
       float: left;
       height: 18px;
@@ -327,14 +342,14 @@
     }
 
     &::before {
-      background-color: $success;
-      color: $white;
+      background-color: $color-positive;
+      color: $color-x-light;
       content: '';
       padding-left: 10px;
     }
 
     &::after {
-      background-color: $gallery-grey;
+      background-color: $color-light;
       color: $color-mid-dark;
       content: '';
       padding-right: 10px;
@@ -343,13 +358,13 @@
   }
 
   .onoffswitch-switch {
-    background: $white;
-    border: 1px solid $outline;
+    background: $color-x-light;
+    border: 1px solid $color-mid-light;
     border-radius: 2px;
     bottom: 0;
     box-sizing: border-box;
     display: block;
-    height: 16px;
+    height: 18px;
     margin: 0;
     position: absolute;
     right: 19px;

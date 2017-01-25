@@ -8,7 +8,7 @@
 /// @group Icons
 @mixin maas-list-tree {
   .p-list__tree {
-    border-left: 1px solid $outline;
+    border-left: 1px solid lighten($color-mid-light, 2%);
     list-style: none;
     padding: 0;
     position: relative;
@@ -27,7 +27,7 @@
       list-style: none;
 
       &::before {
-        background: $outline;
+        background: lighten($color-mid-light, 2%);
         content: '';
         display: inline-block;
         height: 1px;
@@ -38,7 +38,7 @@
       }
 
       &:last-child::after {
-        background: $off-white;
+        background: $color-light;
         bottom: -6px;
         content: '';
         display: block;
