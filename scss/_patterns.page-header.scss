@@ -239,5 +239,9 @@
         float: right;
       }
     }
+
+    + .page-navigation {
+      border-top: 1px dotted $outline;
+    }
   }
 }
