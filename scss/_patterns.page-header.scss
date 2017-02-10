@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-page-header
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// MAAS Page header
@@ -13,15 +13,28 @@
     background: $white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     padding: 0 20px;
-    width: 100%;
+    height: auto !important;
+    width: 100% !important;
     float: left;
     margin-bottom: 20px;
+    overflow: visible;
+
+    @media only screen and (max-width : $breakpoint-medium) {
+      padding: 0 10px;
+      width: 100%;
+    }
 
     .page-header__title {
       @include font-size($h1);
       margin: 0;
       padding: 34px 0;
       display: inline-block;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        font-size: 1.5rem;
+        padding: 20px 0;
+        width: 100%;
+      }
 
       [contenteditable="true"] {
         @include font-size($h1);
@@ -34,6 +47,13 @@
         color: $cool-grey;
         cursor: default;
         display: inline-block;
+
+        @media only screen and (max-width : $breakpoint-medium) {
+          border: 1px solid $outline;
+          margin: 0;
+          width: 100%;
+          font-size: 1.5rem;
+        }
 
         &.editmode,
         &.editable:hover {
@@ -61,6 +81,10 @@
         display: inline-block;
         width: auto;
         padding: 0;
+
+        @media only screen and (max-width : $breakpoint-medium) {
+          display: none;
+        }
       }
 
       .page-header__title-domain {
@@ -73,6 +97,12 @@
         margin: -20px 0;
         background-position: top 32px right 10px;
         padding: 13px 10px !important;
+
+        @media only screen and (max-width : $breakpoint-medium) {
+          width: 100%;
+          margin: 20px 0 0;
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -84,6 +114,19 @@
       margin-left: 20px;
       color: $warm-grey;
 
+      @media only screen and (max-width : $breakpoint-medium) {
+        margin: 0 0 20px;
+        width: 100%;
+      }
+
+      .page-header__status-text {
+        @media only screen and (max-width : $breakpoint-medium) {
+          margin: 0 !important;
+          width: 50%;
+          display: inline-block;
+        }
+      }
+
       .page-header__status-check {
         @include font-size(16px);
         margin-left: 10px;
@@ -93,6 +136,12 @@
         &:hover {
           text-decoration: underline;
         }
+
+        @media only screen and (max-width : $breakpoint-medium) {
+          margin: 0;
+          width: 50%;
+          display: inline-block;
+        }
       }
     }
 
@@ -100,6 +149,19 @@
       padding: 40px 0;
       display: inline-block;
       float: right;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        padding: 0 0 20px;
+        width: 100%;
+
+        [class^="button--"] {
+          margin-top: 10px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
 
       .page-header__controls-feedback {
         color: $cool-grey;
@@ -111,17 +173,20 @@
           color: $link-hover;
           cursor: pointer;
         }
+
+        @media only screen and (max-width : $breakpoint-medium) {
+          margin-bottom: 20px;
+          display: inline-block;
+          clear: both;
+        }
       }
     }
 
     .page-header__dropdown {
       max-height: 0;
       overflow: hidden;
-      //scss-lint:disable VendorPrefixes
-      -webkit-transition: max-height .3s ease;
-      -moz-transition: max-height .3s ease;
       transition: max-height .3s ease;
-      //scss-lint:enable VendorPrefixes
+      width: 100%;
 
       &.is-open {
         max-height: 1000px;
@@ -139,7 +204,6 @@
         float: none;
         margin: 0 20px 0 0;
         line-height: 36px;
-        vertical-align: middle;
       }
 
       .page-header__message--error {
@@ -173,7 +237,6 @@
       .page-header__controls {
         padding: 0;
         float: right;
-        vertical-align: middle;
       }
     }
   }

@@ -2,9 +2,8 @@
 @import '../node_modules/cloud-vanilla-theme/scss/theme';
 
 // Theme variables
-@import 'settings.colors';
-@import 'settings.fonts';
 @import 'settings.defaults';
+@import 'settings.fonts';
 
 // Theme base styles
 @import 'base.main';
@@ -20,7 +19,8 @@
 @import 'components.buttons';
 @import 'components.forms';
 @import 'components.code';
-@import 'components.flashmessages';
+@import 'components.grid';
+@import 'components.notifications';
 @import 'components.icons';
 @import 'components.list-tree';
 @import 'components.tables';
@@ -30,6 +30,7 @@
 // Theme pattern styles
 @import 'patterns.accordion';
 @import 'patterns.action-card';
+@import 'patterns.footer';
 @import 'patterns.header';
 @import 'patterns.page-header';
 @import 'patterns.search';
@@ -43,23 +44,21 @@
 @import 'helpers.vertical-alignment';
 @import 'helpers.mixins';
 
-@import 'scratch.docs';
-
 // MAAS theme
 @mixin maas-gui-vanilla-theme {
   @include cloud-vanilla-theme;
-  @include maas-fonts;
   @include maas-main;
   @include maas-typography;
   @include maas-forms;
   @include maas-definition-list;
   @include maas-wrapper;
   @include maas-row;
+  @include maas-grid;
   @include maas-buttons;
   @include maas-button-group;
   @include maas-form-layouts;
   @include maas-code-block;
-  @include maas-flash-messages;
+  @include maas-notifications;
   @include maas-icons;
   @include maas-list-tree;
   @include maas-table;
@@ -67,6 +66,7 @@
   @include maas-tooltips;
   @include maas-accordion;
   @include maas-action-card;
+  @include maas-footer;
   @include maas-header;
   @include maas-page-header;
   @include maas-search;

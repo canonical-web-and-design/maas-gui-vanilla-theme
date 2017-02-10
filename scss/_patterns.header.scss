@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-header
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// MAAS header styling
@@ -10,6 +10,29 @@
 
   .banner {
     background-color: $black;
+    min-height: 49px;
+
+    .nav-primary {
+
+      .logo {
+
+        a {
+          border-bottom: 0;
+
+          svg,
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    .nav-toggle {
+
+      a {
+        border-bottom: 0;
+      }
+    }
 
     @media only screen and (min-width: $navigation-threshold) {
       box-shadow: none;
@@ -26,30 +49,31 @@
           }
         }
 
-        ul li {
-          border-left: 1px solid $cool-grey;
+        ul {
 
-          &:last-child {
-            border-right: 1px solid $cool-grey;
+          li {
             border-left: 1px solid $cool-grey;
-          }
 
-          a,
-          a:link,
-          a:visited {
-            box-sizing: border-box;
-            border-bottom: 0;
-            border-left: 0;
-
-            &:hover {
-              background-color: rgba($cool-grey, .9);
+            &:last-child {
+              border-right: 1px solid $cool-grey;
+              border-left: 1px solid $cool-grey;
             }
 
-            &.active {
-              background-color: $transparent;
-              box-shadow: inset 0 -3px $link-hover;
+            a,
+            a:link,
+            a:visited {
+              box-sizing: border-box;
+              border-bottom: 0;
+              border-left: 0;
 
-              &:hover {
+              &.active {
+                background-color: $transparent;
+                box-shadow: inset 0 -3px $primary-button-color;
+                font-weight: 400;
+              }
+
+              &:hover,
+              &.active:hover {
                 background-color: rgba($cool-grey, .9);
               }
             }

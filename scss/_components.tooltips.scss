@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-tool-tips
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// Tooltip element styles
@@ -56,6 +56,10 @@
       opacity: 1 !important;
       z-index: 1000;
       visibility: visible;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        display: none;
+      }
     }
 
     &.tooltip--right {

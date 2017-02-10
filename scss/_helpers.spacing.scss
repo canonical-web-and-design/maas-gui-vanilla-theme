@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-spacing
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// Spacing
@@ -14,7 +14,7 @@
 @mixin spacing($spacing, $spacing-unit) {
 
   $directions:                    top right bottom left;
-  $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
+  $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, medium: ($spacing-unit * 3) / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
 
   .u-#{$spacing} {
     #{$spacing}: $spacing-unit;
@@ -43,6 +43,12 @@
           }
         }
       }
+    }
+  }
+
+  .u-mobile-margin--bottom {
+    @media only screen and (max-width : $breakpoint-medium) {
+      margin-bottom: 20px !important;
     }
   }
 }

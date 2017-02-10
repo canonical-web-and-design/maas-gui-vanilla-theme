@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-search
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// MAAS search
@@ -77,7 +77,7 @@
       }
 
       &.search__submit--close {
-        background-image: url('#{$asset-path}44221cb1-remove.svg');
+        background-image: url('#{$asset-path}89c10794-remove.svg');
         background-size: 16px;
       }
     }

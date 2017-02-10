@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-wrapper
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// MAAS wrapper styling
@@ -15,21 +15,6 @@
     // scss-lint:enable DuplicateProperty
     margin: 0 auto;
     position: relative;
-    background: rgba($white, .4);
-
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: url('#{$asset-path}f8a323a7-background-paper.png');
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-    }
 
     &--inner {
       max-width: $site-max-width;
@@ -37,6 +22,11 @@
       margin: 0 auto;
       clear: both;
       display: block;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        float: left;
+        width: 100%;
+      }
     }
 
     &--flex {

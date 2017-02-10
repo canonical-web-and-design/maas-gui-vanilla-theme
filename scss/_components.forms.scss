@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-vf-forms
-/// @since        0.0.3
+/// @since        1.0.1
 ////
 
 /// Form layout element styles
@@ -22,7 +22,7 @@
           cursor: pointer;
           height: 16px;
           width: 16px;
-          background: url('#{$asset-path}44221cb1-remove.svg') no-repeat;
+          background: url('#{$asset-path}89c10794-remove.svg') no-repeat;
           background-size: 75% 75%;
           background-position: center;
           display: inline-block;
@@ -139,6 +139,11 @@
         width: auto;
         margin: 0;
         vertical-align: middle;
+
+        @media only screen and (max-width : $breakpoint-medium) {
+          display: block;
+          width: 100%;
+        }
       }
 
       .form__group {
@@ -146,11 +151,27 @@
         margin: 0 20px 0 0;
         vertical-align: top;
 
+        @media only screen and (max-width : $breakpoint-medium) {
+          display: block;
+          width: 100%;
+        }
+
         .form__group-label {
           margin-bottom: 0;
           margin-right: 10px;
           vertical-align: top;
           line-height: 34px;
+
+          @media only screen and (max-width : $breakpoint-medium) {
+            display: block;
+            width: 100%;
+          }
+
+          .icon--left {
+            position: absolute;
+            left: 0;
+            top: 12px;
+          }
         }
 
         input,
@@ -159,6 +180,17 @@
           display: inline-block;
           width: auto;
           min-height: 34px;
+
+          @media only screen and (max-width : $breakpoint-medium) {
+            display: block;
+            width: 100%;
+
+            + input,
+            + select,
+            + .form__group-input {
+              margin-top: 10px;
+            }
+          }
         }
 
         [type='checkbox'] + label,
@@ -167,7 +199,7 @@
         }
 
         .onoffswitch {
-          margin: 9px 0 0;
+          margin: 10px 0;
         }
 
         .onoffswitch-external-label {

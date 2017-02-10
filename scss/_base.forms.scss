@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/vanilla-framework/docs/#mixin-maas-forms
-/// @since        0.0.3
+/// @since        1.0.1
 ////
 
 /// Form element styles
@@ -22,6 +22,9 @@
       padding: 7px 10px;
       box-shadow: none;
       width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
 
       &::placeholder {
         color: $warm-grey;
@@ -61,11 +64,17 @@
 
   // Text area styles
   textarea {
+    // Remove First
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     height: auto;
     min-height: 175px;
     padding: 7px 10px !important;
     box-shadow: none;
     width: 100%;
+    line-height: 20px;
 
     &::placeholder {
       color: $warm-grey;
@@ -132,6 +141,11 @@
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
+
+    @media only screen and (max-width : $breakpoint-medium) {
+      width: 100%;
+      color: $warm-grey;
+    }
   }
 
   /// Base for label styling
@@ -144,44 +158,44 @@
     }
 
     + label {
-      height: 16px;
+      min-height: 34px;
+      line-height: 34px;
       position: relative;
       padding-left: 25px;
       cursor: pointer;
+      display: inline-block !important;
 
       &:before {
         content: '';
         position: absolute;
         left: 0;
-        top: 3px;
-        width: 11px;
-        height: 11px;
+        top: 9px;
+        width: 16px;
+        height: 16px;
         border: 1px solid $mid-grey;
         background: $white;
         border-radius: 2px;
+        box-sizing: border-box;
+      }
+
+      &:hover {
+
+        &:before {
+          background: url('#{$asset-path}46b44caf-checkbox-hover.svg') no-repeat;
+          background-size: 100% 100%;
+        }
       }
     }
 
     &:checked {
 
-      + label:before {
-        background-color: $input-checked;
-        border-color: $input-checked;
-      }
+      + label {
 
-      + label:after {
-        content: '✔';
-        position: absolute;
-        line-height: 13px;
-        top: 3px;
-        left: 3px;
-        font-size: 10px;
-        color: $white;
-        transition: all .2s;
+        &:before {
+          background: url('#{$asset-path}db8d0984-checkbox.svg') no-repeat;
+          background-size: 100% 100%;
 
-        @-moz-document url-prefix() {
-          font-size: 13px;
-          left: 1px;
+          border: 0;
         }
       }
     }
@@ -211,17 +225,40 @@
       position: relative;
       padding-left: 25px;
       cursor: pointer;
+      display: inline-block !important;
 
       &:before {
         content: '';
         position: absolute;
         left: 0;
-        top: 1px;
+        top: 5px;
         width: 13px;
         height: 13px;
         border: 1px solid $mid-grey;
         background: $white;
         border-radius: 50%;
+      }
+
+      &:after {
+        transition: opacity .4s ease;
+        opacity: 0;
+        content: '';
+        position: absolute;
+      }
+
+      &:hover {
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 4px;
+          top: 9px;
+          width: 7px;
+          height: 7px;
+          background: $alto-grey;
+          border-radius: 50%;
+          opacity: 1;
+        }
       }
     }
 
@@ -231,11 +268,12 @@
         content: '';
         position: absolute;
         left: 3px;
-        top: 4px;
+        top: 8px;
         width: 9px;
         height: 9px;
-        background: $input-checked;
+        background: $component-color;
         border-radius: 50%;
+        opacity: 1;
       }
     }
   }
@@ -257,6 +295,7 @@
 
         .remove-button {
           border-bottom: 0;
+          color: $cool-grey;
         }
       }
     }
@@ -271,7 +310,8 @@
     display: inline-block;
     vertical-align: middle;
     width: 38px;
-    margin: 0 0 4px;
+    height: 16px;
+    margin: 10px 0 0;
     //scss-lint:disable VendorPrefixes
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -304,6 +344,11 @@
     border-radius: 2px;
     padding-left: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
+    min-height: 16px !important;
+    max-height: 16px;
+    line-height: 16px !important;
+    vertical-align: top !important;
 
     &:before,
     &:after {
@@ -335,7 +380,7 @@
     &:before {
       content: '';
       padding-left: 10px;
-      background-color: $success;
+      background-color: $component-color;
       color: $white;
     }
 

@@ -1,24 +1,45 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-display
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// Display
 /// @group Display
 @mixin maas-display {
-  .u-text {
+  .u-align {
 
-    &--right {
-      text-align: right !important;
+    @media only screen and (min-width : $breakpoint-min-medium) {
+      &--right {
+        text-align: right !important;
+      }
+
+      &--left {
+        text-align: left !important;
+      }
+
+      &--center {
+        text-align: center !important;
+      }
     }
 
-    &--left {
+    &--left-mobile {
       text-align: left !important;
     }
+  }
 
-    &--center {
-      text-align: center !important;
+  .u-position {
+
+    &--relative {
+      position: relative !important;
+    }
+
+    &--fixed {
+      position: fixed !important;
+    }
+
+    &--absolute {
+      position: absolute !important;
     }
   }
 
@@ -50,6 +71,12 @@
 
     &--block {
       display: block !important;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        &-mobile {
+          display: block !important;
+        }
+      }
     }
 
     &--inline {
@@ -63,32 +90,81 @@
     &--hidden {
       display: none !important;
     }
+
+    &--desktop {
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        position: absolute !important;
+        visibility: hidden !important;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &--mobile {
+
+      @media only screen and (min-width : $breakpoint-min-medium) {
+        position: absolute !important;
+        visibility: hidden !important;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+      }
+    }
   }
 
   .u-width {
 
     &--full {
-      width: 100% !important;
       box-sizing: border-box;
       float: left;
+      width: 100% !important;
     }
 
     &--half {
-      width: 50% !important;
       box-sizing: border-box;
       float: left;
+      width: 50% !important;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        width: 100% !important;
+      }
     }
 
     &--third {
-      width: calc(100%/3) !important;
       box-sizing: border-box;
       float: left;
+      width: calc(100%/3) !important;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        width: 100% !important;
+      }
     }
 
     &--quarter {
-      width: 25% !important;
       box-sizing: border-box;
       float: left;
+      width: 25% !important;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .u-scroll {
+
+    &--none {
+      overflow: hidden;
+    }
+  }
+
+  .u-mobile {
+
+    &--offscreen {
+      left: -100vw;
+      display: none !important;
     }
   }
 }

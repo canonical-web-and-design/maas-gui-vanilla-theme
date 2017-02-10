@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-code-block
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// MAAS code block
@@ -13,8 +13,6 @@
     padding: 1em;
     border: 1px solid $mid-grey;
     border-radius: .5em;
-    background-color: $white;
-    color: $cool-grey;
 
     .code-block__line {
       float: left;

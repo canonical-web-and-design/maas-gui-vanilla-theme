@@ -1,7 +1,7 @@
 ////
 /// @author       Web Team at Canonical Ltd
 /// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-icons
-/// @since        0.0.1
+/// @since        1.0.0
 ////
 
 /// Icons
@@ -11,71 +11,49 @@
   .icon {
     @include icon-size(16px);
     padding: 0;
-    border-bottom: 0;
+    border-bottom: 0 !important;
     display: inline-block;
     vertical-align: middle;
     text-indent: 999em;
 
     &.icon--account {
-      background: url('#{$asset-path}9dcb63da-account.svg') no-repeat;
+      background: url('#{$asset-path}d760df7b-account.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--add {
-      background: url('#{$asset-path}b7f0f831-add.svg') no-repeat;
-      background-size: 100% 100%;
-    }
-
-    &.icon--cross-orange {
-      background: url('#{$asset-path}557b45a3-cross-orange.svg') no-repeat;
-      background-size: 100% 100%;
-    }
-
-    &.icon--cross {
-      background: url('#{$asset-path}73fb3728-cross.svg') no-repeat;
+      background: url('#{$asset-path}5c9708d2-add.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--debug {
-      background: url('#{$asset-path}dfe8c043-debug.svg') no-repeat;
+      background: url('#{$asset-path}a02192e3-debug.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--delete {
-      background: url('#{$asset-path}2a1abd77-delete.svg') no-repeat;
+      background: url('#{$asset-path}b5573b6a-delete.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--edit {
-      background: url('#{$asset-path}9f2dd30d-edit.svg') no-repeat;
+      background: url('#{$asset-path}b562c17f-edit.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--error {
-      background: url('#{$asset-path}f5366577-error.svg') no-repeat;
+      background: url('#{$asset-path}d730daea-error.svg') no-repeat;
       background-size: 100% 100%;
-
-      &-mono {
-        background: url('#{$asset-path}14705925-error-mono.svg') no-repeat;
-      }
     }
 
     &.icon--help {
-      background: url('#{$asset-path}4bc397b0-help.svg') no-repeat;
+      background: url('#{$asset-path}908ee6a0-help.svg') no-repeat;
       background-size: 100% 100%;
-
-      &-mono {
-        background: url('#{$asset-path}b570a10b-help-mono.svg') no-repeat;
-      }
     }
 
     &.icon--info {
-      background: url('#{$asset-path}ea90dd64-info.svg') no-repeat;
+      background: url('#{$asset-path}2355399b-info.svg') no-repeat;
       background-size: 100% 100%;
-
-      &-mono {
-        background: url('#{$asset-path}9753b192-info-mono.svg') no-repeat;
-      }
     }
 
     &.icon--loading {
@@ -89,42 +67,38 @@
     }
 
     &.icon--unmount {
-      background: url('#{$asset-path}e5d8a2bf-unmount.svg') no-repeat;
+      background: url('#{$asset-path}d88a05ba-unmount.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--partition {
-      background: url('#{$asset-path}fd624514-partition.svg') no-repeat;
+      background: url('#{$asset-path}8b8eb7d5-partition.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--power-error {
-      background: url('#{$asset-path}e5ade4a5-power-error.svg') no-repeat;
+      background: url('#{$asset-path}b8119c45-power-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--power-off {
-      background: url('#{$asset-path}0c046ad4-power-off.svg') no-repeat;
+      background: url('#{$asset-path}50fc9223-power-off.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--power-on {
-      background: url('#{$asset-path}f8836635-power-on.svg') no-repeat;
+      background: url('#{$asset-path}d53683c4-power-on.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--remove {
-      background: url('#{$asset-path}44221cb1-remove.svg') no-repeat;
+      background: url('#{$asset-path}89c10794-remove.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--success {
-      background: url('#{$asset-path}2477be54-success.svg') no-repeat;
+      background: url('#{$asset-path}89c6b797-success.svg') no-repeat;
       background-size: 100% 100%;
-
-      &-mono {
-        background: url('#{$asset-path}a5cbd685-success-mono.svg') no-repeat;
-      }
 
       &-grey {
         background: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="success"><rect id="rect6708" x="0" y="9.99999989e-06" width="16" height="16"></rect><circle id="circle6710" stroke="#{$warm-grey}" stroke-width="1.5" fill="#{$warm-grey}" cx="8" cy="8.00001" r="7.2500086"></circle><polygon id="path6712" fill="#{$white}" points="11.80029 4.92345 11.73439 4.98115 6.99964 9.12837 4.22407 6.74743 3.38501 7.69631 7.00033 11.50002 12.5 5.71278 11.80029 4.92349"></polygon></g></g></svg>');
@@ -133,52 +107,48 @@
     }
 
     &.icon--settings {
-      background: url('#{$asset-path}08f37fb1-settings.svg') no-repeat;
+      background: url('#{$asset-path}314a253d-settings.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--sync {
-      background: url('#{$asset-path}03edae28-sync.svg') no-repeat;
+      background: url('#{$asset-path}f5453933-sync.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--search {
-      background: url('#{$asset-path}e6dccddb-magnifying_glass.svg') no-repeat;
+      background: url('#{$asset-path}9cc42dcc-magnifying_glass.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--system-shutdown {
-      background: url('#{$asset-path}4574f6cf-system-shutdown.svg') no-repeat;
+      background: url('#{$asset-path}1cdcdb82-system-shutdown.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--tooltip {
-      background: url('#{$asset-path}6a7949e6-tooltip.svg') no-repeat;
+      background: url('#{$asset-path}b2fadbbe-tooltip.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--tags {
-      background: url('#{$asset-path}1f9f62c6-tags.svg') no-repeat;
+      background: url('#{$asset-path}d0374f79-tags.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--tick {
-      background: url('#{$asset-path}87f100d4-tick.svg') no-repeat;
+      background: url('#{$asset-path}6c395e6d-green-tick.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--logical-volume {
-      background: url('#{$asset-path}5152499a-logical-volume.svg') no-repeat;
+      background: url('#{$asset-path}b77e606e-logical-volume.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--warning {
-      background: url('#{$asset-path}7eed27e0-warning.svg') no-repeat;
+      background: url('#{$asset-path}5777c0c7-warning.svg') no-repeat;
       background-size: 100% 100%;
-
-      &-mono {
-        background: url('#{$asset-path}704658b0-warning-mono.svg') no-repeat;
-      }
     }
 
     &.icon--open {
