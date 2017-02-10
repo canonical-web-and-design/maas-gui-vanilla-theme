@@ -40,7 +40,7 @@
         border: 0;
         border-radius: 2px;
         box-sizing: border-box;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
         display: block;
         margin-bottom: 20px;
         width: 100%;
@@ -221,7 +221,7 @@
 
           + label {
             margin: 0;
-            top: 0px;
+            top: 0;
             min-height: 16px;
 
             &:before {
@@ -510,9 +510,8 @@
 
     .table__head {
       display: table-head;
-      width: 100%;
       box-sizing: border-box;
-      width: auto !important;
+      width: auto;
 
       &.table__head--sticky {
         background: $white;
@@ -729,7 +728,7 @@
       width: 100%;
 
       @media only screen and (max-width : $breakpoint-medium) {
-        background: #fff;
+        background: $white;
         border: 0;
         box-sizing: border-box;
         top: 0;
@@ -751,7 +750,7 @@
           width: 100%;
           float: left;
           display: block;
-          box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
           padding: 15px 10px;
           margin: 0;
           background: $white;
@@ -860,7 +859,7 @@
             &--children {
               @media only screen and (max-width : $breakpoint-medium) {
                 padding: 10px 10px 10px 50% !important;
-                border-top: 1px dotted #d2d2d2;
+                border-top: 1px dotted $outline;
 
                 &:before {
                   display: block;
@@ -976,7 +975,7 @@
       border-color: $color;
 
       @media only screen and (max-width: $breakpoint-medium) {
-        background-color: lighten($color, 50%);
+        background-color: rgba($color, .2);
       }
 
       .table__header,
@@ -984,7 +983,7 @@
       th,
       td {
         border-color: $color;
-        background-color: lighten($color, 50%);
+        background-color: rgba($color, .2);
       }
     }
   }
