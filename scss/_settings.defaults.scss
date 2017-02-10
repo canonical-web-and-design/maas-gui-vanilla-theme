@@ -1,6 +1,6 @@
 /// assets database path
-/// usage: background: url(#{$asset-path}img/backgrounds/background.jpg) no-repeat 0 0;
-$asset-path: '../../assets/images/';
+/// usage: background: url(#{$asset-path}images/img/backgrounds/background.jpg) no-repeat 0 0;
+$asset-path: '../../assets/';
 
 /// MAAS font sizes
 $base-font-family:      "'Ubuntu', Arial, 'libra sans', sans-serif";
@@ -45,6 +45,7 @@ $success:               #0e8420;
 $warning:               #f99b11;
 $disabled:              $gallery-grey;
 $editable:              $white;
+$off:                   #666 !default;
 
 /// MAAS Form colours
 $primary-button-color:  #dd4814;
@@ -66,7 +67,7 @@ $breakpoint-min-medium: 769px;
 // MAAS states
 $states: (
   error: $error,
-  off: $outline,
+  off: $off,
   warning: $warning,
   success: $success,
   on: $success,

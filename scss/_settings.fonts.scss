@@ -9,8 +9,8 @@
 @mixin maas-fonts {
 
   @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-l-webfont', 300, normal, $exts: eot woff ttf svg);
-  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-li-webfont', 300, italic);
-  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-r-webfont', 400, normal, $exts: eot woff ttf svg);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-li-webfont', 300, italic, $exts: eot woff ttf svg);
+  @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-r-webfont', 400, normal, $exts: eot woff woff2 ttf svg);
   @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-m-webfont', 500, normal, $exts: eot woff ttf svg);
   @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-mi-webfont', 500, italic);
   @include font-face('Ubuntu', '#{$asset-path}fonts/ubuntu-b-webfont', 700, normal);

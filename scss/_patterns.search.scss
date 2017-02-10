@@ -58,7 +58,7 @@
       top: 15px;
       right: 15px;
       background-color: $transparent;
-      background-image: url('#{$asset-path}e6dccddb-magnifying_glass.svg');
+      background-image: url('#{$asset-path}images/9cc42dcc-magnifying_glass.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 20px;
@@ -73,11 +73,11 @@
 
       &:hover {
         background-color: $transparent;
-        background-image: url('#{$asset-path}e6dccddb-magnifying_glass.svg');
+        background-image: url('#{$asset-path}images/9cc42dcc-magnifying_glass.svg');
       }
 
       &.search__submit--close {
-        background-image: url('#{$asset-path}89c10794-remove.svg');
+        background-image: url('#{$asset-path}images/89c10794-remove.svg');
         background-size: 16px;
       }
     }

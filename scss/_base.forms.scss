@@ -93,7 +93,7 @@
     clear: both;
     cursor: pointer;
     margin: 0;
-    background-image: url('#{$asset-path}04d2075a-chevron-down.svg');
+    background-image: url('#{$asset-path}images/04d2075a-chevron-down.svg');
     background-repeat: no-repeat;
     background-position: top 14px right 10px;
     background-color: $white;
@@ -181,7 +181,7 @@
       &:hover {
 
         &:before {
-          background: url('#{$asset-path}46b44caf-checkbox-hover.svg') no-repeat;
+          background: url('#{$asset-path}images/46b44caf-checkbox-hover.svg') no-repeat;
           background-size: 100% 100%;
         }
       }
@@ -192,7 +192,7 @@
       + label {
 
         &:before {
-          background: url('#{$asset-path}db8d0984-checkbox.svg') no-repeat;
+          background: url('#{$asset-path}images/db8d0984-checkbox.svg') no-repeat;
           background-size: 100% 100%;
 
           border: 0;

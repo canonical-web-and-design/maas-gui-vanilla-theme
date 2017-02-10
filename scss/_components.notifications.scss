@@ -62,7 +62,7 @@
     border-color: $success;
 
     .p-notification__response {
-      background-image: url('#{$asset-path}89c6b797-success.svg');
+      background-image: url('#{$asset-path}images/89c6b797-success.svg');
       padding-left: 1.5rem;
     }
   }
@@ -75,7 +75,7 @@
     border-color: $warning;
 
     .p-notification__response {
-      background-image: url('#{$asset-path}5777c0c7-warning.svg');
+      background-image: url('#{$asset-path}images/5777c0c7-warning.svg');
       padding-left: 1.5rem;
     }
   }
@@ -88,7 +88,7 @@
     border-color: $error;
 
     .p-notification__response {
-      background-image: url('#{$asset-path}d730daea-error.svg');
+      background-image: url('#{$asset-path}images/d730daea-error.svg');
       padding-left: 1.5rem;
     }
   }

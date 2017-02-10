@@ -54,11 +54,11 @@
 
       @media only screen and (max-width : $breakpoint-medium) {
         border-bottom: 0;
-        background: $transparent url('#{$asset-path}04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
+        background: $transparent url('#{$asset-path}images/04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
 
         &.is-active {
           border-bottom: 1px dotted $muted-grey;
-          background-image: url('#{$asset-path}73fb3728-cross.svg');
+          background-image: url('#{$asset-path}images/89c10794-remove.svg');
 
           + .accordion__content {
             display: block;
@@ -87,7 +87,7 @@
 
         &.is-active {
           @extend %accordion__tab-title;
-          background-image: url('#{$asset-path}f3f43376-chevron-up.svg');
+          background-image: url('#{$asset-path}images/f3f43376-chevron-up.svg');
 
           + .accordion__tab-content {
             max-height: 400px;
@@ -138,7 +138,7 @@
               font-weight: 400;
 
               .accordion__tab-link {
-                background: $transparent url('#{$asset-path}89c10794-remove.svg') top 7px right 0 no-repeat;
+                background: $transparent url('#{$asset-path}images/89c10794-remove.svg') top 7px right 0 no-repeat;
                 background-size: 12px;
                 text-decoration: none;
               }
@@ -159,7 +159,7 @@
     margin: 0;
     color: $warm-grey;
     cursor: pointer;
-    background: $transparent url('#{$asset-path}04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
+    background: $transparent url('#{$asset-path}images/04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
   }
   // scss-lint:enable NestingDepth SelectorDepth
 }
