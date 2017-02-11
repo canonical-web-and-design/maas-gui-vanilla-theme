@@ -10,7 +10,7 @@ A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-frame
 If you just need to include the latest compiled version of the MAAS GUI Framework, use our hosted version and fonts to kick start you project.
 
 ``` html
-<link href="https://assets.ubuntu.com/v1/0ccafbe2-maas-gui-framework.build-1.1.0.min.css"rel="stylesheet" type="text/css" media="screen">
+<link href="https://assets.ubuntu.com/v1/ff49080f-maas-gui-framework.build-1.1.1.min.css"rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 ```
 
@@ -36,7 +36,14 @@ You can override any of the settings in [_settings.defaults.scss](scss/_settings
 
 To see the latest changes and updates live please view the [demo page](http://ubuntudesign.github.io/maas-gui-vanilla-theme/)
 
-## Change log (v1.1.0)
+## Change log
+
+### v1.1.1
+
+- Uploading missing font assets and giving the ability to turn on or off local assets for fonts in ```_settings.defaults.scss```
+- Removing the sass docs gulp requirements, gulp command and scss comments.
+
+### v1.1.0
 
 - Updated all icons and colour set within the framework. This will keep inline with the Vanilla Framework and the new visual update which is going across all products
 - Links have changed from black to blue. This keeps MAAS inline with Juju and other Cloud products also improves the visual UX.
@@ -51,4 +58,3 @@ To see the latest changes and updates live please view the [demo page](http://ub
 Code licensed [LGPLv3](http://opensource.org/licenses/lgpl-3.0.html) by [Canonical Ltd](http://www.canonical.com/)
 
 With ♥ from Canonical
-
