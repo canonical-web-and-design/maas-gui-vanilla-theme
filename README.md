@@ -17,7 +17,7 @@ If you just need to include the latest compiled version of the MAAS GUI Framewor
 
 ## Including Vanilla in your project via NPM
 
-Pull down the latest version of Vanilla into your local `node_modules` folder
+Pull down the latest version of MAAS GUI Framework into your local `node_modules` folder
 and save it into your project's dependencies (`package.json`) as follows:
 
 ``` bash
