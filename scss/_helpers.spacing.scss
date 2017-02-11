@@ -1,11 +1,4 @@
-////
-/// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-spacing
-/// @since        1.0.0
-////
-
 /// Spacing
-/// @group Spacing
 @mixin maas-spacing {
   @include spacing(margin, $base-spacing-unit);
   @include spacing(padding, $base-spacing-unit);

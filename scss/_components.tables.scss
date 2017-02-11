@@ -1,11 +1,4 @@
-////
-/// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-maas-table
-/// @since        0.0.3
-////
-
-/// MAAS table styling
-/// @group maas table
+/// Tables
 @mixin maas-table {
   @include tables($alto-grey, $warm-grey, 16px, 13px);
   @include table-columns(100);

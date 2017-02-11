@@ -1,11 +1,4 @@
-////
-/// @author       Web Team at Canonical Ltd
-/// @link         http://ubuntudesign.github.io/maas-gui-vanilla-theme/docs/#mixin-tool-tips
-/// @since        1.0.0
-////
-
-/// Flash message styles
-/// @group maas flash messages
+/// Notifications
 @mixin maas-notifications {
   @include notifications-default;
   @include notifications-success;
