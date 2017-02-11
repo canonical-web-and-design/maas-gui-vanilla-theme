@@ -36,6 +36,18 @@ You can override any of the settings in [_settings.defaults.scss](scss/_settings
 
 To see the latest changes and updates live please view the [demo page](http://ubuntudesign.github.io/maas-gui-vanilla-theme/)
 
+## Change log (v1.1.0)
+
+- Updated all icons and colour set within the framework. This will keep inline with the Vanilla Framework and the new visual update which is going across all products
+- Links have changed from black to blue. This keeps MAAS inline with Juju and other Cloud products also improves the visual UX.
+- Improved the responsive nature of MAAS. Tables especially have been improved. The new card view and label using ```aria-label``` improves the readability and uses on mobile / small screens.
+- All assets have been renamed and also hosted on https://assets.ubuntu.com. This gives the flexibility to use hosted assets or to host them locally dependant on project.
+- Navigation responsive issues have been resolved.
+- Flash messages has been removed and now replaced with the improved notification pattern.
+- New utility classes ```u-display--mobile``` & ```u-display--desktop``` have been added for extra responsive development / design flexibility.
+- Accordion styles have been slightly improved. Removing the cross style and keeping it consistent with our remove style.
+- Login action card styles have been added to the framework.
+
 Code licensed [LGPLv3](http://opensource.org/licenses/lgpl-3.0.html) by [Canonical Ltd](http://www.canonical.com/)
 
 With ♥ from Canonical
