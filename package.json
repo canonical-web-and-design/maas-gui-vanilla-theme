@@ -23,7 +23,8 @@
     "ui",
     "front-end",
     "sass",
-    "maas"
+    "maas",
+    "html"
   ],
   "devDependencies": {
     "gulp": "3.9",
