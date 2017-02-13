@@ -24,7 +24,6 @@ function throwSassError(sassError) {
 /* Gulp instructions start here */
 gulp.task('help', function() {
     console.log('sass - Generate the min and unminified css from sass');
-    console.log('docs - Generate the docs from the source sass');
     console.log('build - Generate css');
     console.log('watch - Watch sass files and generate unminified css');
     console.log('test - Lints Sass');

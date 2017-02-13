@@ -1,5 +1,5 @@
 /// assets database path
-/// usage: background: url(#{$asset-path}images/img/backgrounds/background.jpg) no-repeat 0 0;
+/// usage: background: url(#{$asset-path}images/background.jpg) no-repeat 0 0;
 $asset-path: '../assets/';
 
 /// MAAS font sizes
@@ -15,6 +15,8 @@ $h5:                    14px!default;
 
 $gigantic:              45px!default;
 $mega:                  40px!default;
+
+$use-local-fonts:       false!default;
 
 /// MAAS Line heights
 $base-spacing-unit:     20px!default;
@@ -53,7 +55,6 @@ $secondary-button-color: $white;
 
 // MAAS Tab colours
 $tab-active-state:      #dd4814!default;
-
 
 // Header variables
 $header-link-color:     $white;
