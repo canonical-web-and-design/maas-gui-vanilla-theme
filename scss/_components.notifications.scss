@@ -204,9 +204,14 @@
     background-color: $white;
     border-radius: 12px;
     box-sizing: border-box;
+    margin: 12px 0;
     padding: 0 10px;
     display: inline-block;
     vertical-align: middle;
+
+    + * {
+      margin-left: 20px !important;
+    }
 
     &__link {
       color: $cool-grey;
