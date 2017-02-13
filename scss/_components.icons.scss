@@ -154,13 +154,13 @@
     &.icon--open {
       background: url('#{$asset-path}images/04d2075a-chevron-down.svg') no-repeat;
       background-size: 10px 4px;
-      background-position: center 4px;
+      background-position: center 6px;
     }
 
     &.icon--close {
       background: url('#{$asset-path}images/f3f43376-chevron-up.svg') no-repeat;
       background-size: 10px 4px;
-      background-position: center 4px;
+      background-position: center 6px;
     }
 
     &--status-failed {
