@@ -52,6 +52,45 @@
       border-bottom: 0;
       margin-left: .3125rem;
     }
+
+    &--group {
+
+      .p-notification__response {
+        background-image: none !important;
+        padding-left: 0 !important;
+      }
+
+      .p-notification__status {
+
+        &:before {
+          content: attr(data-count);
+          display: inline-block;
+          background-color: $warm-grey;
+          border-radius: 50%;
+          box-sizing: border-box;
+          padding: 5px 10px;
+          max-width: 34px;
+          max-height: 34px;
+          margin-right: 5px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      .p-notification__list {
+        list-style-type: none;
+        margin: 0;
+        padding-top: 10px;
+      }
+
+      .p-notification__item {
+        border-top: 1px solid $outline;
+        margin: 0;
+        padding: 10px 0;
+        text-align: left;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -91,5 +130,7 @@
       background-image: url('#{$asset-path}images/d730daea-error.svg');
       padding-left: 1.5rem;
     }
+
+
   }
 }
