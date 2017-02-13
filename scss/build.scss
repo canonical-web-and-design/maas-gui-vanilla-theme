@@ -10,6 +10,7 @@
 @import 'base.typography';
 @import 'base.forms';
 @import 'base.definition-list';
+@import 'base.meter';
 
 // Theme layout styles
 @import 'layout.wrapper';
@@ -52,6 +53,7 @@
   @include maas-typography;
   @include maas-forms;
   @include maas-definition-list;
+  @include maas-meter;
   @include maas-wrapper;
   @include maas-row;
   @include maas-grid;

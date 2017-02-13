@@ -14,7 +14,7 @@
     <!-- stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/build.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="docs.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="documentation.css" />
 </head>
 <body>
     <div class="wrapper--flex">
@@ -3644,6 +3644,30 @@
         &lt;button type="submit" class="button--positive"&gt;Login&lt;/button&gt;
     &lt;/form&gt;
 &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                        <div class="eight-col">
+                            <h2>Meter</h2>
+                            <p class="docs-text--success">Meter element is to be used for showing how full / empty a value can be. For example in MAAS it is used to show how many cores or memory is in current use.</p>
+                            <p class="docs-text--avoid eight-col">Do not use as a progress bar or to show over all completeness of a task.</p>
+                        </div>
+                        <div class="twelve-col">
+                            <h5 class="u-align--right">Example</h5>
+                            <div class="docs-example">
+                                <div class="docs-example__item">
+                                    <div class="four-col">
+                                        <div class="action-card u-margin--bottom-none">
+                                            <meter max="500" value="350">350 degrees</meter>
+                                            <p>
+                                                <span>0%</span>
+                                                <span class="u-float--right">100%</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <pre class="docs-example__item docs-example__item--code">
+&lt;meter max="500" value="350"&gt;350 degrees&lt;/meter&gt;
+                                </pre>
                             </div>
                         </div>
                     </div>
