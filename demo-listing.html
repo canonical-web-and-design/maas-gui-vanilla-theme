@@ -12,8 +12,8 @@
     <title>MAAS GUI | Demo listing page</title>
 
     <!-- stylesheets -->
+    <link href="https://assets.ubuntu.com/v1/ff49080f-maas-gui-framework.build-1.1.1.min.css"rel="stylesheet" type="text/css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://assets.ubuntu.com/v1/ff49080f-maas-gui-framework.build-1.1.1.min.css" />
 </head>
 <body>
     <div class="wrapper--flex">
@@ -86,28 +86,23 @@
                             <li><a href="index.html">Documentation</a></li>
                             <li><a href="demo-listing.html" class="active">Demo listing page</a></li>
                             <li><a href="demo-details.html">Demo details page</a></li>
+                            <li><a href="https://github.com/ubuntudesign/maas-gui-vanilla-theme">MAAS GUI GitHub Project</a></li>
                         </ul>
-                        <ul class="u-float--right">
-                            <li><a href="http://maas.io">MAAS Website</a></li>
-                            <li><a href="https://github.com/ubuntudesign/vanilla-framework">Vanilla Framework</a></li>
-                        </ul>
+                        <div class="nav-secondary">
+                            <div class="p-notification-signal">
+                                <a href="#" class="p-notification-signal__link">3 Notifications</a>
+                            </div>
+                            <ul>
+                                <li><a href="http://maas.io">MAAS Website</a></li>
+                                <li><a href="https://github.com/ubuntudesign/vanilla-framework">Vanilla Framework</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </header>
             <header class="page-header u-margin--bottom-none">
                 <div class="wrapper--inner">
                     <h1 class="page-header__title">MAAS test title</h1>
-                    <ul class="tabs">
-                        <li class="tabs__tab is-active">
-                            <a href="" class="tabs__tab-link">Machines</a>
-                        </li>
-                        <li class="tabs__tab">
-                            <a href="" class="tabs__tab-link">Devices</a>
-                        </li>
-                        <li class="tabs__tab">
-                            <a href="" class="tabs__tab-link">Controllers</a>
-                        </li>
-                    </ul>
                     <p class="page-header__status">
                         <span class="u-margin--left-small u-text--loading">
                             <i class="icon u-margin--right-tiny icon--loading u-animation--spin"></i>Loading
@@ -193,6 +188,15 @@
                     </div>
                 </div>
             </header>
+            <div class="page-navigation u-margin--bottom-none">
+                <div class="wrapper--inner">
+                    <nav class="page-navigation__links">
+                        <a href="#" class="page-navigation__link is-active">Machines</a>
+                        <a href="#" class="page-navigation__link">Devices</a>
+                        <a href="#" class="page-navigation__link">Controllers</a>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="wrapper--flex-content">
             <main class="wrapper">
@@ -201,8 +205,31 @@
                         <div class="twelve-col">
                             <div class="p-notification--error">
                                 <p class="p-notification__response">
-                                    <span class="p-notification__status">Error:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsum nemo autem reiciendis nulla tempore natus repudiandae dolorem. Corporis maxime, iure maiores repellat, odit facilis! <a href="#" class="p-notification__action">Dismiss</a>
+                                    <span class="p-notification__status">Error:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsum nemo autem reiciendis nulla tempore natus repudiandae dolorem. Corporis maxime, iure maiores repellat, odit facilis! &mdash;<a href="#" class="p-notification__action">Dismiss</a>
                                 </p>
+                            </div>
+                            <div class="p-notification--success p-notification--group">
+                                <p class="p-notification__response" onclick="document.getElementById('notification-list-success').classList.toggle('is-open')">
+                                    <span class="p-notification__status" data-count="4">Success</span><i class="icon icon--open"></i>
+                                </p>
+                                <ul class="p-notification__list" id="notification-list-success">
+                                    <li class="p-notification__item">
+                                        <p class="p-notification__msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur at illo saepe, aspernatur, facilis eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Consequuntur at</a> illo saepe, aspernatur, facilis eligendi!</p>
+                                        <time class="p-notification__date">34m</time>
+                                    </li>
+                                    <li class="p-notification__item">
+                                        <p class="p-notification__msg">Consectetur adipisicing elit. Facilis, magnam, voluptate tenetur <a href="#">provident</a> nihil illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ab, voluptatibus porro, veniam tempora asperiores.</p>
+                                        <time class="p-notification__date">2h</time>
+                                    </li>
+                                    <li class="p-notification__item">
+                                        <p class="p-notification__msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam, facilis temporibus harum quae sunt?</p>
+                                        <time class="p-notification__date">6h</time>
+                                    </li>
+                                    <li class="p-notification__item">
+                                        <p class="p-notification__msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio accusamus ullam labore nesciunt. Earum, iusto.</p>
+                                        <time class="p-notification__date">6h</time>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="accordion three-col">
@@ -377,7 +404,7 @@
                         <div class="eight-col">
                             <p>
                                 <small>
-                                    <strong class="u-margin--right">MAAS GUI Framework v1.1.0</strong>&nbsp;<a href="http://ubuntudesign.github.io/maas-gui-vanilla-theme/">Documentation</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/ubuntudesign/maas-gui-vanilla-theme">GitHub repository</a>
+                                    <strong class="u-margin--right">MAAS GUI Framework v1.2.0</strong>&nbsp;<a href="http://ubuntudesign.github.io/maas-gui-vanilla-theme/">Documentation</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/ubuntudesign/maas-gui-vanilla-theme">GitHub repository</a>
                                 </small>
                             </p>
                             <p>
