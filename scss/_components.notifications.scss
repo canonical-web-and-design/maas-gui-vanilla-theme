@@ -53,24 +53,30 @@
       margin-left: .3125rem;
     }
 
+    //
+    // Notificaation grup style, used for multiple notifications.
+    //
     &--group {
 
+      // Removes the background image used for error, warning and success
+      // notifications.
       .p-notification__response {
         background-image: none !important;
         padding-left: 0 !important;
+        cursor: pointer;
       }
 
       .p-notification__status {
 
+        // Pulls in data-count content to show the response count.
         &:before {
           content: attr(data-count);
           display: inline-block;
           background-color: $warm-grey;
           border-radius: 50%;
           box-sizing: border-box;
-          padding: 3px 10px;
-          max-width: 30px;
-          max-height: 30px;
+          max-width: 24px;
+          max-height: 24px;
           margin-right: 5px;
           text-align: center;
           width: 100%;
@@ -85,6 +91,12 @@
         list-style-type: none;
         margin: 0;
         padding-top: 10px;
+        display: none;
+
+        // Set this class with JS to show/hide the notification list
+        &.is-open {
+          display: block;
+        }
       }
 
       .p-notification__item {
@@ -97,7 +109,7 @@
 
         .p-notification__msg {
           box-sizing: border-box;
-          padding-right: 20px;
+          padding-right: 40px;
           margin: 0;
         }
 
@@ -105,7 +117,7 @@
           color: $pale-grey;
           position: absolute;
           right: 0;
-          bottom: 5px;
+          bottom: 15px;
         }
       }
     }
@@ -122,6 +134,18 @@
       background-image: url('#{$asset-path}images/89c6b797-success.svg');
       padding-left: 1.5rem;
     }
+
+    // Notification group color overrides
+    &.p-notification--group {
+
+      .p-notification__status {
+
+        &:before {
+          background-color: $success;
+          color: $white;
+        }
+      }
+    }
   }
 }
 
@@ -134,6 +158,17 @@
     .p-notification__response {
       background-image: url('#{$asset-path}images/5777c0c7-warning.svg');
       padding-left: 1.5rem;
+    }
+
+    // Notification group color overrides
+    &.p-notification--group {
+
+      .p-notification__status {
+
+        &:before {
+          background-color: $warning;
+        }
+      }
     }
   }
 }
@@ -149,6 +184,16 @@
       padding-left: 1.5rem;
     }
 
+    // Notification group color overrides
+    &.p-notification--group {
 
+      .p-notification__status {
+
+        &:before {
+          background-color: $error;
+          color: $white;
+        }
+      }
+    }
   }
 }
