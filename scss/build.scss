@@ -33,6 +33,7 @@
 @import 'patterns.footer';
 @import 'patterns.header';
 @import 'patterns.page-header';
+@import 'patterns.page-navigation';
 @import 'patterns.search';
 
 // Theme helper styles
@@ -69,6 +70,7 @@
   @include maas-footer;
   @include maas-header;
   @include maas-page-header;
+  @include maas-page-navigation;
   @include maas-search;
   @include maas-animations;
   @include maas-borders;

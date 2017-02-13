@@ -65,6 +65,8 @@ $breakpoint-large:      $site-max-width;
 $breakpoint-medium:     768px;
 $breakpoint-min-medium: 769px;
 
+$navigation-threshold: $breakpoint-medium;
+
 // MAAS states
 $states: (
   error: $error,

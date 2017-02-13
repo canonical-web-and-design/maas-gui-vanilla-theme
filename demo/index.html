@@ -14,7 +14,7 @@
     <!-- stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/build.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/documentation.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="docs.css" />
 </head>
 <body>
     <div class="wrapper--flex">
@@ -99,13 +99,17 @@
             <div class="page-header u-margin--bottom-none">
                 <div class="wrapper--inner">
                     <h2 class="page-header__title">GUI Framework</h2>
-                    <p class="page-header__status">
-                        <a class="u-margin--right" href="#intro">Introduction</a>
-                        <a class="u-margin--right" href="#design">Design</a>
-                        <a class="u-margin--right" href="#layout">Layout</a>
-                        <a class="u-margin--right" href="#patterns">Patterns</a>
-                        <a class="u-margin--right" href="#utility">Utility classes</a>
-                    </p>
+                </div>
+            </div>
+            <div class="page-navigation u-margin--bottom-none">
+                <div class="wrapper--inner">
+                    <nav class="page-navigation__links">
+                        <a class="page-navigation__link" href="#intro">Introduction</a>
+                        <a class="page-navigation__link" href="#design">Design</a>
+                        <a class="page-navigation__link" href="#layout">Layout</a>
+                        <a class="page-navigation__link" href="#patterns">Patterns</a>
+                        <a class="page-navigation__link" href="#utility">Utility classes</a>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -1699,7 +1703,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="table__row is-active">
+                                            <div class="table__row is-active u-display--desktop">
                                                 <div aria-label="label" class="table__data table-col--3">
                                                     <input type="checkbox" id="exampleCheckboxAll">
                                                     <label for="exampleCheckboxAll"></label>
@@ -2861,6 +2865,49 @@
 &lt;a href="" class="button--positive button--inline u-margin--bottom-small"&gt;Save&lt;/a&gt;</pre>
                             </div>
                         </div>
+                        <hr />
+                        <div class="eight-col">
+                            <h2>Page navigation</h2>
+                            <p class="docs-text--success">Used as secondary navigation for pages which are too long or require tabbed content.</p>
+                        </div>
+                        <div class="twelve-col">
+                            <h5 class="u-align--right">Example</h5>
+                            <div class="docs-example">
+                                <div class="docs-example__item">
+                                    <header class="page-header u-margin--bottom-none">
+                                        <div class="wrapper--inner">
+                                            <h1 class="page-header__title">MAAS test title</h1>
+                                        </div>
+                                    </header>
+                                    <div class="page-navigation">
+                                        <div class="wrapper--inner">
+                                            <nav class="page-navigation__links">
+                                                <a href="#" class="page-navigation__link is-active">Secondary nav link 1</a>
+                                                <a href="#" class="page-navigation__link">Secondary nav link 2</a>
+                                                <a href="#" class="page-navigation__link">Secondary nav link 3</a>
+                                                <a href="#" class="page-navigation__link">Secondary nav link 4</a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <pre class="docs-example__item docs-example__item--code">
+&lt;header class="page-header u-margin--bottom-none"&gt;
+    &lt;div class="wrapper--inner"&gt;
+        &lt;h1 class="page-header__title"&gt;MAAS test title&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;div class="page-navigation"&gt;
+    &lt;div class="wrapper--inner"&gt;
+        &lt;nav class="page-navigation__links"&gt;
+            &lt;a href="#" class="page-navigation__link is-active"&gt;Secondary nav link 1&lt;/a&gt;
+            &lt;a href="#" class="page-navigation__link"&gt;Secondary nav link 2&lt;/a&gt;
+            &lt;a href="#" class="page-navigation__link"&gt;Secondary nav link 3&lt;/a&gt;
+            &lt;a href="#" class="page-navigation__link"&gt;Secondary nav link 4&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="row">
@@ -2892,6 +2939,11 @@
                                     <div class="p-notification--success">
                                         <p class="p-notification__response">
                                             <span class="p-notification__status">Success:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsum nemo autem reiciendis nulla tempore natus repudiandae dolorem. Corporis maxime, iure maiores repellat, odit facilis!
+                                        </p>
+                                    </div>
+                                    <div class="p-notification--error">
+                                        <p class="p-notification__response">
+                                            <span class="p-notification__status">Error:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsum nemo autem reiciendis nulla tempore natus repudiandae dolorem. Corporis maxime, iure maiores repellat, odit facilis! <a href="#" class="p-notification__action">Dismiss</a>
                                         </p>
                                     </div>
                                 </div>
