@@ -38,6 +38,12 @@ To see the latest changes and updates live please view the [demo page](http://ub
 
 ## Change log
 
+### v1.2.0
+
+- Created new notification group style, to be used when multiple notifications of one category are to be displayed on the screen without swamping the UI.
+- New secondary page navigation pattern has been included. This shall be used as secondary navigation for pages which are too long or require tabbed content.
+- Meter element has been styled to follow our new component color styles. Can be used to show machine information such as CPU, RAM e.t.c.
+
 ### v1.1.1
 
 - Uploading missing font assets and giving the ability to turn on or off local assets for fonts in ```_settings.defaults.scss```
