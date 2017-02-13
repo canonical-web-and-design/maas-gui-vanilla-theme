@@ -8,10 +8,6 @@
     {
       "name": "Richard McCartney",
       "email": "richard.mccartney@canonical.com"
-    },
-    {
-      "name": "Carla Berkers",
-      "email": "Carla.berkers@canonical.com"
     }
   ],
   "description": "MAAS GUI framework",
@@ -21,7 +17,13 @@
     "vanilla",
     "framework",
     "landscape",
-    "cloud"
+    "cloud",
+    "scss",
+    "css",
+    "ui",
+    "front-end",
+    "sass",
+    "maas"
   ],
   "devDependencies": {
     "gulp": "3.9",
@@ -50,5 +52,5 @@
   "scripts": {
     "clean": "rm -r build; rm -r node_modules"
   },
-  "version": "1.1.1"
+  "version": "1.2.0"
 }
