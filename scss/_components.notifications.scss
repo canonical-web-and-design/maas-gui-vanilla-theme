@@ -213,6 +213,10 @@
       margin-left: 20px !important;
     }
 
+    @media screen and (max-width: $breakpoint-medium) {
+      margin-right: 50px;
+    }
+
     &__link {
       color: $cool-grey;
 
