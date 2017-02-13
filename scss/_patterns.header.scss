@@ -89,6 +89,20 @@
       }
     }
 
+    .nav-secondary {
+      float: right;
+
+      @media only screen and (min-width: $breakpoint-medium) {
+        border: 0;
+      }
+
+      ul {
+        display: inline-block;
+        border: 0;
+        float: right;
+      }
+    }
+
     .nav-toggle {
 
       a {
