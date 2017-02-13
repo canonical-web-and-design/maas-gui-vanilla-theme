@@ -11,6 +11,7 @@
   @include notifications-success;
   @include notifications-warning;
   @include notifications-error;
+  @include notifications-signal;
 }
 
 // The placeholder for basic notification styling
@@ -193,6 +194,25 @@
           background-color: $error;
           color: $white;
         }
+      }
+    }
+  }
+}
+
+@mixin notifications-signal {
+  .p-notification-signal {
+    background-color: $white;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &__link {
+      color: $cool-grey;
+
+      &:hover {
+        border-bottom: 0;
       }
     }
   }
