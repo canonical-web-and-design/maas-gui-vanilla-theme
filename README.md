@@ -24,9 +24,10 @@ and save it into your project's dependencies (`package.json`) as follows:
 npm install maas-gui-vanilla-theme --save-dev
 ```
 
-To build the minified and un-minified CSS run:
+If downloaded / cloned this repo run the following commands to create the minified CSS:
 
 ``` bash
+npm install
 gulp build
 ```
 
