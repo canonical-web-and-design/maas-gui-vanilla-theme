@@ -15,7 +15,7 @@ If you just need to include the latest compiled version of the MAAS GUI Framewor
 ```
 
 
-## Including Vanilla in your project via NPM
+## Including MAAS GUI Framework in your project via NPM
 
 Pull down the latest version of MAAS GUI Framework into your local `node_modules` folder
 and save it into your project's dependencies (`package.json`) as follows:
@@ -25,13 +25,14 @@ npm install maas-gui-vanilla-theme
 ```
 *NOTE: if using npm version 4.0.0 or higher add ```--legacy-bundling``` to your npm install command*
 
-If downloaded / cloned this repo run the following commands to create the minified CSS:
+## Local development
+
+If you wish to download or clone this repo run the following commands to setup and create the minified CSS:
 
 ``` bash
 npm install
 gulp build
 ```
-
 You can override any of the settings in [_settings.defaults.scss](scss/_settings.defaults.scss).
 
 ## Demo
