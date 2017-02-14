@@ -23,7 +23,7 @@ and save it into your project's dependencies (`package.json`) as follows:
 ``` bash
 npm install maas-gui-vanilla-theme
 ```
-*NOTE: if using npm version ```4.*.*``` or higher add ```--legacy-bundling``` to your npm install command*
+*NOTE: if using npm version 4.0.0 or higher add ```--legacy-bundling``` to your npm install command*
 
 If downloaded / cloned this repo run the following commands to create the minified CSS:
 
