@@ -10,7 +10,7 @@ A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-frame
 If you just need to include the latest compiled version of the MAAS GUI Framework, use our hosted version and fonts to kick start you project.
 
 ``` html
-<link href="https://assets.ubuntu.com/v1/0bc4896f-maas-gui-framework.build-1.2.0.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://assets.ubuntu.com/v1/a029cb08-maas-gui-framework.build-1.2.2.min.css" rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 ```
 
