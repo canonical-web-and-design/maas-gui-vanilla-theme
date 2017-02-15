@@ -1,5 +1,10 @@
 # MAAS GUI Framework
 
+[![Build Status](https://travis-ci.org/ubuntudesign/maas-gui-vanilla-theme.svg?branch=master)](https://travis-ci.org/ubuntudesign/maas-gui-vanilla-theme)
+[![npm version](https://badge.fury.io/js/maas-gui-vanilla-theme.svg)](http://badge.fury.io/js/maas-gui-vanilla-theme)
+[![Downloads](http://img.shields.io/npm/dm/maas-gui-vanilla-theme.svg)](https://www.npmjs.com/package/maas-gui-vanilla-theme)
+[![devDependency Status](https://david-dm.org/ubuntudesign/maas-gui-vanilla-theme/dev-status.svg)](https://david-dm.org/ubuntudesign/maas-gui-vanilla-theme#info=devDependencies)
+
 A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/). The framework is used as the front-end tool for MAAS (Metal as a Service) a cloud style offering for provisioning servers at scale.
 
 [Documentation](http://ubuntudesign.github.io/maas-gui-vanilla-theme/) |

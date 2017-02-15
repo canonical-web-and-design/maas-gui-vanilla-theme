@@ -53,5 +53,5 @@
   "scripts": {
     "clean": "rm -r build; rm -r node_modules"
   },
-  "version": "1.2.2"
+  "version": "1.2.3"
 }
