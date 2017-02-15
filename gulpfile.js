@@ -30,8 +30,7 @@ gulp.task('help', function() {
 });
 
 gulp.task('sasslint', function() {
-    var path = (gutil.env.file)? gutil.env.file : '**/*.scss';
-    return gulp.src('scss/' + path)
+    return gulp.src('scss/**/*.scss')
         .pipe(scsslint({ 'config': '.scss-lint.yml' }))
         .pipe(scsslint.failReporter());
 });
@@ -50,8 +49,6 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('css/'));
 });
 
-gulp.task('build', ['sasslint', 'sass']);
-
 gulp.task('sass-lite', function() {
     return gulp.src('scss/build.scss')
         .pipe(sass({ style: 'expanded', errLogToConsole: true }))
@@ -63,6 +60,6 @@ gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['sass-lite']);
 });
 
+gulp.task('build', ['sasslint', 'sass']);
 gulp.task('test', ['sasslint']);
-
 gulp.task('default', ['help']);
