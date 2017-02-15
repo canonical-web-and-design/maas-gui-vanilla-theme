@@ -6,6 +6,6 @@ before_install:
 install:
   - npm install
 before_script:
-  - node_modules/gulp/bin/gulp.js build
-script:
   - node_modules/gulp/bin/gulp.js test
+script:
+  - node_modules/gulp/bin/gulp.js build
