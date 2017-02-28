@@ -50,7 +50,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('sass-lite', function() {
-    return gulp.src('scss/build.scss')
+    return gulp.src('scss/maas-gui-framework.build-1.2.3.scss')
         .pipe(sass({ style: 'expanded', errLogToConsole: true }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         .pipe(gulp.dest('css/'));
@@ -60,6 +60,6 @@ gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['sass-lite']);
 });
 
-gulp.task('build', ['sasslint', 'sass']);
-gulp.task('test', ['sasslint']);
 gulp.task('default', ['help']);
+gulp.task('test', ['sasslint']);
+gulp.task('build', ['sasslint', 'sass']);
