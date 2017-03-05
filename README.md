@@ -1,5 +1,10 @@
 # MAAS GUI Framework
 
+[![Build Status](https://travis-ci.org/ubuntudesign/maas-gui-vanilla-theme.svg?branch=master)](https://travis-ci.org/ubuntudesign/maas-gui-vanilla-theme)
+[![npm version](https://badge.fury.io/js/maas-gui-vanilla-theme.svg)](http://badge.fury.io/js/maas-gui-vanilla-theme)
+[![Downloads](http://img.shields.io/npm/dm/maas-gui-vanilla-theme.svg)](https://www.npmjs.com/package/maas-gui-vanilla-theme)
+[![devDependency Status](https://david-dm.org/ubuntudesign/maas-gui-vanilla-theme/dev-status.svg)](https://david-dm.org/ubuntudesign/maas-gui-vanilla-theme#info=devDependencies)
+
 A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-framework), written in [Sass](http://sass-lang.com/). The framework is used as the front-end tool for MAAS (Metal as a Service) a cloud style offering for provisioning servers at scale.
 
 [Documentation](http://ubuntudesign.github.io/maas-gui-vanilla-theme/) |
@@ -10,7 +15,7 @@ A extension of [Vanilla framework](https://github.com/ubuntudesign/vanilla-frame
 If you just need to include the latest compiled version of the MAAS GUI Framework, use our hosted version and fonts to kick start you project.
 
 ``` html
-<link href="https://assets.ubuntu.com/v1/a029cb08-maas-gui-framework.build-1.2.2.min.css" rel="stylesheet" type="text/css" media="screen">
+<link href="https://assets.ubuntu.com/v1/c9514781-maas-gui-framework.build-1.2.4.min.css" rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 ```
 
