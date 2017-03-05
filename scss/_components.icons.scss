@@ -156,6 +156,26 @@
       background-position: center 6px;
     }
 
+    &.icon--pass {
+      background: url('#{$asset-path}images/0d8e27a6-pass.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--pending {
+      background: url('#{$asset-path}images/b603b4e0-pending.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--running {
+      background: url('#{$asset-path}images/fa6793c0-running.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--timed-out {
+      background: url('#{$asset-path}images/9b78d7f1-timed+out.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &--status-failed {
       //scss-lint:disable PlaceholderInExtend
       @extend .icon;

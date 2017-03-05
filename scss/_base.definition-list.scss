@@ -6,7 +6,7 @@
       clear: left;
       color: $cool-grey;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         color: $warm-grey;
       }
     }
@@ -15,7 +15,7 @@
       color: $cool-grey;
       margin-left: 0;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         text-align: right;
       }
     }
@@ -28,7 +28,7 @@
       margin-bottom: 10px !important;
       word-wrap: break-word;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 50% !important;
       }
 

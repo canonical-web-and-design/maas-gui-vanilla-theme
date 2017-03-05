@@ -27,6 +27,10 @@
         color: $warm-grey;
         background-color: $transparent;
       }
+
+      &[aria-invalid='true'] {
+        border-color: $error;
+      }
     }
 
     &[type='number'] {
@@ -77,6 +81,10 @@
       color: $warm-grey;
       background-color: $transparent;
     }
+
+    &[aria-invalid='true'] {
+      border-color: $error;
+    }
   }
 
   // Select dropdown styles
@@ -111,6 +119,10 @@
       color: $warm-grey;
       background-image: none;
       background-color: $transparent;
+    }
+
+    &[aria-invalid='true'] {
+      border-color: $error;
     }
 
     // Removes firefox dotted outline focusing
@@ -301,10 +313,10 @@
   .onoffswitch {
     position: relative;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 38px;
     height: 16px;
-    margin: 10px 0 0;
+    margin: 4px 0 0;
     //scss-lint:disable VendorPrefixes
     -webkit-user-select: none;
     -moz-user-select: none;

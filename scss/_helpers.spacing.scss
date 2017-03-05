@@ -8,6 +8,7 @@
 
   $directions:                    top right bottom left;
   $sizes:                         (tiny: $spacing-unit / 4, small: $spacing-unit / 2, medium: ($spacing-unit * 3) / 2, large: $spacing-unit * 2, huge: $spacing-unit * 4);
+  $hyphen:                        '-';
 
   .u-#{$spacing} {
     #{$spacing}: $spacing-unit;
@@ -24,15 +25,16 @@
 
     @each $direction in $directions {
       &--#{$direction} {
-        #{$spacing}-#{$direction}: $spacing-unit !important;
+
+        #{$spacing}#{$hyphen}#{$direction}: $spacing-unit !important;
 
         &-none {
-          #{$spacing}-#{$direction}: 0 !important;
+          #{$spacing}#{$hyphen}#{$direction}: 0 !important;
         }
 
         @each $size, $division in $sizes {
           &-#{$size} {
-            #{$spacing}-#{$direction}: $division !important;
+            #{$spacing}#{$hyphen}#{$direction}: $division !important;
           }
         }
       }
