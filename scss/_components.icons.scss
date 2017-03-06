@@ -94,7 +94,7 @@
       background-size: 100% 100%;
 
       &-grey {
-        background: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="success"><rect id="rect6708" x="0" y="9.99999989e-06" width="16" height="16"></rect><circle id="circle6710" stroke="#{$warm-grey}" stroke-width="1.5" fill="#{$warm-grey}" cx="8" cy="8.00001" r="7.2500086"></circle><polygon id="path6712" fill="#{$white}" points="11.80029 4.92345 11.73439 4.98115 6.99964 9.12837 4.22407 6.74743 3.38501 7.69631 7.00033 11.50002 12.5 5.71278 11.80029 4.92349"></polygon></g></g></svg>');
+        background: url('data:image/svg+xml;utf8,%3Csvg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="success"%3E%3Crect id="rect6708" x="0" y="9.99999989e-06" width="16" height="16"%3E%3C/rect%3E%3Ccircle id="circle6710" stroke="' + color-string($warm-grey) + '" stroke-width="1.5" fill="' + color-string($warm-grey) + '" cx="8" cy="8.00001" r="7.2500086"%3E%3C/circle%3E%3Cpolygon id="path6712" fill="' + color-string($white) + '" points="11.80029 4.92345 11.73439 4.98115 6.99964 9.12837 4.22407 6.74743 3.38501 7.69631 7.00033 11.50002 12.5 5.71278 11.80029 4.92349"%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
         background-size: 100% 100%;
       }
     }
@@ -180,35 +180,35 @@
       //scss-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
-      content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-failed}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-failed}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
+      background: url('data:image/svg+xml;utf8,%3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-failed) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-failed) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-in-progress {
       //scss-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
-      content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-in-progress}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-in-progress}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
+      background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-in-progress) +'" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-in-progress) +'" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-queued {
       //scss-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
-      content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-queued}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-queued}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
+      background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-queued) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-queued) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-succeeded {
       //scss-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
-      content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-succeeded}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-succeeded}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
+      background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-succeeded) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-succeeded) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-waiting {
       //scss-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
-      content: url('data:image/svg+xml;utf8, <svg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="status-queued" transform="translate(1, 1)"><g id="Page-1"><g id="status-queued"><g id="Group"><circle id="Oval" stroke="#{$status-waiting}" stroke-width="2" cx="6" cy="6" r="6"></circle><circle id="Oval-Copy" class="status-circle" fill="#{$status-waiting}" cx="6" cy="6" r="4"></circle></g></g></g></g></g></svg>');
+      background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-waiting) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-waiting) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
   }
 
