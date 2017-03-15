@@ -173,6 +173,10 @@
     }
   }
 
+  button {
+    @include focus($offset: 2px);
+  }
+
   /// Base for label styling
   [type="checkbox"] {
 

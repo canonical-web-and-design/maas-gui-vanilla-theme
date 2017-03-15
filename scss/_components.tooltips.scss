@@ -45,7 +45,9 @@
     }
 
     &:hover::after,
-    &:hover::before {
+    &:hover::before,
+    &:focus::after,
+    &:focus::before {
       opacity: 1 !important;
       z-index: 1000;
       visibility: visible;
