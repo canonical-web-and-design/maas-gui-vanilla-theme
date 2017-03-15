@@ -13,7 +13,6 @@
     &[type='tel'] {
       @include focus($offset: 2px);
       @extend %input-elements;
-      outline: inherit;
       padding: 7px 10px;
       box-shadow: none;
       width: 100%;
