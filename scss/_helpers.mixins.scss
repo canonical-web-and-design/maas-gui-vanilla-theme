@@ -78,3 +78,10 @@
     @return '%23' + str-slice('#{$color}', 2, -1);
   }
 }
+
+@mixin focus($color: $color-focus, $width: 1px, $offset: -1px) {
+  &:focus {
+    outline: $width solid $color;
+    outline-offset: $offset;
+  }
+}

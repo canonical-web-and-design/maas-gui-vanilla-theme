@@ -56,6 +56,7 @@
           a,
           a:link,
           a:visited {
+            @include focus;
             box-sizing: border-box;
             border-bottom: 0;
             border-left: 0;

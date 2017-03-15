@@ -33,6 +33,7 @@
     }
 
     &__link {
+      @include focus;
       border-bottom: 0;
       color: $cool-grey;
       box-sizing: border-box;

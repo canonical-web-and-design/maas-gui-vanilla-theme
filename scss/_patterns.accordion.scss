@@ -41,6 +41,7 @@
     // accordion main sidebar title
     .accordion__title {
       @include font-size(20px);
+      @include focus($offset: 2px);
       border-bottom: 1px dotted $muted-grey;
       padding: 8px 20px 9px;
       margin: 0;
@@ -77,6 +78,11 @@
       // Block level title
       .accordion__tab-title {
         @extend %accordion__tab-title;
+        @include font-size(20px);
+        @include focus;
+        display: block;
+        height: auto;
+        text-align: left;
 
         &.is-active {
           @extend %accordion__tab-title;
@@ -90,6 +96,10 @@
               max-height: 150px;
             }
           }
+        }
+
+        &:hover {
+          border-bottom: 0;
         }
       }
 
@@ -108,13 +118,15 @@
             margin-bottom: .15em;
 
             .accordion__tab-link {
+              @include focus($offset: 2px);
               box-sizing: border-box;
               color: $cool-grey;
               width: 100%;
               display: inline-block;
-              padding-right: 20px;
+              padding: 0 20px 0 0;
               border-bottom: 0;
-              outline: 0;
+              background-color: transparent;
+              text-align: left;
 
               &:hover {
                 color: $link-hover;

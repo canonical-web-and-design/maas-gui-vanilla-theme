@@ -11,13 +11,20 @@
     &[type='email'],
     &[type='url'],
     &[type='tel'] {
+      @include focus($offset: 2px);
       @extend %input-elements;
+      outline: inherit;
       padding: 7px 10px;
       box-shadow: none;
       width: 100%;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+
+      &:active {
+        outline: 1px solid $color-focus;
+        outline-offset: 2px;
+      }
 
       &::placeholder {
         color: $warm-grey;
@@ -61,6 +68,7 @@
 
   // Text area styles
   textarea {
+    @include focus($offset: 2px);
     // Remove First
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -72,6 +80,11 @@
     box-shadow: none;
     width: 100%;
     line-height: 20px;
+
+    &:active {
+      outline: 1px solid $color-focus;
+      outline-offset: 2px;
+    }
 
     &::placeholder {
       color: $warm-grey;
@@ -89,7 +102,9 @@
 
   // Select dropdown styles
   select {
+    @include focus($offset: 2px);
     @extend %input-elements;
+    outline: inherit;
     display: block;
     clear: both;
     cursor: pointer;
@@ -107,6 +122,11 @@
     appearance: none;
     text-indent: .01px;
     text-overflow: '';
+
+    &:active {
+      outline: 1px solid $color-focus;
+      outline-offset: 2px;
+    }
 
     &[multiple],
     &[size] {
@@ -156,6 +176,17 @@
   /// Base for label styling
   [type="checkbox"] {
 
+    &:focus {
+
+      + label {
+
+        &:before {
+          outline: 1px solid $color-focus;
+          outline-offset: 2px;
+        }
+      }
+    }
+
     &:not(:checked),
     &:checked {
       position: absolute;
@@ -181,6 +212,15 @@
         background: $white;
         border-radius: 2px;
         box-sizing: border-box;
+      }
+
+      &:focus {
+        outline: none;
+
+        &:before {
+          outline: 1px solid $color-focus;
+          outline-offset: 2px;
+        }
       }
 
       &:hover {
@@ -226,6 +266,16 @@
       left: -9999px;
     }
 
+    &:focus {
+
+      + label {
+
+        &:before {
+          box-shadow: 0 0 0 2px $white, 0 0 0 3px $color-focus;
+        }
+      }
+    }
+
     + label {
       position: relative;
       padding-left: 25px;
@@ -249,6 +299,15 @@
         opacity: 0;
         content: '';
         position: absolute;
+      }
+
+      &:focus {
+        outline: none;
+
+        &:before {
+          outline: 1px solid $color-focus;
+          outline-offset: 2px;
+        }
       }
 
       &:hover {
@@ -339,7 +398,14 @@
   }
 
   .onoffswitch-checkbox {
-    display: none !important;
+
+    &:focus {
+
+      + .onoffswitch-label {
+        outline: 1px solid $color-focus;
+        outline-offset: 2px;
+      }
+    }
   }
 
   .onoffswitch-label {
