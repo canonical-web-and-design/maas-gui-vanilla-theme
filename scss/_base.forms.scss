@@ -75,11 +75,6 @@
     width: 100%;
     line-height: 20px;
 
-    &:active {
-      outline: 1px solid $color-focus;
-      outline-offset: 2px;
-    }
-
     &::placeholder {
       color: $warm-grey;
     }
@@ -116,11 +111,6 @@
     appearance: none;
     text-indent: .01px;
     text-overflow: '';
-
-    &:active {
-      outline: 1px solid $color-focus;
-      outline-offset: 2px;
-    }
 
     &[multiple],
     &[size] {

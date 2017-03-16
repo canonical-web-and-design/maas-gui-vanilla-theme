@@ -80,7 +80,8 @@
 }
 
 @mixin focus($color: $color-focus, $width: 1px, $offset: -1px) {
-  &:focus {
+  &:focus,
+  &:active {
     outline: $width solid $color;
     outline-offset: $offset;
   }
