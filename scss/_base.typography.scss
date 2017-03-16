@@ -2,6 +2,7 @@
 @mixin maas-typography {
 
   a {
+    @include focus($offset: 2px);
     color: $link-hover;
     text-decoration: none;
 

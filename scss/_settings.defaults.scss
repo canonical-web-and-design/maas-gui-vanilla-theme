@@ -4,23 +4,23 @@ $asset-path: '../assets/';
 
 /// MAAS font sizes
 $base-font-family:      "'Ubuntu', Arial, 'libra sans', sans-serif";
-$base-font-size:        16px!default;
-$base-line-height:      24px!default;
+$base-font-size:        16px !default;
+$base-line-height:      24px !default;
 
-$h1:                    32px!default;
-$h2:                    23px!default;
-$h3:                    20px!default;
-$h4:                    16px!default;
-$h5:                    14px!default;
+$h1:                    32px !default;
+$h2:                    23px !default;
+$h3:                    20px !default;
+$h4:                    16px !default;
+$h5:                    14px !default;
 
-$gigantic:              45px!default;
-$mega:                  40px!default;
+$gigantic:              45px !default;
+$mega:                  40px !default;
 
-$use-local-fonts:       false!default;
+$use-local-fonts:       false !default;
 
 /// MAAS Line heights
-$base-spacing-unit:     20px!default;
-$half-spacing-unit:     $base-spacing-unit / 2!default;
+$base-spacing-unit:     20px !default;
+$half-spacing-unit:     $base-spacing-unit / 2 !default;
 $line-height-ratio:     $base-line-height / $base-font-size;
 
 /// MAAS Text styles
@@ -30,32 +30,33 @@ $alt-headline-color:    $warm-grey;
 $link-color:            $brand-color;
 $link-border:           #c2c2c2;
 $link-hover:            #007aa6;
-$component-color:       #335280!default;
+$component-color:       #335280 !default;
+$color-focus:           #19b6ee !default;
 
 // MAAS colours
-$pale-grey:             #bcbcbc!default;
-$silk-grey:             #cdcdcd!default;
-$muted-grey:            #b2b2b2!default;
-$gallery-grey:          #eee!default;
-$mercury-grey:          #e3e3e3!default;
-$off-white:             #f7f7f7!default;
+$pale-grey:             #bcbcbc !default;
+$silk-grey:             #cdcdcd !default;
+$muted-grey:            #b2b2b2 !default;
+$gallery-grey:          #eee !default;
+$mercury-grey:          #e3e3e3 !default;
+$off-white:             #f7f7f7 !default;
 
-$loading:               #2ab7ec!default;
+$loading:               #2ab7ec !default;
 $error:                 #c7162b;
-$information:           #2ab7ec!default;
-$outline:               #d2d2d2!default;
+$information:           #2ab7ec !default;
+$outline:               #d2d2d2 !default;
 $success:               #0e8420;
 $warning:               #f99b11;
 $disabled:              $gallery-grey;
 $editable:              $white;
-$off:                   #666 !default;
+$off:                   #666  !default;
 
 /// MAAS Form colours
 $primary-button-color:  #e95420;
 $secondary-button-color: $white;
 
 // MAAS Tab colours
-$tab-active-state:      #e95420!default;
+$tab-active-state:      #e95420 !default;
 
 // Header variables
 $header-link-color:     $white;
@@ -80,8 +81,8 @@ $states: (
 );
 
 // MAAS Status icon colours
-$status-failed:        $error!default;
-$status-in-progress:   $information!default;
-$status-queued:        #888!default;
-$status-succeeded:     $success!default;
-$status-waiting:       $warning!default;
+$status-failed:        $error !default;
+$status-in-progress:   $information !default;
+$status-queued:        #888 !default;
+$status-succeeded:     $success !default;
+$status-waiting:       $warning !default;

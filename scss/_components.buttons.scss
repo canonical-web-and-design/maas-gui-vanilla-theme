@@ -5,6 +5,7 @@
   // }
 
   .button--secondary {
+    @include focus($offset: 2px);
     @extend %button-pattern;
   }
 
@@ -24,7 +25,8 @@
 
   .button--destructive,
   .button--positive {
-
+    @include focus($offset: 2px);
+    
     &:hover {
       color: $white;
     }
@@ -32,6 +34,7 @@
 
   .button--base,
   .button--neutral {
+    @include focus($offset: 2px);
 
     &:hover {
       color: $cool-grey;
