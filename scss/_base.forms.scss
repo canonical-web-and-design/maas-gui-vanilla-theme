@@ -20,11 +20,6 @@
       -moz-appearance: none;
       appearance: none;
 
-      &:active {
-        outline: 1px solid $color-focus;
-        outline-offset: 2px;
-      }
-
       &::placeholder {
         color: $warm-grey;
       }
