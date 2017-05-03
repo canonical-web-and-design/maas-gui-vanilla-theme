@@ -1,4 +1,4 @@
-/// Icons
+  /// Icons
 @mixin maas-icons {
 
   .icon {
@@ -75,7 +75,7 @@
     }
 
     &.icon--power-error {
-      background: url('#{$asset-path}images/b8119c45-power-error.svg') no-repeat;
+      background: url('#{$asset-path}images/d730daea-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
@@ -178,6 +178,11 @@
 
     &.icon--timed-out {
       background: url('#{$asset-path}images/9b78d7f1-timed+out.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &.icon--add-pod {
+      background: url('#{$asset-path}images/9daa79e1-add-pod.svg') no-repeat;
       background-size: 100% 100%;
     }
 
