@@ -30,11 +30,28 @@
     @extend %notification;
 
     &__response {
-      background-position: 0 4px;
       background-repeat: no-repeat;
       background-size: 16px 16px;
       margin: 0;
       text-align: left;
+      background-color: $transparent;
+      color: $text-color;
+      padding: 0;
+      height: initial;
+      background-position: left center;
+
+      &:hover {
+        background-color: $transparent;
+      }
+
+      &:focus {
+        outline: 1px solid $color-focus;
+        outline-offset: 2px;
+      }
+
+      .button--inline {
+        vertical-align: initial;
+      }
     }
 
     &__status {
@@ -69,6 +86,7 @@
           background-color: $warm-grey;
           border-radius: 50%;
           box-sizing: border-box;
+          line-height: 24px;
           max-width: 24px;
           max-height: 24px;
           margin-right: 5px;
@@ -105,6 +123,10 @@
           box-sizing: border-box;
           padding-right: 40px;
           margin: 0;
+
+          .button--inline {
+            vertical-align: initial;
+          }
         }
 
         .p-notification__date {

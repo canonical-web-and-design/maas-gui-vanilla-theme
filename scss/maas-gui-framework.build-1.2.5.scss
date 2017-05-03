@@ -43,7 +43,7 @@
 @import 'helpers.display';
 @import 'helpers.spacing';
 @import 'helpers.state';
-@import 'helpers.vertical-alignment';
+@import 'helpers.alignment';
 @import 'helpers.mixins';
 
 // MAAS theme
@@ -79,7 +79,7 @@
   @include maas-display;
   @include maas-spacing;
   @include maas-state;
-  @include maas-vertical-alignment;
+  @include maas-alignment;
 }
 
 // Build the MAAS theme

@@ -1,0 +1,26 @@
+/// Vertical alginment
+@mixin maas-alignment {
+  .u-vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .u-align--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+
+    .u-align--top {
+      align-self: flex-start;
+    }
+
+    .u-align--bottom {
+      align-self: flex-end;
+    }
+  }
+}

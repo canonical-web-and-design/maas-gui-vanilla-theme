@@ -26,7 +26,7 @@
   .button--destructive,
   .button--positive {
     @include focus($offset: 2px);
-    
+
     &:hover {
       color: $white;
     }
@@ -60,6 +60,11 @@
   }
 }
 
+
+  .button--no-padding {
+    height: initial;
+    padding: 0;
+  }
 @mixin maas-button-group {
   .button-group {
     position: relative;
@@ -136,11 +141,11 @@
     .button-group__item {
       float: left;
       clear: both;
-      padding: 5px 14px;
+      padding: 0px 14px;
       margin: 0;
       text-align: left;
       width: 100%;
-
+      
       .button-group__item-link {
         color: $cool-grey;
         cursor: pointer;
@@ -148,6 +153,10 @@
         float: left;
         margin: 0;
         border: 0;
+        padding: 0;
+        text-align: left;
+        text-transform: none;
+        background-color: $transparent;
         text-transform: lowercase;
         white-space: nowrap;
 

@@ -17,7 +17,13 @@
       .tabs__tab-link {
         color: $warm-grey;
         text-decoration: none;
-        border-bottom: 0;
+        display: inline-block;
+        width: initial;
+        padding: 0;
+        background-color: $transparent;
+        box-sizing: border-box;
+        border-radius: 0;
+        border-bottom: 3px solid $transparent;
       }
 
       &:hover .tabs__tab-link {

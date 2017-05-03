@@ -125,6 +125,9 @@
         margin-left: 10px;
         color: inherit;
         border: 0;
+        display: inline-block;
+        width: initial;
+        background-color: transparent;
 
         &:hover {
           text-decoration: underline;
@@ -180,9 +183,12 @@
       overflow: hidden;
       transition: max-height .3s ease;
       width: 100%;
+      display: none;
 
       &.is-open {
         max-height: 1000px;
+        display: block;
+        overflow: visible;
       }
 
       .page-header__section {
