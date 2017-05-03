@@ -1,9 +1,9 @@
 /// Wrapper
 @mixin maas-wrapper {
   .wrapper {
-    min-height: 100%;
+    min-height: initial;
     // scss-lint:disable DuplicateProperty
-    height: auto !important; // This line and the next line are not necessary unless you need IE6 support
+    height: initial !important; // This line and the next line are not necessary unless you need IE6 support
     height: 100%;
     // scss-lint:enable DuplicateProperty
     margin: 0 auto;
@@ -20,6 +20,13 @@
         float: left;
         width: 100%;
       }
+    }
+
+    &--sticky {
+      display: block !important;
+      overflow: visible;
+      float: left;
+      width: 100% !important;
     }
 
     &--flex {

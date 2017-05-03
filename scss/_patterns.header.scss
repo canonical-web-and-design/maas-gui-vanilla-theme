@@ -10,12 +10,14 @@
     }
 
     .nav-primary {
+      overflow: visible;
 
       @media only screen and (min-width: $navigation-threshold) {
         max-width: none;
       }
 
       .logo {
+        overflow: visible;
 
         @media only screen and (min-width: $navigation-threshold) {
           height: auto;
@@ -23,6 +25,7 @@
         }
 
         a {
+          @include focus($offset: 2px);
           border-bottom: 0;
 
           svg,

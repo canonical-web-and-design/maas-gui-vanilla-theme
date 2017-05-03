@@ -160,4 +160,11 @@
       display: none !important;
     }
   }
+
+  .u-upper-case {
+
+    &--first {
+      text-transform: capitalize;
+    }
+  }
 }
