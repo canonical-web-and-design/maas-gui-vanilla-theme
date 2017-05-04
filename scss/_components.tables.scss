@@ -158,6 +158,7 @@
     %table-header-row {
       color: $table-header-color;
       border-bottom: 1px solid;
+      width: auto !important;
 
       &:hover {
         background-color: transparent;
@@ -170,6 +171,21 @@
 
         &:hover {
           background-color: $white;
+        }
+      }
+
+      &.table__head--sticky {
+        background: #fff;
+        padding: 0;
+        width: 100vw !important;
+        left: 0 !important;
+        right: 0 !important;
+        border-top: 1px dotted #d2d2d2;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        height: auto !important;
+
+        tr th {
+          float: none;
         }
       }
     }
@@ -335,6 +351,10 @@
       width: 100%;
       display: table-header-group;
 
+      @media screen and (min-width: $breakpoint-medium + 1) {
+        display: table-header-group !important;
+      }
+
       @media only screen and (max-width : $breakpoint-medium) {
         display: block;
         width: 100%;
@@ -432,7 +452,7 @@
 
       // Table row hover style, this can reveal control elements
       &:hover {
-        background-color: $white;
+        background-color: $transparent;
 
         // Set controls z-index and opacity so it is visible
         .table__controls {
@@ -446,9 +466,100 @@
         }
       }
 
+      .table__controls {
+        display: inline-block;
+        opacity: 1;
+        z-index: 0;
+
+        @media screen and (max-width: $breakpoint-medium) {
+          width: 100%;
+        }
+
+        &-toggle {
+          display: inline-block;
+          padding: 0;
+          background-color: $transparent;
+          background-image: url('#{$asset-path}images/b0b97dfc-contextual-menu.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          text-indent: -9999px;
+          width: 30px;
+          height: 21px;
+          border-radius: 2px;
+          overflow: hidden;
+
+          @media screen and (max-width: $breakpoint-medium) {
+            display: none;
+          }
+        }
+
+        &-menu {
+          border-radius: 3px;
+          margin: 0;
+          list-style: none;
+          background: #fff;
+          border: 1px solid #d2d2d2;
+          z-index: 20;
+          max-height: 1000px;
+          transition: max-height .3s ease-in;
+          position: absolute;
+          right: 0;
+          top: 33px;
+          clear: both;
+          min-width: 160px;
+
+          @media screen and (max-width: $breakpoint-medium) {
+            display: block !important;
+            position: relative;
+            z-index: 0;
+            max-height: initial;
+            top: initial;
+            min-width: 100%;
+            border: 0;
+          }
+        }
+
+        &-action {
+          background: $transparent;
+          color: $text-color;
+          border-radius: 0;
+          text-align: left;
+
+          &:hover {
+            color: $link-hover;
+          }
+
+          @media screen and (min-width: $breakpoint-medium + 1) {
+            &.u-text--error {
+              border-top: 1px dotted #cdcdcd;
+              margin-top: 5px;
+            }
+          }
+
+          @media screen and (max-width: $breakpoint-medium) {
+            border: 1px solid #cdcdcd;
+            width: 100%;
+            text-align: center;
+
+            + * {
+              margin-top: 10px;
+            }
+
+            &:hover {
+              background-color: #efefef;
+              color: $text-color;
+            }
+          }
+        }
+      }
+      
       // Active state on .table__row
       &.is-active {
         background-color: $white;
+
+        &:hover {
+          background-color: $white;
+        }
 
         .table__controls {
           z-index: 1;

@@ -60,6 +60,10 @@
     clear: both !important;
   }
 
+  .u-visibility--hidden {
+    visibility: hidden !important;
+  }
+
   .u-display {
 
     &--block {
@@ -135,6 +139,16 @@
       }
     }
 
+    &--two-thirds {
+      box-sizing: border-box;
+      float: left;
+      width: 66.66666%!important;
+
+      @media only screen and (max-width : $breakpoint-medium) {
+        width: 100% !important;
+      }
+    }
+
     &--quarter {
       box-sizing: border-box;
       float: left;
@@ -159,5 +173,27 @@
       left: -100vw;
       display: none !important;
     }
+  }
+
+  .u-upper-case {
+
+    &--first {
+      text-transform: capitalize;
+    }
+  }
+
+  .u-text--truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  //
+  // Writespace pre-wrapping for terminal output. This is important in order
+  // to preserve the original indentation when viewing commissioning script
+  // or testing results.
+  //
+  .u-whitespace--prewrap {
+    white-space: pre-wrap !important;
   }
 }

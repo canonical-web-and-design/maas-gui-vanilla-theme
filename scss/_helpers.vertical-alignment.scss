@@ -1,8 +1,0 @@
-/// Vertical alginment
-@mixin maas-vertical-alignment {
-  .u-vertical-align {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}

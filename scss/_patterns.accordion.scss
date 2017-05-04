@@ -43,7 +43,7 @@
       @include font-size(20px);
       @include focus($offset: 2px);
       border-bottom: 1px dotted $muted-grey;
-      padding: 8px 20px 9px;
+      padding: 14px 20px;
       margin: 0;
 
       @media only screen and (max-width : $breakpoint-medium) {
