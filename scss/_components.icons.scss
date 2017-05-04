@@ -182,11 +182,6 @@
     }
 
     &.icon--add-pod {
-      background: url('#{$asset-path}images/9daa79e1-add-pod.svg') no-repeat;
-      background-size: 100% 100%;
-    }
-
-    &.icon--add-pod {
       background: url('data:image/svg+xml;utf8,%3Csvg width="85" height="104" viewBox="0 0 85 104" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3Eadd-pod%3C/title%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cpath d="M84.795 84.947H.755M42.774 71.3v14.69" stroke="' + color-string($status-queued) +'" stroke-width="4"/%3E%3Cpath d="M84.69 74.404v-16.79h-4.202v12.592H4.852V57.614H.65v16.79h84.04zm0-23.087v-16.79h-4.202v16.79h4.202zm-79.733 0v-16.79H.755v16.79h4.202zM84.69 28.23V.948H.65V28.23h4.202V5.145h75.636V28.23h4.202z" fill="' + color-string($status-queued) +'"/%3E%3Cpath d="M84.795 26.12H.755M84.795 49.23H.755" stroke="' + color-string($status-queued) +'" stroke-width="4"/%3E%3Cpath fill="' + color-string($status-queued) +'" d="M23.826 11.406H11.22v6.296h12.606M23.826 34.517H11.22v6.296h12.606M23.826 57.628H11.22v6.296h12.606"/%3E%3Cellipse fill="' + color-string($status-queued) +'" transform="rotate(-180 42.71 97.543)" cx="42.709" cy="97.543" rx="6.296" ry="6.303"/%3E%3C/g%3E%3C/svg%3E');
       background-size: 100% 100%;
     }

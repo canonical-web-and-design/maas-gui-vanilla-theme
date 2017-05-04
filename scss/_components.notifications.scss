@@ -30,15 +30,17 @@
     @extend %notification;
 
     &__response {
-      background-repeat: no-repeat;
-      background-size: 16px 16px;
-      margin: 0;
-      text-align: left;
-      background-color: $transparent;
+      background: {
+        color: $transparent;
+        position: left center;
+        repeat: no-repeat;
+        size: 16px 16px;
+      }
       color: $text-color;
-      padding: 0;
       height: initial;
-      background-position: left center;
+      margin: 0;
+      padding: 0;
+      text-align: left;
 
       &:hover {
         background-color: $transparent;
