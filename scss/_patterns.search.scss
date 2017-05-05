@@ -5,16 +5,16 @@
     position: relative;
 
     .search__input {
-      @include font-size(16px);
-      box-sizing: border-box;
-      border-radius: 4px;
-      list-style: none;
-      background: $white;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-      width: 100%;
-      border: 0;
-      padding: 15px;
       appearance: textfield;
+      background: $white;
+      border: 0;
+      border-radius: 4px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+      box-sizing: border-box;
+      list-style: none;
+      padding: 15px;
+      width: 100%;
+      @include font-size(16px);
 
       &::placeholder {
         color: $warm-grey;
@@ -40,29 +40,29 @@
         pointer-events: none;
 
         + .search__submit {
-          pointer-events: none;
           opacity: .5;
+          pointer-events: none;
         }
       }
     }
 
     .search__submit {
-      @include focus($offset: 2px);
-      position: absolute;
-      top: 15px;
-      right: 15px;
       background-color: $transparent;
       background-image: url('#{$asset-path}images/9cc42dcc-magnifying_glass.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: 20px;
-      text-indent: -999em;
+      border: 0;
       display: block;
-      width: 20px;
       height: 20px;
       overflow: hidden;
       padding: 0;
-      border: 0;
+      position: absolute;
+      right: 15px;
+      text-indent: -999em;
+      top: 15px;
+      width: 20px;
+      @include focus($offset: 2px);
 
       &:hover {
         background-color: $transparent;

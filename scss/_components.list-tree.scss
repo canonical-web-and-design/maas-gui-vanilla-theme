@@ -1,14 +1,14 @@
 /// List tree
 @mixin maas-list-tree {
   .list__tree {
-    list-style: none;
     border-left: 1px solid $outline;
+    list-style: none;
     position: relative;
 
     &.list__tree--sub-level {
-      margin-top: 10px;
-      margin-left: 20px;
       clear: both;
+      margin-left: 20px;
+      margin-top: 10px;
 
       .list__item .list__item-feedback {
         left: 180px;
@@ -19,31 +19,31 @@
       list-style: none;
 
       &:before {
-        content: '';
-        width: 12px;
-        height: 1px;
         background: $outline;
+        content: '';
         display: inline-block;
+        height: 1px;
+        margin-right: 5px;
         position: relative;
         top: -4px;
-        margin-right: 5px;
+        width: 12px;
       }
 
       &:last-child::after {
-        content: '';
-        width: 4px;
-        height: 1em;
-        position: absolute;
-        display: block;
-        left: -2px;
-        bottom: -6px;
         background: $off-white;
+        bottom: -6px;
+        content: '';
+        display: block;
+        height: 1em;
+        left: -2px;
+        position: absolute;
+        width: 4px;
       }
 
       .list__item-feedback {
-        position: relative;
         left: 200px;
         margin-top: -24px;
+        position: relative;
       }
     }
   }

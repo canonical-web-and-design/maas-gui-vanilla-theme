@@ -1,38 +1,38 @@
 // Code block
 @mixin maas-code-block {
   .code-block {
-    overflow: auto;
-    margin: .5em 0;
-    padding: 1em;
-    border: 1px solid $mid-grey;
     background-color: $white;
-    color: $cool-grey;
+    border: 1px solid $mid-grey;
     border-radius: .5em;
+    color: $cool-grey;
+    margin: .5em 0;
+    overflow: auto;
+    padding: 1em;
 
     .code-block__line {
-      float: left;
       clear: both;
+      float: left;
       margin: 0;
     }
 
     &.code-block--terminal {
-      color: $white;
-      border: 0;
       background-color: $cool-grey;
+      border: 0;
+      color: $white;
     }
 
     &.code-block--numbering {
       counter-reset: line-numbering;
 
-      .code-block__line::before {
-        width: 1.5em;
-        padding-right: 1em; // space after numbers
+      .code-block__line::before { // space after numbers
         content: counter(line-numbering);
         counter-increment: line-numbering;
-        user-select: none;
-        text-align: right;
-        pointer-events: none;
         opacity: .5;
+        padding-right: 1em;
+        pointer-events: none;
+        text-align: right;
+        user-select: none;
+        width: 1.5em;
       }
     }
   }

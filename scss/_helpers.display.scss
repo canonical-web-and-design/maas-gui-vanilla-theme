@@ -52,8 +52,8 @@
   }
 
   .u-muted {
-    opacity: .5 !important;
     filter: alpha(opacity = 50) !important;
+    opacity: .5 !important;
   }
 
   .u-clear {
@@ -91,22 +91,22 @@
     &--desktop {
 
       @media only screen and (max-width : $breakpoint-medium) {
+        height: 0;
+        overflow: hidden;
         position: absolute !important;
         visibility: hidden !important;
-        overflow: hidden;
         width: 0;
-        height: 0;
       }
     }
 
     &--mobile {
 
       @media only screen and (min-width : $breakpoint-min-medium) {
+        height: 0;
+        overflow: hidden;
         position: absolute !important;
         visibility: hidden !important;
-        overflow: hidden;
         width: 0;
-        height: 0;
       }
     }
   }
@@ -170,8 +170,8 @@
   .u-mobile {
 
     &--offscreen {
-      left: -100vw;
       display: none !important;
+      left: -100vw;
     }
   }
 
@@ -183,9 +183,9 @@
   }
 
   .u-text--truncate {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   //

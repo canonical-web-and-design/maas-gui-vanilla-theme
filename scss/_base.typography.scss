@@ -7,9 +7,9 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: none;
-      color: $link-hover;
       border-bottom: 1px solid $link-hover;
+      color: $link-hover;
+      text-decoration: none;
     }
   }
 
@@ -24,13 +24,13 @@
 
   pre,
   code {
+    direction: ltr;
+    hyphens: none;
+    tab-size: 4;
     text-align: left;
     white-space: pre-line;
     word-spacing: normal;
     word-wrap: break-word;
-    tab-size: 4;
-    hyphens: none;
-    direction: ltr;
   }
 
   hr {
@@ -44,9 +44,9 @@
 
   // Shared heading styles
   #{$headings()} {
+    color: $headline-color;
     font-weight: 300;
     line-height: #{$line-height-ratio};
-    color: $headline-color;
   }
 
   // Additional font sizes

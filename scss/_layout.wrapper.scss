@@ -1,20 +1,20 @@
 /// Wrapper
 @mixin maas-wrapper {
   .wrapper {
-    min-height: initial;
     // scss-lint:disable DuplicateProperty
     height: initial !important; // This line and the next line are not necessary unless you need IE6 support
     height: 100%;
     // scss-lint:enable DuplicateProperty
     margin: 0 auto;
+    min-height: initial;
     position: relative;
 
     &--inner {
-      max-width: $site-max-width;
-      width: 100%;
-      margin: 0 auto;
       clear: both;
       display: block;
+      margin: 0 auto;
+      max-width: $site-max-width;
+      width: 100%;
 
       @media only screen and (max-width : $breakpoint-medium) {
         float: left;
@@ -24,8 +24,8 @@
 
     &--sticky {
       display: block !important;
-      overflow: visible;
       float: left;
+      overflow: visible;
       width: 100% !important;
     }
 
@@ -40,9 +40,9 @@
 
       &-content {
         flex: 1 1 auto;
-        position: relative; // need this to position inner content
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: auto;
+        position: relative; // need this to position inner content
       }
     }
   }

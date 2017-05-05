@@ -11,22 +11,20 @@
     &[type='email'],
     &[type='url'],
     &[type='tel'] {
-      @include focus($offset: 2px);
       @extend %input-elements;
-      padding: 7px 10px;
-      box-shadow: none;
-      width: 100%;
-      -webkit-appearance: none;
-      -moz-appearance: none;
+      @include focus($offset: 2px);
       appearance: none;
+      box-shadow: none;
+      padding: 7px 10px;
+      width: 100%;
 
       &::placeholder {
         color: $warm-grey;
       }
 
       &[disabled] {
-        color: $warm-grey;
         background-color: $transparent;
+        color: $warm-grey;
       }
 
       &[aria-invalid='true'] {
@@ -40,17 +38,17 @@
 
     &[type='search'] {
       appearance: textfield;
-    }
 
-    &[type='search']::-webkit-search-decoration,
-    &[type='search']::-webkit-search-cancel-button {
-      appearance: none;
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button {
+        appearance: none;
+      }
     }
 
     &[type='checkbox'] {
+      line-height: normal;
       margin: 4px 0 0;
       margin-top: 1px	9;
-      line-height: normal;
     }
 
     &[type='radio'],
@@ -63,25 +61,21 @@
   // Text area styles
   textarea {
     @include focus($offset: 2px);
-    // Remove First
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-
+    box-shadow: none;
     height: auto;
+    line-height: 20px;
     min-height: 175px;
     padding: 7px 10px !important;
-    box-shadow: none;
     width: 100%;
-    line-height: 20px;
 
     &::placeholder {
       color: $warm-grey;
     }
 
     &[disabled] {
-      color: $warm-grey;
       background-color: $transparent;
+      color: $warm-grey;
     }
 
     &[aria-invalid='true'] {
@@ -91,38 +85,38 @@
 
   // Select dropdown styles
   select {
-    @include focus($offset: 2px);
     @extend %input-elements;
-    outline: inherit;
-    display: block;
-    clear: both;
-    cursor: pointer;
-    margin: 0;
-    background-image: url('#{$asset-path}images/04d2075a-chevron-down.svg');
-    background-repeat: no-repeat;
-    background-position: top 14px right 10px;
-    background-color: $white;
-    padding: 7px 30px 7px 10px !important;
-    box-shadow: none;
-    width: 100%;
-
-    // Removes firefox select styles & arrow
+    @include focus($offset: 2px);
     -moz-appearance: none;
     appearance: none;
+    background: {
+      color: $white;
+      image: url('#{$asset-path}images/04d2075a-chevron-down.svg');
+      position: top 14px right 10px;
+      repeat: no-repeat;
+    }
+    box-shadow: none;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    outline: inherit;
+    padding: 7px 30px 7px 10px !important;
     text-indent: .01px;
     text-overflow: '';
+    width: 100%;
 
     &[multiple],
     &[size] {
-      height: auto;
       background-image: none;
+      height: auto;
       padding-top: 10px;
     }
 
     &[disabled] {
-      color: $warm-grey;
-      background-image: none;
       background-color: $transparent;
+      background-image: none;
+      color: $warm-grey;
     }
 
     &[aria-invalid='true'] {
@@ -148,12 +142,12 @@
 
   label {
     display: inline-block;
-    max-width: 100%;
     margin-bottom: 5px;
+    max-width: 100%;
 
     @media only screen and (max-width : $breakpoint-medium) {
-      width: 100%;
       color: $warm-grey;
+      width: 100%;
     }
   }
 
@@ -162,13 +156,13 @@
   }
 
   /// Base for label styling
-  [type="checkbox"] {
+  [type='checkbox'] {
 
     &:focus {
 
       + label {
 
-        &:before {
+        &::before {
           outline: 1px solid $color-focus;
           outline-offset: 2px;
         }
@@ -177,35 +171,35 @@
 
     &:not(:checked),
     &:checked {
-      position: absolute;
       left: -9999px;
+      position: absolute;
     }
 
     + label {
-      min-height: 34px;
-      line-height: 34px;
-      position: relative;
-      padding-left: 25px;
       cursor: pointer;
       display: inline-block !important;
+      line-height: 34px;
+      min-height: 34px;
+      padding-left: 25px;
+      position: relative;
 
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 9px;
-        width: 16px;
-        height: 16px;
-        border: 1px solid $mid-grey;
+      &::before {
         background: $white;
+        border: 1px solid $mid-grey;
         border-radius: 2px;
         box-sizing: border-box;
+        content: '';
+        height: 16px;
+        left: 0;
+        position: absolute;
+        top: 9px;
+        width: 16px;
       }
 
       &:focus {
         outline: none;
 
-        &:before {
+        &::before {
           outline: 1px solid $color-focus;
           outline-offset: 2px;
         }
@@ -213,7 +207,7 @@
 
       &:hover {
 
-        &:before {
+        &::before {
           background: url('#{$asset-path}images/46b44caf-checkbox-hover.svg') no-repeat;
           background-size: 100% 100%;
         }
@@ -224,10 +218,9 @@
 
       + label {
 
-        &:before {
+        &::before {
           background: url('#{$asset-path}images/db8d0984-checkbox.svg') no-repeat;
           background-size: 100% 100%;
-
           border: 0;
         }
       }
@@ -239,60 +232,60 @@
       + label {
         cursor: not-allowed;
 
-        &:before {
+        &::before {
           opacity: .5;
         }
       }
     }
   }
 
-  [type="radio"] {
+  [type='radio'] {
 
     &:not(:checked),
     &:checked {
-      position: absolute;
       left: -9999px;
+      position: absolute;
     }
 
     &:focus {
 
       + label {
 
-        &:before {
+        &::before {
           box-shadow: 0 0 0 2px $white, 0 0 0 3px $color-focus;
         }
       }
     }
 
     + label {
-      position: relative;
-      padding-left: 25px;
       cursor: pointer;
       display: inline-block !important;
+      padding-left: 25px;
+      position: relative;
 
-      &:before {
+      &::before {
+        background: $white;
+        border: 1px solid $mid-grey;
+        border-radius: 50%;
         content: '';
-        position: absolute;
+        height: 13px;
         left: 0;
+        position: absolute;
         top: 5px;
         width: 13px;
-        height: 13px;
-        border: 1px solid $mid-grey;
-        background: $white;
-        border-radius: 50%;
       }
 
-      &:after {
-        transition: opacity .4s ease;
-        opacity: 0;
+      &::after {
         content: '';
+        opacity: 0;
         position: absolute;
+        transition: opacity .4s ease;
       }
 
       &:focus {
         outline: none;
 
-        &:before {
+        &::before {
           outline: 1px solid $color-focus;
           outline-offset: 2px;
         }
@@ -300,16 +293,16 @@
 
       &:hover {
 
-        &:after {
-          content: '';
-          position: absolute;
-          left: 4px;
-          top: 9px;
-          width: 7px;
-          height: 7px;
+        &::after {
           background: $alto-grey;
           border-radius: 50%;
+          content: '';
+          height: 7px;
+          left: 4px;
           opacity: 1;
+          position: absolute;
+          top: 9px;
+          width: 7px;
         }
       }
     }
@@ -317,15 +310,15 @@
     &:checked {
 
       + label:after {
-        content: '';
-        position: absolute;
-        left: 3px;
-        top: 8px;
-        width: 9px;
-        height: 9px;
         background: $component-color;
         border-radius: 50%;
+        content: '';
+        height: 9px;
+        left: 3px;
         opacity: 1;
+        position: absolute;
+        top: 8px;
+        width: 9px;
       }
     }
   }
@@ -334,8 +327,8 @@
     width: 100%;
 
     .tag-list {
-      width: 100%;
       margin: 0;
+      width: 100%;
 
       .tag-item {
         display: inline-block;
@@ -358,16 +351,16 @@
   }
 
   .onoffswitch {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 38px;
-    height: 16px;
-    margin: 4px 0 0;
     //scss-lint:disable VendorPrefixes
-    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    -webkit-user-select: none;
+    display: inline-block;
+    height: 16px;
+    margin: 4px 0 0;
+    position: relative;
+    vertical-align: top;
+    width: 38px;
     //scss-lint:enable VendorPrefixes
 
     &[disabled] {
@@ -397,75 +390,75 @@
   }
 
   .onoffswitch-label {
-    display: block !important;
-    overflow: hidden;
-    cursor: pointer;
     border-radius: 2px;
-    padding-left: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    min-height: 16px !important;
-    max-height: 16px;
+    cursor: pointer;
+    display: block !important;
     line-height: 16px !important;
+    margin: 0 !important;
+    max-height: 16px;
+    min-height: 16px !important;
+    overflow: hidden;
+    padding-left: 0 !important;
     vertical-align: top !important;
+    width: 100% !important;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       display: none;
     }
   }
 
   .onoffswitch-inner {
     display: block;
-    width: 200%;
     margin-left: -100%;
     transition: margin .3s ease-in 0s;
+    width: 200%;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
+      box-sizing: border-box;
+      color: $white;
       display: block;
       float: left;
-      width: 50%;
-      height: 18px;
-      padding: 0;
-      line-height: 18px;
-      font-size: 14px;
-      color: $white;
       font-family: Trebuchet, Arial, sans-serif;
+      font-size: 14px;
       font-weight: bold;
-      box-sizing: border-box;
+      height: 18px;
+      line-height: 18px;
+      padding: 0;
+      width: 50%;
     }
 
-    &:before {
-      content: '';
-      padding-left: 10px;
+    &::before {
       background-color: $component-color;
       color: $white;
+      content: '';
+      padding-left: 10px;
     }
 
-    &:after {
-      content: '';
-      padding-right: 10px;
+    &::after {
       background-color: $gallery-grey;
       color: $warm-grey;
+      content: '';
+      padding-right: 10px;
       text-align: right;
     }
   }
 
   .onoffswitch-switch {
-    display: block;
-    width: 19px;
-    height: 16px;
-    margin: 0;
     background: $white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 19px;
     border: 1px solid $outline;
     border-radius: 2px;
-    transition: all .3s ease-in 0s;
+    bottom: 0;
     box-sizing: border-box;
+    display: block;
+    height: 16px;
+    margin: 0;
+    position: absolute;
+    right: 19px;
+    top: 0;
+    transition: all .3s ease-in 0s;
+    width: 19px;
   }
 
   .onoffswitch-checkbox:checked + .onoffswitch-label {
