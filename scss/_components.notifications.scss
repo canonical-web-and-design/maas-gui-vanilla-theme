@@ -82,7 +82,7 @@
       .p-notification__status {
 
         // Pulls in data-count content to show the response count.
-        &:before {
+        &::before {
           background-color: $warm-grey;
           border-radius: 50%;
           box-sizing: border-box;
@@ -158,7 +158,7 @@
 
       .p-notification__status {
 
-        &:before {
+        &::before {
           background-color: $success;
           color: $white;
         }
@@ -183,7 +183,7 @@
 
       .p-notification__status {
 
-        &:before {
+        &::before {
           background-color: $warning;
         }
       }
@@ -207,7 +207,7 @@
 
       .p-notification__status {
 
-        &:before {
+        &::before {
           background-color: $error;
           color: $white;
         }

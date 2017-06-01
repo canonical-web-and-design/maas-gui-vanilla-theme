@@ -18,7 +18,7 @@
       color: $cool-grey;
     }
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       line-height: 28px;
     }
   }
@@ -50,7 +50,7 @@
 
   [class^="button--"] {
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       margin-top: 0;
 
       + [class^="button--"] {
@@ -75,7 +75,7 @@
     vertical-align: middle;
     width: 100%;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       width: 100%;
     }
 
@@ -83,7 +83,7 @@
       display: inline-block;
       width: auto;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100%;
       }
     }
@@ -94,7 +94,7 @@
       padding-right: 35px;
       text-align: left;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         line-height: 30px;
       }
 
@@ -111,7 +111,7 @@
         vertical-align: middle;
         width: 4px;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           top: 18px;
         }
       }
@@ -134,7 +134,7 @@
       width: 100%;
       z-index: 20;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100%;
         top: 48px;
       }
@@ -173,7 +173,7 @@
       }
     }
   }
-  // scss-lint:enable SelectorFormat
+  // sass-lint:enable class-name-format
 }
 
 %button-pattern {
@@ -198,12 +198,12 @@
     display: inline-block;
     width: auto;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       width: 100%;
     }
   }
 
-  @media only screen and (max-width : $breakpoint-medium) {
+  @media only screen and (max-width: $breakpoint-medium) {
     height: 48px;
     line-height: 28px;
     width: 100%;

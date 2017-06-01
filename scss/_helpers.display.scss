@@ -1,8 +1,9 @@
 /// Display
 @mixin maas-display {
+  // sass-lint:disable no-important
   .u-align {
 
-    @media only screen and (min-width : $breakpoint-min-medium) {
+    @media only screen and (min-width: $breakpoint-min-medium) {
       &--right {
         text-align: right !important;
       }
@@ -69,7 +70,7 @@
     &--block {
       display: block !important;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         &-mobile {
           display: block !important;
         }
@@ -90,7 +91,7 @@
 
     &--desktop {
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         height: 0;
         overflow: hidden;
         position: absolute !important;
@@ -101,7 +102,7 @@
 
     &--mobile {
 
-      @media only screen and (min-width : $breakpoint-min-medium) {
+      @media only screen and (min-width: $breakpoint-min-medium) {
         height: 0;
         overflow: hidden;
         position: absolute !important;
@@ -124,7 +125,7 @@
       float: left;
       width: 50% !important;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100% !important;
       }
     }
@@ -134,7 +135,7 @@
       float: left;
       width: calc(100%/3) !important;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100% !important;
       }
     }
@@ -142,9 +143,9 @@
     &--two-thirds {
       box-sizing: border-box;
       float: left;
-      width: 66.66666%!important;
+      width: 66.66666% !important;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100% !important;
       }
     }
@@ -154,7 +155,7 @@
       float: left;
       width: 25% !important;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100% !important;
       }
     }
@@ -196,4 +197,5 @@
   .u-whitespace--prewrap {
     white-space: pre-wrap !important;
   }
+  // sass-lint:enable no-important
 }

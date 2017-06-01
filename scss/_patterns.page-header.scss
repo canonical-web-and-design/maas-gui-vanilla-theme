@@ -12,7 +12,7 @@
     padding: 0 20px;
     width: 100% !important;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       padding: 0 10px;
       width: 100%;
     }
@@ -23,7 +23,7 @@
       padding: 20px 0;
       @include font-size($h1);
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         font-size: 1.5rem;
         padding: 10px 0;
         width: 100%;
@@ -41,7 +41,7 @@
         width: auto;
         @include font-size($h1);
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           border: 1px solid $outline;
           font-size: 1.5rem;
           margin: 0;
@@ -75,7 +75,7 @@
         padding: 0;
         width: auto;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: none;
         }
       }
@@ -91,7 +91,7 @@
         width: auto;
         @include font-size($h1);
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           font-size: 1.5rem;
           margin: 20px 0 0;
           width: 100%;
@@ -107,13 +107,13 @@
       width: auto;
       @include font-size(19px);
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         margin: 0 0 20px;
         width: 100%;
       }
 
       .page-header__status-text {
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: inline-block;
           margin: 0 !important;
           width: 50%;
@@ -133,7 +133,7 @@
           text-decoration: underline;
         }
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: inline-block;
           margin: 0;
           width: 50%;
@@ -146,7 +146,7 @@
       float: right;
       padding: 26px 0;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         padding: 0 0 20px;
         width: 100%;
 
@@ -170,7 +170,7 @@
           text-decoration: none;
         }
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           clear: both;
           display: inline-block;
           margin-bottom: 20px;

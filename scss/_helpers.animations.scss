@@ -1,5 +1,6 @@
 /// Animations
 @mixin maas-animations {
+  // sass-lint:disable no-important
   .u-animation--spin {
     animation: spin 1s infinite linear !important;
   }
@@ -35,4 +36,5 @@
       transform: scale(1.2, 1.2);
     }
   }
+  // sass-lint:enable no-important
 }

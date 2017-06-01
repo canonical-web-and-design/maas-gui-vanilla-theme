@@ -47,6 +47,7 @@
     }
 
     .search__submit {
+      @include focus($offset: 2px);
       background-color: $transparent;
       background-image: url('#{$asset-path}images/9cc42dcc-magnifying_glass.svg');
       background-position: center;
@@ -61,8 +62,7 @@
       right: 15px;
       text-indent: -999em;
       top: 15px;
-      width: 20px;
-      @include focus($offset: 2px);
+      width: 20px;  
 
       &:hover {
         background-color: $transparent;

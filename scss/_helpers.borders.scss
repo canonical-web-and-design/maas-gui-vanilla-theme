@@ -1,5 +1,6 @@
 /// Borders
 @mixin maas-borders($border-color: $mid-grey, $border-width: 1px) {
+  // sass-lint:disable no-important
   .u-border {
     border: $border-width dotted $border-color !important;
 
@@ -35,4 +36,5 @@
       border: 0 !important;
     }
   }
+  // sass-lint:enable no-important
 }

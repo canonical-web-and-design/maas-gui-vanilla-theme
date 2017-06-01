@@ -18,7 +18,7 @@
     .list__item {
       list-style: none;
 
-      &:before {
+      &::before {
         background: $outline;
         content: '';
         display: inline-block;

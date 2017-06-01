@@ -52,7 +52,7 @@
       visibility: visible;
       z-index: 1000;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         display: none;
       }
     }

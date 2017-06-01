@@ -66,7 +66,7 @@
     height: auto;
     line-height: 20px;
     min-height: 175px;
-    padding: 7px 10px !important;
+    padding: 7px 10px;
     width: 100%;
 
     &::placeholder {
@@ -101,7 +101,7 @@
     display: block;
     margin: 0;
     outline: inherit;
-    padding: 7px 30px 7px 10px !important;
+    padding: 7px 30px 7px 10px;
     text-indent: .01px;
     text-overflow: '';
     width: 100%;
@@ -145,7 +145,7 @@
     margin-bottom: 5px;
     max-width: 100%;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       color: $warm-grey;
       width: 100%;
     }
@@ -177,7 +177,7 @@
 
     + label {
       cursor: pointer;
-      display: inline-block !important;
+      display: inline-block;
       line-height: 34px;
       min-height: 34px;
       padding-left: 25px;
@@ -237,6 +237,7 @@
         }
       }
     }
+    // sass-lint:enable nesting-depth
   }
 
   [type='radio'] {
@@ -259,7 +260,7 @@
 
     + label {
       cursor: pointer;
-      display: inline-block !important;
+      display: inline-block;
       padding-left: 25px;
       position: relative;
 
@@ -309,16 +310,19 @@
 
     &:checked {
 
-      + label:after {
-        background: $component-color;
-        border-radius: 50%;
-        content: '';
-        height: 9px;
-        left: 3px;
-        opacity: 1;
-        position: absolute;
-        top: 8px;
-        width: 9px;
+      + label {
+
+        &::after {
+          background: $component-color;
+          border-radius: 50%;
+          content: '';
+          height: 9px;
+          left: 3px;
+          opacity: 1;
+          position: absolute;
+          top: 8px;
+          width: 9px;
+        }
       }
     }
   }
@@ -346,12 +350,12 @@
     }
 
     .input {
-      width: 100% !important;
+      width: 100%;
     }
   }
 
   .onoffswitch {
-    //scss-lint:disable VendorPrefixes
+    // sass-lint:disable no-vendor-prefixes
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
@@ -361,7 +365,7 @@
     position: relative;
     vertical-align: top;
     width: 38px;
-    //scss-lint:enable VendorPrefixes
+    // sass-lint:enable no-vendor-prefixes
 
     &[disabled] {
 
@@ -389,6 +393,7 @@
     }
   }
 
+  // sass-lint:disable no-important
   .onoffswitch-label {
     border-radius: 2px;
     cursor: pointer;
@@ -401,6 +406,7 @@
     padding-left: 0 !important;
     vertical-align: top !important;
     width: 100% !important;
+    // sass-lint:enable no-important
 
     &::before,
     &::after {
@@ -461,13 +467,20 @@
     width: 19px;
   }
 
-  .onoffswitch-checkbox:checked + .onoffswitch-label {
-    .onoffswitch-inner {
-      margin-left: 0;
-    }
+  .onoffswitch-checkbox {
 
-    .onoffswitch-switch {
-      right: 0;
+    &:checked {
+
+      + .onoffswitch-label {
+
+        .onoffswitch-inner {
+          margin-left: 0;
+        }
+
+        .onoffswitch-switch {
+          right: 0;
+        }
+      }
     }
   }
 }

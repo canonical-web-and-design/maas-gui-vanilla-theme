@@ -10,7 +10,7 @@
     }
 
     .nav-primary {
-      // scss-lint:disable enable;
+      // sass-lint:disable enable;
       overflow: visible;
 
       @media only screen and (min-width: $navigation-threshold) {
@@ -86,7 +86,7 @@
         }
       }
 
-      // scss-lint:disable IdSelector
+      // sass-lint:disable IdSelector
       #nav:hover .nav-secondary {
         display: block;
       }

@@ -1,10 +1,10 @@
 /// Accordion
 @mixin maas-accordion {
-  // scss-lint:enable NestingDepth SelectorDepth;
+  // sass-lint:enable NestingDepth SelectorDepth;
   .p-mobile-nav {
     display: none;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       display: block;
       width: 100%;
 
@@ -21,7 +21,7 @@
     }
   }
 
-  // scss-lint:disable NestingDepth SelectorDepth
+  // sass-lint:disable NestingDepth SelectorDepth
   .accordion {
     background: $white;
     border-radius: 2px;
@@ -30,7 +30,7 @@
     list-style: none;
     margin-bottom: 40px;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       margin-bottom: 0;
     }
 
@@ -47,7 +47,7 @@
       @include font-size(20px);
       @include focus($offset: 2px);
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         background: $transparent url('#{$asset-path}images/04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
         border-bottom: 0;
 
@@ -63,7 +63,7 @@
     }
 
     .accordion__content {
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         display: none;
       }
     }
@@ -93,7 +93,7 @@
             max-height: 400px;
             transition: max-height .5s ease-in;
 
-            @media only screen and (max-width : $breakpoint-medium) {
+            @media only screen and (max-width: $breakpoint-medium) {
               max-height: 150px;
             }
           }

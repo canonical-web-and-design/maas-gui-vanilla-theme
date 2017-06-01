@@ -129,7 +129,7 @@
         vertical-align: middle;
         width: auto;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: block;
           width: 100%;
         }
@@ -140,7 +140,7 @@
         margin: 0 20px 0 0;
         vertical-align: top;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: block;
           width: 100%;
         }
@@ -151,7 +151,7 @@
           margin-right: 10px;
           vertical-align: top;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             display: block;
             width: 100%;
           }
@@ -170,7 +170,7 @@
           min-height: 34px;
           width: auto;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             display: block;
             width: 100%;
 

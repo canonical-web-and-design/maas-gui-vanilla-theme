@@ -1,10 +1,10 @@
 /// Wrapper
 @mixin maas-wrapper {
   .wrapper {
-    // scss-lint:disable DuplicateProperty
+    // sass-lint:disable DuplicateProperty
     height: initial !important; // This line and the next line are not necessary unless you need IE6 support
     height: 100%;
-    // scss-lint:enable DuplicateProperty
+    // sass-lint:enable DuplicateProperty
     margin: 0 auto;
     min-height: initial;
     position: relative;
@@ -16,7 +16,7 @@
       max-width: $site-max-width;
       width: 100%;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         float: left;
         width: 100%;
       }
