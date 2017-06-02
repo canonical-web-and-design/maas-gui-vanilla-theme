@@ -531,13 +531,13 @@
 
           @media screen and (min-width: $breakpoint-medium + 1) {
             &.u-text--error {
-              border-top: 1px dotted $silk;
+              border-top: 1px dotted $silk-grey;
               margin-top: 5px;
             }
           }
 
           @media screen and (max-width: $breakpoint-medium) {
-            border: 1px solid $silk;
+            border: 1px solid $silk-grey;
             text-align: center;
             width: 100%;
 
