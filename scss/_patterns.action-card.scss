@@ -3,13 +3,13 @@
   .action-card {
     background: $white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-    margin-bottom: 40px;
-    padding: 20px 20px 10px;
     box-sizing: border-box;
-    width: 100%;
-    display: inline-block;
     clear: both;
+    display: inline-block;
+    margin-bottom: 40px;
     overflow: hidden;
+    padding: 20px 20px 10px;
+    width: 100%;
 
     .action-card__title {
       font-size: $h2;
@@ -18,11 +18,11 @@
 
     .action-card__controls {
       border-top: 1px dotted $warm-grey;
-      width: 100%;
+      box-sizing: border-box;
       display: inline-block;
       margin: 10px 0 0;
       padding: 10px 0 0;
-      box-sizing: border-box;
+      width: 100%;
     }
 
     &--login {

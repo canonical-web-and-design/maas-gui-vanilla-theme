@@ -3,41 +3,41 @@
   .tabs {
     display: inline-block;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       margin: 0 0 20px;
       width: 100%;
     }
 
     .tabs__tab {
-      @include font-size(18px);
       display: inline-block;
       list-style-type: none;
       margin: 0;
+      @include font-size(18px);
 
       .tabs__tab-link {
-        color: $warm-grey;
-        text-decoration: none;
-        display: inline-block;
-        width: initial;
-        padding: 0;
         background-color: $transparent;
-        box-sizing: border-box;
-        border-radius: 0;
         border-bottom: 3px solid $transparent;
+        border-radius: 0;
+        box-sizing: border-box;
+        color: $warm-grey;
+        display: inline-block;
+        padding: 0;
+        text-decoration: none;
+        width: initial;
       }
 
       &:hover .tabs__tab-link {
         border-bottom: 3px solid $warm-grey;
       }
 
-      &:after {
-        content: '';
-        width: 1px;
-        display: inline-block;
+      &::after {
         background: $outline;
+        content: '';
+        display: inline-block;
         height: 11px;
-        padding: 0;
         margin: 0 5px;
+        padding: 0;
+        width: 1px;
       }
 
       &:last-child::after {

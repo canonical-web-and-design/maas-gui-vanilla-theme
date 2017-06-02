@@ -3,11 +3,11 @@
 
   .icon {
     @include icon-size(16px);
-    padding: 0;
     border-bottom: 0 !important;
     display: inline-block;
-    vertical-align: middle;
+    padding: 0;
     text-indent: 999em;
+    vertical-align: middle;
 
     &.icon--account {
       background: url('#{$asset-path}images/d760df7b-account.svg') no-repeat;
@@ -192,35 +192,35 @@
     }
 
     &--status-failed {
-      //scss-lint:disable PlaceholderInExtend
+      // sass-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
       background: url('data:image/svg+xml;utf8,%3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-failed) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-failed) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-in-progress {
-      //scss-lint:disable PlaceholderInExtend
+      // sass-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
       background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-in-progress) +'" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-in-progress) +'" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-queued {
-      //scss-lint:disable PlaceholderInExtend
+      // sass-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
       background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-queued) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-queued) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-succeeded {
-      //scss-lint:disable PlaceholderInExtend
+      // sass-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
       background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-succeeded) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-succeeded) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     }
 
     &--status-waiting {
-      //scss-lint:disable PlaceholderInExtend
+      // sass-lint:disable PlaceholderInExtend
       @extend .icon;
       //scss-link:enable PlaceholderInExtend
       background: url('data:image/svg+xml;utf8, %3Csvg width="16px" height="16px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"%3E%3Cg id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"%3E%3Cg id="status-queued" transform="translate(1, 1)"%3E%3Cg id="Page-1"%3E%3Cg id="status-queued"%3E%3Cg id="Group"%3E%3Ccircle id="Oval" stroke="' + color-string($status-waiting) + '" stroke-width="2" cx="6" cy="6" r="6"%3E%3C/circle%3E%3Ccircle id="Oval-Copy" class="status-circle" fill="' + color-string($status-waiting) + '" cx="6" cy="6" r="4"%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
@@ -282,6 +282,6 @@
 }
 
 @mixin icon-size($size) {
-  width: $size;
   height: $size;
+  width: $size;
 }

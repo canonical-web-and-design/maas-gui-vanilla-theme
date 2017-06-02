@@ -4,57 +4,57 @@
   @include table-columns(100);
 }
 
-// scss-lint:disable SelectorFormat
+// sass-lint:disable class-name-format
 @mixin tables($table-border-color, $table-header-color, $table-font-size, $table-header-size) {
 
-  // scss-lint:disable NestingDepth
+  // sass-lint:disable NestingDepth
 
   // Here is the main placeholder styles for tables. All main elements can be
   // changed or amended here and will effect standard table markup / class based
   // div created tables.
   %table {
+    border-collapse: separate;
     border-color: $table-border-color;
     border-spacing: 0;
     margin: 0 0 20px;
-    width: 100%;
     max-width: $site-max-width;
     text-align: left;
-    border-collapse: separate;
+    width: 100%;
 
     // Table row styles
     %table-row {
-      width: 100%;
-      border-color: rgb(178, 178, 178);
       border-bottom-style: dotted;
       border-bottom-width: 1px;
+      border-color: rgb(178, 178, 178);
+      width: 100%;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         background: $white;
         border: 0;
         border-radius: 2px;
-        box-sizing: border-box;
         box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        box-sizing: border-box;
         display: block;
-        margin-bottom: 20px;
-        width: 100%;
-        padding: 0 10px;
         float: left;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        width: 100%;
       }
     }
 
     // Table cell styles
     %table-cell {
       @include font-size($table-font-size);
-      padding: 10px;
+      backface-visibility: hidden;
+      background: none;
+      border-collapse: separate;
+      border: 0;
       box-sizing: border-box;
       min-height: 21px;
-      background: none;
-      border: 0;
-      text-align: left;
-      border-collapse: separate;
-      vertical-align: top;
-      backface-visibility: hidden;
+      padding: 10px;
       position: relative;
+      text-align: left;
+      vertical-align: top;
 
       > input {
 
@@ -64,7 +64,7 @@
             margin: 0;
             min-height: 16px;
 
-            &:before {
+            &::before {
               top: -2px;
             }
           }
@@ -76,13 +76,13 @@
             margin: 0;
             min-height: 16px;
 
-            &:before {
+            &::before {
               top: 0;
             }
 
             &:hover {
 
-              &:after {
+              &::after {
                 top: 4px;
               }
             }
@@ -104,17 +104,17 @@
         margin: 0;
       }
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
+        border-bottom: 0 !important;
+        border-top: 0;
         box-sizing: border-box;
         display: block;
         margin: 0;
         min-height: 45px;
         padding-left: 50%;
-        width: 100% !important;
-        text-align: right;
         position: relative;
-        border-bottom: 0 !important;
-        border-top: 0;
+        text-align: right;
+        width: 100% !important;
 
         label,
         dl,
@@ -128,24 +128,24 @@
         }
 
         &::before {
+          color: $warm-grey;
           content: attr(aria-label);
           display: block;
-          width: 50%;
-          height: 100%;
           font-size: 16px;
-          color: $warm-grey;
-          position: absolute;
-          top: 10px;
+          height: 100%;
           left: 10px;
+          position: absolute;
           text-align: left !important;
+          top: 10px;
+          width: 50%;
         }
 
         &.table--mobile-controls {
           padding-left: 10px;
-          width: 100% !important;
           text-align: center !important;
+          width: 100% !important;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             &::before {
               display: none;
             }
@@ -156,18 +156,18 @@
 
     // Table header row styles
     %table-header-row {
-      color: $table-header-color;
       border-bottom: 1px solid;
+      color: $table-header-color;
       width: auto !important;
 
       &:hover {
         background-color: transparent;
       }
 
-      @media only screen and (max-width : $breakpoint-medium) {
-        width: 100%;
+      @media only screen and (max-width: $breakpoint-medium) {
         border: 0;
         display: block;
+        width: 100%;
 
         &:hover {
           background-color: $white;
@@ -175,14 +175,14 @@
       }
 
       &.table__head--sticky {
-        background: #fff;
-        padding: 0;
-        width: 100vw !important;
-        left: 0 !important;
-        right: 0 !important;
-        border-top: 1px dotted #d2d2d2;
+        background: $white;
+        border-top: 1px dotted $outline;
         box-shadow: 0 1px 1px rgba(0,0,0,0.1);
         height: auto !important;
+        left: 0 !important;
+        padding: 0;
+        right: 0 !important;
+        width: 100vw !important;
 
         tr th {
           float: none;
@@ -195,30 +195,30 @@
       @include font-size($table-header-size);
       background: none;
       color: $table-header-color;
-      font-size: 13px;
       display: table-cell;
+      font-size: 13px;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         display: none;
         width: 100%;
 
         &::before {
+          color: $cool-grey;
           content: attr(aria-label);
           display: block;
-          width: 50%;
-          height: 100%;
           font-size: 16px;
-          color: $cool-grey;
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          text-align: left !important;
           font-weight: 300;
+          height: 100%;
+          left: 10px;
+          position: absolute;
+          text-align: left !important;
+          top: 10px;
+          width: 50%;
         }
 
         &.u-display--block-mobile {
-          display: block;
           border-bottom: 0;
+          display: block;
           text-align: right;
         }
       }
@@ -230,13 +230,13 @@
 
           + label {
             margin: 0;
-            top: 0;
             min-height: 16px;
+            top: 0;
 
-            &:before {
+            &::before {
               top: 0;
 
-              @media only screen and (max-width : $breakpoint-medium) {
+              @media only screen and (max-width: $breakpoint-medium) {
                 top: 2px;
               }
             }
@@ -255,8 +255,8 @@
 
     // Table header hyperlink styles
     %table-header-link {
-      color: $table-header-color;
       border-bottom: 0;
+      color: $table-header-color;
 
       &:hover {
         color: $text-color;
@@ -276,11 +276,11 @@
 
     // Table divide is used for multiple table header options
     %table-divide {
-      width: 1px;
-      display: inline-block;
       background: $table-header-color;
+      display: inline-block;
       height: 10px;
       margin: 0 5px;
+      width: 1px;
     }
 
     .numerical {
@@ -326,14 +326,14 @@
     }
 
     th {
-      color: $table-header-color;
       border-bottom: 1px solid;
+      color: $table-header-color;
     }
 
     td {
-      border-color: rgb(178, 178, 178);
       border-bottom-style: dotted;
       border-bottom-width: 1px;
+      border-color: rgb(178, 178, 178);
 
       a:link,
       a:visited {
@@ -341,21 +341,21 @@
         font-weight: 400;
 
         &:hover {
-          text-decoration: none;
           color: $link-hover;
+          text-decoration: none;
         }
       }
     }
 
     thead {
-      width: 100%;
       display: table-header-group;
+      width: 100%;
 
       @media screen and (min-width: $breakpoint-medium + 1) {
         display: table-header-group !important;
       }
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         display: block;
         width: 100%;
       }
@@ -375,20 +375,20 @@
 
       &.table__head--sticky {
         background: $white;
-        padding: 0;
-        width: 100vw !important;
-        left: 0 !important;
-        right: 0 !important;
         height: auto;
+        left: 0 !important;
+        padding: 0;
+        right: 0 !important;
+        width: 100vw !important;
 
         tr {
-          max-width: $site-max-width;
-          width: 100%;
-          margin: 0 auto;
+          border-bottom: 0;
           display: block;
           float: none;
-          border-bottom: 0;
+          margin: 0 auto;
+          max-width: $site-max-width;
           overflow: hidden;
+          width: 100%;
 
           th {
             border-bottom: 0;
@@ -404,7 +404,7 @@
 
     tbody {
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100%;
         display: block;
       }
@@ -440,15 +440,15 @@
     @extend %table;
     display: table;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       display: block;
     }
 
     // Table row style
     .table__row {
       @extend %table-row;
-      float: left;
       display: table-row;
+      float: left;
 
       // Table row hover style, this can reveal control elements
       &:hover {
@@ -456,12 +456,12 @@
 
         // Set controls z-index and opacity so it is visible
         .table__controls {
-          z-index: 1;
           opacity: 1;
+          z-index: 1;
 
           &--secondary {
-            z-index: 1;
             opacity: 1;
+            z-index: 1;
           }
         }
       }
@@ -476,17 +476,17 @@
         }
 
         &-toggle {
-          display: inline-block;
-          padding: 0;
           background-color: $transparent;
           background-image: url('#{$asset-path}images/b0b97dfc-contextual-menu.svg');
           background-position: center;
           background-repeat: no-repeat;
+          border-radius: 2px;
+          display: inline-block;
+          height: 21px;
+          overflow: hidden;
+          padding: 0;
           text-indent: -9999px;
           width: 30px;
-          height: 21px;
-          border-radius: 2px;
-          overflow: hidden;
 
           @media screen and (max-width: $breakpoint-medium) {
             display: none;
@@ -494,35 +494,35 @@
         }
 
         &-menu {
+          background: $white;
           border-radius: 3px;
-          margin: 0;
+          border: 1px solid $outline;
+          clear: both;
           list-style: none;
-          background: #fff;
-          border: 1px solid #d2d2d2;
-          z-index: 20;
+          margin: 0;
           max-height: 1000px;
-          transition: max-height .3s ease-in;
+          min-width: 160px;
           position: absolute;
           right: 0;
           top: 33px;
-          clear: both;
-          min-width: 160px;
+          transition: max-height .3s ease-in;
+          z-index: 20;
 
           @media screen and (max-width: $breakpoint-medium) {
-            display: block !important;
-            position: relative;
-            z-index: 0;
-            max-height: initial;
-            top: initial;
-            min-width: 100%;
             border: 0;
+            display: block !important;
+            max-height: initial;
+            min-width: 100%;
+            position: relative;
+            top: initial;
+            z-index: 0;
           }
         }
 
         &-action {
           background: $transparent;
-          color: $text-color;
           border-radius: 0;
+          color: $text-color;
           text-align: left;
 
           &:hover {
@@ -531,28 +531,28 @@
 
           @media screen and (min-width: $breakpoint-medium + 1) {
             &.u-text--error {
-              border-top: 1px dotted #cdcdcd;
+              border-top: 1px dotted $silk-grey;
               margin-top: 5px;
             }
           }
 
           @media screen and (max-width: $breakpoint-medium) {
-            border: 1px solid #cdcdcd;
-            width: 100%;
+            border: 1px solid $silk-grey;
             text-align: center;
+            width: 100%;
 
             + * {
               margin-top: 10px;
             }
 
             &:hover {
-              background-color: #efefef;
+              background-color: $outline;
               color: $text-color;
             }
           }
         }
       }
-      
+
       // Active state on .table__row
       &.is-active {
         background-color: $white;
@@ -562,12 +562,12 @@
         }
 
         .table__controls {
-          z-index: 1;
           opacity: 1;
+          z-index: 1;
 
           &--secondary {
-            z-index: 1;
             opacity: 1;
+            z-index: 1;
           }
         }
 
@@ -593,10 +593,10 @@
 
     .table__data {
 
-      @media only screen and (max-width : $breakpoint-medium) {
-        border-color: rgb(178, 178, 178);
+      @media only screen and (max-width: $breakpoint-medium) {
         border-bottom-style: dotted;
         border-bottom-width: 1px;
+        border-color: rgb(178, 178, 178);
         padding-left: 50%;
       }
 
@@ -613,28 +613,28 @@
     }
 
     .table__head {
-      display: table-head;
       box-sizing: border-box;
+      display: table-head;
       width: auto;
 
       &.table__head--sticky {
         background: $white;
-        padding: 0;
-        width: 100vw !important;
-        left: 0 !important;
-        right: 0 !important;
         border-top: 1px dotted $alto-grey;
         box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
         height: auto !important;
+        left: 0 !important;
+        padding: 0;
+        right: 0 !important;
+        width: 100vw !important;
 
         .table__row {
-          max-width: $site-max-width;
-          width: 100%;
-          margin: 0 auto;
+          border-bottom: 0;
           display: block;
           float: none;
-          border-bottom: 0;
+          margin: 0 auto;
+          max-width: $site-max-width;
           overflow: hidden;
+          width: 100%;
         }
       }
 
@@ -658,16 +658,16 @@
 
     .table__body {
       display: table-row-group;
+      float: left;
       max-width: $site-max-width;
       width: 100%;
-      float: left;
     }
 
     .table__footer {
       display: table-footer-group;
+      float: left;
       max-width: $site-max-width;
       width: 100%;
-      float: left;
     }
 
     // Table label style used as secondary information with in a table cell. Can
@@ -689,10 +689,10 @@
     // </div>
     .table__label {
       clear: both;
-      display: block;
-      margin-top: 5px;
-      line-height: 16px;
       color: $pale-grey;
+      display: block;
+      line-height: 16px;
+      margin-top: 5px;
 
       a {
         color: $pale-grey;
@@ -728,44 +728,44 @@
     //     </div>
     // </div>
     .table__controls {
-      width: 100%;
-      text-align: right;
       opacity: 0;
+      text-align: right;
+      width: 100%;
       z-index: -1000;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         opacity: 1;
-        z-index: 1;
         text-align: center;
+        z-index: 1;
 
         .icon {
-          transform: scale(1.5, 1.5);
           margin: 20px !important;
+          transform: scale(1.5, 1.5);
         }
       }
 
       &--secondary {
         opacity: 0;
-        z-index: -1000;
-        width: auto;
         text-align: left;
+        width: auto;
+        z-index: -1000;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           opacity: 1;
-          z-index: 1;
           text-align: center;
+          z-index: 1;
         }
       }
 
       a,
       a:link,
       a:visited {
-        color: $text-color;
         border-bottom: 1px solid $link-border;
+        color: $text-color;
 
         &:hover {
-          text-decoration: none;
           color: $link-hover;
+          text-decoration: none;
         }
       }
     }
@@ -785,18 +785,18 @@
     //     </div>
     // </div>
     .table__input {
-      display: inline-block;
       background-color: $white;
-      border-color: $alto-grey;
       background-position: right 10px top 16px;
+      border-color: $alto-grey;
+      display: inline-block;
       margin: -7px 0;
 
       &[disabled] {
         background-color: transparent;
-        border-color: transparent;
-        pointer-events: none;
         background-position: -9999px -9999px;
+        border-color: transparent;
         color: $text-color;
+        pointer-events: none;
       }
     }
 
@@ -831,36 +831,36 @@
     .table__dropdown {
       width: 100%;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         background: $white;
         border: 0;
-        box-sizing: border-box;
-        top: 0;
-        right: 0;
         bottom: 0;
+        box-sizing: border-box;
         left: 0;
-        position: fixed;
-        z-index: 1000;
         overflow-y: scroll;
-        width: 100% !important;
-        padding-top: 74px;
         padding-bottom: 10px;
+        padding-top: 74px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100% !important;
+        z-index: 1000;
       }
 
       .table__dropdown-title {
         display: none;
 
-        @media only screen and (max-width : $breakpoint-medium) {
-          width: 100%;
-          float: left;
-          display: block;
-          box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-          padding: 15px 10px;
-          margin: 0;
+        @media only screen and (max-width: $breakpoint-medium) {
           background: $white;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+          display: block;
+          float: left;
+          margin: 0;
+          padding: 15px 10px;
           position: fixed;
-          z-index: 10;
           top: 0;
+          width: 100%;
+          z-index: 10;
 
           > h2 {
             margin: 0;
@@ -874,31 +874,31 @@
         display: none;
         position: relative;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           box-shadow: none;
         }
 
         &--indent {
-          padding-left: 41px;
-          float: left;
-          width: 100%;
           box-sizing: border-box;
+          float: left;
+          padding-left: 41px;
+          width: 100%;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             padding-left: 0;
           }
         }
 
-        &:before {
-          display: block;
-          margin: 0 auto;
-          width: calc(100% - 20px);
+        &::before {
           border-top: 1px dotted $alto-grey;
-          position: absolute;
-          height: 1px;
           content: '';
-          top: 0;
+          display: block;
+          height: 1px;
           left: 10px;
+          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          width: calc(100% - 20px);
         }
 
         // Table dropdown header row removes border styling from .table__row
@@ -914,40 +914,40 @@
         // If no borders are required, removes all borders and before elements
         &.u-border--none {
 
-          &:before {
+          &::before {
             display: none;
           }
         }
 
         &.u-border {
 
-          &:before {
-            display: block;
-            margin: 0 auto;
-            width: calc(100% - 20px);
+          &::before {
             border-top: 1px dotted $alto-grey;
-            position: absolute;
-            height: 1px;
             content: '';
-            top: 0;
+            display: block;
+            height: 1px;
             left: 10px;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            width: calc(100% - 20px);
           }
         }
 
         &.is-active {
 
-          @media only screen and (max-width : $breakpoint-medium) {
-            padding: 0 !important;
+          @media only screen and (max-width: $breakpoint-medium) {
             display: block;
+            padding: 0 !important;
           }
 
           .table__data {
 
-            @media only screen and (max-width : $breakpoint-medium) {
-              padding: 10px 10px 0;
+            @media only screen and (max-width: $breakpoint-medium) {
               border-top: 0;
+              padding: 10px 10px 0;
 
-              &:before {
+              &::before {
                 display: none;
               }
 
@@ -961,11 +961,11 @@
             }
 
             &--children {
-              @media only screen and (max-width : $breakpoint-medium) {
-                padding: 10px 10px 10px 50% !important;
+              @media only screen and (max-width: $breakpoint-medium) {
                 border-top: 1px dotted $outline;
+                padding: 10px 10px 10px 50% !important;
 
-                &:before {
+                &::before {
                   display: block;
                 }
               }
@@ -974,8 +974,8 @@
 
           .table__input {
             background-color: $white;
-            border-color: $alto-grey;
             background-position: right 10px top 16px;
+            border-color: $alto-grey;
             pointer-events: all;
 
             &[disabled] {
@@ -983,7 +983,7 @@
             }
           }
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             margin-bottom: 0;
 
             &::before {
@@ -992,27 +992,27 @@
 
             &.table__dropdown-controls {
 
-              @media only screen and (max-width : $breakpoint-medium) {
-                top: inherit !important;
-                margin: 0;
-                z-index: 2000;
-                padding-bottom: 0;
-                height: auto !important;
+              @media only screen and (max-width: $breakpoint-medium) {
                 bottom: 0 !important;
+                height: auto !important;
+                margin: 0;
+                padding-bottom: 0;
+                top: inherit !important;
+                z-index: 2000;
 
                 [class^="button--"] {
-                  width: 48%;
                   float: left;
-                  margin: 0 1%;
                   height: auto;
+                  line-height: 1.5;
+                  margin: 0 1%;
                   overflow: hidden;
                   white-space: normal;
-                  line-height: 1.5;
+                  width: 48%;
 
                   + [class^="button--"] {
-                    width: 48%;
                     float: left;
                     margin: 0 1%;
+                    width: 48%;
                   }
                 }
 
@@ -1086,12 +1086,12 @@
       .table__data,
       th,
       td {
-        border-color: $color;
         background-color: rgba($color, .2);
+        border-color: $color;
       }
     }
   }
-  // scss-lint:enable NestingDepth
+  // sass-lint:enable NestingDepth
 }
 
 // Generates column classes use for tables

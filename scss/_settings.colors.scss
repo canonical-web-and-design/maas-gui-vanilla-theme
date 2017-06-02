@@ -1,19 +1,19 @@
 // SURU colors
-$black:                 #000!default;
-$cool-grey:             #333!default;
-$ash:                   #888!default;
-$silk:                  #cdcdcd!default;
-$porcelain:             #f7f7f7!default;
-$white:                 #fff!default;
+$black:                 #000 !default;
+$cool-grey:             #333 !default;
+$ash:                   #888 !default;
+$silk:                  #cdcdcd !default;
+$porcelain:             #f7f7f7 !default;
+$white:                 #fff !default;
 
-$blue:                  #19b6ee!default;
-$green:                 #0e8420!default;
-$red:                   #ed3146!default;
-$orange:                #e95420!default;
-$yellow:                #f99b11!default;
+$blue:                  #19b6ee !default;
+$green:                 #0e8420 !default;
+$red:                   #ed3146 !default;
+$orange:                #e95420 !default;
+$yellow:                #f99b11 !default;
 
 // SURU color names
-// scss-lint:disable ColorVariable ColorKeyword
+// sass-lint:disable no-color-keywords
 $colors: (
   black: $black,
   cool-grey: $cool-grey,
@@ -27,4 +27,4 @@ $colors: (
   orange: $orange,
   yellow: $yellow
 );
-// scss-lint:enable ColorVariable ColorKeyword
+// sass-lint:enable no-color-keywords

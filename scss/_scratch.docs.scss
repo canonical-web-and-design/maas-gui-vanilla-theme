@@ -1,20 +1,20 @@
 hr {
-  border-style: dotted;
   border-bottom: 0;
   border-color: $pale-grey;
-  margin-top: 60px;
-  margin-bottom: 60px !important;
-  width: 100%;
+  border-style: dotted;
   float: left;
+  margin-bottom: 60px !important;
+  margin-top: 60px;
+  width: 100%;
 }
 
 .docs-nav {
-  box-sizing: border-box;
-  width: 100%;
   background-color: $white;
-  padding: 20px;
+  box-sizing: border-box;
   float: left;
+  padding: 20px;
   position: fixed;
+  width: 100%;
   z-index: 10;
 
   .docs-nav__logo {
@@ -23,25 +23,25 @@ hr {
   }
 
   .docs-nav__title {
+    display: inline-block;
     font-size: 16px;
     margin: 0 0 0 10px;
-    display: inline-block;
     vertical-align: middle;
   }
 
   .docs-nav__link {
+    display: inline-block;
     font-size: 16px;
     margin: 0 0 0 10px;
-    display: inline-block;
     vertical-align: middle;
   }
 }
 
 .docs-color {
-  width: 100%;
-  height: 100px;
   border-radius: 5px;
+  height: 100px;
   margin-bottom: 20px;
+  width: 100%;
 
   @each $name, $color in $colors {
     &.docs-color--#{$name} {
@@ -53,41 +53,41 @@ hr {
 .docs-text {
 
   &--success {
-    padding-left: 30px;
     background: url('#{$asset-path}images/2355399b-info.svg') no-repeat;
-    background-size: 16px 16px;
     background-position: 0 4px;
+    background-size: 16px 16px;
+    padding-left: 30px;
   }
 
   &--avoid {
-    padding-left: 30px;
     background: url('#{$asset-path}images/d730daea-error.svg') no-repeat;
-    background-size: 16px 16px;
     background-position: 0 4px;
+    background-size: 16px 16px;
+    padding-left: 30px;
   }
 }
 
 .docs-code {
-  color: $cool-grey;
   background-color: darken($porcelain, 5%);
-  padding: 2px 3px;
   border-radius: 3px;
+  color: $cool-grey;
+  padding: 2px 3px;
 }
 
 .docs-example {
-  border: 1px solid $silk;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  float: left;
-  width: 100%;
-  box-sizing: border-box;
   background-color: $porcelain;
+  border-radius: 5px;
+  border: 1px solid $silk;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
 
   .docs-example__item {
     border-bottom: 1px solid $silk;
     box-sizing: border-box;
-    padding: 20px;
     float: left;
+    padding: 20px;
     width: 100%;
 
     &--last,
@@ -97,11 +97,11 @@ hr {
     }
 
     &--code {
-      color: $ash;
       background-color: lighten($silk, 15%);
-      white-space: pre-wrap;
-      padding-right: 0;
+      color: $ash;
       overflow-x: scroll;
+      padding-right: 0;
+      white-space: pre-wrap;
 
       code {
         white-space: pre-wrap;
@@ -110,8 +110,8 @@ hr {
   }
 
   .docs-example__help-text {
-    font-size: 14px;
     color: $silk;
+    font-size: 14px;
     margin: 0;
     width: 100%;
   }

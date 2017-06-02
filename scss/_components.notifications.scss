@@ -30,17 +30,17 @@
     @extend %notification;
 
     &__response {
+      color: $text-color;
+      height: initial;
+      margin: 0;
+      padding: 0;
+      text-align: left;
       background: {
         color: $transparent;
         position: left center;
         repeat: no-repeat;
         size: 16px 16px;
       }
-      color: $text-color;
-      height: initial;
-      margin: 0;
-      padding: 0;
-      text-align: left;
 
       &:hover {
         background-color: $transparent;
@@ -75,23 +75,23 @@
       // notifications.
       .p-notification__response {
         background-image: none !important;
-        padding-left: 0 !important;
         cursor: pointer;
+        padding-left: 0 !important;
       }
 
       .p-notification__status {
 
         // Pulls in data-count content to show the response count.
-        &:before {
-          content: attr(data-count);
-          display: inline-block;
+        &::before {
           background-color: $warm-grey;
           border-radius: 50%;
           box-sizing: border-box;
+          content: attr(data-count);
+          display: inline-block;
           line-height: 24px;
-          max-width: 24px;
-          max-height: 24px;
           margin-right: 5px;
+          max-height: 24px;
+          max-width: 24px;
           text-align: center;
           width: 100%;
         }
@@ -102,10 +102,10 @@
       }
 
       .p-notification__list {
+        display: none;
         list-style-type: none;
         margin: 0;
         padding-top: 10px;
-        display: none;
 
         // Set this class with JS to show/hide the notification list
         &.is-open {
@@ -123,8 +123,8 @@
 
         .p-notification__msg {
           box-sizing: border-box;
-          padding-right: 40px;
           margin: 0;
+          padding-right: 40px;
 
           .button--inline {
             vertical-align: initial;
@@ -132,10 +132,10 @@
         }
 
         .p-notification__date {
+          bottom: 15px;
           color: $pale-grey;
           position: absolute;
           right: 0;
-          bottom: 15px;
         }
       }
     }
@@ -145,8 +145,8 @@
 // Positive notification styling
 @mixin notifications-success {
   .p-notification--success {
-    @extend %notification;
     border-color: $success;
+    @extend %notification;
 
     .p-notification__response {
       background-image: url('#{$asset-path}images/89c6b797-success.svg');
@@ -158,7 +158,7 @@
 
       .p-notification__status {
 
-        &:before {
+        &::before {
           background-color: $success;
           color: $white;
         }
@@ -170,8 +170,8 @@
 // Warning notification styling
 @mixin notifications-warning {
   .p-notification--warning {
-    @extend %notification;
     border-color: $warning;
+    @extend %notification;
 
     .p-notification__response {
       background-image: url('#{$asset-path}images/5777c0c7-warning.svg');
@@ -183,7 +183,7 @@
 
       .p-notification__status {
 
-        &:before {
+        &::before {
           background-color: $warning;
         }
       }
@@ -194,8 +194,8 @@
 // Negative notification styling
 @mixin notifications-error {
   .p-notification--error {
-    @extend %notification;
     border-color: $error;
+    @extend %notification;
 
     .p-notification__response {
       background-image: url('#{$asset-path}images/d730daea-error.svg');
@@ -207,7 +207,7 @@
 
       .p-notification__status {
 
-        &:before {
+        &::before {
           background-color: $error;
           color: $white;
         }
@@ -221,9 +221,9 @@
     background-color: $white;
     border-radius: 12px;
     box-sizing: border-box;
+    display: inline-block;
     margin: 12px 0;
     padding: 0 10px;
-    display: inline-block;
     vertical-align: middle;
 
     + * {

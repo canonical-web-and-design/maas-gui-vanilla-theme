@@ -1,35 +1,36 @@
 /// Accordion
 @mixin maas-accordion {
+  // sass-lint:enable NestingDepth SelectorDepth;
   .p-mobile-nav {
     display: none;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       display: block;
       width: 100%;
 
       &__link {
-        width: 100%;
-        float: left;
-        display: block;
-        padding: 15px 10px;
-        margin: 0;
         background: $white;
-        z-index: 10;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 15px 10px;
         top: 0;
+        width: 100%;
+        z-index: 10;
       }
     }
   }
 
-  // scss-lint:disable NestingDepth SelectorDepth
+  // sass-lint:disable NestingDepth SelectorDepth
   .accordion {
-    box-sizing: border-box;
-    border-radius: 2px;
-    list-style: none;
     background: $white;
+    border-radius: 2px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    list-style: none;
     margin-bottom: 40px;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       margin-bottom: 0;
     }
 
@@ -40,19 +41,19 @@
 
     // accordion main sidebar title
     .accordion__title {
+      border-bottom: 1px dotted $muted-grey;
+      margin: 0;
+      padding: 14px 20px;
       @include font-size(20px);
       @include focus($offset: 2px);
-      border-bottom: 1px dotted $muted-grey;
-      padding: 14px 20px;
-      margin: 0;
 
-      @media only screen and (max-width : $breakpoint-medium) {
-        border-bottom: 0;
+      @media only screen and (max-width: $breakpoint-medium) {
         background: $transparent url('#{$asset-path}images/04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
+        border-bottom: 0;
 
         &.is-active {
-          border-bottom: 1px dotted $muted-grey;
           background-image: url('#{$asset-path}images/89c10794-remove.svg');
+          border-bottom: 1px dotted $muted-grey;
 
           + .accordion__content {
             display: block;
@@ -62,7 +63,7 @@
     }
 
     .accordion__content {
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         display: none;
       }
     }
@@ -77,22 +78,22 @@
 
       // Block level title
       .accordion__tab-title {
-        @extend %accordion__tab-title;
-        @include font-size(20px);
-        @include focus;
         display: block;
         height: auto;
         text-align: left;
+        @extend %accordion__tab-title;
+        @include font-size(20px);
+        @include focus;
 
         &.is-active {
-          @extend %accordion__tab-title;
           background-image: url('#{$asset-path}images/f3f43376-chevron-up.svg');
+          @extend %accordion__tab-title;
 
           + .accordion__tab-content {
             max-height: 400px;
             transition: max-height .5s ease-in;
 
-            @media only screen and (max-width : $breakpoint-medium) {
+            @media only screen and (max-width: $breakpoint-medium) {
               max-height: 150px;
             }
           }
@@ -106,27 +107,27 @@
       // Filter list
       .accordion__tab-content {
         max-height: 0;
-        transition: max-height .5s ease-out;
         overflow: auto;
+        transition: max-height .5s ease-out;
 
         .accordion__tab-list {
           list-style-type: none;
-          padding: 0 20px 14px;
           margin: 0;
+          padding: 0 20px 14px;
 
           .accordion__tab-item {
             margin-bottom: .15em;
 
             .accordion__tab-link {
-              @include focus($offset: 2px);
+              background-color: transparent;
+              border-bottom: 0;
               box-sizing: border-box;
               color: $cool-grey;
-              width: 100%;
               display: inline-block;
               padding: 0 20px 0 0;
-              border-bottom: 0;
-              background-color: transparent;
               text-align: left;
+              width: 100%;
+              @include focus($offset: 2px);
 
               &:hover {
                 color: $link-hover;
@@ -139,8 +140,8 @@
             }
 
             &.is-active {
-              margin-bottom: .15em;
               font-weight: 400;
+              margin-bottom: .15em;
 
               .accordion__tab-link {
                 background: $transparent url('#{$asset-path}images/89c10794-remove.svg') top 7px right 0 no-repeat;
@@ -160,11 +161,10 @@
 
   // Accordion patterns
   %accordion__tab-title {
-    padding: 12px 20px;
-    margin: 0;
+    background: $transparent url('#{$asset-path}images/04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
     color: $warm-grey;
     cursor: pointer;
-    background: $transparent url('#{$asset-path}images/04d2075a-chevron-down.svg') top 20px right 20px no-repeat;
+    margin: 0;
+    padding: 12px 20px;
   }
-  // scss-lint:enable NestingDepth SelectorDepth
 }

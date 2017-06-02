@@ -10,6 +10,7 @@
     }
 
     .nav-primary {
+      // sass-lint:disable enable;
       overflow: visible;
 
       @media only screen and (min-width: $navigation-threshold) {
@@ -25,8 +26,8 @@
         }
 
         a {
-          @include focus($offset: 2px);
           border-bottom: 0;
+          @include focus($offset: 2px);
 
           svg,
           img {
@@ -43,26 +44,26 @@
         }
 
         li {
-          width: 100%;
           border-right: 0;
+          width: 100%;
 
           @media only screen and (min-width: $navigation-threshold) {
             border-left: 1px solid $cool-grey;
             width: auto;
 
             &:last-child {
-              border-right: 1px solid $cool-grey;
               border-left: 1px solid $cool-grey;
+              border-right: 1px solid $cool-grey;
             }
           }
 
           a,
           a:link,
           a:visited {
-            @include focus;
-            box-sizing: border-box;
             border-bottom: 0;
             border-left: 0;
+            box-sizing: border-box;
+            @include focus;
 
             &.active {
               background-color: $transparent;
@@ -85,16 +86,15 @@
         }
       }
 
-      // scss-lint:disable IdSelector
+      // sass-lint:disable IdSelector
       #nav:hover .nav-secondary {
         display: block;
       }
-      // scss-lint:disable enable
     }
 
     .nav-secondary {
-      float: right;
       display: none;
+      float: right;
       width: 100%;
 
       @media only screen and (min-width: $breakpoint-medium) {
@@ -104,8 +104,8 @@
       }
 
       ul {
-        display: inline-block;
         border: 0;
+        display: inline-block;
         float: right;
       }
     }

@@ -9,18 +9,18 @@
 @mixin maas-page-navigation {
 
   .page-navigation {
-    box-sizing: border-box;
     background: $white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-    padding: 0 20px;
-    height: auto !important;
-    width: 100% !important;
+    box-sizing: border-box;
     float: left;
-    overflow: visible;
+    height: auto !important;
     margin: 0;
+    overflow: visible;
+    padding: 0 20px;
+    width: 100% !important;
     z-index: 1 !important;
 
-    @media only screen and (max-width : $breakpoint-medium) {
+    @media only screen and (max-width: $breakpoint-medium) {
       padding: 0;
     }
 
@@ -28,24 +28,24 @@
       float: left;
       width: auto;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100%;
       }
     }
 
     &__link {
-      @include focus;
+      background-color: transparent;
       border-bottom: 0;
-      color: $cool-grey;
+      border-radius: 0;
       box-sizing: border-box;
+      color: $cool-grey;
       float: left;
+      height: initial;
       padding: 15px 20px;
       width: auto;
-      background-color: transparent;
-      height: initial;
-      border-radius: 0;
+      @include focus;
 
-      @media only screen and (max-width : $breakpoint-medium) {
+      @media only screen and (max-width: $breakpoint-medium) {
         width: 100%;
 
         + .page-navigation__link {
@@ -55,47 +55,47 @@
 
       &:hover {
         background-color: $transparent;
-        color: $cool-grey;
         border-bottom: 0;
         box-shadow: inset 0 -3px $outline;
+        color: $cool-grey;
 
-        @media only screen and (max-width : $breakpoint-medium) {
-          box-shadow: none;
+        @media only screen and (max-width: $breakpoint-medium) {
           background-color: rgba($outline, .2);
+          box-shadow: none;
         }
 
         &:focus,
         &:active {
-          outline: none;
           box-shadow: inset 0 -3px $outline, 0 0 0 1px $color-focus;
+          outline: none;
         }
       }
 
       &:focus,
       &:active {
-        outline: none;
         box-shadow: 0 0 0 1px $color-focus;
+        outline: none;
       }
 
       &.is-active {
         box-shadow: inset 0 -3px $tab-active-state;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           box-shadow: inset 3px 0 $tab-active-state;
         }
 
         &:hover {
           box-shadow: inset 0 -3px $tab-active-state;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             box-shadow: inset 3px 0 $tab-active-state;
           }
         }
 
         &:focus,
         &:active {
-          outline: none;
           box-shadow: inset 0 -3px #e95420, 0 0 0 1px $color-focus;
+          outline: none;
         }
       }
     }

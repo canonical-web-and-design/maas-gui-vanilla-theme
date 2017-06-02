@@ -9,23 +9,23 @@
         position: relative;
 
         .form__group-remove {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-          height: 16px;
-          width: 16px;
           background: url('#{$asset-path}images/89c10794-remove.svg') no-repeat;
-          background-size: 75% 75%;
           background-position: center;
+          background-size: 75% 75%;
+          cursor: pointer;
           display: inline-block;
+          height: 16px;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          width: 16px;
         }
 
         .icon {
-          position: absolute;
-          top: 10px;
-          right: 10px;
           display: inline-block;
+          position: absolute;
+          right: 10px;
+          top: 10px;
         }
       }
 
@@ -38,18 +38,18 @@
         input,
         select,
         textarea {
-          border-color: $mercury-grey;
           background-color: transparent;
+          border-color: $mercury-grey;
 
           &:hover {
-            border-color: $mid-grey;
             background-color: $white;
+            border-color: $mid-grey;
           }
 
           &:active,
           &:focus {
-            border-color: $warm-grey;
             background-color: $white;
+            border-color: $warm-grey;
           }
         }
       }
@@ -64,8 +64,8 @@
 
     .form__siblings {
       float: left;
-      width: 100%;
       margin-bottom: 10px;
+      width: 100%;
 
       &:hover {
 
@@ -74,8 +74,8 @@
           input,
           select,
           textarea {
-            border-color: $mid-grey;
             background-color: $white;
+            border-color: $mid-grey;
           }
         }
       }
@@ -87,8 +87,8 @@
           input,
           select,
           textarea {
-            border-color: $mid-grey;
             background-color: $white;
+            border-color: $mid-grey;
           }
         }
       }
@@ -97,17 +97,17 @@
     &.form--stack {
 
       .form__group {
-        width: 100%;
         float: left;
+        width: 100%;
 
         [class*='-col'] {
           margin-bottom: 0;
         }
 
         .form__group-label {
-          margin-top: 0;
-          margin-bottom: 0;
           line-height: 34px;
+          margin-bottom: 0;
+          margin-top: 0;
           vertical-align: top;
         }
 
@@ -125,11 +125,11 @@
 
       .form__fieldset {
         display: inline-block;
-        width: auto;
         margin: 0;
         vertical-align: middle;
+        width: auto;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: block;
           width: 100%;
         }
@@ -140,25 +140,25 @@
         margin: 0 20px 0 0;
         vertical-align: top;
 
-        @media only screen and (max-width : $breakpoint-medium) {
+        @media only screen and (max-width: $breakpoint-medium) {
           display: block;
           width: 100%;
         }
 
         .form__group-label {
+          line-height: 34px;
           margin-bottom: 0;
           margin-right: 10px;
           vertical-align: top;
-          line-height: 34px;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             display: block;
             width: 100%;
           }
 
           .icon--left {
-            position: absolute;
             left: 0;
+            position: absolute;
             top: 12px;
           }
         }
@@ -167,10 +167,10 @@
         select,
         .form__group-input {
           display: inline-block;
-          width: auto;
           min-height: 34px;
+          width: auto;
 
-          @media only screen and (max-width : $breakpoint-medium) {
+          @media only screen and (max-width: $breakpoint-medium) {
             display: block;
             width: 100%;
 
@@ -192,22 +192,22 @@
         }
 
         .onoffswitch-external-label {
+          line-height: 34px;
           margin: 0;
           vertical-align: middle;
-          line-height: 34px;
         }
       }
     }
 
     .form__help-text {
-      @include font-size(14px);
       color: $warm-grey;
+      @include font-size(14px);
     }
   }
 
   .form__error {
-    margin: 0;
     color: $error;
+    margin: 0;
 
     .form__error-item {
       margin: 6px 0;
