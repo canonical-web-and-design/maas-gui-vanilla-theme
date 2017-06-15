@@ -22,6 +22,25 @@
 
     @media only screen and (max-width : $breakpoint-medium) {
       padding: 0;
+      position: relative;
+
+      &::before {
+        background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff);
+        box-sizing: border-box;
+        content: '\203A';
+        color: $warm-grey;
+        display: block;
+        font-size: 2rem;
+        height: 52px;
+        line-height: 52px;
+        padding: 0 15px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 1px;
+        width: 100px;
+        z-index: 10;
+      }
     }
 
     &__links {
@@ -29,6 +48,10 @@
       width: auto;
 
       @media only screen and (max-width : $breakpoint-medium) {
+        height: 54px;
+        overflow: scroll;
+        position: relative;
+        white-space: nowrap;
         width: 100%;
       }
     }
@@ -46,11 +69,10 @@
       border-radius: 0;
 
       @media only screen and (max-width : $breakpoint-medium) {
-        width: 100%;
-
-        + .page-navigation__link {
-          border-top: 1px dotted $outline;
-        }
+        display: inline-block;
+        float: none;
+        width: auto;
+        z-index: 1;
       }
 
       &:hover {
