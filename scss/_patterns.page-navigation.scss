@@ -25,7 +25,7 @@
       position: relative;
 
       &::before {
-        background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#fff);
+        background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0,$white);
         box-sizing: border-box;
         content: '\203A';
         color: $warm-grey;
