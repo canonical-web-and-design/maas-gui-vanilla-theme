@@ -13,7 +13,7 @@
     background: $white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     padding: 0 20px;
-    height: auto !important;
+    height: auto;
     width: 100% !important;
     float: left;
     overflow: visible;
@@ -52,6 +52,7 @@
       @media only screen and (max-width : $breakpoint-medium) {
         box-sizing: unset;
         padding-bottom: 20px;
+        overflow: scroll;
         position: relative;
         white-space: nowrap;
         width: 100%;
