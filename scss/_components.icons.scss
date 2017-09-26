@@ -40,17 +40,17 @@
     }
 
     &.icon--error {
-      background: url('#{$asset-path}images/d730daea-error.svg') no-repeat;
+      background: url('#{$asset-path}images/8ce0cdda-vanilla-error.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--help {
-      background: url('#{$asset-path}images/908ee6a0-help.svg') no-repeat;
+      background: url('#{$asset-path}images/913b601e-vanilla-help.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--info {
-      background: url('#{$asset-path}images/2355399b-info.svg') no-repeat;
+      background: url('#{$asset-path}images/6c00065e-vanilla-information.svg') no-repeat;
       background-size: 100% 100%;
     }
 
@@ -89,13 +89,18 @@
       background-size: 100% 100%;
     }
 
+    &.icon--question {
+      background: url('#{$asset-path}images/76ce1d41-vanilla-question.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+
     &.icon--remove {
       background: url('#{$asset-path}images/89c10794-remove.svg') no-repeat;
       background-size: 100% 100%;
     }
 
     &.icon--success {
-      background: url('#{$asset-path}images/89c6b797-success.svg') no-repeat;
+      background: url('#{$asset-path}images/3dfd9f21-vanilla-success.svg') no-repeat;
       background-size: 100% 100%;
 
       &-grey {
@@ -145,7 +150,7 @@
     }
 
     &.icon--warning {
-      background: url('#{$asset-path}images/5777c0c7-warning.svg') no-repeat;
+      background: url('#{$asset-path}images/2024a050-vanilla-warning.svg') no-repeat;
       background-size: 100% 100%;
     }
 
