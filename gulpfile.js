@@ -6,7 +6,7 @@ cssnano = require('gulp-cssnano'),
 sassLint = require('gulp-sass-lint'),
 rename = require('gulp-rename'),
 sourcemaps = require('gulp-sourcemaps'),
-sassPath = 'scss/maas-gui-framework.build-1.2.5.scss';
+sassPath = 'scss/maas-gui-framework.build-1.2.9.scss';
 
 // Gulp help instructions triggered as Gulp default task
 gulp.task('help', function() {
